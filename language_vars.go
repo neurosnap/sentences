@@ -64,7 +64,3 @@ var period_context_fmt = `
 var period_context = regexp.MustCompile(fmt.Sprintf(period_context_fmt, re_sent_end_chars, re_non_word_chars))
 
 var re_non_punct = regexp.MustCompile(`[^\W\d]`)
-
-func main() {
-	fmt.Println(re_sent_end_chars(sent_end_chars))
-}
