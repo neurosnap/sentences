@@ -14,12 +14,12 @@ Frequency distributions are generally constructed by running a
 number of experiments, and incrementing the count for a sample
 every time it is an outcome of an experiment.
 */
-type FrequencyDistribution struct {
+type FreqDist struct {
 	samples map[string]int
 }
 
 // Return the total number of sample outcomes that have been recorded by this FreqDist.
-func (f *FrequencyDistribution) N() int {
+func (f *FreqDist) N() int {
 	sum := 0
 	for _, val := range f.samples {
 		sum += val
@@ -28,12 +28,12 @@ func (f *FrequencyDistribution) N() int {
 }
 
 // Return the total number of sample values (or "bins") that have counts greater than zero.
-func (f *FrequencyDistribution) B() int {
+func (f *FreqDist) B() int {
 	return len(f.samples)
 }
 
 // Return a list of all samples that occur once (hapax legomena)
-func (f *FrequencyDistribution) hapaxes() []string {
+func (f *FreqDist) hapaxes() []string {
 	hap := make([]string, 0, f.B())
 
 	for key, val := range f.samples {
@@ -47,7 +47,7 @@ func (f *FrequencyDistribution) hapaxes() []string {
 }
 
 // Return the dictionary mapping r to Nr, the number of samples with frequency r, where Nr > 0
-func (f *FrequencyDistribution) rToNr(bins int) map[int]int {
+func (f *FreqDist) rToNr(bins int) map[int]int {
 	tmpRToNr := map[int]int{}
 
 	for _, value := range f.samples {
@@ -65,7 +65,7 @@ func (f *FrequencyDistribution) rToNr(bins int) map[int]int {
 
 // Return the cumulative frequencies of the specified samples.
 // If no samples are specified, all counts are returned, starting with the largest.
-func (f *FrequencyDistribution) cumulativeFrequencies(samples []string) []int {
+func (f *FreqDist) cumulativeFrequencies(samples []string) []int {
 	cf := make([]int, 0, len(f.samples))
 
 	for _, val := range samples {
@@ -84,7 +84,7 @@ number of times that sample outcome was recorded by this
 FreqDist.  Frequencies are always real numbers in the range
 [0, 1].
 */
-func (f *FrequencyDistribution) freq(sample string) float32 {
+func (f *FreqDist) freq(sample string) float32 {
 	if f.N() == 0 {
 		return 0
 	}
@@ -102,7 +102,7 @@ frequency distribution.  If two or more samples have the same
 number of outcomes, return one of them; which sample is
 returned is undefined.
 */
-func (f *FrequencyDistribution) max() (string, error) {
+func (f *FreqDist) max() (string, error) {
 	if len(f.samples) == 0 {
 		return "", fmt.Errorf("No samples loaded, please add samples before getting max")
 	}
