@@ -6,6 +6,15 @@ import (
 	"strings"
 )
 
+type PunktLanguageVars struct {
+	sentEndChars          []byte
+	internalPunctuation   string
+	reBoundaryRealignment *regexp.Regexp
+	reWordStart           *regexp.Regexp
+	reNonWordChars        *regexp.Regexp
+	reMultiCharPunct      *regexp.Regexp
+}
+
 // Characters that are candidates for sentence boundaries
 var sent_end_chars = []string{".", "?", "!"}
 
