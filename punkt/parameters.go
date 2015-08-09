@@ -20,7 +20,7 @@ func (ss *SetString) Has(str string) bool {
 	}
 }
 
-type SetInt struct {
+/*type SetInt struct {
 	items map[int]int
 }
 
@@ -30,7 +30,7 @@ func (si *SetInt) Add(val int) {
 
 func (si *SetInt) Remove(val int) {
 	delete(si.items, val)
-}
+}*/
 
 // Stores data used to perform sentence boundary detection with punkt
 type PunktParameters struct {

@@ -12,6 +12,30 @@ type AbbrevType struct {
 	IsAdd bool
 }
 
+/*
+The following constants are used to describe the orthographic
+contexts in which a word can occur.  BEG=beginning, MID=middle,
+UNK=unknown, UC=uppercase, LC=lowercase, NC=no case.
+*/
+const (
+	// Beginning of a sentence with upper case.
+	orthoBegUc = 1 << 1
+	// Middle of a sentence with upper case.
+	orthoMidUc = 1 << 2
+	// Unknown position in a sentence with upper case.
+	orthoUnkUc = 1 << 3
+	// Beginning of a sentence with lower case.
+	orthoBegLc = 1 << 4
+	// Middle of a sentence with lower case.
+	orthoMidLc = 1 << 5
+	// Unknown position in a sentence with lower case.
+	orthoUnkLc = 1 << 6
+	// Occurs with upper case.
+	orthoUc = orthoBegUc + orthoMidUc + orthoUnkUc
+	// Occurs with lower case.
+	orthoLc = orthoBegLc + orthoMidLc + orthoUnkLc
+)
+
 func boolToFloat64(cond bool) float64 {
 	if cond {
 		return 1
@@ -26,7 +50,7 @@ type PunktTrainer struct {
 	numPeriodToks        float64
 	collocationFreqDist  *gs.FreqDist
 	sentStarterFreqDist  *gs.FreqDist
-	sentBreakCount       int
+	sentBreakCount       float64
 	finalized            bool
 	Abbrev               float64
 	IgnoreAbbrevPenalty  bool
@@ -117,6 +141,14 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 		if p.isPotentialSentStarter(tokPair[1], tokPair[0]) {
 			p.sentStarterFreqDist.Samples[tokPair[1].Typ] += 1
 		}
+
+		if p.isPotentialCollocation(tokPair[0], tokPair[1]) {
+			var bigramColl = strings.Join([]string{
+				tokPair[0].TypeNoPeriod(),
+				tokPair[1].TypeNoSentPeriod(),
+			}, ",")
+			p.collocationFreqDist.Samples[bigramColl] += 1
+		}
 	}
 }
 
@@ -150,7 +182,11 @@ Uses data that has been gathered in training to determine likely
 collocations and sentence starters.
 */
 func (p *PunktTrainer) FinalizeTraining() {
-	//p.PunktParameters.clearSentStarters()
+	p.PunktParameters.SentStarters.items = map[string]int{}
+	for _, val := range p.findSentStarters() {
+	}
+	p.PunktParameters.Collocations.items = map[string]int{}
+
 }
 
 /*
@@ -276,12 +312,12 @@ and `get_rare_abbreviations`.
 func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 	/*
 		A word type is counted as a rare abbreviation if:
-		   - it's not already marked as an abbreviation
-		   - it occurs fewer than ABBREV_BACKOFF times
-		   - either it is followed by a sentence-internal punctuation
-		   mark, *or* it is followed by a lower-case word that
-		   sometimes appears with upper case, but never occurs with
-		   lower case at the beginning of sentences.
+			- it's not already marked as an abbreviation
+			- it occurs fewer than ABBREV_BACKOFF times
+			- either it is followed by a sentence-internal punctuation
+			mark, *or* it is followed by a lower-case word that
+			sometimes appears with upper case, but never occurs with
+			lower case at the beginning of sentences.
 	*/
 	if curTok.Abbr || !curTok.SentBreak {
 		return false
@@ -303,29 +339,83 @@ func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 	}
 
 	/*
-	   Record this token as an abbreviation if the next
-	   token is a sentence-internal punctuation mark.
-	   [XX] :1 or check the whole thing??
+		Record this token as an abbreviation if the next
+		token is a sentence-internal punctuation mark.
+		[XX] :1 or check the whole thing??
 	*/
 	if strings.Contains(p.PunktLanguageVars.internalPunctuation, nextTok.Tok[:1]) {
 		return true
 	}
 
 	/*
-	   Record this type as an abbreviation if the next
-	   # token...  (i) starts with a lower case letter,
-	   # (ii) sometimes occurs with an uppercase letter,
-	   # and (iii) never occus with an uppercase letter
-	   # sentence-internally.
-	   # [xx] should the check for (ii) be modified??
+		Record this type as an abbreviation if the next
+		token...  (i) starts with a lower case letter,
+		(ii) sometimes occurs with an uppercase letter,
+		and (iii) never occus with an uppercase letter
+		sentence-internally.
+		[xx] should the check for (ii) be modified??
 	*/
 	if nextTok.FirstLower() {
 		typTwo := nextTok.TypeNoSentPeriod()
-		typeTwoOrthoCtx := p.PunktParameters.OrthoContext.items[typTwo]
+		typTwoOrthoCtx := p.PunktParameters.OrthoContext.items[typTwo]
 
+		if (typTwoOrthoCtx&orthoBegUc) == 1 && (typTwoOrthoCtx&orthoMidUc) == 0 {
+			return true
+		}
+	}
+
+	return false
+}
+
+/*
+Returns True given a token and the token that preceds it if it
+seems clear that the token is beginning a sentence.
+*/
+func (p *PunktTrainer) isPotentialSentStarter(curTok, prevTok *PunktToken) bool {
+	return prevTok.SentBreak && !(prevTok.IsNumber() || prevTok.IsInitial()) && curTok.IsAlpha()
+}
+
+/*
+Returns True if the pair of tokens may form a collocation given
+log-likelihood statistics.
+*/
+func (p *PunktTrainer) isPotentialCollocation(tokOne, tokTwo *PunktToken) bool {
+	return ((p.IncludeAllCollocs || p.IncludeAbbrevCollocs && tokOne.Abbr) ||
+		(tokOne.SentBreak && (tokOne.IsNumber() || tokOne.IsInitial())) &&
+			tokOne.IsNonPunct() && tokTwo.IsNonPunct())
+}
+
+type sentStarters struct {
+	Typ string
+	float64
+}
+
+func (p *PunktTrainer) findSentStarters() []*sentStarters {
+	starters := make([]*sentStarters, 0, len(p.sentStarterFreqDist.Samples))
+
+	for typ, _ := range p.sentStarterFreqDist.Samples {
+		if typ == "" {
+			continue
+		}
+
+		typAtBreakCount := float64(p.sentStarterFreqDist.Samples[typ])
+		typCount := float64(p.typeFreqDist.Samples[typ] + p.typeFreqDist.Samples[strings.Join([]string{typ, "."}, "")])
+		if typCount < typAtBreakCount {
+			continue
+		}
+
+		ll := p.colLogLikelihood(p.sentBreakCount, typCount, typAtBreakCount, p.typeFreqDist.N())
 	}
 
 }
 
-func (p *PunktTrainer) isPotentialSentStarter(typ string) bool {
+/*
+A function that will just compute log-likelihood estimate, in
+the original paper it's described in algorithm 6 and 7.
+This *should* be the original Dunning log-likelihood values,
+unlike the previous log_l function where it used modified
+Dunning log-likelihood values
+*/
+func (p *PunktTrainer) colLogLikelihood(countA, countB, countAB, N float64) float64 {
+
 }
