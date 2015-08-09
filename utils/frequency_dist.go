@@ -18,6 +18,10 @@ type FreqDist struct {
 	Samples map[string]int
 }
 
+func NewFreqDist() *FreqDist {
+	return &FreqDist{map[string]int{}}
+}
+
 // Return the total number of sample outcomes that have been recorded by this FreqDist.
 func (f *FreqDist) N() float64 {
 	sum := 0.0

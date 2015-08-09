@@ -4,6 +4,10 @@ type SetString struct {
 	items map[string]int
 }
 
+func NewSetString() *SetString {
+	return &SetString{map[string]int{}}
+}
+
 func (ss *SetString) Add(str string) {
 	ss.items[str] = 1
 }
@@ -38,6 +42,15 @@ type PunktParameters struct {
 	Collocations *SetString
 	SentStarters *SetString
 	OrthoContext *SetString
+}
+
+func NewPunktParameters() *PunktParameters {
+	return &PunktParameters{
+		NewSetString(),
+		NewSetString(),
+		NewSetString(),
+		NewSetString(),
+	}
 }
 
 func (p *PunktParameters) addOrthoContext(typ string, flag int) {

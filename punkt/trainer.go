@@ -78,9 +78,9 @@ type PunktTrainer struct {
 func NewPunktTrainer(trainText string) *PunktTrainer {
 	trainer := &PunktTrainer{
 		PunktBase:           NewPunktBase(),
-		typeFreqDist:        &utils.FreqDist{},
-		collocationFreqDist: &utils.FreqDist{},
-		sentStarterFreqDist: &utils.FreqDist{},
+		typeFreqDist:        utils.NewFreqDist(),
+		collocationFreqDist: utils.NewFreqDist(),
+		sentStarterFreqDist: utils.NewFreqDist(),
 		finalized:           true,
 		Abbrev:              0.3,
 		AbbrevBackoff:       5,
@@ -112,7 +112,12 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 		tokens that end in periods.
 	*/
 	for _, tok := range tokens {
-		p.typeFreqDist.Samples[tok.Typ] += 1
+		if p.typeFreqDist.Samples[tok.Typ] == 0 {
+			p.typeFreqDist.Samples[tok.Typ] = 1
+		} else {
+			p.typeFreqDist.Samples[tok.Typ] += 1
+		}
+
 		if tok.PeriodFinal {
 			p.numPeriodToks += 1
 		}
@@ -235,7 +240,7 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 		}
 
 		var isAdd bool
-		if typ[len(typ)-1] == '.' {
+		if strings.HasSuffix(typ, ".") {
 			if !p.PunktParameters.AbbrevTypes.Has(typ) {
 				continue
 			}

@@ -14,6 +14,7 @@ type PunktBase struct {
 
 func NewPunktBase() *PunktBase {
 	return &PunktBase{
+		PunktParameters:   NewPunktParameters(),
 		PunktLanguageVars: NewPunktLanguageVars(),
 	}
 }
@@ -22,23 +23,17 @@ func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart
 	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
 	tok := strings.Join([]string{lineTok.First, lineTok.Second}, "")
 	if nonword.MatchString(lineTok.Second) || strings.HasSuffix(lineTok.Second, ",") {
-		tokOne := &PunktToken{
-			Tok:       lineTok.First,
-			ParaStart: parastart,
-			LineStart: linestart,
-		}
+		tokOne := NewPunktToken(lineTok.First)
+		tokOne.ParaStart = parastart
+		tokOne.LineStart = linestart
 
-		tokTwo := &PunktToken{
-			Tok: lineTok.Second,
-		}
+		tokTwo := NewPunktToken(lineTok.Second)
 
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
-		token := &PunktToken{
-			Tok:       tok,
-			ParaStart: parastart,
-			LineStart: linestart,
-		}
+		token := NewPunktToken(tok)
+		token.ParaStart = parastart
+		token.LineStart = linestart
 
 		tokens = append(tokens, token)
 	}

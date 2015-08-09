@@ -44,14 +44,20 @@ func (p *PunktToken) TypeNoSentPeriod() string {
 
 // True if the token's first character is uppercase.
 func (p *PunktToken) FirstUpper() bool {
-	firstType := string(p.Typ[0])
-	return strings.ToUpper(firstType) == firstType
+	if p.Tok == "" {
+		return false
+	}
+	firstTok := string(p.Tok[0])
+	return strings.ToUpper(firstTok) == firstTok
 }
 
 // True if the token's first character is lowercase
 func (p *PunktToken) FirstLower() bool {
-	firstType := string(p.Typ[0])
-	return strings.ToLower(firstType) == firstType
+	if p.Tok == "" {
+		return false
+	}
+	firstTok := string(p.Tok[0])
+	return strings.ToLower(firstTok) == firstTok
 }
 
 // True if the token text is that of an ellipsis.
@@ -71,7 +77,7 @@ func (p *PunktToken) IsEllipsis() bool {
 
 // True if the token text is that of a number.
 func (p *PunktToken) IsNumber() bool {
-	return string(p.Typ[:9]) == "##number##"
+	return strings.HasPrefix(p.Tok, "##number##")
 }
 
 // True if the token text is that of an initial.
@@ -99,7 +105,7 @@ func NewPunktToken(token string) *PunktToken {
 	}
 
 	tok.Typ = tok.getType(token)
-	tok.PeriodFinal = string(token[len(token)-1]) == "."
+	tok.PeriodFinal = strings.HasSuffix(token, ".")
 
 	return &tok
 }
