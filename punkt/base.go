@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"regexp"
 	"strings"
 )
 
@@ -17,6 +18,34 @@ func NewPunktBase() *PunktBase {
 	}
 }
 
+func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart bool, linestart bool) []*PunktToken {
+	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
+	tok := strings.Join([]string{lineTok.First, lineTok.Second}, "")
+	if nonword.MatchString(lineTok.Second) || strings.HasSuffix(lineTok.Second, ",") {
+		tokOne := &PunktToken{
+			Tok:       lineTok.First,
+			ParaStart: parastart,
+			LineStart: linestart,
+		}
+
+		tokTwo := &PunktToken{
+			Tok: lineTok.Second,
+		}
+
+		tokens = append(tokens, tokOne, tokTwo)
+	} else {
+		token := &PunktToken{
+			Tok:       tok,
+			ParaStart: parastart,
+			LineStart: linestart,
+		}
+
+		tokens = append(tokens, token)
+	}
+
+	return tokens
+}
+
 func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 	lines := strings.Split(text, "\n")
 	tokens := make([]*PunktToken, 0, len(lines))
@@ -26,23 +55,15 @@ func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 		if strings.Trim(line, " ") == "" {
 			parastart = true
 		} else {
-			var token = &PunktToken{}
-			lineToks := p.WordTokenize(line)
+			lineToks := p.WordTokenizer(line)
 
 			for index, lineTok := range lineToks {
 				if index == 0 {
-					token = &PunktToken{
-						Tok:       lineTok,
-						ParaStart: parastart,
-						LineStart: true,
-					}
-
+					tokens = p.AddToken(tokens, lineTok, parastart, true)
 					parastart = false
 				} else {
-					token = &PunktToken{Tok: lineTok}
+					tokens = p.AddToken(tokens, lineTok, parastart, false)
 				}
-
-				tokens = append(tokens, token)
 			}
 		}
 	}

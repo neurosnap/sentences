@@ -66,12 +66,12 @@ func NewPunktLanguageVars() *PunktLanguageVars {
 		reWordStart:      "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
 		reNonWordChars:   `(?:[?!)\";}\]\*:@\'\({\[])`,
 		reMultiCharPunct: `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
-		wordTokenizeFmt:  wordTokenFmt,
+		//wordTokenizeFmt:  wordTokenFmt,
 	}
 }
 
 // Compile word tokenizer regexp
-func (p *PunktLanguageVars) ReWordTokenizer() *regexp.Regexp {
+/*func (p *PunktLanguageVars) ReWordTokenizer() *regexp.Regexp {
 	t := template.Must(template.New("wordTokenizer").Parse(p.wordTokenizeFmt))
 	var r bytes.Buffer
 
@@ -82,12 +82,12 @@ func (p *PunktLanguageVars) ReWordTokenizer() *regexp.Regexp {
 	})
 
 	return regexp.MustCompile(r.String())
-}
+}*/
 
 // Tokenize a string to split off punctuation other than periods
-func (p *PunktLanguageVars) WordTokenize(s string) []string {
+/*func (p *PunktLanguageVars) WordTokenize(s string) []string {
 	return p.ReWordTokenizer().FindAllString(s, -1)
-}
+}*/
 
 type WordToken struct {
 	First, Second string
