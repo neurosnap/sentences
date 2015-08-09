@@ -7,8 +7,8 @@ import (
 // Includes common components of PunkTrainer and PunktSentenceTokenizer
 type PunktBase struct {
 	// The collection of parameters that determines the behavior of the punkt tokenizer.
-	PunktParameters
-	PunktLanguageVars
+	*PunktParameters
+	*PunktLanguageVars
 }
 
 func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
@@ -21,7 +21,7 @@ func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 			parastart = true
 		} else {
 			var token *PunktToken
-			lineToks := p.PunktLanguageVars.WordTokenize(line)
+			lineToks := p.WordTokenize(line)
 
 			for index, lineTok := range lineToks {
 				if index == 0 {
@@ -66,7 +66,7 @@ func (p *PunktBase) annotateFirstPass(tokens []*PunktToken) []*PunktToken {
 }
 
 func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
-	tokInEndChars := strings.Index(string(p.PunktLanguageVars.sentEndChars), token.Tok)
+	tokInEndChars := strings.Index(string(p.sentEndChars), token.Tok)
 
 	if tokInEndChars != -1 {
 		token.SentBreak = true

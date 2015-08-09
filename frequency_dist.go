@@ -15,28 +15,28 @@ number of experiments, and incrementing the count for a sample
 every time it is an outcome of an experiment.
 */
 type FreqDist struct {
-	samples map[string]int
+	Samples map[string]int
 }
 
 // Return the total number of sample outcomes that have been recorded by this FreqDist.
-func (f *FreqDist) N() int {
-	sum := 0
-	for _, val := range f.samples {
-		sum += val
+func (f *FreqDist) N() float64 {
+	sum := 0.0
+	for _, val := range f.Samples {
+		sum += float64(val)
 	}
 	return sum
 }
 
 // Return the total number of sample values (or "bins") that have counts greater than zero.
 func (f *FreqDist) B() int {
-	return len(f.samples)
+	return len(f.Samples)
 }
 
-// Return a list of all samples that occur once (hapax legomena)
+// Return a list of all Samples that occur once (hapax legomena)
 func (f *FreqDist) hapaxes() []string {
 	hap := make([]string, 0, f.B())
 
-	for key, val := range f.samples {
+	for key, val := range f.Samples {
 		if val != 1 {
 			continue
 		}
@@ -46,11 +46,11 @@ func (f *FreqDist) hapaxes() []string {
 	return hap
 }
 
-// Return the dictionary mapping r to Nr, the number of samples with frequency r, where Nr > 0
+// Return the dictionary mapping r to Nr, the number of Samples with frequency r, where Nr > 0
 func (f *FreqDist) rToNr(bins int) map[int]int {
 	tmpRToNr := map[int]int{}
 
-	for _, value := range f.samples {
+	for _, value := range f.Samples {
 		tmpRToNr[value] += 1
 	}
 
@@ -63,13 +63,13 @@ func (f *FreqDist) rToNr(bins int) map[int]int {
 	return tmpRToNr
 }
 
-// Return the cumulative frequencies of the specified samples.
-// If no samples are specified, all counts are returned, starting with the largest.
-func (f *FreqDist) cumulativeFrequencies(samples []string) []int {
-	cf := make([]int, 0, len(f.samples))
+// Return the cumulative frequencies of the specified Samples.
+// If no Samples are specified, all counts are returned, starting with the largest.
+func (f *FreqDist) cumulativeFrequencies(Samples []string) []int {
+	cf := make([]int, 0, len(f.Samples))
 
-	for _, val := range samples {
-		cf = append(cf, f.samples[val])
+	for _, val := range Samples {
+		cf = append(cf, f.Samples[val])
 	}
 
 	return cf
@@ -84,11 +84,11 @@ number of times that sample outcome was recorded by this
 FreqDist.  Frequencies are always real numbers in the range
 [0, 1].
 */
-func (f *FreqDist) freq(sample string) float32 {
+func (f *FreqDist) freq(sample string) float64 {
 	if f.N() == 0 {
 		return 0
 	}
-	return float32(f.samples[sample] / f.N())
+	return float64(f.Samples[sample]) / f.N()
 }
 
 type maxFreq struct {
@@ -98,17 +98,17 @@ type maxFreq struct {
 
 /*
 Return the sample with the greatest number of outcomes in this
-frequency distribution.  If two or more samples have the same
+frequency distribution.  If two or more Samples have the same
 number of outcomes, return one of them; which sample is
 returned is undefined.
 */
 func (f *FreqDist) max() (string, error) {
-	if len(f.samples) == 0 {
-		return "", fmt.Errorf("No samples loaded, please add samples before getting max")
+	if len(f.Samples) == 0 {
+		return "", fmt.Errorf("No Samples loaded, please add samples before getting max")
 	}
 
 	max := maxFreq{}
-	for key, val := range f.samples {
+	for key, val := range f.Samples {
 		if val > max.Val {
 			max.Key = key
 			max.Val = val
