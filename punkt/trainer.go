@@ -36,6 +36,19 @@ const (
 	orthoLc = orthoBegLc + orthoMidLc + orthoUnkLc
 )
 
+/*
+A map from context position and first-letter case to the
+appropriate orthographic context flag.
+*/
+var orthoMap = map[[2]string]int{
+	[2]string{"initial", "upper"}:  orthoBegUc,
+	[2]string{"internal", "upper"}: orthoMidUc,
+	[2]string{"unknown", "upper"}:  orthoUnkUc,
+	[2]string{"initial", "lower"}:  orthoBegLc,
+	[2]string{"internal", "lower"}: orthoMidLc,
+	[2]string{"unknown", "lower"}:  orthoUnkLc,
+}
+
 func boolToFloat64(cond bool) float64 {
 	if cond {
 		return 1
@@ -56,10 +69,10 @@ type PunktTrainer struct {
 	IgnoreAbbrevPenalty  bool
 	AbbrevBackoff        int
 	Collocation          float64
-	SentStarter          int
+	SentStarter          float64
 	IncludeAllCollocs    bool
 	IncludeAbbrevCollocs bool
-	MinCollocFreq        int
+	MinCollocFreq        float64
 }
 
 func NewPunktTrainer(trainText string, languageVars PunktLanguageVars, token PunktToken) *PunktTrainer {
@@ -183,10 +196,16 @@ collocations and sentence starters.
 */
 func (p *PunktTrainer) FinalizeTraining() {
 	p.PunktParameters.SentStarters.items = map[string]int{}
-	for _, val := range p.findSentStarters() {
+	for _, ss := range p.findSentStarters() {
+		p.PunktParameters.SentStarters.Add(ss.Typ)
 	}
-	p.PunktParameters.Collocations.items = map[string]int{}
 
+	p.PunktParameters.Collocations.items = map[string]int{}
+	for _, val := range p.findCollocations() {
+		p.PunktParameters.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
+	}
+
+	p.finalized = true
 }
 
 /*
@@ -219,7 +238,7 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 				continue
 			}
 			typ = typ[:len(typ)-1]
-			isAdd := true
+			isAdd = true
 		} /*else {
 			if p.PunktParameters.AbbrevTypes[typ] == "" {
 				continue
@@ -286,14 +305,58 @@ positions.
 */
 func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 	context := "internal"
+
+	/*
+		If we encounter a paragraph break, then it's a good sign
+		that it's a sentence break.  But err on the side of
+		caution (by not positing a sentence break) if we just
+		saw an abbreviation.
+	*/
+	for _, tok := range tokens {
+		if tok.ParaStart && context != "unknown" {
+			context = "initial"
+		}
+
+		/*
+			If we're at the beginning of a line, then we can't decide
+			between 'internal' and 'initial'.
+		*/
+		if tok.LineStart && context == "internal" {
+			context = "unknown"
+		}
+		/*
+		   Find the case-normalized type of the token.  If it's a
+		   sentence-final token, strip off the period.
+		*/
+		typ := tok.TypeNoSentPeriod()
+
+		// Update the orthographic context table
+		flag := orthoMap[[2]string{context, tok.FirstCase()}]
+		if flag != 0 {
+			p.PunktParameters.addOrthoContext(typ, flag)
+		}
+
+		// Decide whether the next word is at a sentence boundary.
+		if tok.SentBreak {
+			if !(tok.IsNumber() || tok.IsInitial()) {
+				context = "initial"
+			} else {
+				context = "unknown"
+			}
+		} else if tok.Ellipsis || tok.Abbr {
+			context = "unknown"
+		} else {
+			context = "initial"
+		}
+	}
 }
 
 /*
 Returns the number of sentence breaks marked in a given set of
 augmented tokens.
 */
-func (p *PunktTrainer) getSentBreakCount(tokens []*PunktToken) int {
-	sum := 0
+func (p *PunktTrainer) getSentBreakCount(tokens []*PunktToken) float64 {
+	sum := 0.0
 
 	for _, tok := range tokens {
 		if tok.SentBreak {
@@ -385,13 +448,17 @@ func (p *PunktTrainer) isPotentialCollocation(tokOne, tokTwo *PunktToken) bool {
 			tokOne.IsNonPunct() && tokTwo.IsNonPunct())
 }
 
-type sentStarters struct {
-	Typ string
-	float64
+type sentStarterStruct struct {
+	Typ    string
+	Likely float64
 }
 
-func (p *PunktTrainer) findSentStarters() []*sentStarters {
-	starters := make([]*sentStarters, 0, len(p.sentStarterFreqDist.Samples))
+/*
+Uses collocation heuristics for each candidate token to
+determine if it frequently starts sentences.
+*/
+func (p *PunktTrainer) findSentStarters() []*sentStarterStruct {
+	starters := make([]*sentStarterStruct, 0, len(p.sentStarterFreqDist.Samples))
 
 	for typ, _ := range p.sentStarterFreqDist.Samples {
 		if typ == "" {
@@ -405,8 +472,13 @@ func (p *PunktTrainer) findSentStarters() []*sentStarters {
 		}
 
 		ll := p.colLogLikelihood(p.sentBreakCount, typCount, typAtBreakCount, p.typeFreqDist.N())
+
+		if ll >= p.SentStarter && p.typeFreqDist.N()/p.sentBreakCount > typCount/typAtBreakCount {
+			starters = append(starters, &sentStarterStruct{typ, ll})
+		}
 	}
 
+	return starters
 }
 
 /*
@@ -417,5 +489,73 @@ unlike the previous log_l function where it used modified
 Dunning log-likelihood values
 */
 func (p *PunktTrainer) colLogLikelihood(countA, countB, countAB, N float64) float64 {
+	p0 := 1.0 * countB / N
+	p1 := 1.0 * countAB / countA
+	p2 := 1.0 * (countB - countAB) / (N - countA)
 
+	summand1 := (countAB*math.Log(p0) + (countA-countAB)*math.Log(1.0-p0))
+	summand2 := ((countB-countAB)*math.Log(p0) + (N-countA-countB+countAB)*math.Log(1.0-p0))
+
+	summand3 := 0.0
+	if countA != countAB {
+		summand3 = (countAB*math.Log(p1) + (countA-countAB)*math.Log(1.0-p1))
+	}
+
+	summand4 := 0.0
+	if countB == countAB {
+		summand4 = ((countB-countAB)*math.Log(p2) + (N-countA-countB+countAB)*math.Log(1.0-p2))
+	}
+
+	likely := summand1 + summand2 - summand3 - summand4
+
+	return (-2.0 + likely)
+}
+
+type collocationStruct struct {
+	TypOne, TypTwo string
+	Likely         float64
+}
+
+/*
+Generates likely collocations and their log-likelihood.
+*/
+func (p *PunktTrainer) findCollocations() []*collocationStruct {
+	collocs := make([]*collocationStruct, 0, len(p.collocationFreqDist.Samples))
+
+	for key, _ := range p.collocationFreqDist.Samples {
+		sample := strings.Split(key, ",")
+		typOne := sample[0]
+		typTwo := sample[1]
+
+		if typOne == "" || typTwo == "" {
+			continue
+		}
+
+		if p.PunktParameters.SentStarters.Has(typTwo) {
+			continue
+		}
+
+		colCount := float64(p.collocationFreqDist.Samples[key])
+		typOneWithPeriod := strings.Join([]string{typOne, "."}, "")
+		typTwoWithPeriod := strings.Join([]string{typTwo, "."}, "")
+		typOneCount := float64(p.typeFreqDist.Samples[typOne] + p.typeFreqDist.Samples[typOneWithPeriod])
+		typTwoCount := float64(p.typeFreqDist.Samples[typTwo] + p.typeFreqDist.Samples[typTwoWithPeriod])
+
+		minTyp := typOneCount
+		if typTwoCount < minTyp {
+			minTyp = typTwoCount
+		}
+
+		countLEMinTyp := boolToFloat64(colCount <= minTyp)
+		if typOneCount > 1 && typTwoCount > 1 && p.MinCollocFreq < countLEMinTyp {
+			likely := p.colLogLikelihood(typOneCount, typTwoCount, colCount, p.typeFreqDist.N())
+
+			// Filter out the not-so-collocative
+			if likely >= p.Collocation && p.typeFreqDist.N()/typOneCount > typTwoCount/colCount {
+				collocs = append(collocs, &collocationStruct{typOne, typTwo, likely})
+			}
+		}
+	}
+
+	return collocs
 }
