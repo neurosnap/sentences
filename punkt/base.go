@@ -11,6 +11,12 @@ type PunktBase struct {
 	*PunktLanguageVars
 }
 
+func NewPunktBase() *PunktBase {
+	return &PunktBase{
+		PunktLanguageVars: NewPunktLanguageVars(),
+	}
+}
+
 func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 	lines := strings.Split(text, "\n")
 	tokens := make([]*PunktToken, 0, len(lines))
@@ -20,7 +26,7 @@ func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 		if strings.Trim(line, " ") == "" {
 			parastart = true
 		} else {
-			var token *PunktToken
+			var token = &PunktToken{}
 			lineToks := p.WordTokenize(line)
 
 			for index, lineTok := range lineToks {

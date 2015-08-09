@@ -3,6 +3,7 @@ package punkt
 import (
 	"bytes"
 	"regexp"
+	"strings"
 	"text/template"
 )
 
@@ -59,13 +60,13 @@ type PunktLanguageVars struct {
 
 func NewPunktLanguageVars() *PunktLanguageVars {
 	return &PunktLanguageVars{
-		sentEndChars:          []byte{'.', '?', '!'},
-		internalPunctuation:   ",:;",
-		reBoundaryRealignment: regexp.MustCompile(`["\')\]}]+?(?:\s+|(?=--)|$)`),
-		reWordStart:           "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
-		reNonWordChars:        `(?:[?!)\";}\]\*:@\'\({\[])`,
-		reMultiCharPunct:      `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
-		wordTokenizeFmt:       wordTokenFmt,
+		sentEndChars:        []byte{'.', '?', '!'},
+		internalPunctuation: ",:;",
+		//reBoundaryRealignment: regexp.MustCompile(`["')\]}]+?(?:\s+|(?=--)|$)`),
+		reWordStart:      "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
+		reNonWordChars:   `(?:[?!)\";}\]\*:@\'\({\[])`,
+		reMultiCharPunct: `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
+		wordTokenizeFmt:  wordTokenFmt,
 	}
 }
 
@@ -86,6 +87,66 @@ func (p *PunktLanguageVars) ReWordTokenizer() *regexp.Regexp {
 // Tokenize a string to split off punctuation other than periods
 func (p *PunktLanguageVars) WordTokenize(s string) []string {
 	return p.ReWordTokenizer().FindAllString(s, -1)
+}
+
+type WordToken struct {
+	First, Second string
+}
+
+func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
+	words := strings.Fields(text)
+	tokens := make([]*WordToken, 0, len(words))
+
+	multi := regexp.MustCompile(p.reMultiCharPunct)
+	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
+	//wstart := regexp.MustCompile(p.reNonWordChars)
+
+	for _, word := range words {
+		// Skip one letter words
+		if len(word) == 1 {
+			continue
+		}
+
+		first := ""
+		second := ""
+
+		if first == "" {
+			first = string(word[:1])
+			second = string(word[1:])
+		}
+
+		punctInWord := nonword.FindStringIndex(word)
+		if punctInWord != nil {
+			first = word[:punctInWord[0]]
+			second = word[punctInWord[0]:]
+		}
+
+		if strings.HasSuffix(word, ",") {
+			first = word[:len(word)-1]
+			second = word[len(word)-1:]
+		}
+
+		multipunct := multi.FindStringIndex(word)
+		if multipunct != nil {
+			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) || multipunct[0]+multipunct[1] == len(word)) {
+				first = word[:len(word)-1]
+				second = "."
+			} else {
+				if multipunct[1] == len(word) {
+					first = word[:multipunct[0]]
+					second = word[multipunct[0]:]
+				} else {
+					first = word[:multipunct[1]]
+					second = word[multipunct[1]:]
+				}
+			}
+		}
+
+		token := &WordToken{first, second}
+		tokens = append(tokens, token)
+	}
+
+	return tokens
 }
 
 // Compile period context regexp

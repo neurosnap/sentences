@@ -1,7 +1,7 @@
 package punkt
 
 import (
-	gs "github.com/neurosnap/go-sentences"
+	"github.com/neurosnap/go-sentences/utils"
 	"math"
 	"strings"
 )
@@ -59,10 +59,10 @@ func boolToFloat64(cond bool) float64 {
 // Learns parameters used in Punkt sentence boundary detection
 type PunktTrainer struct {
 	*PunktBase
-	typeFreqDist         *gs.FreqDist
+	typeFreqDist         *utils.FreqDist
 	numPeriodToks        float64
-	collocationFreqDist  *gs.FreqDist
-	sentStarterFreqDist  *gs.FreqDist
+	collocationFreqDist  *utils.FreqDist
+	sentStarterFreqDist  *utils.FreqDist
 	sentBreakCount       float64
 	finalized            bool
 	Abbrev               float64
@@ -75,17 +75,19 @@ type PunktTrainer struct {
 	MinCollocFreq        float64
 }
 
-func NewPunktTrainer(trainText string, languageVars PunktLanguageVars, token PunktToken) *PunktTrainer {
+func NewPunktTrainer(trainText string) *PunktTrainer {
 	trainer := &PunktTrainer{
-		typeFreqDist:        &gs.FreqDist{},
-		collocationFreqDist: &gs.FreqDist{},
-		sentStarterFreqDist: &gs.FreqDist{},
+		PunktBase:           NewPunktBase(),
+		typeFreqDist:        &utils.FreqDist{},
+		collocationFreqDist: &utils.FreqDist{},
+		sentStarterFreqDist: &utils.FreqDist{},
 		finalized:           true,
 		Abbrev:              0.3,
 		AbbrevBackoff:       5,
 		Collocation:         7.88,
 		SentStarter:         30,
 		MinCollocFreq:       1,
+		IncludeAllCollocs:   true,
 	}
 
 	if trainText != "" {
@@ -558,4 +560,11 @@ func (p *PunktTrainer) findCollocations() []*collocationStruct {
 	}
 
 	return collocs
+}
+
+func (p *PunktTrainer) GetParams() *PunktParameters {
+	if !p.finalized {
+		p.FinalizeTraining()
+	}
+	return p.PunktParameters
 }
