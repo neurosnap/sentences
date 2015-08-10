@@ -23,7 +23,7 @@ type PunktToken struct {
 
 // Returns a case-normalized representation of the token.
 func (p *PunktToken) getType(tok string) string {
-	return p.reNumeric.ReplaceAllString(tok, "##number##")
+	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
 }
 
 // The type with its final period removed if it has one.

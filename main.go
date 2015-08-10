@@ -49,5 +49,9 @@ func main() {
 		fmt.Println(word.Tok, word.ParaStart, word.LineStart)
 	}*/
 	trainer := punkt.NewPunktTrainer(text)
-	fmt.Println("%v", trainer.GetParams())
+	results := trainer.GetParams()
+	fmt.Println(results.AbbrevTypes)
+	fmt.Println(results.Collocations)
+	fmt.Println(results.SentStarters)
+	fmt.Println(results.OrthoContext)
 }

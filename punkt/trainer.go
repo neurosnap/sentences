@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"fmt"
 	"github.com/neurosnap/go-sentences/utils"
 	"math"
 	"strings"
@@ -60,19 +61,19 @@ func boolToFloat64(cond bool) float64 {
 type PunktTrainer struct {
 	*PunktBase
 	typeFreqDist         *utils.FreqDist
-	numPeriodToks        float64
 	collocationFreqDist  *utils.FreqDist
 	sentStarterFreqDist  *utils.FreqDist
 	sentBreakCount       float64
-	finalized            bool
+	numPeriodToks        float64
 	Abbrev               float64
-	IgnoreAbbrevPenalty  bool
-	AbbrevBackoff        int
 	Collocation          float64
 	SentStarter          float64
+	MinCollocFreq        float64
+	IgnoreAbbrevPenalty  bool
+	finalized            bool
 	IncludeAllCollocs    bool
 	IncludeAbbrevCollocs bool
-	MinCollocFreq        float64
+	AbbrevBackoff        int
 }
 
 func NewPunktTrainer(trainText string) *PunktTrainer {
@@ -186,13 +187,13 @@ func (p *PunktTrainer) pairIter(tokens []*PunktToken) [][2]*PunktToken {
 }
 
 func (p *PunktTrainer) uniqueTypes(tokens []*PunktToken) []string {
-	unique := make([]string, 0, len(tokens))
+	unique := NewSetString()
 
 	for _, tok := range tokens {
-		unique = append(unique, tok.Typ)
+		unique.Add(tok.Typ)
 	}
 
-	return unique
+	return unique.Array()
 }
 
 func (p *PunktTrainer) TrainTokens(tokens []string, finalize bool) {}
@@ -234,24 +235,24 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 	for _, typ := range types {
 		// Check some basic conditions, to rule out words that are
 		// clearly not abbrev_types.
-		isPunct := !(ReNonPunct.FindString(typ) == "")
+		isPunct := ReNonPunct.FindString(typ) == ""
 		if isPunct || typ == "##number##" {
 			continue
 		}
 
 		var isAdd bool
 		if strings.HasSuffix(typ, ".") {
-			if !p.PunktParameters.AbbrevTypes.Has(typ) {
+			if p.PunktParameters.AbbrevTypes.Has(typ) {
 				continue
 			}
 			typ = typ[:len(typ)-1]
 			isAdd = true
-		} /*else {
-			if p.PunktParameters.AbbrevTypes[typ] == "" {
+		} else {
+			if !p.PunktParameters.AbbrevTypes.Has(typ) {
 				continue
 			}
-			isAdd := false
-		}*/
+			isAdd = false
+		}
 
 		numPeriods := float64(strings.Count(typ, ".") + 1)
 		numNonPeriods := float64(float64(len(typ)) - numPeriods + 1)
@@ -281,6 +282,7 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 		fPenalty := boolToFloat64(p.IgnoreAbbrevPenalty || math.Pow(numNonPeriods, -countWithoutPeriod) != 0.0)
 		score := likely * fLength * numPeriods * fPenalty
 
+		fmt.Println(typ, score)
 		abbrTypes = append(abbrTypes, &AbbrevType{typ, score, isAdd})
 	}
 

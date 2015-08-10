@@ -24,6 +24,16 @@ func (ss *SetString) Has(str string) bool {
 	}
 }
 
+func (ss *SetString) Array() []string {
+	arr := make([]string, 0, len(ss.items))
+
+	for key := range ss.items {
+		arr = append(arr, key)
+	}
+
+	return arr
+}
+
 /*type SetInt struct {
 	items map[int]int
 }
