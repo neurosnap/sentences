@@ -279,10 +279,15 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 			p.typeFreqDist.N(),
 		)
 		fLength := math.Exp(-numNonPeriods)
-		fPenalty := boolToFloat64(p.IgnoreAbbrevPenalty || math.Pow(numNonPeriods, -countWithoutPeriod) != 0.0)
+		var fPenalty float64
+		if p.IgnoreAbbrevPenalty {
+			fPenalty = 1
+		} else {
+			fPenalty = math.Pow(numNonPeriods, -countWithoutPeriod)
+		}
 		score := likely * fLength * numPeriods * fPenalty
 
-		fmt.Println(typ, score)
+		fmt.Println(typ, likely)
 		abbrTypes = append(abbrTypes, &AbbrevType{typ, score, isAdd})
 	}
 
@@ -298,8 +303,8 @@ func (p *PunktTrainer) dunningLogLikelihood(countA, countB, countAB, N float64) 
 	p1 := countB / N
 	p2 := 0.99
 
-	nullHypo := (countAB*math.Log(p1) + (countA-countB)*math.Log(1.0-p1))
-	altHypo := (countAB*math.Log(p2) + (countA-countB)*math.Log(1.0-p2))
+	nullHypo := (countAB*math.Log(p1) + (countA-countAB)*math.Log(1.0-p1))
+	altHypo := (countAB*math.Log(p2) + (countA-countAB)*math.Log(1.0-p2))
 
 	likelihood := nullHypo - altHypo
 
