@@ -287,7 +287,7 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 		}
 		score := likely * fLength * numPeriods * fPenalty
 
-		fmt.Println(typ, likely)
+		//fmt.Println(typ, likely)
 		abbrTypes = append(abbrTypes, &AbbrevType{typ, score, isAdd})
 	}
 
@@ -347,6 +347,7 @@ func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 		// Update the orthographic context table
 		flag := orthoMap[[2]string{context, tok.FirstCase()}]
 		if flag != 0 {
+			fmt.Println(typ, context, tok.FirstCase())
 			p.PunktParameters.addOrthoContext(typ, flag)
 		}
 
@@ -358,9 +359,10 @@ func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 				context = "unknown"
 			}
 		} else if tok.Ellipsis || tok.Abbr {
+			//fmt.Println(tok.Ellipsis, tok.Abbr)
 			context = "unknown"
 		} else {
-			context = "initial"
+			context = "internal"
 		}
 	}
 }

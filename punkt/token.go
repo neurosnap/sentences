@@ -72,7 +72,7 @@ func (p *PunktToken) FirstCase() string {
 
 // True if the token text is that of an ellipsis.
 func (p *PunktToken) IsEllipsis() bool {
-	return p.reAlpha.MatchString(p.Tok)
+	return p.reEllipsis.MatchString(p.Tok)
 }
 
 // True if the token text is that of a number.
@@ -102,8 +102,8 @@ func NewPunktToken(token string) *PunktToken {
 		reNumeric:  regexp.MustCompile(`^-?[\.,]?\d[\d,\.-]*\.?$`),
 		reInitial:  regexp.MustCompile(`[^\W\d]\.$`),
 		reAlpha:    regexp.MustCompile(`[^\W\d]+$`),
+		Ellipsis:   false,
 	}
-
 	tok.Typ = tok.getType(token)
 	tok.PeriodFinal = strings.HasSuffix(token, ".")
 
