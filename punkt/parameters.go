@@ -4,8 +4,12 @@ type SetString struct {
 	items map[string]int
 }
 
-func NewSetString() *SetString {
-	return &SetString{map[string]int{}}
+func NewSetString(items map[string]int) *SetString {
+	if items == nil {
+		return &SetString{map[string]int{}}
+	} else {
+		return &SetString{items}
+	}
 }
 
 func (ss *SetString) Add(str string) {
@@ -34,18 +38,6 @@ func (ss *SetString) Array() []string {
 	return arr
 }
 
-/*type SetInt struct {
-	items map[int]int
-}
-
-func (si *SetInt) Add(val int) {
-	si.items[val] = 1
-}
-
-func (si *SetInt) Remove(val int) {
-	delete(si.items, val)
-}*/
-
 // Stores data used to perform sentence boundary detection with punkt
 type PunktParameters struct {
 	AbbrevTypes  *SetString
@@ -56,10 +48,10 @@ type PunktParameters struct {
 
 func NewPunktParameters() *PunktParameters {
 	return &PunktParameters{
-		NewSetString(),
-		NewSetString(),
-		NewSetString(),
-		NewSetString(),
+		NewSetString(nil),
+		NewSetString(nil),
+		NewSetString(nil),
+		NewSetString(nil),
 	}
 }
 

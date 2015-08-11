@@ -1,9 +1,12 @@
 package punkt
 
 import (
-	"fmt"
+	//"fmt"
+	"bufio"
 	"github.com/neurosnap/go-sentences/utils"
+	"io/ioutil"
 	"math"
+	"os"
 	"strings"
 )
 
@@ -76,7 +79,7 @@ type PunktTrainer struct {
 	AbbrevBackoff        int
 }
 
-func NewPunktTrainer(trainText string) *PunktTrainer {
+func NewPunktTrainer(trainText string, fileText *os.File) *PunktTrainer {
 	trainer := &PunktTrainer{
 		PunktBase:           NewPunktBase(),
 		typeFreqDist:        utils.NewFreqDist(),
@@ -93,6 +96,10 @@ func NewPunktTrainer(trainText string) *PunktTrainer {
 
 	if trainText != "" {
 		trainer.Train(trainText, true)
+	} else if fileText != nil {
+		reader := bufio.NewReader(fileText)
+		contents, _ := ioutil.ReadAll(reader)
+		trainer.Train(string(contents), true)
 	}
 
 	return trainer
@@ -187,7 +194,7 @@ func (p *PunktTrainer) pairIter(tokens []*PunktToken) [][2]*PunktToken {
 }
 
 func (p *PunktTrainer) uniqueTypes(tokens []*PunktToken) []string {
-	unique := NewSetString()
+	unique := NewSetString(nil)
 
 	for _, tok := range tokens {
 		unique.Add(tok.Typ)
@@ -347,7 +354,7 @@ func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 		// Update the orthographic context table
 		flag := orthoMap[[2]string{context, tok.FirstCase()}]
 		if flag != 0 {
-			fmt.Println(typ, context, tok.FirstCase())
+			//fmt.Println(typ, context, tok.FirstCase())
 			p.PunktParameters.addOrthoContext(typ, flag)
 		}
 

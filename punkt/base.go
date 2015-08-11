@@ -1,7 +1,7 @@
 package punkt
 
 import (
-	//"fmt"
+	"fmt"
 	"regexp"
 	"strings"
 )
@@ -30,12 +30,14 @@ func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart
 
 		tokTwo := NewPunktToken(lineTok.Second)
 
+		fmt.Println(tokOne)
+		fmt.Println(tokTwo)
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
 		token := NewPunktToken(tok)
 		token.ParaStart = parastart
 		token.LineStart = linestart
-
+		fmt.Println(token)
 		tokens = append(tokens, token)
 	}
 
