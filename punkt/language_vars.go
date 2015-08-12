@@ -2,7 +2,7 @@ package punkt
 
 import (
 	"bytes"
-	"fmt"
+	//	"fmt"
 	"regexp"
 	"strings"
 	"text/template"
@@ -15,14 +15,7 @@ Format of a regular expression to find contexts including possible
 sentence boundaries. Matches token which the possible sentence boundary
 ends, and matches the following token within a lookahead expression
 */
-const periodContextFmt string = `
-\S*
-{{.SentEndChars}}
-(?P<after_tok>
-{{.NonWord}}
-|
-\s+(?P<next_tok>\S+)
-)`
+const periodContextFmt string = `\S*{{.SentEndChars}}(?P<after_tok>{{.NonWord}}|\s+(?P<next_tok>\S+))`
 
 type periodContextStruct struct {
 	SentEndChars string
@@ -46,7 +39,7 @@ func NewPunktLanguageVars() *PunktLanguageVars {
 		internalPunctuation: ",:;",
 		//reBoundaryRealignment: regexp.MustCompile(`["')\]}]+?(?:\s+|(?=--)|$)`),
 		reWordStart:      "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
-		reNonWordChars:   `(?:[?!)\";}\]\*:@\'\({\[])`,
+		reNonWordChars:   `(?:[?!)";}\]\*:@\'\({\[])`,
 		reMultiCharPunct: `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
 		periodContextFmt: periodContextFmt,
 	}
@@ -118,11 +111,10 @@ func (p *PunktLanguageVars) RePeriodContext() *regexp.Regexp {
 	r := new(bytes.Buffer)
 
 	t.Execute(r, periodContextStruct{
-		SentEndChars: p.ReSentEndChars(),
+		SentEndChars: strings.Join([]string{"[", p.ReSentEndChars(), "]"}, ""),
 		NonWord:      p.reNonWordChars,
 	})
 
-	fmt.Println(strings.Trim(r.String(), " "))
 	return regexp.MustCompile(strings.Trim(r.String(), " "))
 }
 

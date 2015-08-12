@@ -22,9 +22,6 @@ func NewSentenceTokenizer(trainedData *PunktParameters) *SentenceTokenizer {
 func (s *SentenceTokenizer) Tokenize(text string) []string {
 	//last_break := 0
 	matches := s.PunktLanguageVars.PeriodContext(text)
-	fmt.Println(len(matches))
-	/*for _, match := range matches {
-		fmt.Println(match)
-	}*/
+	fmt.Println(matches)
 	return matches
 }
