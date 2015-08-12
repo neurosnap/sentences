@@ -2,6 +2,7 @@ package punkt
 
 import (
 	"bytes"
+	"fmt"
 	"regexp"
 	"strings"
 	"text/template"
@@ -9,41 +10,22 @@ import (
 
 var ReNonPunct = regexp.MustCompile(`[^\W\d]`)
 
-// Format of a regular expression to split punctuation from words, excluding period.
-const wordTokenFmt string = `(
-{{.MultiChar}}
-|
-(?={{.WordStart}})\S+?				  # Accept word characters until end is found
-(?=									  # Sequences marking a word's end
-\s|                                   # White-space
-$|									  # End-of-string
-{{.NonWord}}|{{.MultiChar}}|          # Punctuation
-,(?=$|\s|{{.NonWord}}|{{.MultiChar}}) # Comma if at end of word
-)
-|
-\S
-)`
-
-type wordTokenStruct struct {
-	MultiChar, WordStart, NonWord string
-}
-
 /*
 Format of a regular expression to find contexts including possible
 sentence boundaries. Matches token which the possible sentence boundary
 ends, and matches the following token within a lookahead expression
 */
 const periodContextFmt string = `
-\S*                         # some word material
-{{.SentEndChars}}           # a potential sentence ending
-(?=(?P<after_tok>
-{{.NonWord}}                # either other punctuation
+\S*
+{{.SentEndChars}}
+(?P<after_tok>
+{{.NonWord}}
 |
-\s+(?P<next_tok>\S+)        # or whitespace and some other token
-))`
+\s+(?P<next_tok>\S+)
+)`
 
 type periodContextStruct struct {
-	SentEndChars []byte
+	SentEndChars string
 	NonWord      string
 }
 
@@ -66,28 +48,9 @@ func NewPunktLanguageVars() *PunktLanguageVars {
 		reWordStart:      "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
 		reNonWordChars:   `(?:[?!)\";}\]\*:@\'\({\[])`,
 		reMultiCharPunct: `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
-		//wordTokenizeFmt:  wordTokenFmt,
+		periodContextFmt: periodContextFmt,
 	}
 }
-
-// Compile word tokenizer regexp
-/*func (p *PunktLanguageVars) ReWordTokenizer() *regexp.Regexp {
-	t := template.Must(template.New("wordTokenizer").Parse(p.wordTokenizeFmt))
-	var r bytes.Buffer
-
-	t.Execute(&r, wordTokenStruct{
-		MultiChar: p.reMultiCharPunct,
-		WordStart: p.reWordStart,
-		NonWord:   p.reNonWordChars,
-	})
-
-	return regexp.MustCompile(r.String())
-}*/
-
-// Tokenize a string to split off punctuation other than periods
-/*func (p *PunktLanguageVars) WordTokenize(s string) []string {
-	return p.ReWordTokenizer().FindAllString(s, -1)
-}*/
 
 type WordToken struct {
 	First, Second string
@@ -152,14 +115,15 @@ func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
 // Compile period context regexp
 func (p *PunktLanguageVars) RePeriodContext() *regexp.Regexp {
 	t := template.Must(template.New("periodContext").Parse(p.periodContextFmt))
-	var r bytes.Buffer
+	r := new(bytes.Buffer)
 
-	t.Execute(&r, periodContextStruct{
-		SentEndChars: p.sentEndChars,
+	t.Execute(r, periodContextStruct{
+		SentEndChars: p.ReSentEndChars(),
 		NonWord:      p.reNonWordChars,
 	})
 
-	return regexp.MustCompile(r.String())
+	fmt.Println(strings.Trim(r.String(), " "))
+	return regexp.MustCompile(strings.Trim(r.String(), " "))
 }
 
 // Compiles and returns a regular expression to find contexts including possible sentence boundaries.
