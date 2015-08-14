@@ -1,7 +1,6 @@
 package punkt
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -30,14 +29,11 @@ func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart
 
 		tokTwo := NewPunktToken(lineTok.Second)
 
-		fmt.Println(tokOne)
-		fmt.Println(tokTwo)
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
 		token := NewPunktToken(tok)
 		token.ParaStart = parastart
 		token.LineStart = linestart
-		fmt.Println(token)
 		tokens = append(tokens, token)
 	}
 
@@ -108,4 +104,17 @@ func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
 			token.SentBreak = true
 		}
 	}
+}
+
+func (p *PunktBase) pairIter(tokens []*PunktToken) [][2]*PunktToken {
+	pairTokens := make([][2]*PunktToken, 0, len(tokens))
+
+	prevToken := tokens[0]
+	for _, tok := range tokens {
+		pairTokens = append(pairTokens, [2]*PunktToken{prevToken, tok})
+		prevToken = tok
+	}
+	pairTokens = append(pairTokens, [2]*PunktToken{prevToken, nil})
+
+	return pairTokens
 }

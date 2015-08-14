@@ -61,9 +61,12 @@ accuracy of sentence boundary detection on newspaper corpora in eleven languages
 		panic(err)
 	}
 
-	sentences := punkt.NewSentenceTokenizer(params)
-	fmt.Println(sentences)
+	tokenizer := punkt.NewSentenceTokenizer(params)
 	//reader := bufio.NewReader(os.Stdin)
 	//contents, _ := ioutil.ReadAll(reader)
-	sentences.Tokenize(text)
+	sentences := tokenizer.Tokenize(text)
+	for _, s := range sentences {
+		fmt.Println(s)
+		fmt.Println("------")
+	}
 }

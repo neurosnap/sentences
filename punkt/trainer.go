@@ -180,19 +180,6 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 	}
 }
 
-func (p *PunktTrainer) pairIter(tokens []*PunktToken) [][2]*PunktToken {
-	pairTokens := make([][2]*PunktToken, 0, len(tokens))
-
-	prevToken := tokens[0]
-	for _, tok := range tokens {
-		pairTokens = append(pairTokens, [2]*PunktToken{prevToken, tok})
-		prevToken = tok
-	}
-	pairTokens = append(pairTokens, [2]*PunktToken{prevToken, nil})
-
-	return pairTokens
-}
-
 func (p *PunktTrainer) uniqueTypes(tokens []*PunktToken) []string {
 	unique := NewSetString(nil)
 
