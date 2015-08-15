@@ -54,7 +54,7 @@ func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
 	tokens := make([]*WordToken, 0, len(words))
 
 	multi := regexp.MustCompile(p.reMultiCharPunct)
-	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
+	//nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
 	//wstart := regexp.MustCompile(p.reNonWordChars)
 
 	for _, word := range words {
@@ -63,19 +63,14 @@ func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
 			continue
 		}
 
-		first := ""
-		second := ""
+		first := string(word[:1])
+		second := string(word[1:])
 
-		if first == "" {
-			first = string(word[:1])
-			second = string(word[1:])
-		}
-
-		punctInWord := nonword.FindStringIndex(word)
-		if punctInWord != nil {
+		//punctInWord := nonword.FindStringIndex(word)
+		/*if punctInWord != nil {
 			first = word[:punctInWord[0]]
 			second = word[punctInWord[0]:]
-		}
+		}*/
 
 		if strings.HasSuffix(word, ",") {
 			first = word[:len(word)-1]

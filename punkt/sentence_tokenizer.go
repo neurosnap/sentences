@@ -1,7 +1,6 @@
 package punkt
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -29,17 +28,26 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
+	matchEnd := 0
 	for _, match := range matches {
 		context := text[match[0]:match[1]]
-		nextTok := text[match[4]:match[5]]
-		matchStart := match[2]
-		matchEnd := match[4]
+		nextTok := ""
+		// attempting to replicate lookahead regexp
+		if strings.Count(context, ".") > 1 {
+			match := re.FindStringSubmatchIndex(text[match[2]:])
+			context = text[match[0]:match[1]]
+		}
 
-		/*fmt.Println("context: ", context)
-		fmt.Println("next_tok: ", nextTok)
-		fmt.Println("start: ", matchStart)
-		fmt.Println("end: ", matchEnd)
-		fmt.Println("-------")*/
+		if match[4] != -1 && match[5] != -1 {
+			nextTok = text[match[4]:match[5]]
+		}
+
+		matchStart := match[2]
+
+		matchEnd = match[1]
+		if match[4] >= 0 {
+			matchEnd = match[4]
+		}
 
 		if s.hasSentBreak(context) {
 			noNewline := strings.Replace(text[lastBreak:matchEnd], "\n", "", -1)
@@ -53,6 +61,7 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		}
 	}
 
+	sentences = append(sentences, strings.Replace(text[matchEnd:], "\n", "", -1))
 	return sentences
 }
 
@@ -82,7 +91,7 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*PunktToken) []*PunktToken {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
-
+	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 
 	return tokens
@@ -102,7 +111,7 @@ func (s *SentenceTokenizer) annotateSecondPass(tokens []*PunktToken) []*PunktTok
 }
 
 func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
-	if tokTwo == (&PunktToken{}) {
+	if tokTwo == nil {
 		return
 	}
 
@@ -127,7 +136,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 	if s.PunktParameters.Collocations.items[collocation] != 0 {
 		tokOne.SentBreak = false
 		tokOne.Abbr = true
-		fmt.Println("REASON KNOWN COLLOCATION")
+		//fmt.Println("REASON KNOWN COLLOCATION")
 		return
 	}
 
@@ -145,7 +154,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 		isSentStarter := s.orthoHeuristic(tokTwo)
 		if isSentStarter == 1 {
 			tokOne.SentBreak = true
-			fmt.Println("REASON ABBR WITH ORTHO HEURISTIC")
+			//fmt.Println("REASON ABBR WITH ORTHO HEURISTIC")
 			return
 		}
 
@@ -157,7 +166,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 		*/
 		if tokTwo.FirstUpper() && s.PunktParameters.SentStarters.items[nextTyp] != 0 {
 			tokOne.SentBreak = true
-			fmt.Println("REASON ABBR WITH SENTENCE STARTER")
+			//fmt.Println("REASON ABBR WITH SENTENCE STARTER")
 			return
 		}
 	}
@@ -174,10 +183,10 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
 			if tokIsInitial {
-				fmt.Println("REASON INITIAL WITH ORTHO HEURISTIC")
+				//fmt.Println("REASON INITIAL WITH ORTHO HEURISTIC")
 				return
 			} else {
-				fmt.Println("REASON NUMBER WITH ORTHO HEURISTIC")
+				//fmt.Println("REASON NUMBER WITH ORTHO HEURISTIC")
 				return
 			}
 		}
@@ -194,7 +203,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
-			fmt.Println("REASON INITIAL WITH SPECIAL ORTHO HEURISTIC")
+			//fmt.Println("REASON INITIAL WITH SPECIAL ORTHO HEURISTIC")
 			return
 		}
 	}
@@ -221,7 +230,6 @@ func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
 	   lower case first letter, and never occurs with an upper case
 	   first letter sentence-internally, then it's a sentence starter.
 	*/
-	fmt.Println(orthoCtx & orthoLc)
 	if token.FirstUpper() && (orthoCtx&orthoLc > 0 || orthoCtx&orthoMidLc == 0) {
 		return 1
 	}

@@ -1,7 +1,6 @@
 package punkt
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -53,6 +52,14 @@ func (p *PunktToken) FirstUpper() bool {
 	if p == nil || p.Tok == "" {
 		return false
 	}
+
+	// if the first character in word is not a letter or number,
+	// then assume it is not upper cased
+	alphanum := regexp.MustCompile(`^\s*[\W]`)
+	if alphanum.MatchString(p.Tok) {
+		return false
+	}
+
 	firstTok := string(p.Tok[0])
 	return strings.ToUpper(firstTok) == firstTok
 }
@@ -63,7 +70,6 @@ func (p *PunktToken) FirstLower() bool {
 		return false
 	}
 	firstTok := string(p.Tok[0])
-	fmt.Println(strings.ToLower(firstTok), firstTok)
 	return strings.ToLower(firstTok) == firstTok
 }
 

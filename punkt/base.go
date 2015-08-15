@@ -1,7 +1,6 @@
 package punkt
 
 import (
-	//"fmt"
 	"regexp"
 	"strings"
 )
@@ -47,7 +46,7 @@ func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
 	parastart := false
 
 	for _, line := range lines {
-		if strings.Trim(line, " ") == "" {
+		if strings.Trim(line, " ") == "" || line == " " {
 			parastart = true
 		} else {
 			lineToks := p.WordTokenizer(line)
@@ -91,6 +90,7 @@ func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
 	tokInEndChars := strings.Index(string(p.sentEndChars), token.Tok)
 
 	if tokInEndChars != -1 {
+
 		token.SentBreak = true
 	} else if token.IsEllipsis() {
 		token.Ellipsis = true
@@ -112,6 +112,9 @@ func (p *PunktBase) pairIter(tokens []*PunktToken) [][2]*PunktToken {
 
 	prevToken := tokens[0]
 	for _, tok := range tokens {
+		if prevToken == tok {
+			continue
+		}
 		pairTokens = append(pairTokens, [2]*PunktToken{prevToken, tok})
 		prevToken = tok
 	}
