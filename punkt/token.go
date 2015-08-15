@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"fmt"
 	"regexp"
 	"strings"
 )
@@ -10,6 +11,7 @@ type PunktToken struct {
 	reEllipsis  *regexp.Regexp
 	reNumeric   *regexp.Regexp
 	reInitial   *regexp.Regexp
+	reInitials  *regexp.Regexp
 	reAlpha     *regexp.Regexp
 	Tok         string
 	Typ         string
@@ -36,6 +38,10 @@ func (p *PunktToken) TypeNoPeriod() string {
 
 // The type with its final period removed if it is marked as a sentence break.
 func (p *PunktToken) TypeNoSentPeriod() string {
+	if p == nil {
+		return ""
+	}
+
 	if p.SentBreak {
 		return p.TypeNoPeriod()
 	}
@@ -44,7 +50,7 @@ func (p *PunktToken) TypeNoSentPeriod() string {
 
 // True if the token's first character is uppercase.
 func (p *PunktToken) FirstUpper() bool {
-	if p.Tok == "" {
+	if p == nil || p.Tok == "" {
 		return false
 	}
 	firstTok := string(p.Tok[0])
@@ -57,6 +63,7 @@ func (p *PunktToken) FirstLower() bool {
 		return false
 	}
 	firstTok := string(p.Tok[0])
+	fmt.Println(strings.ToLower(firstTok), firstTok)
 	return strings.ToLower(firstTok) == firstTok
 }
 
@@ -99,9 +106,10 @@ func NewPunktToken(token string) *PunktToken {
 	tok := PunktToken{
 		Tok:        token,
 		reEllipsis: regexp.MustCompile(`\.\.+$`),
-		reNumeric:  regexp.MustCompile(`^-?[\.,]?\d[\d,\.-]*\.?$`),
-		reInitial:  regexp.MustCompile(`[^\W\d]\.$`),
-		reAlpha:    regexp.MustCompile(`[^\W\d]+$`),
+		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
+		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
+		reInitials: regexp.MustCompile(`[A-Za-z]\.[A-Za-z]\.$`),
+		reAlpha:    regexp.MustCompile(`^[A-Za-z]+$`),
 		Ellipsis:   false,
 	}
 	tok.Typ = tok.getType(token)

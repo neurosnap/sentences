@@ -133,8 +133,8 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 
 	/*
 		[4.2. Token-Based Reclassification of Abbreviations] If
-		# the token is an abbreviation or an ellipsis, then decide
-		# whether we should *also* classify it as a sentbreak.
+		the token is an abbreviation or an ellipsis, then decide
+		whether we should *also* classify it as a sentbreak.
 	*/
 	if (tokOne.Abbr || tokOne.Ellipsis) && !tokIsInitial {
 		/*
@@ -160,42 +160,42 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 			fmt.Println("REASON ABBR WITH SENTENCE STARTER")
 			return
 		}
+	}
 
-		/*
-			[4.3. Token-Based Detection of Initials and Ordinals]
-			Check if any initials or ordinals tokens that are marked
-			as sentbreaks should be reclassified as abbreviations.
-		*/
-		if tokIsInitial || typ == "##number##" {
-			isSentStarter = s.orthoHeuristic(tokTwo)
+	/*
+		[4.3. Token-Based Detection of Initials and Ordinals]
+		Check if any initials or ordinals tokens that are marked
+		as sentbreaks should be reclassified as abbreviations.
+	*/
+	if tokIsInitial || typ == "##number##" {
+		isSentStarter := s.orthoHeuristic(tokTwo)
 
-			if isSentStarter == 0 {
-				tokOne.SentBreak = false
-				tokOne.Abbr = true
-				if tokIsInitial {
-					fmt.Println("REASON INITIAL WITH ORTHO HEURISTIC")
-					return
-				} else {
-					fmt.Println("REASON NUMBER WITH ORTHO HEURISTIC")
-					return
-				}
-			}
-
-			/*
-				Special heuristic for initials: if orthogrpahic
-				heuristc is unknown, and next word is always
-				capitalized, then mark as abbrev (eg: J. Bach).
-			*/
-			if isSentStarter == -1 &&
-				tokIsInitial &&
-				tokTwo.FirstUpper() &&
-				s.PunktParameters.OrthoContext.items[nextTyp]&orthoLc == 0 {
-
-				tokOne.SentBreak = false
-				tokOne.Abbr = true
-				fmt.Println("REASON INITIAL WITH SPECIAL ORTHO HEURISTIC")
+		if isSentStarter == 0 {
+			tokOne.SentBreak = false
+			tokOne.Abbr = true
+			if tokIsInitial {
+				fmt.Println("REASON INITIAL WITH ORTHO HEURISTIC")
+				return
+			} else {
+				fmt.Println("REASON NUMBER WITH ORTHO HEURISTIC")
 				return
 			}
+		}
+
+		/*
+			Special heuristic for initials: if orthogrpahic
+			heuristc is unknown, and next word is always
+			capitalized, then mark as abbrev (eg: J. Bach).
+		*/
+		if isSentStarter == -1 &&
+			tokIsInitial &&
+			tokTwo.FirstUpper() &&
+			s.PunktParameters.OrthoContext.items[nextTyp]&orthoLc == 0 {
+
+			tokOne.SentBreak = false
+			tokOne.Abbr = true
+			fmt.Println("REASON INITIAL WITH SPECIAL ORTHO HEURISTIC")
+			return
 		}
 	}
 }
@@ -204,6 +204,10 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 Decide whether the given token is the first token in a sentence.
 */
 func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
+	if token == nil {
+		return 0
+	}
+
 	for _, punct := range s.Punctuation {
 		if token.Tok == punct {
 			return 0
@@ -217,7 +221,8 @@ func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
 	   lower case first letter, and never occurs with an upper case
 	   first letter sentence-internally, then it's a sentence starter.
 	*/
-	if token.FirstUpper() && orthoCtx&orthoUc == 1 || orthoCtx&orthoBegLc == 1 {
+	fmt.Println(orthoCtx & orthoLc)
+	if token.FirstUpper() && (orthoCtx&orthoLc > 0 || orthoCtx&orthoMidLc == 0) {
 		return 1
 	}
 
@@ -227,7 +232,7 @@ func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
 		sentence-initially with lower case, then it's not a sentence
 		starter.
 	*/
-	if token.FirstLower() && orthoCtx&orthoUc == 1 || orthoCtx&orthoBegLc == 0 {
+	if token.FirstLower() && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
 		return 0
 	}
 

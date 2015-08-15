@@ -28,7 +28,7 @@ func main() {
 	text := `Here... are some initials E.R.B. and also an etc. in the middle.
 Periods that form part of an abbreviation but are taken to be end-of-sentence markers
 or vice versa do not only introduce errors in the determination of sentence boundaries.
-Segmentation errors propagate into further components which rely on accurate
+What is funny is I grew up in the U.S. Segmentation errors propagate into further components which rely on accurate
 sentence segmentation and subsequent analyses are most likely affected negatively.
 Walker et al. (2001), for example, stress the importance of correct sentence boundary
 disambiguation for machine translation and Kiss and Strunk (2002b) show that errors
@@ -49,7 +49,7 @@ other languages: Brazilian Portuguese, Dutch, Estonian, French, German, Italian,
 Spanish, Swedish, and Turkish. Without further additions or amendments to
 the system produced through experimentation on the development corpus, the mean
 accuracy of sentence boundary detection on newspaper corpora in eleven languages is
-98.74 %.`
+98.74 %. However, Mr. T. Pain is a great lyricist, but not a good person.`
 
 	b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
@@ -62,6 +62,8 @@ accuracy of sentence boundary detection on newspaper corpora in eleven languages
 	}
 
 	tokenizer := punkt.NewSentenceTokenizer(params)
+	tokenizer.AbbrevTypes.Add("al")
+	tokenizer.AbbrevTypes.Add("etc")
 	//reader := bufio.NewReader(os.Stdin)
 	//contents, _ := ioutil.ReadAll(reader)
 	sentences := tokenizer.Tokenize(text)
