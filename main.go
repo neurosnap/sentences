@@ -50,22 +50,23 @@ func main() {
 	the system produced through experimentation on the development corpus, the mean
 	accuracy of sentence boundary detection on newspaper corpora in eleven languages is
 	 98.74%. However, Mr. T. Pain is a great lyricist, but not a good person.`*/
-	//fmt.Println(text)
 	b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
 		panic(err)
 	}
 
-	params, err := Load(b)
+	storage, err := punkt.LoadStorage(b)
 	if err != nil {
 		panic(err)
 	}
 
-	tokenizer := punkt.NewSentenceTokenizer(params)
+	tokenizer := punkt.NewSentenceTokenizer(storage)
 	tokenizer.AbbrevTypes.Add("al")
 	tokenizer.AbbrevTypes.Add("etc")
+
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := ioutil.ReadAll(reader)
+
 	sentences := tokenizer.Tokenize(string(text))
 	for _, s := range sentences {
 		fmt.Println(s)

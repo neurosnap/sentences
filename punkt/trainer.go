@@ -26,9 +26,9 @@ func boolToFloat64(cond bool) float64 {
 // Learns parameters used in Punkt sentence boundary detection
 type Trainer struct {
 	*Base
-	typeFreqDist         *utils.FreqDist
-	collocationFreqDist  *utils.FreqDist
-	sentStarterFreqDist  *utils.FreqDist
+	TypeDist             *utils.FreqDist
+	CollocationDist      *utils.FreqDist
+	SentStarterDist      *utils.FreqDist
 	sentBreakCount       float64
 	numPeriodToks        float64
 	Abbrev               float64
@@ -44,17 +44,17 @@ type Trainer struct {
 
 func NewTrainer(trainText string, fileText *os.File) *Trainer {
 	trainer := &Trainer{
-		Base:                NewBase(),
-		typeFreqDist:        utils.NewFreqDist(),
-		collocationFreqDist: utils.NewFreqDist(),
-		sentStarterFreqDist: utils.NewFreqDist(),
-		finalized:           true,
-		Abbrev:              0.3,
-		AbbrevBackoff:       5,
-		Collocation:         7.88,
-		SentStarter:         30,
-		MinCollocFreq:       1,
-		IncludeAllCollocs:   true,
+		Base:              NewBase(),
+		TypeDist:          utils.NewFreqDist(map[string]int{}),
+		CollocationDist:   utils.NewFreqDist(map[string]int{}),
+		SentStarterDist:   utils.NewFreqDist(map[string]int{}),
+		finalized:         true,
+		Abbrev:            0.3,
+		AbbrevBackoff:     5,
+		Collocation:       7.88,
+		SentStarter:       30,
+		MinCollocFreq:     1,
+		IncludeAllCollocs: true,
 	}
 
 	if trainText != "" {
@@ -83,10 +83,10 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 		tokens that end in periods.
 	*/
 	for _, tok := range tokens {
-		if p.typeFreqDist.Samples[tok.Typ] == 0 {
-			p.typeFreqDist.Samples[tok.Typ] = 1
+		if p.TypeDist.Samples[tok.Typ] == 0 {
+			p.TypeDist.Samples[tok.Typ] = 1
 		} else {
-			p.typeFreqDist.Samples[tok.Typ] += 1
+			p.TypeDist.Samples[tok.Typ] += 1
 		}
 
 		if tok.PeriodFinal {
@@ -130,7 +130,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 		}
 
 		if p.isPotentialSentStarter(tokPair[1], tokPair[0]) {
-			p.sentStarterFreqDist.Samples[tokPair[1].Typ] += 1
+			p.SentStarterDist.Samples[tokPair[1].Typ] += 1
 		}
 
 		if p.isPotentialCollocation(tokPair[0], tokPair[1]) {
@@ -138,7 +138,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 				tokPair[0].TypeNoPeriod(),
 				tokPair[1].TypeNoSentPeriod(),
 			}, ",")
-			p.collocationFreqDist.Samples[bigramColl] += 1
+			p.CollocationDist.Samples[bigramColl] += 1
 		}
 	}
 }
@@ -221,8 +221,8 @@ func (p *Trainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 			<b> (low value of ll).
 		*/
 		typPeriod := strings.Join([]string{typ, "."}, "")
-		countWithPeriod := float64(p.typeFreqDist.Samples[typPeriod])
-		countWithoutPeriod := float64(p.typeFreqDist.Samples[typ])
+		countWithPeriod := float64(p.TypeDist.Samples[typPeriod])
+		countWithoutPeriod := float64(p.TypeDist.Samples[typ])
 		/*
 			Apply three scaling factors to 'tweak' the basic log
 			likelihood ratio:
@@ -233,7 +233,7 @@ func (p *Trainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 		likely := p.dunningLogLikelihood(
 			countWithPeriod+countWithoutPeriod,
 			p.numPeriodToks, countWithPeriod,
-			p.typeFreqDist.N(),
+			p.TypeDist.N(),
 		)
 		fLength := math.Exp(-numNonPeriods)
 		var fPenalty float64
@@ -369,7 +369,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 		Proceed only if the type hasn't been categorized as an
 		abbreviation already, and is sufficiently rare...
 	*/
-	count := p.typeFreqDist.Samples[typ] + p.typeFreqDist.Samples[typ[:len(typ)-1]]
+	count := p.TypeDist.Samples[typ] + p.TypeDist.Samples[typ[:len(typ)-1]]
 	if p.Storage.AbbrevTypes.Has(typ) || count >= p.AbbrevBackoff {
 		return false
 	}
@@ -431,22 +431,22 @@ Uses collocation heuristics for each candidate token to
 determine if it frequently starts sentences.
 */
 func (p *Trainer) findSentStarters() []*sentStarterStruct {
-	starters := make([]*sentStarterStruct, 0, len(p.sentStarterFreqDist.Samples))
+	starters := make([]*sentStarterStruct, 0, len(p.SentStarterDist.Samples))
 
-	for typ, _ := range p.sentStarterFreqDist.Samples {
+	for typ, _ := range p.SentStarterDist.Samples {
 		if typ == "" {
 			continue
 		}
 
-		typAtBreakCount := float64(p.sentStarterFreqDist.Samples[typ])
-		typCount := float64(p.typeFreqDist.Samples[typ] + p.typeFreqDist.Samples[strings.Join([]string{typ, "."}, "")])
+		typAtBreakCount := float64(p.SentStarterDist.Samples[typ])
+		typCount := float64(p.TypeDist.Samples[typ] + p.TypeDist.Samples[strings.Join([]string{typ, "."}, "")])
 		if typCount < typAtBreakCount {
 			continue
 		}
 
-		ll := p.colLogLikelihood(p.sentBreakCount, typCount, typAtBreakCount, p.typeFreqDist.N())
+		ll := p.colLogLikelihood(p.sentBreakCount, typCount, typAtBreakCount, p.TypeDist.N())
 
-		if ll >= p.SentStarter && p.typeFreqDist.N()/p.sentBreakCount > typCount/typAtBreakCount {
+		if ll >= p.SentStarter && p.TypeDist.N()/p.sentBreakCount > typCount/typAtBreakCount {
 			starters = append(starters, &sentStarterStruct{typ, ll})
 		}
 	}
@@ -493,9 +493,9 @@ type collocationStruct struct {
 Generates likely collocations and their log-likelihood.
 */
 func (p *Trainer) findCollocations() []*collocationStruct {
-	collocs := make([]*collocationStruct, 0, len(p.collocationFreqDist.Samples))
+	collocs := make([]*collocationStruct, 0, len(p.CollocationDist.Samples))
 
-	for key, _ := range p.collocationFreqDist.Samples {
+	for key, _ := range p.CollocationDist.Samples {
 		sample := strings.Split(key, ",")
 		typOne := sample[0]
 		typTwo := sample[1]
@@ -508,11 +508,11 @@ func (p *Trainer) findCollocations() []*collocationStruct {
 			continue
 		}
 
-		colCount := float64(p.collocationFreqDist.Samples[key])
+		colCount := float64(p.CollocationDist.Samples[key])
 		typOneWithPeriod := strings.Join([]string{typOne, "."}, "")
 		typTwoWithPeriod := strings.Join([]string{typTwo, "."}, "")
-		typOneCount := float64(p.typeFreqDist.Samples[typOne] + p.typeFreqDist.Samples[typOneWithPeriod])
-		typTwoCount := float64(p.typeFreqDist.Samples[typTwo] + p.typeFreqDist.Samples[typTwoWithPeriod])
+		typOneCount := float64(p.TypeDist.Samples[typOne] + p.TypeDist.Samples[typOneWithPeriod])
+		typTwoCount := float64(p.TypeDist.Samples[typTwo] + p.TypeDist.Samples[typTwoWithPeriod])
 
 		minTyp := typOneCount
 		if typTwoCount < minTyp {
@@ -521,10 +521,10 @@ func (p *Trainer) findCollocations() []*collocationStruct {
 
 		countLEMinTyp := boolToFloat64(colCount <= minTyp)
 		if typOneCount > 1 && typTwoCount > 1 && p.MinCollocFreq < countLEMinTyp {
-			likely := p.colLogLikelihood(typOneCount, typTwoCount, colCount, p.typeFreqDist.N())
+			likely := p.colLogLikelihood(typOneCount, typTwoCount, colCount, p.TypeDist.N())
 
 			// Filter out the not-so-collocative
-			if likely >= p.Collocation && p.typeFreqDist.N()/typOneCount > typTwoCount/colCount {
+			if likely >= p.Collocation && p.TypeDist.N()/typOneCount > typTwoCount/colCount {
 				collocs = append(collocs, &collocationStruct{typOne, typTwo, likely})
 			}
 		}

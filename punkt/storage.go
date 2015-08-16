@@ -5,11 +5,7 @@ type SetString struct {
 }
 
 func NewSetString(items map[string]int) *SetString {
-	if items == nil {
-		return &SetString{map[string]int{}}
-	} else {
-		return &SetString{items}
-	}
+	return &SetString{items}
 }
 
 func (ss *SetString) Add(str string) {

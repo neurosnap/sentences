@@ -49,7 +49,7 @@ func (p *Base) TokenizeWords(text string) []*Token {
 		if strings.Trim(line, " ") == "" || line == " " {
 			parastart = true
 		} else {
-			lineToks := p.WordTokenizer(line)
+			lineToks := WordTokenizer(line)
 
 			for index, lineTok := range lineToks {
 				if index == 0 {
