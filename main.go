@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-
-	b, err := ioutil.ReadFile("data/english.json")
+	b, err := Asset("data/english.json")
+	//b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
 		panic(err)
 	}
