@@ -3,27 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/neurosnap/sentences/punkt"
 	"io/ioutil"
 	"os"
+
+	"github.com/neurosnap/sentences/punkt"
 )
-
-type CustomTokenizer struct {
-	*punkt.SentenceTokenizer
-}
-
-func (c *CustomTokenizer) AnnotateTokens(tokens []*punkt.Token) {
-	fmt.Println("HI MOM")
-	tokens = c.SentenceTokenizer.AnnotateTokens(tokens)
-}
-
-func NewCustomTokenizer(trainedData *punkt.Storage) *CustomTokenizer {
-	st := &CustomTokenizer{
-		punkt.NewSentenceTokenizer(trainedData),
-	}
-
-	return st
-}
 
 func main() {
 
@@ -37,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	tokenizer := NewCustomTokenizer(training)
+	tokenizer := punkt.NewSentenceTokenizer(training)
 
 	tokenizer.AbbrevTypes.Add("al")
 	tokenizer.AbbrevTypes.Add("etc")
@@ -48,6 +32,5 @@ func main() {
 	sentences := tokenizer.Tokenize(string(text))
 	for _, s := range sentences {
 		fmt.Println(s)
-		fmt.Println("------")
 	}
 }
