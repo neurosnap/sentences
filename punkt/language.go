@@ -2,7 +2,6 @@ package punkt
 
 import (
 	"bytes"
-	//	"fmt"
 	"regexp"
 	"strings"
 	"text/template"

@@ -5,8 +5,23 @@ import (
 	"strings"
 )
 
+type WToken interface {
+	GetType(string) string
+	TypeNoPeriod() string
+	TypeNoSentPeriod() string
+	FirstCase() bool
+	FirstLower() bool
+	FirstUpper() bool
+	IsAlpha() bool
+	IsEllipsis() bool
+	IsInitial() bool
+	IsNumber() bool
+	IsNonPunct() bool
+}
+
 // Stores a token of text with annotations produced during sentence boundary detection.
 type Token struct {
+	WToken
 	reEllipsis  *regexp.Regexp
 	reNumeric   *regexp.Regexp
 	reInitial   *regexp.Regexp
@@ -22,8 +37,24 @@ type Token struct {
 	Abbr        bool
 }
 
+func NewToken(token string) *Token {
+	tok := Token{
+		Tok:        token,
+		reEllipsis: regexp.MustCompile(`\.\.+$`),
+		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
+		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
+		reInitials: regexp.MustCompile(`[A-Za-z]\.[A-Za-z]\.$`),
+		reAlpha:    regexp.MustCompile(`^[A-Za-z]+$`),
+		Ellipsis:   false,
+	}
+	tok.Typ = tok.GetType(token)
+	tok.PeriodFinal = strings.HasSuffix(token, ".")
+
+	return &tok
+}
+
 // Returns a case-normalized representation of the token.
-func (p *Token) getType(tok string) string {
+func (p *Token) GetType(tok string) string {
 	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
 }
 
@@ -106,20 +137,4 @@ func (p *Token) IsAlpha() bool {
 // True if the token is either a number or is alphabetic.
 func (p *Token) IsNonPunct() bool {
 	return ReNonPunct.MatchString(p.Typ)
-}
-
-func NewToken(token string) *Token {
-	tok := Token{
-		Tok:        token,
-		reEllipsis: regexp.MustCompile(`\.\.+$`),
-		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
-		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
-		reInitials: regexp.MustCompile(`[A-Za-z]\.[A-Za-z]\.$`),
-		reAlpha:    regexp.MustCompile(`^[A-Za-z]+$`),
-		Ellipsis:   false,
-	}
-	tok.Typ = tok.getType(token)
-	tok.PeriodFinal = strings.HasSuffix(token, ".")
-
-	return &tok
 }

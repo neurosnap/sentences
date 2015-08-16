@@ -19,15 +19,16 @@ func NewBase() *Base {
 	}
 }
 
-func (p *Base) AddToken(tokens []*Token, lineTok *WordToken, parastart bool, linestart bool) []*Token {
+func (p *Base) AddToken(tokens []*Token, pairTok *PairToken, parastart bool, linestart bool) []*Token {
 	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, ReMultiCharPunct}, "|"))
-	tok := strings.Join([]string{lineTok.First, lineTok.Second}, "")
-	if nonword.MatchString(lineTok.Second) || strings.HasSuffix(lineTok.Second, ",") {
-		tokOne := NewToken(lineTok.First)
+	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
+
+	if nonword.MatchString(pairTok.Second) || strings.HasSuffix(pairTok.Second, ",") {
+		tokOne := NewToken(pairTok.First)
 		tokOne.ParaStart = parastart
 		tokOne.LineStart = linestart
 
-		tokTwo := NewToken(lineTok.Second)
+		tokTwo := NewToken(pairTok.Second)
 
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
@@ -97,7 +98,7 @@ func (p *Base) firstPassAnnotation(token *Token) {
 		tokNoPeriodHypen := strings.Split(tokNoPeriod, "-")
 		tokLastHyphEl := string(tokNoPeriodHypen[len(tokNoPeriodHypen)-1])
 
-		if p.Storage.IsAbbr(tokNoPeriod, tokLastHyphEl) {
+		if p.IsAbbr(tokNoPeriod, tokLastHyphEl) {
 			token.Abbr = true
 		} else {
 			token.SentBreak = true

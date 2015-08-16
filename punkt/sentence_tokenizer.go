@@ -1,17 +1,8 @@
 package punkt
 
 import (
-	"fmt"
 	"strings"
 )
-
-// A sentence tokenizer which uses an unsupervised algorithm to build a model
-// for abbreviation words, collocations, and words that start sentences
-// and then uses that model to find sentence boundaries.
-type SentenceTokenizer struct {
-	*Base
-	Punctuation []string
-}
 
 type STokenizer interface {
 	Tokenize(string) []string
@@ -22,10 +13,21 @@ type STokenizer interface {
 	orthoHeuristic(*Token) int
 }
 
+// A sentence tokenizer which uses an unsupervised algorithm to build a model
+// for abbreviation words, collocations, and words that start sentences
+// and then uses that model to find sentence boundaries.
+type SentenceTokenizer struct {
+	*Base
+	STokenizer
+	Punctuation []string
+}
+
+var Punctuation = []string{";", ":", ",", ".", "!", "?"}
+
 func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 	st := &SentenceTokenizer{
 		Base:        NewBase(),
-		Punctuation: []string{";", ":", ",", ".", "!", "?"},
+		Punctuation: Punctuation,
 	}
 
 	st.Storage = trainedData
@@ -35,8 +37,7 @@ func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 func (s *SentenceTokenizer) Tokenize(text string) []string {
 	text = strings.Join(strings.Fields(text), " ")
 
-	re := s.Language.RePeriodContext()
-	fmt.Println(re)
+	re := s.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
 
 	sentences := make([]string, 0, len(matches))
@@ -61,9 +62,7 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			matchEnd = match[4]
 		}
 
-		fmt.Println(context)
 		if s.hasSentBreak(context) {
-			fmt.Println(context, match)
 			noNewline := text[lastBreak:matchEnd]
 			s := strings.Trim(noNewline, " ")
 			sentences = append(sentences, s)
@@ -146,10 +145,9 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 	   excluded in training.
 	*/
 	collocation := strings.Join([]string{typ, nextTyp}, ",")
-	if s.Storage.Collocations.items[collocation] != 0 {
+	if s.Collocations.items[collocation] != 0 {
 		tokOne.SentBreak = false
 		tokOne.Abbr = true
-		//fmt.Println("REASON KNOWN COLLOCATION")
 		return
 	}
 
@@ -167,7 +165,6 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 		isSentStarter := s.orthoHeuristic(tokTwo)
 		if isSentStarter == 1 {
 			tokOne.SentBreak = true
-			//fmt.Println("REASON ABBR WITH ORTHO HEURISTIC")
 			return
 		}
 
@@ -177,9 +174,8 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 			frequent-sentence-starters list, then label tok as a
 			sentence break.
 		*/
-		if tokTwo.FirstUpper() && s.Storage.SentStarters.items[nextTyp] != 0 {
+		if tokTwo.FirstUpper() && s.SentStarters.items[nextTyp] != 0 {
 			tokOne.SentBreak = true
-			//fmt.Println("REASON ABBR WITH SENTENCE STARTER")
 			return
 		}
 	}
@@ -196,10 +192,8 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
 			if tokIsInitial {
-				//fmt.Println("REASON INITIAL WITH ORTHO HEURISTIC")
 				return
 			} else {
-				//fmt.Println("REASON NUMBER WITH ORTHO HEURISTIC")
 				return
 			}
 		}
@@ -212,11 +206,10 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 		if isSentStarter == -1 &&
 			tokIsInitial &&
 			tokTwo.FirstUpper() &&
-			s.Storage.OrthoContext.items[nextTyp]&orthoLc == 0 {
+			s.OrthoContext.items[nextTyp]&orthoLc == 0 {
 
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
-			//fmt.Println("REASON INITIAL WITH SPECIAL ORTHO HEURISTIC")
 			return
 		}
 	}
@@ -236,7 +229,7 @@ func (s *SentenceTokenizer) orthoHeuristic(token *Token) int {
 		}
 	}
 
-	orthoCtx := s.Storage.OrthoContext.items[token.TypeNoSentPeriod()]
+	orthoCtx := s.OrthoContext.items[token.TypeNoSentPeriod()]
 
 	/*
 	   If the word is capitalized, occurs at least once with a

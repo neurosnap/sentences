@@ -1,13 +1,13 @@
 package punkt
 
 import (
-	//"fmt"
 	"bufio"
-	"github.com/neurosnap/sentences/utils"
 	"io/ioutil"
 	"math"
 	"os"
 	"strings"
+
+	"github.com/neurosnap/sentences/utils"
 )
 
 type AbbrevType struct {
@@ -99,11 +99,11 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 	for _, abbrType := range p.reclassifyAbbrevTypes(uniqueTypes) {
 		if abbrType.Score >= p.Abbrev {
 			if abbrType.IsAdd {
-				p.Storage.AbbrevTypes.Add(abbrType.Typ)
+				p.AbbrevTypes.Add(abbrType.Typ)
 			}
 		} else {
 			if !abbrType.IsAdd {
-				p.Storage.AbbrevTypes.Remove(abbrType.Typ)
+				p.AbbrevTypes.Remove(abbrType.Typ)
 			}
 		}
 	}
@@ -126,7 +126,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 		}
 
 		if p.isRareAbbrevType(tokPair[0], tokPair[1]) {
-			p.Storage.AbbrevTypes.Add(tokPair[0].TypeNoPeriod())
+			p.AbbrevTypes.Add(tokPair[0].TypeNoPeriod())
 		}
 
 		if p.isPotentialSentStarter(tokPair[1], tokPair[0]) {
@@ -160,14 +160,14 @@ Uses data that has been gathered in training to determine likely
 collocations and sentence starters.
 */
 func (p *Trainer) FinalizeTraining() {
-	p.Storage.SentStarters.items = map[string]int{}
+	p.SentStarters.items = map[string]int{}
 	for _, ss := range p.findSentStarters() {
-		p.Storage.SentStarters.Add(ss.Typ)
+		p.SentStarters.Add(ss.Typ)
 	}
 
-	p.Storage.Collocations.items = map[string]int{}
+	p.Collocations.items = map[string]int{}
 	for _, val := range p.findCollocations() {
-		p.Storage.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
+		p.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
 	}
 
 	p.finalized = true
@@ -199,13 +199,13 @@ func (p *Trainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 
 		var isAdd bool
 		if strings.HasSuffix(typ, ".") {
-			if p.Storage.AbbrevTypes.Has(typ) {
+			if p.AbbrevTypes.Has(typ) {
 				continue
 			}
 			typ = typ[:len(typ)-1]
 			isAdd = true
 		} else {
-			if !p.Storage.AbbrevTypes.Has(typ) {
+			if !p.AbbrevTypes.Has(typ) {
 				continue
 			}
 			isAdd = false
@@ -305,7 +305,7 @@ func (p *Trainer) getOrthographData(tokens []*Token) {
 		flag := orthoMap[[2]string{context, tok.FirstCase()}]
 		if flag != 0 {
 			//fmt.Println(typ, context, tok.FirstCase())
-			p.Storage.addOrthoContext(typ, flag)
+			p.addOrthoContext(typ, flag)
 		}
 
 		// Decide whether the next word is at a sentence boundary.
@@ -370,7 +370,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 		abbreviation already, and is sufficiently rare...
 	*/
 	count := p.TypeDist.Samples[typ] + p.TypeDist.Samples[typ[:len(typ)-1]]
-	if p.Storage.AbbrevTypes.Has(typ) || count >= p.AbbrevBackoff {
+	if p.AbbrevTypes.Has(typ) || count >= p.AbbrevBackoff {
 		return false
 	}
 
@@ -379,7 +379,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 		token is a sentence-internal punctuation mark.
 		[XX] :1 or check the whole thing??
 	*/
-	if strings.Contains(p.Language.internalPunctuation, nextTok.Tok[:1]) {
+	if strings.Contains(p.internalPunctuation, nextTok.Tok[:1]) {
 		return true
 	}
 
@@ -393,7 +393,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 	*/
 	if nextTok.FirstLower() {
 		typTwo := nextTok.TypeNoSentPeriod()
-		typTwoOrthoCtx := p.Storage.OrthoContext.items[typTwo]
+		typTwoOrthoCtx := p.OrthoContext.items[typTwo]
 
 		if (typTwoOrthoCtx&orthoBegUc) == 1 && (typTwoOrthoCtx&orthoMidUc) == 0 {
 			return true
@@ -504,7 +504,7 @@ func (p *Trainer) findCollocations() []*collocationStruct {
 			continue
 		}
 
-		if p.Storage.SentStarters.Has(typTwo) {
+		if p.SentStarters.Has(typTwo) {
 			continue
 		}
 

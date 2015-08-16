@@ -5,19 +5,17 @@ import (
 	"strings"
 )
 
-type WordToken struct {
+type PairToken struct {
 	First, Second string
 }
 
 var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`
 
-func WordTokenizer(text string) []*WordToken {
+func WordTokenizer(text string) []*PairToken {
 	words := strings.Fields(text)
-	tokens := make([]*WordToken, 0, len(words))
+	tokens := make([]*PairToken, 0, len(words))
 
 	multi := regexp.MustCompile(ReMultiCharPunct)
-	//nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
-	//wstart := regexp.MustCompile(p.reNonWordChars)
 
 	for _, word := range words {
 		// Skip one letter words
@@ -27,12 +25,6 @@ func WordTokenizer(text string) []*WordToken {
 
 		first := string(word[:1])
 		second := string(word[1:])
-
-		//punctInWord := nonword.FindStringIndex(word)
-		/*if punctInWord != nil {
-			first = word[:punctInWord[0]]
-			second = word[punctInWord[0]:]
-		}*/
 
 		if strings.HasSuffix(word, ",") {
 			first = word[:len(word)-1]
@@ -55,7 +47,7 @@ func WordTokenizer(text string) []*WordToken {
 			}
 		}
 
-		token := &WordToken{first, second}
+		token := &PairToken{first, second}
 		tokens = append(tokens, token)
 	}
 
