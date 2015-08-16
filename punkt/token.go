@@ -6,7 +6,7 @@ import (
 )
 
 // Stores a token of text with annotations produced during sentence boundary detection.
-type PunktToken struct {
+type Token struct {
 	reEllipsis  *regexp.Regexp
 	reNumeric   *regexp.Regexp
 	reInitial   *regexp.Regexp
@@ -23,12 +23,12 @@ type PunktToken struct {
 }
 
 // Returns a case-normalized representation of the token.
-func (p *PunktToken) getType(tok string) string {
+func (p *Token) getType(tok string) string {
 	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
 }
 
 // The type with its final period removed if it has one.
-func (p *PunktToken) TypeNoPeriod() string {
+func (p *Token) TypeNoPeriod() string {
 	if len(p.Typ) > 1 && string(p.Typ[len(p.Typ)-1]) == "." {
 		return string(p.Typ[:len(p.Typ)-1])
 	}
@@ -36,7 +36,7 @@ func (p *PunktToken) TypeNoPeriod() string {
 }
 
 // The type with its final period removed if it is marked as a sentence break.
-func (p *PunktToken) TypeNoSentPeriod() string {
+func (p *Token) TypeNoSentPeriod() string {
 	if p == nil {
 		return ""
 	}
@@ -48,7 +48,7 @@ func (p *PunktToken) TypeNoSentPeriod() string {
 }
 
 // True if the token's first character is uppercase.
-func (p *PunktToken) FirstUpper() bool {
+func (p *Token) FirstUpper() bool {
 	if p == nil || p.Tok == "" {
 		return false
 	}
@@ -65,7 +65,7 @@ func (p *PunktToken) FirstUpper() bool {
 }
 
 // True if the token's first character is lowercase
-func (p *PunktToken) FirstLower() bool {
+func (p *Token) FirstLower() bool {
 	if p.Tok == "" {
 		return false
 	}
@@ -74,7 +74,7 @@ func (p *PunktToken) FirstLower() bool {
 }
 
 // True if the token text is that of an ellipsis.
-func (p *PunktToken) FirstCase() string {
+func (p *Token) FirstCase() string {
 	if p.FirstLower() {
 		return "lower"
 	} else if p.FirstUpper() {
@@ -84,32 +84,32 @@ func (p *PunktToken) FirstCase() string {
 }
 
 // True if the token text is that of an ellipsis.
-func (p *PunktToken) IsEllipsis() bool {
+func (p *Token) IsEllipsis() bool {
 	return p.reEllipsis.MatchString(p.Tok)
 }
 
 // True if the token text is that of a number.
-func (p *PunktToken) IsNumber() bool {
+func (p *Token) IsNumber() bool {
 	return strings.HasPrefix(p.Tok, "##number##")
 }
 
 // True if the token text is that of an initial.
-func (p *PunktToken) IsInitial() bool {
+func (p *Token) IsInitial() bool {
 	return p.reInitial.MatchString(p.Tok)
 }
 
 // True if the token text is all alphabetic.
-func (p *PunktToken) IsAlpha() bool {
+func (p *Token) IsAlpha() bool {
 	return p.reAlpha.MatchString(p.Tok)
 }
 
 // True if the token is either a number or is alphabetic.
-func (p *PunktToken) IsNonPunct() bool {
+func (p *Token) IsNonPunct() bool {
 	return ReNonPunct.MatchString(p.Typ)
 }
 
-func NewPunktToken(token string) *PunktToken {
-	tok := PunktToken{
+func NewToken(token string) *Token {
+	tok := Token{
 		Tok:        token,
 		reEllipsis: regexp.MustCompile(`\.\.+$`),
 		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),

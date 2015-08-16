@@ -22,7 +22,7 @@ type periodContextStruct struct {
 	NonWord      string
 }
 
-type PunktLanguageVars struct {
+type Language struct {
 	sentEndChars          []byte         // Characters that are candidates for sentence boundaries
 	internalPunctuation   string         // Sentence internal punctuation, which indicates an abbreviation if preceded by a period-final token
 	reBoundaryRealignment *regexp.Regexp // Used to realign punctuation that should be included in a sentence although it follows the period (or ?, !)
@@ -33,15 +33,14 @@ type PunktLanguageVars struct {
 	periodContextFmt      string
 }
 
-func NewPunktLanguageVars() *PunktLanguageVars {
-	return &PunktLanguageVars{
+func NewLanguage() *Language {
+	return &Language{
 		sentEndChars:        []byte{'.', '?', '!'},
 		internalPunctuation: ",:;",
-		//reBoundaryRealignment: regexp.MustCompile(`["')\]}]+?(?:\s+|(?=--)|$)`),
-		reWordStart:      "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
-		reNonWordChars:   `(?:[?!)";}\]\*:@\'\({\[])`,
-		reMultiCharPunct: `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
-		periodContextFmt: periodContextFmt,
+		reWordStart:         "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
+		reNonWordChars:      `(?:[?!)";}\]\*:@\'\({\[])`,
+		reMultiCharPunct:    `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`,
+		periodContextFmt:    periodContextFmt,
 	}
 }
 
@@ -49,7 +48,7 @@ type WordToken struct {
 	First, Second string
 }
 
-func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
+func (p *Language) WordTokenizer(text string) []*WordToken {
 	words := strings.Fields(text)
 	tokens := make([]*WordToken, 0, len(words))
 
@@ -101,7 +100,7 @@ func (p *PunktLanguageVars) WordTokenizer(text string) []*WordToken {
 }
 
 // Compile period context regexp
-func (p *PunktLanguageVars) RePeriodContext() *regexp.Regexp {
+func (p *Language) RePeriodContext() *regexp.Regexp {
 	t := template.Must(template.New("periodContext").Parse(p.periodContextFmt))
 	r := new(bytes.Buffer)
 
@@ -114,10 +113,10 @@ func (p *PunktLanguageVars) RePeriodContext() *regexp.Regexp {
 }
 
 // Compiles and returns a regular expression to find contexts including possible sentence boundaries.
-func (p *PunktLanguageVars) PeriodContext(s string) []string {
+func (p *Language) PeriodContext(s string) []string {
 	return p.RePeriodContext().FindAllString(s, -1)
 }
 
-func (p *PunktLanguageVars) ReSentEndChars() string {
+func (p *Language) ReSentEndChars() string {
 	return regexp.QuoteMeta(string(p.sentEndChars))
 }

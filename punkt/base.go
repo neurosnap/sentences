@@ -5,33 +5,33 @@ import (
 	"strings"
 )
 
-// Includes common components of PunkTrainer and PunktSentenceTokenizer
-type PunktBase struct {
+// Includes common components of Trainer and SentenceTokenizer
+type Base struct {
 	// The collection of parameters that determines the behavior of the punkt tokenizer.
-	*PunktParameters
-	*PunktLanguageVars
+	*Storage
+	*Language
 }
 
-func NewPunktBase() *PunktBase {
-	return &PunktBase{
-		PunktParameters:   NewPunktParameters(),
-		PunktLanguageVars: NewPunktLanguageVars(),
+func NewBase() *Base {
+	return &Base{
+		Storage:  NewStorage(),
+		Language: NewLanguage(),
 	}
 }
 
-func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart bool, linestart bool) []*PunktToken {
+func (p *Base) AddToken(tokens []*Token, lineTok *WordToken, parastart bool, linestart bool) []*Token {
 	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
 	tok := strings.Join([]string{lineTok.First, lineTok.Second}, "")
 	if nonword.MatchString(lineTok.Second) || strings.HasSuffix(lineTok.Second, ",") {
-		tokOne := NewPunktToken(lineTok.First)
+		tokOne := NewToken(lineTok.First)
 		tokOne.ParaStart = parastart
 		tokOne.LineStart = linestart
 
-		tokTwo := NewPunktToken(lineTok.Second)
+		tokTwo := NewToken(lineTok.Second)
 
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
-		token := NewPunktToken(tok)
+		token := NewToken(tok)
 		token.ParaStart = parastart
 		token.LineStart = linestart
 		tokens = append(tokens, token)
@@ -40,9 +40,9 @@ func (p *PunktBase) AddToken(tokens []*PunktToken, lineTok *WordToken, parastart
 	return tokens
 }
 
-func (p *PunktBase) TokenizeWords(text string) []*PunktToken {
+func (p *Base) TokenizeWords(text string) []*Token {
 	lines := strings.Split(text, "\n")
-	tokens := make([]*PunktToken, 0, len(lines))
+	tokens := make([]*Token, 0, len(lines))
 	parastart := false
 
 	for _, line := range lines {
@@ -78,15 +78,14 @@ Return these annotations as a tuple of three sets:
 	- abbrev_toks: The indices of all abbreviations.
 	- ellipsis_toks: The indices of all ellipsis marks.
 */
-func (p *PunktBase) annotateFirstPass(tokens []*PunktToken) []*PunktToken {
-	//resultTokens := make([]*PunktToken, 0, len(tokens))
+func (p *Base) annotateFirstPass(tokens []*Token) []*Token {
 	for _, augTok := range tokens {
 		p.firstPassAnnotation(augTok)
 	}
 	return tokens
 }
 
-func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
+func (p *Base) firstPassAnnotation(token *Token) {
 	tokInEndChars := strings.Index(string(p.sentEndChars), token.Tok)
 
 	if tokInEndChars != -1 {
@@ -99,7 +98,7 @@ func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
 		tokNoPeriodHypen := strings.Split(tokNoPeriod, "-")
 		tokLastHyphEl := string(tokNoPeriodHypen[len(tokNoPeriodHypen)-1])
 
-		if p.PunktParameters.IsAbbr(tokNoPeriod, tokLastHyphEl) {
+		if p.Storage.IsAbbr(tokNoPeriod, tokLastHyphEl) {
 			token.Abbr = true
 		} else {
 			token.SentBreak = true
@@ -107,18 +106,18 @@ func (p *PunktBase) firstPassAnnotation(token *PunktToken) {
 	}
 }
 
-func (p *PunktBase) pairIter(tokens []*PunktToken) [][2]*PunktToken {
-	pairTokens := make([][2]*PunktToken, 0, len(tokens))
+func (p *Base) pairIter(tokens []*Token) [][2]*Token {
+	pairTokens := make([][2]*Token, 0, len(tokens))
 
 	prevToken := tokens[0]
 	for _, tok := range tokens {
 		if prevToken == tok {
 			continue
 		}
-		pairTokens = append(pairTokens, [2]*PunktToken{prevToken, tok})
+		pairTokens = append(pairTokens, [2]*Token{prevToken, tok})
 		prevToken = tok
 	}
-	pairTokens = append(pairTokens, [2]*PunktToken{prevToken, nil})
+	pairTokens = append(pairTokens, [2]*Token{prevToken, nil})
 
 	return pairTokens
 }

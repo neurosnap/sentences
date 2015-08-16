@@ -12,7 +12,7 @@ type tmpParams struct {
 	OrthoContext map[string]int
 }
 
-func Load(data []byte) (*punkt.PunktParameters, error) {
+func Load(data []byte) (*punkt.Storage, error) {
 	var p tmpParams
 	err := json.Unmarshal(data, &p)
 
@@ -20,7 +20,7 @@ func Load(data []byte) (*punkt.PunktParameters, error) {
 		return nil, err
 	}
 
-	params := &punkt.PunktParameters{
+	params := &punkt.Storage{
 		AbbrevTypes:  punkt.NewSetString(p.AbbrevTypes),
 		Collocations: punkt.NewSetString(p.Collocations),
 		SentStarters: punkt.NewSetString(p.SentStarters),

@@ -8,22 +8,22 @@ import (
 // for abbreviation words, collocations, and words that start sentences
 // and then uses that model to find sentence boundaries.
 type SentenceTokenizer struct {
-	*PunktBase
+	*Base
 	Punctuation []string
 }
 
-func NewSentenceTokenizer(trainedData *PunktParameters) *SentenceTokenizer {
+func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 	st := &SentenceTokenizer{
-		PunktBase:   NewPunktBase(),
+		Base:        NewBase(),
 		Punctuation: []string{";", ":", ",", ".", "!", "?"},
 	}
 
-	st.PunktParameters = trainedData
+	st.Storage = trainedData
 	return st
 }
 
 func (s *SentenceTokenizer) Tokenize(text string) []string {
-	re := s.PunktLanguageVars.RePeriodContext()
+	re := s.Language.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
 
 	sentences := make([]string, 0, len(matches))
@@ -87,7 +87,7 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *SentenceTokenizer) annotateTokens(tokens []*PunktToken) []*PunktToken {
+func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
@@ -102,7 +102,7 @@ Performs a token-based classification (section 4) over the given
 tokens, making use of the orthographic heuristic (4.1.1), collocation
 heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
 */
-func (s *SentenceTokenizer) annotateSecondPass(tokens []*PunktToken) []*PunktToken {
+func (s *SentenceTokenizer) annotateSecondPass(tokens []*Token) []*Token {
 	for _, tokPair := range s.pairIter(tokens) {
 		s.secondPassAnnotation(tokPair[0], tokPair[1])
 
@@ -110,7 +110,7 @@ func (s *SentenceTokenizer) annotateSecondPass(tokens []*PunktToken) []*PunktTok
 	return tokens
 }
 
-func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
+func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *Token) {
 	if tokTwo == nil {
 		return
 	}
@@ -133,7 +133,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 	   excluded in training.
 	*/
 	collocation := strings.Join([]string{typ, nextTyp}, ",")
-	if s.PunktParameters.Collocations.items[collocation] != 0 {
+	if s.Storage.Collocations.items[collocation] != 0 {
 		tokOne.SentBreak = false
 		tokOne.Abbr = true
 		//fmt.Println("REASON KNOWN COLLOCATION")
@@ -164,7 +164,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 			frequent-sentence-starters list, then label tok as a
 			sentence break.
 		*/
-		if tokTwo.FirstUpper() && s.PunktParameters.SentStarters.items[nextTyp] != 0 {
+		if tokTwo.FirstUpper() && s.Storage.SentStarters.items[nextTyp] != 0 {
 			tokOne.SentBreak = true
 			//fmt.Println("REASON ABBR WITH SENTENCE STARTER")
 			return
@@ -199,7 +199,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 		if isSentStarter == -1 &&
 			tokIsInitial &&
 			tokTwo.FirstUpper() &&
-			s.PunktParameters.OrthoContext.items[nextTyp]&orthoLc == 0 {
+			s.Storage.OrthoContext.items[nextTyp]&orthoLc == 0 {
 
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
@@ -212,7 +212,7 @@ func (s *SentenceTokenizer) secondPassAnnotation(tokOne, tokTwo *PunktToken) {
 /*
 Decide whether the given token is the first token in a sentence.
 */
-func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
+func (s *SentenceTokenizer) orthoHeuristic(token *Token) int {
 	if token == nil {
 		return 0
 	}
@@ -223,7 +223,7 @@ func (s *SentenceTokenizer) orthoHeuristic(token *PunktToken) int {
 		}
 	}
 
-	orthoCtx := s.PunktParameters.OrthoContext.items[token.TypeNoSentPeriod()]
+	orthoCtx := s.Storage.OrthoContext.items[token.TypeNoSentPeriod()]
 
 	/*
 	   If the word is capitalized, occurs at least once with a

@@ -16,43 +16,6 @@ type AbbrevType struct {
 	IsAdd bool
 }
 
-/*
-The following constants are used to describe the orthographic
-contexts in which a word can occur.  BEG=beginning, MID=middle,
-UNK=unknown, UC=uppercase, LC=lowercase, NC=no case.
-*/
-const (
-	// Beginning of a sentence with upper case.
-	orthoBegUc = 1 << 1
-	// Middle of a sentence with upper case.
-	orthoMidUc = 1 << 2
-	// Unknown position in a sentence with upper case.
-	orthoUnkUc = 1 << 3
-	// Beginning of a sentence with lower case.
-	orthoBegLc = 1 << 4
-	// Middle of a sentence with lower case.
-	orthoMidLc = 1 << 5
-	// Unknown position in a sentence with lower case.
-	orthoUnkLc = 1 << 6
-	// Occurs with upper case.
-	orthoUc = orthoBegUc + orthoMidUc + orthoUnkUc
-	// Occurs with lower case.
-	orthoLc = orthoBegLc + orthoMidLc + orthoUnkLc
-)
-
-/*
-A map from context position and first-letter case to the
-appropriate orthographic context flag.
-*/
-var orthoMap = map[[2]string]int{
-	[2]string{"initial", "upper"}:  orthoBegUc,
-	[2]string{"internal", "upper"}: orthoMidUc,
-	[2]string{"unknown", "upper"}:  orthoUnkUc,
-	[2]string{"initial", "lower"}:  orthoBegLc,
-	[2]string{"internal", "lower"}: orthoMidLc,
-	[2]string{"unknown", "lower"}:  orthoUnkLc,
-}
-
 func boolToFloat64(cond bool) float64 {
 	if cond {
 		return 1
@@ -61,8 +24,8 @@ func boolToFloat64(cond bool) float64 {
 }
 
 // Learns parameters used in Punkt sentence boundary detection
-type PunktTrainer struct {
-	*PunktBase
+type Trainer struct {
+	*Base
 	typeFreqDist         *utils.FreqDist
 	collocationFreqDist  *utils.FreqDist
 	sentStarterFreqDist  *utils.FreqDist
@@ -79,9 +42,9 @@ type PunktTrainer struct {
 	AbbrevBackoff        int
 }
 
-func NewPunktTrainer(trainText string, fileText *os.File) *PunktTrainer {
-	trainer := &PunktTrainer{
-		PunktBase:           NewPunktBase(),
+func NewTrainer(trainText string, fileText *os.File) *Trainer {
+	trainer := &Trainer{
+		Base:                NewBase(),
 		typeFreqDist:        utils.NewFreqDist(),
 		collocationFreqDist: utils.NewFreqDist(),
 		sentStarterFreqDist: utils.NewFreqDist(),
@@ -105,14 +68,14 @@ func NewPunktTrainer(trainText string, fileText *os.File) *PunktTrainer {
 	return trainer
 }
 
-func (p *PunktTrainer) Train(text string, finalize bool) {
+func (p *Trainer) Train(text string, finalize bool) {
 	p.trainTokens(p.TokenizeWords(text))
 	if finalize {
 		p.FinalizeTraining()
 	}
 }
 
-func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
+func (p *Trainer) trainTokens(tokens []*Token) {
 	p.finalized = false
 	/*
 		Find the frequency of each case-normalized type.  (Don't
@@ -136,11 +99,11 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 	for _, abbrType := range p.reclassifyAbbrevTypes(uniqueTypes) {
 		if abbrType.Score >= p.Abbrev {
 			if abbrType.IsAdd {
-				p.PunktParameters.AbbrevTypes.Add(abbrType.Typ)
+				p.Storage.AbbrevTypes.Add(abbrType.Typ)
 			}
 		} else {
 			if !abbrType.IsAdd {
-				p.PunktParameters.AbbrevTypes.Remove(abbrType.Typ)
+				p.Storage.AbbrevTypes.Remove(abbrType.Typ)
 			}
 		}
 	}
@@ -163,7 +126,7 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 		}
 
 		if p.isRareAbbrevType(tokPair[0], tokPair[1]) {
-			p.PunktParameters.AbbrevTypes.Add(tokPair[0].TypeNoPeriod())
+			p.Storage.AbbrevTypes.Add(tokPair[0].TypeNoPeriod())
 		}
 
 		if p.isPotentialSentStarter(tokPair[1], tokPair[0]) {
@@ -180,7 +143,7 @@ func (p *PunktTrainer) trainTokens(tokens []*PunktToken) {
 	}
 }
 
-func (p *PunktTrainer) uniqueTypes(tokens []*PunktToken) []string {
+func (p *Trainer) uniqueTypes(tokens []*Token) []string {
 	unique := NewSetString(nil)
 
 	for _, tok := range tokens {
@@ -190,21 +153,21 @@ func (p *PunktTrainer) uniqueTypes(tokens []*PunktToken) []string {
 	return unique.Array()
 }
 
-func (p *PunktTrainer) TrainTokens(tokens []string, finalize bool) {}
+func (p *Trainer) TrainTokens(tokens []string, finalize bool) {}
 
 /*
 Uses data that has been gathered in training to determine likely
 collocations and sentence starters.
 */
-func (p *PunktTrainer) FinalizeTraining() {
-	p.PunktParameters.SentStarters.items = map[string]int{}
+func (p *Trainer) FinalizeTraining() {
+	p.Storage.SentStarters.items = map[string]int{}
 	for _, ss := range p.findSentStarters() {
-		p.PunktParameters.SentStarters.Add(ss.Typ)
+		p.Storage.SentStarters.Add(ss.Typ)
 	}
 
-	p.PunktParameters.Collocations.items = map[string]int{}
+	p.Storage.Collocations.items = map[string]int{}
 	for _, val := range p.findCollocations() {
-		p.PunktParameters.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
+		p.Storage.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
 	}
 
 	p.finalized = true
@@ -223,7 +186,7 @@ abbreviation, such that:
 	- (is_add and score >= 0.3)    suggests a new abbreviation; and
 	- (not is_add and score < 0.3) suggests excluding an abbreviation.
 */
-func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
+func (p *Trainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 	abbrTypes := make([]*AbbrevType, 0, len(types))
 
 	for _, typ := range types {
@@ -236,13 +199,13 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 
 		var isAdd bool
 		if strings.HasSuffix(typ, ".") {
-			if p.PunktParameters.AbbrevTypes.Has(typ) {
+			if p.Storage.AbbrevTypes.Has(typ) {
 				continue
 			}
 			typ = typ[:len(typ)-1]
 			isAdd = true
 		} else {
-			if !p.PunktParameters.AbbrevTypes.Has(typ) {
+			if !p.Storage.AbbrevTypes.Has(typ) {
 				continue
 			}
 			isAdd = false
@@ -293,7 +256,7 @@ func (p *PunktTrainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
  ratio scores for abbreviation candidates.  The details of how
  this works is available in the paper.
 */
-func (p *PunktTrainer) dunningLogLikelihood(countA, countB, countAB, N float64) float64 {
+func (p *Trainer) dunningLogLikelihood(countA, countB, countAB, N float64) float64 {
 	p1 := countB / N
 	p2 := 0.99
 
@@ -311,7 +274,7 @@ with different case patterns (i) overall, (ii) at
 sentence-initial positions, and (iii) at sentence-internal
 positions.
 */
-func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
+func (p *Trainer) getOrthographData(tokens []*Token) {
 	context := "internal"
 
 	/*
@@ -342,7 +305,7 @@ func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 		flag := orthoMap[[2]string{context, tok.FirstCase()}]
 		if flag != 0 {
 			//fmt.Println(typ, context, tok.FirstCase())
-			p.PunktParameters.addOrthoContext(typ, flag)
+			p.Storage.addOrthoContext(typ, flag)
 		}
 
 		// Decide whether the next word is at a sentence boundary.
@@ -365,7 +328,7 @@ func (p *PunktTrainer) getOrthographData(tokens []*PunktToken) {
 Returns the number of sentence breaks marked in a given set of
 augmented tokens.
 */
-func (p *PunktTrainer) getSentBreakCount(tokens []*PunktToken) float64 {
+func (p *Trainer) getSentBreakCount(tokens []*Token) float64 {
 	sum := 0.0
 
 	for _, tok := range tokens {
@@ -382,7 +345,7 @@ This function combines the work done by the original code's
 functions `count_orthography_context`, `get_orthography_count`,
 and `get_rare_abbreviations`.
 */
-func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
+func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 	/*
 		A word type is counted as a rare abbreviation if:
 			- it's not already marked as an abbreviation
@@ -407,7 +370,7 @@ func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 		abbreviation already, and is sufficiently rare...
 	*/
 	count := p.typeFreqDist.Samples[typ] + p.typeFreqDist.Samples[typ[:len(typ)-1]]
-	if p.PunktParameters.AbbrevTypes.Has(typ) || count >= p.AbbrevBackoff {
+	if p.Storage.AbbrevTypes.Has(typ) || count >= p.AbbrevBackoff {
 		return false
 	}
 
@@ -416,7 +379,7 @@ func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 		token is a sentence-internal punctuation mark.
 		[XX] :1 or check the whole thing??
 	*/
-	if strings.Contains(p.PunktLanguageVars.internalPunctuation, nextTok.Tok[:1]) {
+	if strings.Contains(p.Language.internalPunctuation, nextTok.Tok[:1]) {
 		return true
 	}
 
@@ -430,7 +393,7 @@ func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 	*/
 	if nextTok.FirstLower() {
 		typTwo := nextTok.TypeNoSentPeriod()
-		typTwoOrthoCtx := p.PunktParameters.OrthoContext.items[typTwo]
+		typTwoOrthoCtx := p.Storage.OrthoContext.items[typTwo]
 
 		if (typTwoOrthoCtx&orthoBegUc) == 1 && (typTwoOrthoCtx&orthoMidUc) == 0 {
 			return true
@@ -444,7 +407,7 @@ func (p *PunktTrainer) isRareAbbrevType(curTok, nextTok *PunktToken) bool {
 Returns True given a token and the token that preceds it if it
 seems clear that the token is beginning a sentence.
 */
-func (p *PunktTrainer) isPotentialSentStarter(curTok, prevTok *PunktToken) bool {
+func (p *Trainer) isPotentialSentStarter(curTok, prevTok *Token) bool {
 	return prevTok.SentBreak && !(prevTok.IsNumber() || prevTok.IsInitial()) && curTok.IsAlpha()
 }
 
@@ -452,7 +415,7 @@ func (p *PunktTrainer) isPotentialSentStarter(curTok, prevTok *PunktToken) bool 
 Returns True if the pair of tokens may form a collocation given
 log-likelihood statistics.
 */
-func (p *PunktTrainer) isPotentialCollocation(tokOne, tokTwo *PunktToken) bool {
+func (p *Trainer) isPotentialCollocation(tokOne, tokTwo *Token) bool {
 	return ((p.IncludeAllCollocs || p.IncludeAbbrevCollocs && tokOne.Abbr) ||
 		(tokOne.SentBreak && (tokOne.IsNumber() || tokOne.IsInitial())) &&
 			tokOne.IsNonPunct() && tokTwo.IsNonPunct())
@@ -467,7 +430,7 @@ type sentStarterStruct struct {
 Uses collocation heuristics for each candidate token to
 determine if it frequently starts sentences.
 */
-func (p *PunktTrainer) findSentStarters() []*sentStarterStruct {
+func (p *Trainer) findSentStarters() []*sentStarterStruct {
 	starters := make([]*sentStarterStruct, 0, len(p.sentStarterFreqDist.Samples))
 
 	for typ, _ := range p.sentStarterFreqDist.Samples {
@@ -498,7 +461,7 @@ This *should* be the original Dunning log-likelihood values,
 unlike the previous log_l function where it used modified
 Dunning log-likelihood values
 */
-func (p *PunktTrainer) colLogLikelihood(countA, countB, countAB, N float64) float64 {
+func (p *Trainer) colLogLikelihood(countA, countB, countAB, N float64) float64 {
 	p0 := 1.0 * countB / N
 	p1 := 1.0 * countAB / countA
 	p2 := 1.0 * (countB - countAB) / (N - countA)
@@ -529,7 +492,7 @@ type collocationStruct struct {
 /*
 Generates likely collocations and their log-likelihood.
 */
-func (p *PunktTrainer) findCollocations() []*collocationStruct {
+func (p *Trainer) findCollocations() []*collocationStruct {
 	collocs := make([]*collocationStruct, 0, len(p.collocationFreqDist.Samples))
 
 	for key, _ := range p.collocationFreqDist.Samples {
@@ -541,7 +504,7 @@ func (p *PunktTrainer) findCollocations() []*collocationStruct {
 			continue
 		}
 
-		if p.PunktParameters.SentStarters.Has(typTwo) {
+		if p.Storage.SentStarters.Has(typTwo) {
 			continue
 		}
 
@@ -570,9 +533,9 @@ func (p *PunktTrainer) findCollocations() []*collocationStruct {
 	return collocs
 }
 
-func (p *PunktTrainer) GetParams() *PunktParameters {
+func (p *Trainer) GetParams() *Storage {
 	if !p.finalized {
 		p.FinalizeTraining()
 	}
-	return p.PunktParameters
+	return p.Storage
 }

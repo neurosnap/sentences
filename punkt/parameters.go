@@ -39,15 +39,15 @@ func (ss *SetString) Array() []string {
 }
 
 // Stores data used to perform sentence boundary detection with punkt
-type PunktParameters struct {
+type Storage struct {
 	AbbrevTypes  *SetString
 	Collocations *SetString
 	SentStarters *SetString
 	OrthoContext *SetString
 }
 
-func NewPunktParameters() *PunktParameters {
-	return &PunktParameters{
+func NewStorage() *Storage {
+	return &Storage{
 		NewSetString(nil),
 		NewSetString(nil),
 		NewSetString(nil),
@@ -55,11 +55,11 @@ func NewPunktParameters() *PunktParameters {
 	}
 }
 
-func (p *PunktParameters) addOrthoContext(typ string, flag int) {
+func (p *Storage) addOrthoContext(typ string, flag int) {
 	p.OrthoContext.items[typ] |= flag
 }
 
-func (p *PunktParameters) IsAbbr(tokens ...string) bool {
+func (p *Storage) IsAbbr(tokens ...string) bool {
 	for _, token := range tokens {
 		if p.AbbrevTypes.Has(token) {
 			return true
