@@ -27,6 +27,18 @@ welcome anyone willing to test the other languages to submit updates as needed.
 
 This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
+Command line
+------------
+
+Currently very simple, it takes `stdin` and outputs a sentence on each line.
+The default command line utility pre-loads the english training data, so loading
+it is not necessary.
+
+```
+go install github.com/neurosnap/sentences
+```
+
+
 Get it
 ------
 

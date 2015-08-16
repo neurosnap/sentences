@@ -48,8 +48,11 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		nextTok := ""
 		// attempting to replicate lookahead regexp
 		if strings.Count(context, ".") > 1 {
-			match := re.FindStringSubmatchIndex(text[match[2]:])
-			context = text[match[0]:match[1]]
+			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
+			if len(nmatch) > 0 {
+				match = nmatch
+				context = text[match[0]:match[1]]
+			}
 		}
 
 		if match[4] != -1 && match[5] != -1 {
