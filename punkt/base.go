@@ -20,7 +20,7 @@ func NewBase() *Base {
 }
 
 func (p *Base) AddToken(tokens []*Token, lineTok *WordToken, parastart bool, linestart bool) []*Token {
-	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
+	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, ReMultiCharPunct}, "|"))
 	tok := strings.Join([]string{lineTok.First, lineTok.Second}, "")
 	if nonword.MatchString(lineTok.Second) || strings.HasSuffix(lineTok.Second, ",") {
 		tokOne := NewToken(lineTok.First)
@@ -50,7 +50,6 @@ func (p *Base) TokenizeWords(text string) []*Token {
 			parastart = true
 		} else {
 			lineToks := WordTokenizer(line)
-
 			for index, lineTok := range lineToks {
 				if index == 0 {
 					tokens = p.AddToken(tokens, lineTok, parastart, true)

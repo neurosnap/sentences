@@ -3,7 +3,7 @@ package punkt
 import (
 	//"fmt"
 	"bufio"
-	"github.com/neurosnap/go-sentences/utils"
+	"github.com/neurosnap/sentences/utils"
 	"io/ioutil"
 	"math"
 	"os"

@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -23,7 +24,10 @@ func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 }
 
 func (s *SentenceTokenizer) Tokenize(text string) []string {
+	text = strings.Join(strings.Fields(text), " ")
+
 	re := s.Language.RePeriodContext()
+	fmt.Println(re)
 	matches := re.FindAllStringSubmatchIndex(text, -1)
 
 	sentences := make([]string, 0, len(matches))
@@ -43,14 +47,15 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		}
 
 		matchStart := match[2]
-
 		matchEnd = match[1]
 		if match[4] >= 0 {
 			matchEnd = match[4]
 		}
 
+		fmt.Println(context)
 		if s.hasSentBreak(context) {
-			noNewline := strings.Replace(text[lastBreak:matchEnd], "\n", "", -1)
+			fmt.Println(context, match)
+			noNewline := text[lastBreak:matchEnd]
 			s := strings.Trim(noNewline, " ")
 			sentences = append(sentences, s)
 			if nextTok != "" {
@@ -61,7 +66,7 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		}
 	}
 
-	sentences = append(sentences, strings.Replace(text[matchEnd:], "\n", "", -1))
+	sentences = append(sentences, text[matchEnd:])
 	return sentences
 }
 
@@ -69,13 +74,11 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 Returns True if the given text includes a sentence break.
 */
 func (s *SentenceTokenizer) hasSentBreak(text string) bool {
-	found := false
-	for _, t := range s.annotateTokens(s.TokenizeWords(text)) {
-		if found {
-			return true
-		}
+	tokens := s.TokenizeWords(text)
+
+	for _, t := range s.annotateTokens(tokens) {
 		if t.SentBreak {
-			found = true
+			return true
 		}
 	}
 
@@ -91,6 +94,7 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
+
 	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bufio"
+	//	"bufio"
 	"fmt"
-	"github.com/neurosnap/go-sentences/punkt"
+	"github.com/neurosnap/sentences/punkt"
 	"io/ioutil"
-	"os"
+	//"os"
 )
 
 func main() {
@@ -50,6 +50,33 @@ func main() {
 	the system produced through experimentation on the development corpus, the mean
 	accuracy of sentence boundary detection on newspaper corpora in eleven languages is
 	 98.74%. However, Mr. T. Pain is a great lyricist, but not a good person.`*/
+	text := `
+	    Things are hopping in Lansing, as the details of an affair between state Reps.
+	    Todd Courser and Cindy Gamrat continue to unfold. With a faux-smear
+	    campaign/cover-up claiming Courser hired male prostitutes,
+	    orchestrated by Courser himself to “inoculate the herd” against the truth of
+	    his affair with Gamrat, a series of purported blackmail texts from
+	    “the Lansing Mafia” and ongoing administrative (and possibly criminal)
+	    investigations, it’s the most excitement the Capitol has seen in a dog’s age.
+
+	    But Courser and Gamrat should take comfort: Theirs isn’t the only scandal in
+	    Michigan political history — and it surely won’t be the last.
+
+	    We here at A Better Michigan worked tirelessly to bring you this by-no-means
+	    exhaustive list of Michigan political scandals, burning the midnight oil,
+	    thumbing ink-stained accounts from days of yore. Your Kwame Kilpatricks
+	    and other well-trod scandalous ground are not for us. We’re bringing you the
+	    obtuse and the bizarre — and sometimes, the beneficial policy changes
+	    prompted by scandalous behavior. It was painstaking work. Oh, who are
+	    we kidding? We love this stuff. Sit back and enjoy.
+
+	    A perennial also-ran, Stallings won his seat when longtime lawmaker David Holmes
+	    died 11 days after the filing deadline. Suddenly, Stallings was a shoo-in, not
+	    the long shot. In short order, the Legislature attempted to pass a law allowing
+	    former U.S. Rep. Carolyn Cheeks Kilpatrick to file; Stallings challenged the
+	    law in court and won. Kilpatrick mounted a write-in campaign, but Stallings won.
+	    `
+	fmt.Println(text)
 	b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
 		panic(err)
@@ -64,8 +91,8 @@ func main() {
 	tokenizer.AbbrevTypes.Add("al")
 	tokenizer.AbbrevTypes.Add("etc")
 
-	reader := bufio.NewReader(os.Stdin)
-	text, _ := ioutil.ReadAll(reader)
+	/*reader := bufio.NewReader(os.Stdin)
+	text, _ := ioutil.ReadAll(reader)*/
 
 	sentences := tokenizer.Tokenize(string(text))
 	for _, s := range sentences {

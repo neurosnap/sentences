@@ -9,13 +9,13 @@ type WordToken struct {
 	First, Second string
 }
 
-var reMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`
+var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`
 
 func WordTokenizer(text string) []*WordToken {
 	words := strings.Fields(text)
 	tokens := make([]*WordToken, 0, len(words))
 
-	multi := regexp.MustCompile(reMultiCharPunct)
+	multi := regexp.MustCompile(ReMultiCharPunct)
 	//nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, p.reMultiCharPunct}, "|"))
 	//wstart := regexp.MustCompile(p.reNonWordChars)
 

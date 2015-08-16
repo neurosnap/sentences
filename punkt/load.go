@@ -2,7 +2,7 @@ package punkt
 
 import (
 	"encoding/json"
-	"github.com/neurosnap/go-sentences/utils"
+	"github.com/neurosnap/sentences/utils"
 )
 
 type tmpStorage struct {
