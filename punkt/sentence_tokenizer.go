@@ -13,6 +13,15 @@ type SentenceTokenizer struct {
 	Punctuation []string
 }
 
+type STokenizer interface {
+	Tokenize(string) []string
+	hasSentBreak(string) string
+	AnnotateTokens([]*Token) []*Token
+	secondPassAnnotation([]*Token) []*Token
+	annotateSecondPass(*Token, *Token)
+	orthoHeuristic(*Token) int
+}
+
 func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 	st := &SentenceTokenizer{
 		Base:        NewBase(),
@@ -76,7 +85,7 @@ Returns True if the given text includes a sentence break.
 func (s *SentenceTokenizer) hasSentBreak(text string) bool {
 	tokens := s.TokenizeWords(text)
 
-	for _, t := range s.annotateTokens(tokens) {
+	for _, t := range s.AnnotateTokens(tokens) {
 		if t.SentBreak {
 			return true
 		}
@@ -90,7 +99,7 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
+func (s *SentenceTokenizer) AnnotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)

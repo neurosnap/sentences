@@ -8,6 +8,15 @@ import (
 	//"os"
 )
 
+type CustomTokenizer struct {
+	*punkt.SentenceTokenizer
+}
+
+func (c *CustomTokenizer) annotateTokens(tokens []*punkt.Token) {
+	tokens = c.SentenceTokenizer.AnnotateTokens(tokens)
+	fmt.Println("HI MOM")
+}
+
 func main() {
 	fmt.Println("TRAIN SOME SHIT")
 
@@ -82,12 +91,13 @@ func main() {
 		panic(err)
 	}
 
-	storage, err := punkt.LoadStorage(b)
+	training, err := punkt.LoadTraining(b)
 	if err != nil {
 		panic(err)
 	}
 
-	tokenizer := punkt.NewSentenceTokenizer(storage)
+	tokenizer := punkt.NewSentenceTokenizer(training)
+
 	tokenizer.AbbrevTypes.Add("al")
 	tokenizer.AbbrevTypes.Add("etc")
 

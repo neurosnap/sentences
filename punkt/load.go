@@ -18,7 +18,7 @@ type tmpDist struct {
 	SentStarterDist map[string]int
 }
 
-func LoadStorage(data []byte) (*Storage, error) {
+func LoadTraining(data []byte) (*Storage, error) {
 	var s tmpStorage
 	err := json.Unmarshal(data, &s)
 
