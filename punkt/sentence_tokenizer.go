@@ -86,7 +86,6 @@ Returns True if the given text includes a sentence break.
 */
 func (s *SentenceTokenizer) hasSentBreak(text string) bool {
 	tokens := s.TokenizeWords(text)
-
 	for _, t := range s.annotateTokens(tokens) {
 		if t.SentBreak {
 			return true
