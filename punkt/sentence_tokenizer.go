@@ -47,10 +47,18 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		context := text[match[0]:match[1]]
 		nextTok := ""
 		// attempting to replicate lookahead regexp
+		// super hacky
 		if strings.Count(context, ".") > 1 {
 			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
 			if len(nmatch) > 0 {
-				match = nmatch
+				match = []int{
+					match[2] + nmatch[0],
+					match[2] + nmatch[1],
+					match[2] + nmatch[2],
+					match[2] + nmatch[3],
+					match[2] + nmatch[4],
+					match[2] + nmatch[5],
+				}
 				context = text[match[0]:match[1]]
 			}
 		}
@@ -86,6 +94,7 @@ Returns True if the given text includes a sentence break.
 */
 func (s *SentenceTokenizer) hasSentBreak(text string) bool {
 	tokens := s.TokenizeWords(text)
+
 	for _, t := range s.annotateTokens(tokens) {
 		if t.SentBreak {
 			return true
@@ -104,7 +113,6 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
-
 	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 
@@ -238,7 +246,7 @@ func (s *SentenceTokenizer) orthoHeuristic(token *Token) int {
 	   lower case first letter, and never occurs with an upper case
 	   first letter sentence-internally, then it's a sentence starter.
 	*/
-	if token.FirstUpper() && (orthoCtx&orthoLc > 0 || orthoCtx&orthoMidLc == 0) {
+	if token.FirstUpper() && (orthoCtx&orthoLc > 0 || orthoCtx&orthoMidUc == 0) {
 		return 1
 	}
 
