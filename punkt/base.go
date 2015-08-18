@@ -86,10 +86,10 @@ func (p *Base) annotateFirstPass(tokens []*Token) []*Token {
 }
 
 func (p *Base) firstPassAnnotation(token *Token) {
-	tokInEndChars := strings.Index(string(p.sentEndChars), token.Tok)
+	chars := strings.Split(token.Tok, "")
+	tokInEndChars := strings.Index(string(p.sentEndChars), token.Tok[len(chars)-1:])
 
 	if tokInEndChars != -1 {
-
 		token.SentBreak = true
 	} else if token.IsEllipsis() {
 		token.Ellipsis = true
