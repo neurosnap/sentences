@@ -10,6 +10,7 @@ type PairToken struct {
 }
 
 var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`
+var endPuncts = []string{`."`, `.'`, `.”`, ","}
 
 func WordTokenizer(text string) []*PairToken {
 	words := strings.Fields(text)
@@ -26,22 +27,23 @@ func WordTokenizer(text string) []*PairToken {
 		first := string(word[:1])
 		second := string(word[1:])
 
-		if strings.HasSuffix(word, ",") {
-			first = word[:len(word)-1]
-			second = word[len(word)-1:]
-		}
-
-		if strings.HasSuffix(word, `."`) || strings.HasSuffix(word, `.'`) {
-			first = word[:len(word)-1]
-			second = word[len(word)-1:]
+		for _, punct := range endPuncts {
+			if strings.HasSuffix(word, punct) {
+				chars := strings.Split(word, "")
+				first = word[:len(chars)-1]
+				second = word[len(chars)-1:]
+				break
+			}
 		}
 
 		multipunct := multi.FindStringIndex(word)
 		if multipunct != nil {
+			chars := strings.Split(word, "")
 			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) || multipunct[0]+multipunct[1] == len(word)) {
-				first = word[:len(word)-1]
+				first = word[:len(chars)-1]
 				second = "."
 			} else {
+				//chars := strings.Split(multipunct, "")
 				if multipunct[1] == len(word) {
 					first = word[:multipunct[0]]
 					second = word[multipunct[0]:]
@@ -51,7 +53,6 @@ func WordTokenizer(text string) []*PairToken {
 				}
 			}
 		}
-
 		token := &PairToken{first, second}
 		tokens = append(tokens, token)
 	}

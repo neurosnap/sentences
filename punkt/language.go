@@ -34,7 +34,7 @@ func NewLanguage() *Language {
 		sentEndChars:        []byte{'.', '?', '!'},
 		internalPunctuation: ",:;",
 		reWordStart:         "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
-		reNonWordChars:      `(?:[?!)";}\]\*:@\'\({\[])`,
+		reNonWordChars:      `(?:[?!)’”"';}\]\*:@\'\({\[])`,
 		periodContextFmt:    periodContextFmt,
 	}
 }
@@ -45,7 +45,7 @@ func (p *Language) RePeriodContext() *regexp.Regexp {
 	r := new(bytes.Buffer)
 
 	t.Execute(r, periodContextStruct{
-		SentEndChars: strings.Join([]string{"[", p.ReSentEndChars(), "]"}, ""),
+		SentEndChars: strings.Join([]string{`[`, p.ReSentEndChars(), `][’”"']?`}, ""),
 		NonWord:      p.reNonWordChars,
 	})
 

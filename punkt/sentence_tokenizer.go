@@ -113,6 +113,7 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
+
 	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 
