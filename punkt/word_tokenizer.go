@@ -24,12 +24,13 @@ func WordTokenizer(text string) []*PairToken {
 			continue
 		}
 
-		first := string(word[:1])
-		second := string(word[1:])
+		chars := strings.Split(word, "")
+
+		first := strings.Join(chars[:1], "")
+		second := strings.Join(chars[1:], "")
 
 		for _, punct := range endPuncts {
 			if strings.HasSuffix(word, punct) {
-				chars := strings.Split(word, "")
 				first = word[:len(chars)-1]
 				second = word[len(chars)-1:]
 				break
@@ -38,7 +39,6 @@ func WordTokenizer(text string) []*PairToken {
 
 		multipunct := multi.FindStringIndex(word)
 		if multipunct != nil {
-			chars := strings.Split(word, "")
 			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) || multipunct[0]+multipunct[1] == len(word)) {
 				first = word[:len(chars)-1]
 				second = "."

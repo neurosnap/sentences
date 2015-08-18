@@ -113,7 +113,6 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
-
 	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 
@@ -247,7 +246,7 @@ func (s *SentenceTokenizer) orthoHeuristic(token *Token) int {
 	   lower case first letter, and never occurs with an upper case
 	   first letter sentence-internally, then it's a sentence starter.
 	*/
-	if token.FirstUpper() && (orthoCtx&orthoLc > 0 || orthoCtx&orthoMidUc == 0) {
+	if token.FirstUpper() && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
 		return 1
 	}
 
