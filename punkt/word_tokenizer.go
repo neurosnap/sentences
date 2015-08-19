@@ -10,7 +10,7 @@ type PairToken struct {
 }
 
 var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)`
-var endPuncts = []string{`."`, `.'`, `.”`, ","}
+var endPuncts = []string{`."`, `.'`, `.”`, ",", "?"}
 
 func WordTokenizer(text string) []*PairToken {
 	words := strings.Fields(text)
@@ -26,8 +26,10 @@ func WordTokenizer(text string) []*PairToken {
 
 		chars := strings.Split(word, "")
 
-		first := strings.Join(chars[:1], "")
-		second := strings.Join(chars[1:], "")
+		//first := strings.Join(chars[:1], "")
+		//second := strings.Join(chars[1:], "")
+		first := word
+		second := ""
 
 		for _, punct := range endPuncts {
 			if strings.HasSuffix(word, punct) {

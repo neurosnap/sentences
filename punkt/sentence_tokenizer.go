@@ -1,7 +1,6 @@
 package punkt
 
 import (
-	//	"fmt"
 	"strings"
 )
 
@@ -47,25 +46,32 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	for _, match := range matches {
 		context := text[match[0]:match[1]]
 		nextTok := ""
+		if match[4] != -1 && match[5] != -1 {
+			nextTok = text[match[4]:match[5]]
+		}
 		// attempting to replicate lookahead regexp
 		// super hacky
 		if strings.Count(context, ".") > 1 {
 			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
-			if len(nmatch) > 0 {
+			firstWord := match[2] + nmatch[0]
+			startSecondWord := match[2] + nmatch[2]
+
+			if len(nmatch) > 0 && nextTok == text[firstWord:startSecondWord] {
 				match = []int{
-					match[2] + nmatch[0],
+					firstWord,
 					match[2] + nmatch[1],
-					match[2] + nmatch[2],
+					startSecondWord,
 					match[2] + nmatch[3],
 					match[2] + nmatch[4],
 					match[2] + nmatch[5],
 				}
-				context = text[match[0]:match[1]]
-			}
-		}
 
-		if match[4] != -1 && match[5] != -1 {
-			nextTok = text[match[4]:match[5]]
+				context = text[match[0]:match[1]]
+
+				if match[4] != -1 && match[5] != -1 {
+					nextTok = text[match[4]:match[5]]
+				}
+			}
 		}
 
 		matchStart := match[2]
