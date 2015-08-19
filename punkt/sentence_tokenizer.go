@@ -53,23 +53,25 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		// super hacky
 		if strings.Count(context, ".") > 1 {
 			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
-			firstWord := match[2] + nmatch[0]
-			startSecondWord := match[2] + nmatch[2]
+			if len(nmatch) > 0 {
+				firstWord := match[2] + nmatch[0]
+				startSecondWord := match[2] + nmatch[2]
 
-			if len(nmatch) > 0 && nextTok == text[firstWord:startSecondWord] {
-				match = []int{
-					firstWord,
-					match[2] + nmatch[1],
-					startSecondWord,
-					match[2] + nmatch[3],
-					match[2] + nmatch[4],
-					match[2] + nmatch[5],
-				}
+				if nextTok == text[firstWord:startSecondWord] {
+					match = []int{
+						firstWord,
+						match[2] + nmatch[1],
+						startSecondWord,
+						match[2] + nmatch[3],
+						match[2] + nmatch[4],
+						match[2] + nmatch[5],
+					}
 
-				context = text[match[0]:match[1]]
+					context = text[match[0]:match[1]]
 
-				if match[4] != -1 && match[5] != -1 {
-					nextTok = text[match[4]:match[5]]
+					if match[4] != -1 && match[5] != -1 {
+						nextTok = text[match[4]:match[5]]
+					}
 				}
 			}
 		}
