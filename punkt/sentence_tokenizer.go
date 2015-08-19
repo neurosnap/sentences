@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	//	"fmt"
 	"strings"
 )
 
@@ -76,6 +77,9 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		if s.hasSentBreak(context) {
 			noNewline := text[lastBreak:matchEnd]
 			s := strings.Trim(noNewline, " ")
+			if s == "" {
+				continue
+			}
 			sentences = append(sentences, s)
 			if nextTok != "" {
 				lastBreak = matchStart

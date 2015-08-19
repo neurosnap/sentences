@@ -94,7 +94,7 @@ func (p *Base) firstPassAnnotation(token *Token) {
 	} else if token.IsEllipsis() {
 		token.Ellipsis = true
 	} else if token.PeriodFinal && !strings.HasSuffix(token.Tok, "..") {
-		tokNoPeriod := strings.ToLower(token.Tok[:len(token.Tok)-1])
+		tokNoPeriod := strings.ToLower(token.Tok[:len(chars)-1])
 		tokNoPeriodHypen := strings.Split(tokNoPeriod, "-")
 		tokLastHyphEl := string(tokNoPeriodHypen[len(tokNoPeriodHypen)-1])
 
