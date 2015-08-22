@@ -58,6 +58,18 @@ func TestEnglishCarolyn(t *testing.T) {
 			"test_files/dre.txt",
 			"test_files/dre_s.txt",
 		},
+		[]string{
+			"test_files/dr.txt",
+			"test_files/dr_s.txt",
+		},
+		[]string{
+			"test_files/quotes.txt",
+			"test_files/quotes_s.txt",
+		},
+		[]string{
+			"test_files/kiss.txt",
+			"test_files/kiss_s.txt",
+		},
 	}
 
 	for _, f := range test_files {
