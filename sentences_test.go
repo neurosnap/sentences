@@ -9,8 +9,8 @@ import (
 	"github.com/neurosnap/sentences/punkt"
 )
 
-func loadEnglishTokenizer() *punkt.SentenceTokenizer {
-	b, err := Asset("data/english.json")
+func loadTokenizer(data string) *punkt.SentenceTokenizer {
+	b, err := Asset(data)
 	if err != nil {
 		panic(err)
 	}
@@ -32,44 +32,28 @@ func readFile(fname string) string {
 	return string(content)
 }
 
-func TestEnglishCarolyn(t *testing.T) {
-	tokenizer := loadEnglishTokenizer()
+func getFileLocation(prefix, original, expected string) []string {
+	orig_text := strings.Join([]string{prefix, original}, "")
+	expected_text := strings.Join([]string{prefix, expected}, "")
+	return []string{orig_text, expected_text}
+}
+
+func TestEnglish(t *testing.T) {
+	tokenizer := loadTokenizer("data/english.json")
 	tokenizer.AbbrevTypes.Add("etc")
 	tokenizer.AbbrevTypes.Add("al")
 
+	prefix := "test_files/english/"
+
 	test_files := [][]string{
-		[]string{
-			"test_files/carolyn.txt",
-			"test_files/carolyn_s.txt",
-		},
-		[]string{
-			"test_files/ecig.txt",
-			"test_files/ecig_s.txt",
-		},
-		[]string{
-			"test_files/foul_ball.txt",
-			"test_files/foul_ball_s.txt",
-		},
-		[]string{
-			"test_files/fbi.txt",
-			"test_files/fbi_s.txt",
-		},
-		[]string{
-			"test_files/dre.txt",
-			"test_files/dre_s.txt",
-		},
-		[]string{
-			"test_files/dr.txt",
-			"test_files/dr_s.txt",
-		},
-		[]string{
-			"test_files/quotes.txt",
-			"test_files/quotes_s.txt",
-		},
-		[]string{
-			"test_files/kiss.txt",
-			"test_files/kiss_s.txt",
-		},
+		getFileLocation(prefix, "carolyn.txt", "carolyn_s.txt"),
+		getFileLocation(prefix, "ecig.txt", "ecig_s.txt"),
+		getFileLocation(prefix, "foul_ball.txt", "foul_ball_s.txt"),
+		getFileLocation(prefix, "fbi.txt", "fbi_s.txt"),
+		getFileLocation(prefix, "dre.txt", "dre_s.txt"),
+		getFileLocation(prefix, "dr.txt", "dr_s.txt"),
+		getFileLocation(prefix, "quotes.txt", "quotes_s.txt"),
+		getFileLocation(prefix, "kiss.txt", "kiss_s.txt"),
 	}
 
 	for _, f := range test_files {
