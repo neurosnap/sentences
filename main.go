@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+
 	b, err := Asset("data/english.json")
 	//b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
@@ -22,9 +23,6 @@ func main() {
 	}
 
 	tokenizer := punkt.NewSentenceTokenizer(training)
-
-	tokenizer.AbbrevTypes.Add("al")
-	tokenizer.AbbrevTypes.Add("etc")
 
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := ioutil.ReadAll(reader)

@@ -1,8 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
+	"log"
+	"os"
 	"strings"
 	"testing"
 
@@ -39,9 +40,11 @@ func getFileLocation(prefix, original, expected string) []string {
 }
 
 func TestEnglish(t *testing.T) {
+	logger := log.New(os.Stdout, "(TestEnglish) ", log.Lshortfile)
+
+	logger.Println("Starting test suite ...")
+
 	tokenizer := loadTokenizer("data/english.json")
-	tokenizer.AbbrevTypes.Add("etc")
-	tokenizer.AbbrevTypes.Add("al")
 
 	prefix := "test_files/english/"
 
@@ -61,7 +64,7 @@ func TestEnglish(t *testing.T) {
 		expected_text := readFile(f[1])
 		expected := strings.Split(expected_text, "\n")
 
-		fmt.Println("Testing ", f[0])
+		logger.Println(f[0])
 		sentences := tokenizer.Tokenize(actual_text)
 		for index, s := range sentences {
 			if s != expected[index] {
@@ -69,4 +72,5 @@ func TestEnglish(t *testing.T) {
 			}
 		}
 	}
+
 }
