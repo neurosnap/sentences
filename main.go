@@ -9,6 +9,8 @@ import (
 	"github.com/neurosnap/sentences/punkt"
 )
 
+var VERSION string
+
 func main() {
 
 	b, err := Asset("data/english.json")
