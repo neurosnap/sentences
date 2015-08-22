@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"strings"
 	"testing"
@@ -31,20 +32,45 @@ func readFile(fname string) string {
 	return string(content)
 }
 
-func TestEnglish(t *testing.T) {
+func TestEnglishCarolyn(t *testing.T) {
 	tokenizer := loadEnglishTokenizer()
 	tokenizer.AbbrevTypes.Add("etc")
 	tokenizer.AbbrevTypes.Add("al")
 
-	actual_text := readFile("test_files/carolyn.txt")
-	expected_text := readFile("test_files/carolyn_s.txt")
-	expected := strings.Split(expected_text, "\n")
+	test_files := [][]string{
+		[]string{
+			"test_files/carolyn.txt",
+			"test_files/carolyn_s.txt",
+		},
+		[]string{
+			"test_files/ecig.txt",
+			"test_files/ecig_s.txt",
+		},
+		[]string{
+			"test_files/foul_ball.txt",
+			"test_files/foul_ball_s.txt",
+		},
+		[]string{
+			"test_files/fbi.txt",
+			"test_files/fbi_s.txt",
+		},
+		[]string{
+			"test_files/dre.txt",
+			"test_files/dre_s.txt",
+		},
+	}
 
-	sentences := tokenizer.Tokenize(actual_text)
-	for index, s := range sentences {
+	for _, f := range test_files {
+		actual_text := readFile(f[0])
+		expected_text := readFile(f[1])
+		expected := strings.Split(expected_text, "\n")
 
-		if s != expected[index] {
-			t.Errorf("Shit is wack")
+		fmt.Println("Testing ", f[0])
+		sentences := tokenizer.Tokenize(actual_text)
+		for index, s := range sentences {
+			if s != expected[index] {
+				t.Errorf("%s: Actual sentence does not match expected sentence", f[0])
+			}
 		}
 	}
 }
