@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 	"strings"
 	"testing"
@@ -34,17 +33,18 @@ func readFile(fname string) string {
 
 func TestEnglish(t *testing.T) {
 	tokenizer := loadEnglishTokenizer()
+	tokenizer.AbbrevTypes.Add("etc")
+	tokenizer.AbbrevTypes.Add("al")
 
 	actual_text := readFile("test_files/carolyn.txt")
 	expected_text := readFile("test_files/carolyn_s.txt")
 	expected := strings.Split(expected_text, "\n")
 
-	fmt.Println(expected_text)
 	sentences := tokenizer.Tokenize(actual_text)
 	for index, s := range sentences {
+
 		if s != expected[index] {
 			t.Errorf("Shit is wack")
 		}
-		fmt.Println(s)
 	}
 }
