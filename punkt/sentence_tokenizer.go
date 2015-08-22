@@ -126,9 +126,15 @@ func (s *SentenceTokenizer) annotateTokens(tokens []*Token) []*Token {
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.annotateFirstPass(tokens)
 
+	/*for _, tok := range tokens {
+		logger.Println(tok.Tok, tok.SentBreak)
+	}*/
 	// correct second pass
 	tokens = s.annotateSecondPass(tokens)
 
+	/*for _, tok := range tokens {
+		logger.Println(tok.Tok, tok.SentBreak)
+	}*/
 	return tokens
 }
 

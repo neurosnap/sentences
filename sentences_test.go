@@ -2,8 +2,6 @@ package main
 
 import (
 	"io/ioutil"
-	"log"
-	"os"
 	"strings"
 	"testing"
 
@@ -40,9 +38,7 @@ func getFileLocation(prefix, original, expected string) []string {
 }
 
 func TestEnglish(t *testing.T) {
-	logger := log.New(os.Stdout, "(TestEnglish) ", log.Lshortfile)
-
-	logger.Println("Starting test suite ...")
+	t.Log("Starting test suite ...")
 
 	tokenizer := loadTokenizer("data/english.json")
 
@@ -64,11 +60,14 @@ func TestEnglish(t *testing.T) {
 		expected_text := readFile(f[1])
 		expected := strings.Split(expected_text, "\n")
 
-		logger.Println(f[0])
+		t.Log(f[0])
 		sentences := tokenizer.Tokenize(actual_text)
 		for index, s := range sentences {
 			if s != expected[index] {
-				t.Errorf("%s line %d: Actual sentence does not match expected sentence", f[0], index)
+				t.Log("Actual: ", s)
+				t.Log("--------")
+				t.Log("Expected: ", expected[index])
+				t.Fatalf("%s line %d: Actual sentence does not match expected sentence", f[0], index)
 			}
 		}
 	}

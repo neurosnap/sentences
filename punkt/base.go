@@ -1,9 +1,13 @@
 package punkt
 
 import (
+	"log"
+	"os"
 	"regexp"
 	"strings"
 )
+
+var logger = log.New(os.Stdout, "(Punkt) ", log.Lshortfile)
 
 // Includes common components of Trainer and SentenceTokenizer
 type Base struct {
