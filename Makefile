@@ -16,4 +16,4 @@ bump:
 	echo $(VER) > $(VERSION_FILE)
 
 english:
-	go-bindata -o english.go data/english.json
+	go-bindata -o data/english.go data/english.json

@@ -5,11 +5,12 @@ import (
 	"strings"
 	"testing"
 
+	td "github.com/neurosnap/sentences/data"
 	"github.com/neurosnap/sentences/punkt"
 )
 
 func loadTokenizer(data string) *punkt.SentenceTokenizer {
-	b, err := Asset(data)
+	b, err := td.Asset(data)
 	if err != nil {
 		panic(err)
 	}

@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
+	"github.com/neurosnap/sentences/data"
 	"github.com/neurosnap/sentences/punkt"
 )
 
@@ -13,7 +14,7 @@ var VERSION string
 
 func main() {
 
-	b, err := Asset("data/english.json")
+	b, err := data.Asset("data/english.json")
 	//b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
 		panic(err)
