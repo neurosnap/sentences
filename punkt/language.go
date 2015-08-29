@@ -22,16 +22,16 @@ type periodContextStruct struct {
 }
 
 type Language struct {
-	sentEndChars        []byte // Characters that are candidates for sentence boundaries
-	internalPunctuation string // Sentence internal punctuation, which indicates an abbreviation if preceded by a period-final token
-	reWordStart         string // Excludes some characters from starting word tokens
-	reNonWordChars      string // Characters that cannot appear within words
+	sentEndChars        []string // Characters that are candidates for sentence boundaries
+	internalPunctuation string   // Sentence internal punctuation, which indicates an abbreviation if preceded by a period-final token
+	reWordStart         string   // Excludes some characters from starting word tokens
+	reNonWordChars      string   // Characters that cannot appear within words
 	periodContextFmt    string
 }
 
 func NewLanguage() *Language {
 	return &Language{
-		sentEndChars:        []byte{'.', '?', '!'},
+		sentEndChars:        []string{".", "?", "!", `."`, `.'`, `?"`, `.)`},
 		internalPunctuation: ",:;",
 		reWordStart:         "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
 		reNonWordChars:      `(?:[?!)’”"';}\]\*:@\'\({\[])`,
@@ -58,5 +58,5 @@ func (p *Language) PeriodContext(s string) []string {
 }
 
 func (p *Language) ReSentEndChars() string {
-	return regexp.QuoteMeta(string(p.sentEndChars))
+	return regexp.QuoteMeta(strings.Join(p.sentEndChars, ""))
 }

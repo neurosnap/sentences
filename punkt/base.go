@@ -92,7 +92,7 @@ func (p *Base) annotateFirstPass(tokens []*Token) []*Token {
 func (p *Base) firstPassAnnotation(token *Token) {
 	chars := strings.Split(token.Tok, "")
 	tokInEndChars := strings.Index(
-		string(p.sentEndChars),
+		strings.Join(p.sentEndChars, ""),
 		token.Tok,
 	)
 
