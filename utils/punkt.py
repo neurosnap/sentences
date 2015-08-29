@@ -2,7 +2,9 @@ import sys
 import nltk
 
 load = nltk.data.load("/home/erock/nltk_data/p2english.pickle")
-sentences = load.tokenize(sys.stdin.read().strip())
+load._params.abbrev_types.add('etc')
+load._params.abbrev_types.add('al')
+sentences = load.tokenize(sys.stdin.read())
 for s in sentences:
     print(s)
-    print("----")
+    print('{{sentence_break}}')

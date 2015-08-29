@@ -35,7 +35,7 @@ func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 }
 
 func (s *SentenceTokenizer) Tokenize(text string) []string {
-	text = strings.Join(strings.Fields(text), " ")
+	//text = strings.Join(strings.Fields(text), " ")
 
 	re := s.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
@@ -43,15 +43,22 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
 	matchEnd := 0
+	/*
+	 * match = [15, 23, 20, 23, 21, 23]
+	 * entire match = 0:1
+	 * second token = 2:3
+	 * newlines + second token = 4:5
+	 */
 	for _, match := range matches {
 		context := text[match[0]:match[1]]
 		nextTok := ""
-		if match[4] != -1 && match[5] != -1 {
-			nextTok = text[match[4]:match[5]]
+		if match[2] != -1 && match[3] != -1 {
+			nextTok = text[match[2]:match[3]]
 		}
 		// attempting to replicate lookahead regexp
 		// super hacky
-		if strings.Count(context, ".") > 1 {
+		/*if strings.Count(context, ".") > 1 {
+			logger.Println("HIT")
 			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
 			if len(nmatch) > 0 {
 				firstWord := match[2] + nmatch[0]
@@ -69,25 +76,26 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 
 					context = text[match[0]:match[1]]
 
-					if match[4] != -1 && match[5] != -1 {
-						nextTok = text[match[4]:match[5]]
+					if match[2] != -1 && match[3] != -1 {
+						nextTok = text[match[2]:match[3]]
 					}
 				}
 			}
-		}
+		}*/
 
 		matchStart := match[2]
 		matchEnd = match[1]
-		if match[4] >= 0 {
-			matchEnd = match[4]
+		if match[2] >= 0 {
+			matchEnd = match[2]
 		}
 
 		if s.hasSentBreak(context) {
 			noNewline := text[lastBreak:matchEnd]
-			s := strings.Trim(noNewline, " ")
+			s := strings.TrimSpace(noNewline)
 			if s == "" {
 				continue
 			}
+
 			sentences = append(sentences, s)
 			if nextTok != "" {
 				lastBreak = matchStart
@@ -97,7 +105,7 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		}
 	}
 
-	sentences = append(sentences, text[matchEnd:])
+	sentences = append(sentences, text[lastBreak:])
 	return sentences
 }
 

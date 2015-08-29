@@ -32,6 +32,6 @@ func main() {
 
 	sentences := tokenizer.Tokenize(string(text))
 	for _, s := range sentences {
-		fmt.Println(s)
+		fmt.Printf("%q\n", s)
 	}
 }

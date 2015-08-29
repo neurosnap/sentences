@@ -14,6 +14,7 @@ var endPuncts = []string{`."`, `.'`, `.”`, ",", "?"}
 
 func WordTokenizer(text string) []*PairToken {
 	words := strings.Fields(text)
+	//words := strings.Split(text, " ")
 	tokens := make([]*PairToken, 0, len(words))
 
 	multi := regexp.MustCompile(ReMultiCharPunct)
@@ -24,17 +25,15 @@ func WordTokenizer(text string) []*PairToken {
 			continue
 		}
 
-		chars := strings.Split(word, "")
+		chars := []rune(word)
 
-		//first := strings.Join(chars[:1], "")
-		//second := strings.Join(chars[1:], "")
 		first := word
 		second := ""
 
 		for _, punct := range endPuncts {
 			if strings.HasSuffix(word, punct) {
-				first = word[:len(chars)-1]
-				second = word[len(chars)-1:]
+				first = string(chars[:len(chars)-1])
+				second = string(chars[len(chars)-1:])
 				break
 			}
 		}

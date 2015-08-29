@@ -3,6 +3,7 @@ package punkt
 import (
 	"regexp"
 	"strings"
+	"unicode"
 )
 
 type WToken interface {
@@ -84,7 +85,10 @@ func (p *Token) FirstUpper() bool {
 		return false
 	}
 
-	// if the first character in word is not a letter or number,
+	runes := []rune(p.Tok)
+	return unicode.IsUpper(runes[0])
+
+	/*// if the first character in word is not a letter or number,
 	// then assume it is not upper cased
 	alphanum := regexp.MustCompile(`^\s*[\W]`)
 	if alphanum.MatchString(p.Tok) {
@@ -92,7 +96,7 @@ func (p *Token) FirstUpper() bool {
 	}
 
 	firstTok := string(p.Tok[0])
-	return strings.ToUpper(firstTok) == firstTok
+	return strings.ToUpper(firstTok) == firstTok*/
 }
 
 // True if the token's first character is lowercase
@@ -100,11 +104,13 @@ func (p *Token) FirstLower() bool {
 	if p.Tok == "" {
 		return false
 	}
-	firstTok := string(p.Tok[0])
-	return strings.ToLower(firstTok) == firstTok
+
+	runes := []rune(p.Tok)
+	return unicode.IsLower(runes[0])
+	/*	firstTok := string(p.Tok[0])
+		return strings.ToLower(firstTok) == firstTok*/
 }
 
-// True if the token text is that of an ellipsis.
 func (p *Token) FirstCase() string {
 	if p.FirstLower() {
 		return "lower"

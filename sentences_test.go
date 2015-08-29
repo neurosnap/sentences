@@ -59,15 +59,15 @@ func TestEnglish(t *testing.T) {
 	for _, f := range test_files {
 		actual_text := readFile(f[0])
 		expected_text := readFile(f[1])
-		expected := strings.Split(expected_text, "\n")
+		expected := strings.Split(expected_text, "{{sentence_break}}")
 
 		t.Log(f[0])
 		sentences := tokenizer.Tokenize(actual_text)
 		for index, s := range sentences {
-			if s != expected[index] {
+			if strings.TrimSpace(s) != strings.TrimSpace(expected[index]) {
 				t.Log("Actual: ", s)
 				t.Log("--------")
-				t.Log("Expected: ", expected[index])
+				t.Log("Expected: ", strings.TrimSpace(expected[index]))
 				t.Fatalf("%s line %d: Actual sentence does not match expected sentence", f[0], index)
 			}
 		}
