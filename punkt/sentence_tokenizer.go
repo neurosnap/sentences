@@ -56,8 +56,9 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 		}
 
 		matchEnd = match[1]
-		if match[2] >= 0 && (!s.hasSentBreak(nextTok) || s.hasSentBreak(text[match[0]:match[2]])) {
-			matchEnd = match[2]
+		// we want the extra stuff for the actual sentence
+		if match[4] >= 0 && (!s.hasSentBreak(nextTok) || s.hasSentBreak(text[match[0]:match[4]])) {
+			matchEnd = match[4]
 		}
 
 		if s.hasSentBreak(context) {
@@ -70,14 +71,6 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			sentences = append(sentences, s)
 			lastBreak = matchEnd
 		}
-	}
-
-	// TODO: FIX
-	// SUPER HACKY
-	leftover := text[lastBreak:]
-	if strings.TrimSpace(leftover) == `"` {
-		sentences[len(sentences)-1] = sentences[len(sentences)-1] + `"`
-		return sentences
 	}
 
 	sentences = append(sentences, text[lastBreak:])
