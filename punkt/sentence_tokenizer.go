@@ -79,20 +79,18 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			match[2] + nmatch[5],
 		}
 
-		logger.Println(text[firstWord:startSecondWord])
 		/*reset_match := re.FindStringSubmatchIndex(text[match[2]:startSecondWord])
 		logger.Println(text[match[2]:startSecondWord])
 		logger.Println(reset_match)
 		if len(reset_match) > 0 {
 			new_matches = append(new_matches, reset_match)
 		}*/
-		match[1] = match[1] - 1
-		match[3] = match[3] - 1
-		logger.Println(text[match[0]:match[1]])
+		//match[1] = match[1] - 1
+		//match[3] = match[3] - 1
 		new_matches = append(new_matches, match, amatch)
 	}
 
-	sentences := make([]string, 0, len(new_matches))
+	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
 	matchEnd := 0
 	/*
@@ -101,7 +99,7 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	 * second token = 2:3
 	 * newlines + second token = 4:5
 	 */
-	for _, match := range new_matches {
+	for _, match := range matches {
 		context := text[match[0]:match[1]]
 
 		//logger.Println(context)
@@ -110,9 +108,11 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			nextTok = text[match[2]:match[3]]
 		}
 
-		matchStart := match[2]
+		//matchStart := match[2]
 		matchEnd = match[1]
-		if match[2] >= 0 {
+		logger.Println(context)
+		logger.Println(nextTok, s.hasSentBreak(nextTok))
+		if match[2] >= 0 && (!s.hasSentBreak(nextTok) || s.hasSentBreak(text[match[0]:match[2]])) {
 			matchEnd = match[2]
 		}
 
@@ -124,11 +124,11 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			}
 
 			sentences = append(sentences, s)
-			if nextTok != "" {
-				lastBreak = matchStart
-			} else {
-				lastBreak = matchEnd
-			}
+			//if nextTok != "" {
+			//	lastBreak = matchStart
+			//} else {
+			lastBreak = matchEnd
+			//}
 		}
 	}
 
@@ -147,6 +147,9 @@ Returns True if the given text includes a sentence break.
 */
 func (s *SentenceTokenizer) hasSentBreak(text string) bool {
 	tokens := s.TokenizeWords(text)
+	if len(tokens) == 0 {
+		return false
+	}
 
 	for _, t := range s.annotateTokens(tokens) {
 		if t.SentBreak {
