@@ -42,6 +42,7 @@ func WordTokenizer(text string) []*PairToken {
 				break
 			}
 		}
+
 		multipunct := multi.FindStringIndex(word)
 		if multipunct != nil {
 			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) || multipunct[0]+multipunct[1] == len(word)) {

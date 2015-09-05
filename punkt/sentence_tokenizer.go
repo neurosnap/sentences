@@ -40,7 +40,44 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	re := s.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
 
-	sentences := make([]string, 0, len(matches))
+	// atempting lookahead assertion
+	// SUPER HACKY
+	new_matches := make([][]int, 0, len(matches))
+	for _, match := range matches {
+		new_matches = append(new_matches, match)
+
+		context := text[match[0]:match[1]]
+
+		nextTok := ""
+		if match[4] != -1 && match[5] != -1 {
+			nextTok = text[match[4]:match[5]]
+		}
+
+		if strings.Count(context, ".") > 1 {
+			nmatch := re.FindStringSubmatchIndex(text[match[2]:])
+			if len(nmatch) == 0 {
+				continue
+			}
+
+			firstWord := match[2] + nmatch[0]
+			startSecondWord := match[2] + nmatch[2]
+
+			if nextTok == text[firstWord:startSecondWord] {
+				amatch := []int{
+					firstWord,
+					match[2] + nmatch[1],
+					startSecondWord,
+					match[2] + nmatch[3],
+					match[2] + nmatch[4],
+					match[2] + nmatch[5],
+				}
+
+				new_matches = append(new_matches, amatch)
+			}
+		}
+	}
+
+	sentences := make([]string, 0, len(new_matches))
 	lastBreak := 0
 	matchEnd := 0
 	/*
@@ -49,8 +86,10 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	 * second token = 2:3
 	 * newlines + second token = 4:5
 	 */
-	for _, match := range matches {
+	for _, match := range new_matches {
 		context := text[match[0]:match[1]]
+
+		logger.Println(context)
 		nextTok := ""
 		if match[2] != -1 && match[3] != -1 {
 			nextTok = text[match[2]:match[3]]
