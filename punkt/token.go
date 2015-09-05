@@ -87,16 +87,6 @@ func (p *Token) FirstUpper() bool {
 
 	runes := []rune(p.Tok)
 	return unicode.IsUpper(runes[0])
-
-	/*// if the first character in word is not a letter or number,
-	// then assume it is not upper cased
-	alphanum := regexp.MustCompile(`^\s*[\W]`)
-	if alphanum.MatchString(p.Tok) {
-		return false
-	}
-
-	firstTok := string(p.Tok[0])
-	return strings.ToUpper(firstTok) == firstTok*/
 }
 
 // True if the token's first character is lowercase
@@ -107,8 +97,6 @@ func (p *Token) FirstLower() bool {
 
 	runes := []rune(p.Tok)
 	return unicode.IsLower(runes[0])
-	/*	firstTok := string(p.Tok[0])
-		return strings.ToLower(firstTok) == firstTok*/
 }
 
 func (p *Token) FirstCase() string {

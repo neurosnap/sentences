@@ -1,5 +1,7 @@
 package punkt
 
+// golang implementation of a set, probably not the best way to do this
+// but oh well
 type SetString struct {
 	items map[string]int
 }
@@ -35,6 +37,7 @@ func (ss *SetString) Array() []string {
 }
 
 // Stores data used to perform sentence boundary detection with punkt
+// This is where all the training data gets stored for future use
 type Storage struct {
 	AbbrevTypes  *SetString
 	Collocations *SetString
