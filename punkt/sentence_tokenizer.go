@@ -35,60 +35,8 @@ func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
 }
 
 func (s *SentenceTokenizer) Tokenize(text string) []string {
-	//text = strings.Join(strings.Fields(text), " ")
-
 	re := s.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
-
-	// atempting lookahead assertion
-	// SUPER HACKY
-	new_matches := make([][]int, 0, len(matches))
-	for _, match := range matches {
-		//context := text[match[0]:match[1]]
-
-		/*nextTok := ""
-		if match[4] != -1 && match[5] != -1 {
-			nextTok = text[match[4]:match[5]]
-		}*/
-
-		/*if strings.Count(context, ".") <= 1 {
-			new_matches = append(new_matches, match)
-			continue
-		}*/
-
-		nmatch := re.FindStringSubmatchIndex(text[match[2]:])
-		if len(nmatch) == 0 {
-			new_matches = append(new_matches, match)
-			continue
-		}
-
-		firstWord := match[2] + nmatch[0]
-		startSecondWord := match[2] + nmatch[2]
-
-		/*if nextTok != text[firstWord:startSecondWord] {
-			new_matches = append(new_matches, match)
-			continue
-		}*/
-
-		amatch := []int{
-			firstWord,
-			match[2] + nmatch[1],
-			startSecondWord,
-			match[2] + nmatch[3],
-			match[2] + nmatch[4],
-			match[2] + nmatch[5],
-		}
-
-		/*reset_match := re.FindStringSubmatchIndex(text[match[2]:startSecondWord])
-		logger.Println(text[match[2]:startSecondWord])
-		logger.Println(reset_match)
-		if len(reset_match) > 0 {
-			new_matches = append(new_matches, reset_match)
-		}*/
-		//match[1] = match[1] - 1
-		//match[3] = match[3] - 1
-		new_matches = append(new_matches, match, amatch)
-	}
 
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
@@ -102,16 +50,12 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 	for _, match := range matches {
 		context := text[match[0]:match[1]]
 
-		//logger.Println(context)
 		nextTok := ""
 		if match[2] != -1 && match[3] != -1 {
 			nextTok = text[match[2]:match[3]]
 		}
 
-		//matchStart := match[2]
 		matchEnd = match[1]
-		logger.Println(context)
-		logger.Println(nextTok, s.hasSentBreak(nextTok))
 		if match[2] >= 0 && (!s.hasSentBreak(nextTok) || s.hasSentBreak(text[match[0]:match[2]])) {
 			matchEnd = match[2]
 		}
@@ -124,14 +68,12 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 			}
 
 			sentences = append(sentences, s)
-			//if nextTok != "" {
-			//	lastBreak = matchStart
-			//} else {
 			lastBreak = matchEnd
-			//}
 		}
 	}
 
+	// TODO: FIX
+	// SUPER HACKY
 	leftover := text[lastBreak:]
 	if strings.TrimSpace(leftover) == `"` {
 		sentences[len(sentences)-1] = sentences[len(sentences)-1] + `"`
