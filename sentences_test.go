@@ -54,6 +54,7 @@ func TestEnglish(t *testing.T) {
 		getFileLocation(prefix, "dr.txt", "dr_s.txt"),
 		getFileLocation(prefix, "quotes.txt", "quotes_s.txt"),
 		getFileLocation(prefix, "kiss.txt", "kiss_s.txt"),
+		getFileLocation(prefix, "kentucky.txt", "kentucky_s.txt"),
 	}
 
 	for _, f := range test_files {
