@@ -112,7 +112,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 		Make a preliminary pass through the document, marking likely
 		sentence breaks, abbreviations, and ellipsis tokens.
 	*/
-	fpTokens := p.annotateFirstPass(tokens)
+	fpTokens := p.AnnotateFirstPass(tokens)
 
 	// Check what contexts each word type can appear in, given the case of its first letter.
 	p.getOrthographData(fpTokens)

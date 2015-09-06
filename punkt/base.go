@@ -82,7 +82,7 @@ Return these annotations as a tuple of three sets:
 	- abbrev_toks: The indices of all abbreviations.
 	- ellipsis_toks: The indices of all ellipsis marks.
 */
-func (p *Base) annotateFirstPass(tokens []*Token) []*Token {
+func (p *Base) AnnotateFirstPass(tokens []*Token) []*Token {
 	for _, augTok := range tokens {
 		p.firstPassAnnotation(augTok)
 	}

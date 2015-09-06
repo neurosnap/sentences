@@ -10,7 +10,7 @@ type WToken interface {
 	GetType(string) string
 	TypeNoPeriod() string
 	TypeNoSentPeriod() string
-	FirstCase() bool
+	FirstCase() string
 	FirstLower() bool
 	FirstUpper() bool
 	IsAlpha() bool
@@ -50,6 +50,7 @@ func NewToken(token string) *Token {
 	}
 	tok.Typ = tok.GetType(token)
 	tok.PeriodFinal = strings.HasSuffix(token, ".")
+	tok.WToken = &tok
 
 	return &tok
 }
