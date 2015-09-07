@@ -75,7 +75,7 @@ func (p *Trainer) Train(text string, finalize bool) {
 	}
 }
 
-func (p *Trainer) trainTokens(tokens []*Token) {
+func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 	p.finalized = false
 	/*
 		Find the frequency of each case-normalized type.  (Don't
@@ -143,7 +143,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 	}
 }
 
-func (p *Trainer) uniqueTypes(tokens []*Token) []string {
+func (p *Trainer) uniqueTypes(tokens []*DefaultToken) []string {
 	unique := NewSetString(nil)
 
 	for _, tok := range tokens {
@@ -274,7 +274,7 @@ with different case patterns (i) overall, (ii) at
 sentence-initial positions, and (iii) at sentence-internal
 positions.
 */
-func (p *Trainer) getOrthographData(tokens []*Token) {
+func (p *Trainer) getOrthographData(tokens []*DefaultToken) {
 	context := "internal"
 
 	/*
@@ -328,7 +328,7 @@ func (p *Trainer) getOrthographData(tokens []*Token) {
 Returns the number of sentence breaks marked in a given set of
 augmented tokens.
 */
-func (p *Trainer) getSentBreakCount(tokens []*Token) float64 {
+func (p *Trainer) getSentBreakCount(tokens []*DefaultToken) float64 {
 	sum := 0.0
 
 	for _, tok := range tokens {
@@ -345,7 +345,7 @@ This function combines the work done by the original code's
 functions `count_orthography_context`, `get_orthography_count`,
 and `get_rare_abbreviations`.
 */
-func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
+func (p *Trainer) isRareAbbrevType(curTok, nextTok *DefaultToken) bool {
 	/*
 		A word type is counted as a rare abbreviation if:
 			- it's not already marked as an abbreviation
@@ -407,7 +407,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 Returns True given a token and the token that preceds it if it
 seems clear that the token is beginning a sentence.
 */
-func (p *Trainer) isPotentialSentStarter(curTok, prevTok *Token) bool {
+func (p *Trainer) isPotentialSentStarter(curTok, prevTok *DefaultToken) bool {
 	return prevTok.SentBreak && !(prevTok.IsNumber() || prevTok.IsInitial()) && curTok.IsAlpha()
 }
 
@@ -415,7 +415,7 @@ func (p *Trainer) isPotentialSentStarter(curTok, prevTok *Token) bool {
 Returns True if the pair of tokens may form a collocation given
 log-likelihood statistics.
 */
-func (p *Trainer) isPotentialCollocation(tokOne, tokTwo *Token) bool {
+func (p *Trainer) isPotentialCollocation(tokOne, tokTwo *DefaultToken) bool {
 	return ((p.IncludeAllCollocs || p.IncludeAbbrevCollocs && tokOne.Abbr) ||
 		(tokOne.SentBreak && (tokOne.IsNumber() || tokOne.IsInitial())) &&
 			tokOne.IsNonPunct() && tokTwo.IsNonPunct())

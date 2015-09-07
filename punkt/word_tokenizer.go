@@ -10,7 +10,6 @@ type PairToken struct {
 }
 
 var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)|(\.\S)`
-
 var endPuncts = []string{ /*`."`, `.'`, `.”`,*/ ":", ",", "?", `?"`, ".)"}
 
 func WordTokenizer(text string) []*PairToken {

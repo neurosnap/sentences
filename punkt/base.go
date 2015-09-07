@@ -23,7 +23,7 @@ func NewBase() *Base {
 	}
 }
 
-func (p *Base) AddToken(tokens []*Token, pairTok *PairToken, parastart bool, linestart bool) []*Token {
+func (p *Base) AddToken(tokens []*DefaultToken, pairTok *PairToken, parastart bool, linestart bool) []*DefaultToken {
 	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, ReMultiCharPunct}, "|"))
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
 
@@ -45,9 +45,9 @@ func (p *Base) AddToken(tokens []*Token, pairTok *PairToken, parastart bool, lin
 	return tokens
 }
 
-func (p *Base) TokenizeWords(text string) []*Token {
+func (p *Base) TokenizeWords(text string) []*DefaultToken {
 	lines := strings.Split(text, "\n")
-	tokens := make([]*Token, 0, len(lines))
+	tokens := make([]*DefaultToken, 0, len(lines))
 	parastart := false
 
 	for _, line := range lines {
@@ -82,14 +82,14 @@ Return these annotations as a tuple of three sets:
 	- abbrev_toks: The indices of all abbreviations.
 	- ellipsis_toks: The indices of all ellipsis marks.
 */
-func (p *Base) AnnotateFirstPass(tokens []*Token) []*Token {
+func (p *Base) AnnotateFirstPass(tokens []*DefaultToken) []*DefaultToken {
 	for _, augTok := range tokens {
 		p.firstPassAnnotation(augTok)
 	}
 	return tokens
 }
 
-func (p *Base) firstPassAnnotation(token *Token) {
+func (p *Base) firstPassAnnotation(token *DefaultToken) {
 	chars := strings.Split(token.Tok, "")
 	tokInEndChars := strings.Index(
 		strings.Join(p.sentEndChars, ""),
@@ -113,18 +113,18 @@ func (p *Base) firstPassAnnotation(token *Token) {
 	}
 }
 
-func (p *Base) pairIter(tokens []*Token) [][2]*Token {
-	pairTokens := make([][2]*Token, 0, len(tokens))
+func (p *Base) pairIter(tokens []*DefaultToken) [][2]*DefaultToken {
+	pairTokens := make([][2]*DefaultToken, 0, len(tokens))
 
 	prevToken := tokens[0]
 	for _, tok := range tokens {
 		if prevToken == tok {
 			continue
 		}
-		pairTokens = append(pairTokens, [2]*Token{prevToken, tok})
+		pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, tok})
 		prevToken = tok
 	}
-	pairTokens = append(pairTokens, [2]*Token{prevToken, nil})
+	pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, nil})
 
 	return pairTokens
 }

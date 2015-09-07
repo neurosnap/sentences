@@ -7,10 +7,10 @@ import (
 type SentenceTokenizer interface {
 	Tokenize(string) []string
 	HasSentBreak(string) bool
-	AnnotateTokens([]*Token) []*Token
-	SecondPassAnnotation(*Token, *Token)
-	AnnotateSecondPass([]*Token) []*Token
-	OrthoHeuristic(*Token) int
+	AnnotateTokens([]*DefaultToken) []*DefaultToken
+	SecondPassAnnotation(*DefaultToken, *DefaultToken)
+	AnnotateSecondPass([]*DefaultToken) []*DefaultToken
+	OrthoHeuristic(*DefaultToken) int
 }
 
 // A sentence tokenizer which uses an unsupervised algorithm to build a model
@@ -102,7 +102,7 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token) []*Token {
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken) []*DefaultToken {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.AnnotateFirstPass(tokens)
@@ -124,7 +124,7 @@ Performs a token-based classification (section 4) over the given
 tokens, making use of the orthographic heuristic (4.1.1), collocation
 heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
 */
-func (s *DefaultSentenceTokenizer) AnnotateSecondPass(tokens []*Token) []*Token {
+func (s *DefaultSentenceTokenizer) AnnotateSecondPass(tokens []*DefaultToken) []*DefaultToken {
 	for _, tokPair := range s.pairIter(tokens) {
 		s.SecondPassAnnotation(tokPair[0], tokPair[1])
 
@@ -132,7 +132,7 @@ func (s *DefaultSentenceTokenizer) AnnotateSecondPass(tokens []*Token) []*Token 
 	return tokens
 }
 
-func (s *DefaultSentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *Token) {
+func (s *DefaultSentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *DefaultToken) {
 	if tokTwo == nil {
 		return
 	}
@@ -227,7 +227,7 @@ func (s *DefaultSentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *Token) {
 /*
 Decide whether the given token is the first token in a sentence.
 */
-func (s *DefaultSentenceTokenizer) OrthoHeuristic(token *Token) int {
+func (s *DefaultSentenceTokenizer) OrthoHeuristic(token *DefaultToken) int {
 	if token == nil {
 		return 0
 	}
