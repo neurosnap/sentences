@@ -30,7 +30,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := ioutil.ReadAll(reader)
 
-	sentences := tokenizer.Tokenize(string(text))
+	sentences := punkt.Tokenize(string(text), tokenizer)
 	for _, s := range sentences {
 		fmt.Printf("%q\n", s)
 	}

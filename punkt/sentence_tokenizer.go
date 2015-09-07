@@ -4,14 +4,46 @@ import (
 	"strings"
 )
 
+var Punctuation = []string{";", ":", ",", ".", "!", "?"}
+
 type SentenceTokenizer interface {
 	Tokenize(string) []string
-	PeriodCtxMatches(string) [][]int
+	PeriodCtxMatches(string) []*PeriodCtx
 	HasSentBreak(string) bool
 	AnnotateTokens([]*DefaultToken) []*DefaultToken
 	SecondPassAnnotation(*DefaultToken, *DefaultToken)
 	AnnotateSecondPass([]*DefaultToken) []*DefaultToken
 	OrthoHeuristic(*DefaultToken) int
+}
+
+type PeriodCtx struct {
+	Context string
+	End     int
+}
+
+/*
+ * Primary entry point to tokenize sentences
+ */
+func Tokenize(text string, s SentenceTokenizer) []string {
+	matches := s.PeriodCtxMatches(text)
+
+	sentences := make([]string, 0, len(matches))
+	lastBreak := 0
+	for _, match := range matches {
+		if s.HasSentBreak(match.Context) {
+			sentence := text[lastBreak:match.End]
+			sentence = strings.TrimSpace(sentence)
+			if sentence == "" {
+				continue
+			}
+
+			sentences = append(sentences, sentence)
+			lastBreak = match.End
+		}
+	}
+
+	sentences = append(sentences, text[lastBreak:])
+	return sentences
 }
 
 // A sentence tokenizer which uses an unsupervised algorithm to build a model
@@ -22,8 +54,6 @@ type DefaultSentenceTokenizer struct {
 	SentenceTokenizer
 	Punctuation []string
 }
-
-var Punctuation = []string{";", ":", ",", ".", "!", "?"}
 
 func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 	st := &DefaultSentenceTokenizer{
@@ -36,16 +66,10 @@ func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 	return st
 }
 
-func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) [][]int {
-	return s.RePeriodContext().FindAllStringSubmatchIndex(text, -1)
-}
+func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
+	matches := s.RePeriodContext().FindAllStringSubmatchIndex(text, -1)
+	periodMatches := make([]*PeriodCtx, 0, len(matches))
 
-func Tokenize(text string, s SentenceTokenizer) []string {
-	matches := s.PeriodCtxMatches(text)
-
-	sentences := make([]string, 0, len(matches))
-	lastBreak := 0
-	matchEnd := 0
 	/*
 	 * match = [15, 23, 20, 23, 21, 23]
 	 * entire match = 0:1
@@ -54,10 +78,11 @@ func Tokenize(text string, s SentenceTokenizer) []string {
 	 */
 	for _, match := range matches {
 		context := text[match[0]:match[1]]
+		matchEnd := 0
 
 		nextTok := ""
-		if match[2] != -1 && match[3] != -1 {
-			nextTok = text[match[2]:match[3]]
+		if match[4] != -1 && match[5] != -1 {
+			nextTok = text[match[4]:match[5]]
 		}
 
 		matchEnd = match[1]
@@ -66,20 +91,15 @@ func Tokenize(text string, s SentenceTokenizer) []string {
 			matchEnd = match[4]
 		}
 
-		if s.HasSentBreak(context) {
-			noNewline := text[lastBreak:matchEnd]
-			s := strings.TrimSpace(noNewline)
-			if s == "" {
-				continue
-			}
-
-			sentences = append(sentences, s)
-			lastBreak = matchEnd
+		periodCtx := &PeriodCtx{
+			Context: context,
+			End:     matchEnd,
 		}
+
+		periodMatches = append(periodMatches, periodCtx)
 	}
 
-	sentences = append(sentences, text[lastBreak:])
-	return sentences
+	return periodMatches
 }
 
 /*
