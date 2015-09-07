@@ -6,6 +6,7 @@ import (
 
 type SentenceTokenizer interface {
 	Tokenize(string) []string
+	PeriodCtxMatches(string) [][]int
 	HasSentBreak(string) bool
 	AnnotateTokens([]*DefaultToken) []*DefaultToken
 	SecondPassAnnotation(*DefaultToken, *DefaultToken)
@@ -35,9 +36,12 @@ func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 	return st
 }
 
-func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
-	re := s.RePeriodContext()
-	matches := re.FindAllStringSubmatchIndex(text, -1)
+func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) [][]int {
+	return s.RePeriodContext().FindAllStringSubmatchIndex(text, -1)
+}
+
+func Tokenize(text string, s SentenceTokenizer) []string {
+	matches := s.PeriodCtxMatches(text)
 
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
@@ -58,11 +62,11 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 
 		matchEnd = match[1]
 		// we want the extra stuff for the actual sentence
-		if match[4] >= 0 && (!s.SentenceTokenizer.HasSentBreak(nextTok) || s.SentenceTokenizer.HasSentBreak(text[match[0]:match[4]])) {
+		if match[4] >= 0 && (!s.HasSentBreak(nextTok) || s.HasSentBreak(text[match[0]:match[4]])) {
 			matchEnd = match[4]
 		}
 
-		if s.SentenceTokenizer.HasSentBreak(context) {
+		if s.HasSentBreak(context) {
 			noNewline := text[lastBreak:matchEnd]
 			s := strings.TrimSpace(noNewline)
 			if s == "" {
