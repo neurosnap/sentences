@@ -9,7 +9,7 @@ import (
 	"github.com/neurosnap/sentences/punkt"
 )
 
-func loadTokenizer(data string) *punkt.SentenceTokenizer {
+func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
 	b, err := td.Asset(data)
 	if err != nil {
 		panic(err)

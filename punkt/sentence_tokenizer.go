@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-type STokenizer interface {
+type SentenceTokenizer interface {
 	Tokenize(string) []string
 	HasSentBreak(string) bool
 	AnnotateTokens([]*Token) []*Token
@@ -16,26 +16,26 @@ type STokenizer interface {
 // A sentence tokenizer which uses an unsupervised algorithm to build a model
 // for abbreviation words, collocations, and words that start sentences
 // and then uses that model to find sentence boundaries.
-type SentenceTokenizer struct {
+type DefaultSentenceTokenizer struct {
 	*Base
-	STokenizer
+	SentenceTokenizer
 	Punctuation []string
 }
 
 var Punctuation = []string{";", ":", ",", ".", "!", "?"}
 
-func NewSentenceTokenizer(trainedData *Storage) *SentenceTokenizer {
-	st := &SentenceTokenizer{
+func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
+	st := &DefaultSentenceTokenizer{
 		Base:        NewBase(),
 		Punctuation: Punctuation,
 	}
 
-	st.STokenizer = st
+	st.SentenceTokenizer = st
 	st.Storage = trainedData
 	return st
 }
 
-func (s *SentenceTokenizer) Tokenize(text string) []string {
+func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 	re := s.RePeriodContext()
 	matches := re.FindAllStringSubmatchIndex(text, -1)
 
@@ -58,11 +58,11 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 
 		matchEnd = match[1]
 		// we want the extra stuff for the actual sentence
-		if match[4] >= 0 && (!s.STokenizer.HasSentBreak(nextTok) || s.STokenizer.HasSentBreak(text[match[0]:match[4]])) {
+		if match[4] >= 0 && (!s.SentenceTokenizer.HasSentBreak(nextTok) || s.SentenceTokenizer.HasSentBreak(text[match[0]:match[4]])) {
 			matchEnd = match[4]
 		}
 
-		if s.STokenizer.HasSentBreak(context) {
+		if s.SentenceTokenizer.HasSentBreak(context) {
 			noNewline := text[lastBreak:matchEnd]
 			s := strings.TrimSpace(noNewline)
 			if s == "" {
@@ -81,14 +81,14 @@ func (s *SentenceTokenizer) Tokenize(text string) []string {
 /*
 Returns True if the given text includes a sentence break.
 */
-func (s *SentenceTokenizer) HasSentBreak(text string) bool {
+func (s *DefaultSentenceTokenizer) HasSentBreak(text string) bool {
 	tokens := s.TokenizeWords(text)
 
 	if len(tokens) == 0 {
 		return false
 	}
 
-	for _, t := range s.STokenizer.AnnotateTokens(tokens) {
+	for _, t := range s.SentenceTokenizer.AnnotateTokens(tokens) {
 		if t.SentBreak {
 			return true
 		}
@@ -102,7 +102,7 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *SentenceTokenizer) AnnotateTokens(tokens []*Token) []*Token {
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token) []*Token {
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
 	tokens = s.AnnotateFirstPass(tokens)
@@ -111,7 +111,7 @@ func (s *SentenceTokenizer) AnnotateTokens(tokens []*Token) []*Token {
 		logger.Println(tok.Tok, tok.SentBreak)
 	}*/
 
-	tokens = s.STokenizer.AnnotateSecondPass(tokens)
+	tokens = s.SentenceTokenizer.AnnotateSecondPass(tokens)
 
 	/*for _, tok := range tokens {
 		logger.Println(tok.Tok, tok.SentBreak)
@@ -124,7 +124,7 @@ Performs a token-based classification (section 4) over the given
 tokens, making use of the orthographic heuristic (4.1.1), collocation
 heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
 */
-func (s *SentenceTokenizer) AnnotateSecondPass(tokens []*Token) []*Token {
+func (s *DefaultSentenceTokenizer) AnnotateSecondPass(tokens []*Token) []*Token {
 	for _, tokPair := range s.pairIter(tokens) {
 		s.SecondPassAnnotation(tokPair[0], tokPair[1])
 
@@ -132,7 +132,7 @@ func (s *SentenceTokenizer) AnnotateSecondPass(tokens []*Token) []*Token {
 	return tokens
 }
 
-func (s *SentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *Token) {
+func (s *DefaultSentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *Token) {
 	if tokTwo == nil {
 		return
 	}
@@ -227,7 +227,7 @@ func (s *SentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *Token) {
 /*
 Decide whether the given token is the first token in a sentence.
 */
-func (s *SentenceTokenizer) OrthoHeuristic(token *Token) int {
+func (s *DefaultSentenceTokenizer) OrthoHeuristic(token *Token) int {
 	if token == nil {
 		return 0
 	}

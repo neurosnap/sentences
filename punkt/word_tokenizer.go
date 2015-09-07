@@ -38,7 +38,6 @@ func WordTokenizer(text string) []*PairToken {
 					first = string(chars[:len(chars)-1])
 					second = string(chars[len(chars)-1:])
 				}
-				break
 			}
 		}
 
