@@ -66,10 +66,10 @@ func main() {
     // English data is loaded in by default
     // Compiling language specific data into a binary file can be accomplished
     // by using `make <lang>` and then using the same method below
-    b, err := data.Asset("data/english.json");
+    b, _ := data.Asset("data/english.json");
 
     // load the training data
-    training, err := punkt.LoadTraining(data)
+    training, _ := punkt.LoadTraining(data)
 
     // create the default sentence tokenizer
     tokenizer := punkt.NewSentenceTokenizer(training)
@@ -102,7 +102,7 @@ type CustomSentenceTokenizer struct {
     *punkt.DefaultSentenceTokenizer
 }
 
-func (s *SentenceTokenizer) AnnotateTokens(tokens []*punkt.DefaultToken) {
+func (s *CustomSentenceTokenizer) AnnotateTokens(tokens []*punkt.DefaultToken) {
     tokens = s.AnnotateFirstPass(tokens)
     tokens = s.AnnotateSecondPass(tokens)
 
