@@ -6,6 +6,8 @@ import (
 
 var Punctuation = []string{";", ":", ",", ".", "!", "?"}
 
+// Interface used by the Tokenize function, can be extended to correct sentence
+// boundaries that punkt misses.
 type SentenceTokenizer interface {
 	Tokenize(string) []string
 	PeriodCtxMatches(string) []*PeriodCtx
@@ -22,8 +24,8 @@ type PeriodCtx struct {
 }
 
 /*
- * Primary entry point to tokenize sentences
- */
+Breaks text into sentences using the SentenceTokenizer interface
+*/
 func Tokenize(text string, s SentenceTokenizer) []string {
 	matches := s.PeriodCtxMatches(text)
 
@@ -55,6 +57,7 @@ type DefaultSentenceTokenizer struct {
 	Punctuation []string
 }
 
+// Creates the default sentence tokenizer
 func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 	st := &DefaultSentenceTokenizer{
 		Base:        NewBase(),
@@ -66,6 +69,8 @@ func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 	return st
 }
 
+// Discovers all periods within a body of text, captures the context
+// in which it is used, and determines if a period denotes a sentence break.
 func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
 	matches := s.RePeriodContext().FindAllStringSubmatchIndex(text, -1)
 	periodMatches := make([]*PeriodCtx, 0, len(matches))

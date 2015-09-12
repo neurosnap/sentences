@@ -6,6 +6,7 @@ import (
 	"unicode"
 )
 
+// Primary token interface that determines the context and type of a tokenized word.
 type Token interface {
 	GetType(string) string
 	TypeNoPeriod() string
@@ -100,6 +101,7 @@ func (p *DefaultToken) FirstLower() bool {
 	return unicode.IsLower(runes[0])
 }
 
+// Text based case of the first letter in the token.
 func (p *DefaultToken) FirstCase() string {
 	if p.FirstLower() {
 		return "lower"

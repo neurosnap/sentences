@@ -21,6 +21,8 @@ type periodContextStruct struct {
 	NonWord      string
 }
 
+// Language holds language specific regular expressions to help determine
+// information about the text that is being parsed.
 type Language struct {
 	sentEndChars        []string // Characters that are candidates for sentence boundaries
 	internalPunctuation string   // Sentence internal punctuation, which indicates an abbreviation if preceded by a period-final token
@@ -29,6 +31,7 @@ type Language struct {
 	periodContextFmt    string
 }
 
+// Creates a default set of properties for the Language struct
 func NewLanguage() *Language {
 	return &Language{
 		sentEndChars:        []string{".", "?", "!", `."`, `.'`, `?"`, `.)`},
@@ -39,7 +42,9 @@ func NewLanguage() *Language {
 	}
 }
 
-// Compile period context regexp
+// Compile the context of a period context using a regular expression.
+// To determine a sentence boundary, punkt must have information about the
+// context in which a period is used.
 func (p *Language) RePeriodContext() *regexp.Regexp {
 	t := template.Must(template.New("periodContext").Parse(p.periodContextFmt))
 	r := new(bytes.Buffer)
@@ -57,6 +62,7 @@ func (p *Language) PeriodContext(s string) []string {
 	return p.RePeriodContext().FindAllString(s, -1)
 }
 
+// A regular expression that find sentence ending characters.
 func (p *Language) ReSentEndChars() string {
 	return regexp.QuoteMeta(strings.Join(p.sentEndChars, ""))
 }

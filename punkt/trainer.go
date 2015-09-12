@@ -23,6 +23,8 @@ func boolToFloat64(cond bool) float64 {
 	return 0
 }
 
+// EXPERIMENTAL!  This trainer has only been tested a few times and it certainly
+// contains some errors, use are your own risk!
 // Learns parameters used in Punkt sentence boundary detection
 type Trainer struct {
 	*Base

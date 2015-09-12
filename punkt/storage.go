@@ -45,6 +45,7 @@ type Storage struct {
 	OrthoContext *SetString
 }
 
+// Creates the default storage container
 func NewStorage() *Storage {
 	return &Storage{
 		NewSetString(nil),
@@ -58,6 +59,7 @@ func (p *Storage) addOrthoContext(typ string, flag int) {
 	p.OrthoContext.items[typ] |= flag
 }
 
+// Detemins if any of the tokens are an abbreviation
 func (p *Storage) IsAbbr(tokens ...string) bool {
 	for _, token := range tokens {
 		if p.AbbrevTypes.Has(token) {

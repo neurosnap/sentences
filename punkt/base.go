@@ -13,9 +13,11 @@ var logger = log.New(os.Stdout, "(Punkt) ", log.Lshortfile)
 type Base struct {
 	// The collection of parameters that determines the behavior of the punkt tokenizer.
 	*Storage
+	// Language specific regular expressions
 	*Language
 }
 
+// Creates the default Base struct with default Storange and Language values
 func NewBase() *Base {
 	return &Base{
 		Storage:  NewStorage(),
@@ -23,6 +25,9 @@ func NewBase() *Base {
 	}
 }
 
+// Adds a token to our list of tokens and provides some context for the token.
+// Is the token a non-word multipuntuation character or does it end in a comma?
+// Does the token start a paragraph?  Does it start a new line?
 func (p *Base) AddToken(tokens []*DefaultToken, pairTok *PairToken, parastart bool, linestart bool) []*DefaultToken {
 	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, ReMultiCharPunct}, "|"))
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
@@ -45,6 +50,8 @@ func (p *Base) AddToken(tokens []*DefaultToken, pairTok *PairToken, parastart bo
 	return tokens
 }
 
+// Helps tokenize the body of text into words while also providing context for
+// the words and how they are used in the text.
 func (p *Base) TokenizeWords(text string) []*DefaultToken {
 	lines := strings.Split(text, "\n")
 	tokens := make([]*DefaultToken, 0, len(lines))
@@ -113,6 +120,7 @@ func (p *Base) firstPassAnnotation(token *DefaultToken) {
 	}
 }
 
+// Groups two adjacent tokens together.
 func (p *Base) pairIter(tokens []*DefaultToken) [][2]*DefaultToken {
 	pairTokens := make([][2]*DefaultToken, 0, len(tokens))
 

@@ -63,15 +63,17 @@ func main() {
     former U.S. Rep. Carolyn Cheeks Kilpatrick to file; Stallings challenged the
     law in court and won. Kilpatrick mounted a write-in campaign, but Stallings won.`
 
-    // load in the training data (required)
-    data, err := ioutil.ReadFile("data/english.json")
-    if err != nil {
-        panic(err)
-    }
+    // English data is loaded in by default
+    // Compiling language specific data into a binary file can be accomplished
+    // by using `make <lang>` and then using the same method below
+    b, err := data.Asset("data/english.json");
 
+    // load the training data
     training, err := punkt.LoadTraining(data)
+
+    // create the default sentence tokenizer
     tokenizer := punkt.NewSentenceTokenizer(training)
-    sentences := tokenizer.Tokenize(text)
+    sentences := punkt.Tokenize(text, tokenizer)
 
     for _, s := range sentences {
         fmt.Println(s)
@@ -86,5 +88,38 @@ tokenizer := punkt.NewSentenceTokenizer(storage)
 tokenizer.AbbrevTypes.Add("al")
 tokenizer.AbbrevTypes.Add("etc")
 
-sentences := tokenizer.Tokenize(text)
+sentences := Tokenize(text, tokenizer)
+```
+
+Want to extend the tokenizer?  In my mind there is one method in particular
+that will yield a ton of extendability: `AnnotateTokens`
+
+This method conducts both the first and second pass annotations that determine
+abbreviations, period context, and sentence boundaries.
+
+```
+type CustomSentenceTokenizer struct {
+    *punkt.DefaultSentenceTokenizer
+}
+
+func (s *SentenceTokenizer) AnnotateTokens(tokens []*punkt.DefaultToken) {
+    tokens = s.AnnotateFirstPass(tokens)
+    tokens = s.AnnotateSecondPass(tokens)
+
+    // Do a third pass and find any sentence boundaries that were missed by punkt
+
+    return tokens
+}
+
+tokenizer := &CustomSentenceTokenize{
+    &punkt.DefaultSentenceTokenizer{
+        Base: punkt.NewBase(),
+        Punctuation: punkt.Punctuation,
+    },
+}
+
+tokenizer.Storage = training
+tokenizer.SentenceTokenizer = tokenizer
+
+punkt.Tokenize(text, tokenizer)
 ```

@@ -12,6 +12,8 @@ type PairToken struct {
 var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)|(\.\S)`
 var endPuncts = []string{ /*`."`, `.'`, `.”`,*/ ":", ",", "?", `?"`, ".)"}
 
+// Breaks the text up into words and also splits the token into two distinct
+// pieces that assist in determining what type of token we are dealing with
 func WordTokenizer(text string) []*PairToken {
 	words := strings.Fields(text)
 	tokens := make([]*PairToken, 0, len(words))
