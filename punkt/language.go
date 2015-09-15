@@ -9,13 +9,17 @@ import (
 
 var ReNonPunct = regexp.MustCompile(`[^\W\d]`)
 
+type RegexpStrings interface {
+	SentEndChars() string
+	NonWordChars() string
+	PeriodContext() string
+}
+
 /*
 Format of a regular expression to find contexts including possible
 sentence boundaries. Matches token which the possible sentence boundary
 ends, and matches the following token within a lookahead expression
 */
-const periodContextFmt string = `\S*{{.SentEndChars}}(?P<after_tok>{{.NonWord}}|\s+(?P<next_tok>\S+))`
-
 type periodContextStruct struct {
 	SentEndChars string
 	NonWord      string
@@ -24,45 +28,38 @@ type periodContextStruct struct {
 // Language holds language specific regular expressions to help determine
 // information about the text that is being parsed.
 type Language struct {
-	sentEndChars        []string // Characters that are candidates for sentence boundaries
-	internalPunctuation string   // Sentence internal punctuation, which indicates an abbreviation if preceded by a period-final token
-	reWordStart         string   // Excludes some characters from starting word tokens
-	reNonWordChars      string   // Characters that cannot appear within words
-	periodContextFmt    string
+	RegexpStrings
 }
 
 // Creates a default set of properties for the Language struct
 func NewLanguage() *Language {
-	return &Language{
-		sentEndChars:        []string{".", "?", "!", `."`, `.'`, `?"`, `.)`},
-		internalPunctuation: ",:;",
-		reWordStart:         "[^\\(\"\\`{\\[:;&\\#\\*@\\)}\\]\\-,]",
-		reNonWordChars:      `(?:[?!)’”"';}\]\*:@\'\({\[])`,
-		periodContextFmt:    periodContextFmt,
-	}
+	return &Language{}
+}
+
+// Characters that are candidates for sentence boundaries
+func (p *Language) SentEndChars() string {
+	return `.?!".".'?".)`
+}
+
+// Characters that cannot appear within words
+func (p *Language) NonWordChars() string {
+	return `(?:[?!)’”"';}\]\*:@\'\({\[])`
 }
 
 // Compile the context of a period context using a regular expression.
 // To determine a sentence boundary, punkt must have information about the
 // context in which a period is used.
-func (p *Language) RePeriodContext() *regexp.Regexp {
-	t := template.Must(template.New("periodContext").Parse(p.periodContextFmt))
+func (p *Language) PeriodContext() string {
+	periodContextFmt := `\S*{{.SentEndChars}}(?P<after_tok>{{.NonWord}}|\s+(?P<next_tok>\S+))`
+	sentEndChars := regexp.QuoteMeta(p.SentEndChars())
+
+	t := template.Must(template.New("periodContext").Parse(periodContextFmt))
 	r := new(bytes.Buffer)
 
 	t.Execute(r, periodContextStruct{
-		SentEndChars: strings.Join([]string{`[`, p.ReSentEndChars(), `][’”"']?`}, ""),
-		NonWord:      p.reNonWordChars,
+		SentEndChars: strings.Join([]string{`[`, sentEndChars, `][’”"']?`}, ""),
+		NonWord:      p.NonWordChars(),
 	})
 
-	return regexp.MustCompile(strings.Trim(r.String(), " "))
-}
-
-// Compiles and returns a regular expression to find contexts including possible sentence boundaries.
-func (p *Language) PeriodContext(s string) []string {
-	return p.RePeriodContext().FindAllString(s, -1)
-}
-
-// A regular expression that find sentence ending characters.
-func (p *Language) ReSentEndChars() string {
-	return regexp.QuoteMeta(strings.Join(p.sentEndChars, ""))
+	return strings.Trim(r.String(), " ")
 }

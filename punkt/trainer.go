@@ -381,7 +381,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *DefaultToken) bool {
 		token is a sentence-internal punctuation mark.
 		[XX] :1 or check the whole thing??
 	*/
-	if strings.Contains(p.internalPunctuation, nextTok.Tok[:1]) {
+	if strings.Contains(",:;", nextTok.Tok[:1]) {
 		return true
 	}
 

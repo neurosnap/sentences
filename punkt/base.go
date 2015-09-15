@@ -29,7 +29,7 @@ func NewBase() *Base {
 // Is the token a non-word multipuntuation character or does it end in a comma?
 // Does the token start a paragraph?  Does it start a new line?
 func (p *Base) AddToken(tokens []*DefaultToken, pairTok *PairToken, parastart bool, linestart bool) []*DefaultToken {
-	nonword := regexp.MustCompile(strings.Join([]string{p.reNonWordChars, ReMultiCharPunct}, "|"))
+	nonword := regexp.MustCompile(strings.Join([]string{p.NonWordChars(), ReMultiCharPunct}, "|"))
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
 
 	if nonword.MatchString(pairTok.Second) || strings.HasSuffix(pairTok.Second, ",") {
@@ -99,7 +99,7 @@ func (p *Base) AnnotateFirstPass(tokens []*DefaultToken) []*DefaultToken {
 func (p *Base) firstPassAnnotation(token *DefaultToken) {
 	chars := strings.Split(token.Tok, "")
 	tokInEndChars := strings.Index(
-		strings.Join(p.sentEndChars, ""),
+		p.SentEndChars(),
 		token.Tok,
 	)
 

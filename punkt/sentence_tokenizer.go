@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"regexp"
 	"strings"
 )
 
@@ -72,7 +73,8 @@ func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
 // Discovers all periods within a body of text, captures the context
 // in which it is used, and determines if a period denotes a sentence break.
 func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
-	matches := s.RePeriodContext().FindAllStringSubmatchIndex(text, -1)
+	rePeriodContext := regexp.MustCompile(s.PeriodContext())
+	matches := rePeriodContext.FindAllStringSubmatchIndex(text, -1)
 	periodMatches := make([]*PeriodCtx, 0, len(matches))
 
 	/*
