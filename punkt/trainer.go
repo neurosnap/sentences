@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"math"
 	"os"
+	"regexp"
 	"strings"
 
 	"github.com/neurosnap/sentences/utils"
@@ -194,7 +195,8 @@ func (p *Trainer) reclassifyAbbrevTypes(types []string) []*AbbrevType {
 	for _, typ := range types {
 		// Check some basic conditions, to rule out words that are
 		// clearly not abbrev_types.
-		isPunct := ReNonPunct.FindString(typ) == ""
+		nonPunct := regexp.MustCompile(p.NonPunct())
+		isPunct := nonPunct.FindString(typ) == ""
 		if isPunct || typ == "##number##" {
 			continue
 		}

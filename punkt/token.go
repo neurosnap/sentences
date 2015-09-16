@@ -24,6 +24,7 @@ type Token interface {
 // Stores a token of text with annotations produced during sentence boundary detection.
 type DefaultToken struct {
 	Token
+	*Language
 	reEllipsis  *regexp.Regexp
 	reNumeric   *regexp.Regexp
 	reInitial   *regexp.Regexp
@@ -42,6 +43,7 @@ type DefaultToken struct {
 func NewToken(token string) *DefaultToken {
 	tok := DefaultToken{
 		Tok:        token,
+		Language:   NewLanguage(),
 		reEllipsis: regexp.MustCompile(`\.\.+$`),
 		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
 		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
@@ -133,5 +135,6 @@ func (p *DefaultToken) IsAlpha() bool {
 
 // True if the token is either a number or is alphabetic.
 func (p *DefaultToken) IsNonPunct() bool {
-	return ReNonPunct.MatchString(p.Typ)
+	nonPunct := regexp.MustCompile(p.NonPunct())
+	return nonPunct.MatchString(p.Typ)
 }

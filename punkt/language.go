@@ -7,12 +7,11 @@ import (
 	"text/template"
 )
 
-var ReNonPunct = regexp.MustCompile(`[^\W\d]`)
-
 type RegexpStrings interface {
 	SentEndChars() string
 	NonWordChars() string
 	PeriodContext() string
+	NonPunct() string
 }
 
 /*
@@ -44,6 +43,10 @@ func (p *Language) SentEndChars() string {
 // Characters that cannot appear within words
 func (p *Language) NonWordChars() string {
 	return `(?:[?!)’”"';}\]\*:@\'\({\[])`
+}
+
+func (p *Language) NonPunct() string {
+	return `[^\W\d]`
 }
 
 // Compile the context of a period context using a regular expression.
