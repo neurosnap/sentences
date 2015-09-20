@@ -7,11 +7,12 @@ import (
 	"text/template"
 )
 
-type RegexpStrings interface {
+type PunctStrings interface {
 	SentEndChars() string
 	NonWordChars() string
 	PeriodContext() string
 	NonPunct() string
+	Punctuation() string
 }
 
 /*
@@ -27,7 +28,7 @@ type periodContextStruct struct {
 // Language holds language specific regular expressions to help determine
 // information about the text that is being parsed.
 type Language struct {
-	RegexpStrings
+	PunctStrings
 }
 
 // Creates a default set of properties for the Language struct
@@ -47,6 +48,10 @@ func (p *Language) NonWordChars() string {
 
 func (p *Language) NonPunct() string {
 	return `[^\W\d]`
+}
+
+func (p *Language) Punctuation() string {
+	return ";:,.!?"
 }
 
 // Compile the context of a period context using a regular expression.

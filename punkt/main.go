@@ -22,3 +22,10 @@ different phases of annotation.
 Original research article: http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=BAE5C34E5C3B9DC60DFC4D93B85D8BB1?doi=10.1.1.85.5017&rep=rep1&type=pdf
 */
 package punkt
+
+import (
+	"log"
+	"os"
+)
+
+var logger = log.New(os.Stdout, "(Punkt) ", log.Lshortfile)

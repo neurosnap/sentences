@@ -25,10 +25,10 @@ func main() {
 		panic(err)
 	}
 
-	tokenizer := punkt.NewSentenceTokenizer(training)
-
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := ioutil.ReadAll(reader)
+
+	tokenizer := punkt.NewTokenizer(training)
 
 	sentences := punkt.Tokenize(string(text), tokenizer)
 	for _, s := range sentences {

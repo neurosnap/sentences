@@ -28,7 +28,11 @@ func boolToFloat64(cond bool) float64 {
 // contains some errors, use are your own risk!
 // Learns parameters used in Punkt sentence boundary detection
 type Trainer struct {
-	*Base
+	*Storage
+	WordTokenizer
+	AnnotateTokens
+	PairToken
+	PunctStrings
 	TypeDist             *utils.FreqDist
 	CollocationDist      *utils.FreqDist
 	SentStarterDist      *utils.FreqDist
@@ -47,7 +51,11 @@ type Trainer struct {
 
 func NewTrainer(trainText string, fileText *os.File) *Trainer {
 	trainer := &Trainer{
-		Base:              NewBase(),
+		Storage:           NewStorage(),
+		WordTokenizer:     &DefaultWordTokenizer{},
+		AnnotateTokens:    &TypeBasedAnnotation{},
+		PairToken:         &DefaultPairToken{},
+		PunctStrings:      NewLanguage(),
 		TypeDist:          utils.NewFreqDist(map[string]int{}),
 		CollocationDist:   utils.NewFreqDist(map[string]int{}),
 		SentStarterDist:   utils.NewFreqDist(map[string]int{}),
@@ -72,7 +80,7 @@ func NewTrainer(trainText string, fileText *os.File) *Trainer {
 }
 
 func (p *Trainer) Train(text string, finalize bool) {
-	p.trainTokens(p.TokenizeWords(text))
+	p.trainTokens(p.WordTokenizer.Tokenize(text))
 	if finalize {
 		p.FinalizeTraining()
 	}
@@ -115,7 +123,7 @@ func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 		Make a preliminary pass through the document, marking likely
 		sentence breaks, abbreviations, and ellipsis tokens.
 	*/
-	fpTokens := p.AnnotateFirstPass(tokens)
+	fpTokens := p.Annotate(tokens)
 
 	// Check what contexts each word type can appear in, given the case of its first letter.
 	p.getOrthographData(fpTokens)
@@ -123,7 +131,7 @@ func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 	// We need total number of sentence breaks to find sentence starters
 	p.sentBreakCount += p.getSentBreakCount(tokens)
 
-	for _, tokPair := range p.pairIter(tokens) {
+	for _, tokPair := range p.PairTokens(tokens) {
 		if !tokPair[0].PeriodFinal || tokPair[1] == nil {
 			continue
 		}

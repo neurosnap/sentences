@@ -9,7 +9,7 @@ import (
 	"github.com/neurosnap/sentences/punkt"
 )
 
-func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
+func loadTokenizer(data string) punkt.Tokenizer {
 	b, err := td.Asset(data)
 	if err != nil {
 		panic(err)
@@ -20,7 +20,7 @@ func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
 		panic(err)
 	}
 
-	return punkt.NewSentenceTokenizer(training)
+	return punkt.NewTokenizer(training)
 }
 
 func readFile(fname string) string {

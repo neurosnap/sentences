@@ -6,6 +6,29 @@ import (
 	"unicode"
 )
 
+type PairToken interface {
+	PairTokens([]*DefaultToken) [][2]*DefaultToken
+}
+
+type DefaultPairToken struct{}
+
+// Groups two adjacent tokens together.
+func (p *DefaultPairToken) PairTokens(tokens []*DefaultToken) [][2]*DefaultToken {
+	pairTokens := make([][2]*DefaultToken, 0, len(tokens))
+
+	prevToken := tokens[0]
+	for _, tok := range tokens {
+		if prevToken == tok {
+			continue
+		}
+		pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, tok})
+		prevToken = tok
+	}
+	pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, nil})
+
+	return pairTokens
+}
+
 // Primary token interface that determines the context and type of a tokenized word.
 type Token interface {
 	GetType(string) string

@@ -5,35 +5,54 @@ import (
 	"strings"
 )
 
-var Punctuation = []string{";", ":", ",", ".", "!", "?"}
+type Tokenizer interface {
+	WordTokenizer
+	SentenceTokenizer
+}
+
+type DefaultTokenizer struct {
+	WordTokenizer
+	SentenceTokenizer
+}
+
+func NewTokenizer(s *Storage) Tokenizer {
+	lang := NewLanguage()
+	annotations := []AnnotateTokens{
+		&TypeBasedAnnotation{s, lang},
+		&TokenBasedAnnotation{Storage: s, Language: lang},
+	}
+
+	return &DefaultTokenizer{
+		&DefaultWordTokenizer{lang},
+		&DefaultSentenceTokenizer{s, lang, annotations},
+	}
+}
 
 // Interface used by the Tokenize function, can be extended to correct sentence
 // boundaries that punkt misses.
 type SentenceTokenizer interface {
-	Tokenize(string) []string
-	PeriodCtxMatches(string) []*PeriodCtx
-	HasSentBreak(string) bool
-	AnnotateTokens([]*DefaultToken) []*DefaultToken
-	SecondPassAnnotation(*DefaultToken, *DefaultToken)
-	AnnotateSecondPass([]*DefaultToken) []*DefaultToken
-	OrthoHeuristic(*DefaultToken) int
+	PeriodCtxTokenizer(string, WordTokenizer) []*PeriodCtx
+	HasSentBreak(string, WordTokenizer) bool
+	AnnotateTokens([]*DefaultToken, ...AnnotateTokens) []*DefaultToken
 }
 
 type PeriodCtx struct {
+	// Entire context of the period, including word before and after
 	Context string
-	End     int
+	// Last character in sentence
+	End int
 }
 
 /*
 Breaks text into sentences using the SentenceTokenizer interface
 */
-func Tokenize(text string, s SentenceTokenizer) []string {
-	matches := s.PeriodCtxMatches(text)
+func Tokenize(text string, t Tokenizer) []string {
+	matches := t.PeriodCtxTokenizer(text, t)
 
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
 	for _, match := range matches {
-		if s.HasSentBreak(match.Context) {
+		if t.HasSentBreak(match.Context, t) {
 			sentence := text[lastBreak:match.End]
 			sentence = strings.TrimSpace(sentence)
 			if sentence == "" {
@@ -53,26 +72,14 @@ func Tokenize(text string, s SentenceTokenizer) []string {
 // for abbreviation words, collocations, and words that start sentences
 // and then uses that model to find sentence boundaries.
 type DefaultSentenceTokenizer struct {
-	*Base
-	SentenceTokenizer
-	Punctuation []string
-}
-
-// Creates the default sentence tokenizer
-func NewSentenceTokenizer(trainedData *Storage) *DefaultSentenceTokenizer {
-	st := &DefaultSentenceTokenizer{
-		Base:        NewBase(),
-		Punctuation: Punctuation,
-	}
-
-	st.SentenceTokenizer = st
-	st.Storage = trainedData
-	return st
+	*Storage
+	PunctStrings
+	Annotations []AnnotateTokens
 }
 
 // Discovers all periods within a body of text, captures the context
 // in which it is used, and determines if a period denotes a sentence break.
-func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
+func (s *DefaultSentenceTokenizer) PeriodCtxTokenizer(text string, w WordTokenizer) []*PeriodCtx {
 	rePeriodContext := regexp.MustCompile(s.PeriodContext())
 	matches := rePeriodContext.FindAllStringSubmatchIndex(text, -1)
 	periodMatches := make([]*PeriodCtx, 0, len(matches))
@@ -94,7 +101,7 @@ func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
 
 		matchEnd = match[1]
 		// we want the extra stuff for the actual sentence
-		if match[4] >= 0 && (!s.HasSentBreak(nextTok) || s.HasSentBreak(text[match[0]:match[4]])) {
+		if match[4] >= 0 && (!s.HasSentBreak(nextTok, w) || s.HasSentBreak(text[match[0]:match[4]], w)) {
 			matchEnd = match[4]
 		}
 
@@ -112,14 +119,14 @@ func (s *DefaultSentenceTokenizer) PeriodCtxMatches(text string) []*PeriodCtx {
 /*
 Returns True if the given text includes a sentence break.
 */
-func (s *DefaultSentenceTokenizer) HasSentBreak(text string) bool {
-	tokens := s.TokenizeWords(text)
+func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bool {
+	tokens := w.Tokenize(text)
 
 	if len(tokens) == 0 {
 		return false
 	}
 
-	for _, t := range s.SentenceTokenizer.AnnotateTokens(tokens) {
+	for _, t := range s.AnnotateTokens(tokens, s.Annotations...) {
 		if t.SentBreak {
 			return true
 		}
@@ -133,162 +140,22 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken) []*DefaultToken {
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken, annotate ...AnnotateTokens) []*DefaultToken {
+	for _, ann := range annotate {
+		tokens = ann.Annotate(tokens)
+	}
 	//Make a preliminary pass through the document, marking likely
 	//sentence breaks, abbreviations, and ellipsis tokens.
-	tokens = s.AnnotateFirstPass(tokens)
+	//tokens = s.AnnotateFirstPass(tokens)
 
 	/*for _, tok := range tokens {
 		logger.Println(tok.Tok, tok.SentBreak)
 	}*/
 
-	tokens = s.SentenceTokenizer.AnnotateSecondPass(tokens)
+	//tokens = s.SentenceTokenizer.AnnotateSecondPass(tokens)
 
 	/*for _, tok := range tokens {
 		logger.Println(tok.Tok, tok.SentBreak)
 	}*/
 	return tokens
-}
-
-/*
-Performs a token-based classification (section 4) over the given
-tokens, making use of the orthographic heuristic (4.1.1), collocation
-heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
-*/
-func (s *DefaultSentenceTokenizer) AnnotateSecondPass(tokens []*DefaultToken) []*DefaultToken {
-	for _, tokPair := range s.pairIter(tokens) {
-		s.SecondPassAnnotation(tokPair[0], tokPair[1])
-
-	}
-	return tokens
-}
-
-func (s *DefaultSentenceTokenizer) SecondPassAnnotation(tokOne, tokTwo *DefaultToken) {
-	if tokTwo == nil {
-		return
-	}
-
-	if !tokOne.PeriodFinal {
-		return
-	}
-
-	typ := tokOne.TypeNoPeriod()
-	nextTyp := tokTwo.TypeNoSentPeriod()
-	tokIsInitial := tokOne.IsInitial()
-
-	/*
-	   [4.1.2. Collocation Heuristic] If there's a
-	   collocation between the word before and after the
-	   period, then label tok as an abbreviation and NOT
-	   a sentence break. Note that collocations with
-	   frequent sentence starters as their second word are
-	   excluded in training.
-	*/
-	collocation := strings.Join([]string{typ, nextTyp}, ",")
-	if s.Collocations.items[collocation] != 0 {
-		tokOne.SentBreak = false
-		tokOne.Abbr = true
-		return
-	}
-
-	/*
-		[4.2. Token-Based Reclassification of Abbreviations] If
-		the token is an abbreviation or an ellipsis, then decide
-		whether we should *also* classify it as a sentbreak.
-	*/
-	if (tokOne.Abbr || tokOne.Ellipsis) && !tokIsInitial {
-		/*
-			[4.1.1. Orthographic Heuristic] Check if there's
-			orthogrpahic evidence about whether the next word
-			starts a sentence or not.
-		*/
-		isSentStarter := s.OrthoHeuristic(tokTwo)
-		if isSentStarter == 1 {
-			tokOne.SentBreak = true
-			return
-		}
-
-		/*
-			[4.1.3. Frequent Sentence Starter Heruistic] If the
-			next word is capitalized, and is a member of the
-			frequent-sentence-starters list, then label tok as a
-			sentence break.
-		*/
-		if tokTwo.FirstUpper() && s.SentStarters.items[nextTyp] != 0 {
-			tokOne.SentBreak = true
-			return
-		}
-	}
-
-	/*
-		[4.3. Token-Based Detection of Initials and Ordinals]
-		Check if any initials or ordinals tokens that are marked
-		as sentbreaks should be reclassified as abbreviations.
-	*/
-	if tokIsInitial || typ == "##number##" {
-		isSentStarter := s.OrthoHeuristic(tokTwo)
-
-		if isSentStarter == 0 {
-			tokOne.SentBreak = false
-			tokOne.Abbr = true
-			if tokIsInitial {
-				return
-			} else {
-				return
-			}
-		}
-
-		/*
-			Special heuristic for initials: if orthogrpahic
-			heuristc is unknown, and next word is always
-			capitalized, then mark as abbrev (eg: J. Bach).
-		*/
-		if isSentStarter == -1 &&
-			tokIsInitial &&
-			tokTwo.FirstUpper() &&
-			s.OrthoContext.items[nextTyp]&orthoLc == 0 {
-
-			tokOne.SentBreak = false
-			tokOne.Abbr = true
-			return
-		}
-	}
-}
-
-/*
-Decide whether the given token is the first token in a sentence.
-*/
-func (s *DefaultSentenceTokenizer) OrthoHeuristic(token *DefaultToken) int {
-	if token == nil {
-		return 0
-	}
-
-	for _, punct := range s.Punctuation {
-		if token.Tok == punct {
-			return 0
-		}
-	}
-
-	orthoCtx := s.OrthoContext.items[token.TypeNoSentPeriod()]
-
-	/*
-	   If the word is capitalized, occurs at least once with a
-	   lower case first letter, and never occurs with an upper case
-	   first letter sentence-internally, then it's a sentence starter.
-	*/
-	if token.FirstUpper() && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
-		return 1
-	}
-
-	/*
-		If the word is lower case, and either (a) we've seen it used
-		with upper case, or (b) we've never seen it used
-		sentence-initially with lower case, then it's not a sentence
-		starter.
-	*/
-	if token.FirstLower() && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
-		return 0
-	}
-
-	return -1
 }
