@@ -77,6 +77,19 @@ type DefaultSentenceTokenizer struct {
 	Annotations []AnnotateTokens
 }
 
+/*
+Given a set of tokens augmented with markers for line-start and
+paragraph-start, returns an iterator through those tokens with full
+annotation including predicted sentence breaks.
+*/
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken, annotate ...AnnotateTokens) []*DefaultToken {
+	for _, ann := range annotate {
+		tokens = ann.Annotate(tokens)
+	}
+
+	return tokens
+}
+
 // Discovers all periods within a body of text, captures the context
 // in which it is used, and determines if a period denotes a sentence break.
 func (s *DefaultSentenceTokenizer) PeriodCtxTokenizer(text string, w WordTokenizer) []*PeriodCtx {
@@ -133,29 +146,4 @@ func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bo
 	}
 
 	return false
-}
-
-/*
-Given a set of tokens augmented with markers for line-start and
-paragraph-start, returns an iterator through those tokens with full
-annotation including predicted sentence breaks.
-*/
-func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken, annotate ...AnnotateTokens) []*DefaultToken {
-	for _, ann := range annotate {
-		tokens = ann.Annotate(tokens)
-	}
-	//Make a preliminary pass through the document, marking likely
-	//sentence breaks, abbreviations, and ellipsis tokens.
-	//tokens = s.AnnotateFirstPass(tokens)
-
-	/*for _, tok := range tokens {
-		logger.Println(tok.Tok, tok.SentBreak)
-	}*/
-
-	//tokens = s.SentenceTokenizer.AnnotateSecondPass(tokens)
-
-	/*for _, tok := range tokens {
-		logger.Println(tok.Tok, tok.SentBreak)
-	}*/
-	return tokens
 }

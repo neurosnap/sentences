@@ -5,19 +5,12 @@ import (
 	"strings"
 )
 
-type pairTokens struct {
-	First, Second string
-}
-
-var ReMultiCharPunct string = `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)|(\.\S)`
-var endPuncts = []string{ /*`."`, `.'`, `.”`,*/ ":", ",", "?", `?"`, ".)"}
-
 type WordTokenizer interface {
 	Tokenize(string) []*DefaultToken
 }
 
 type DefaultWordTokenizer struct {
-	PunctStrings
+	*Language
 }
 
 // Helps tokenize the body of text into words while also providing context for
@@ -31,7 +24,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*DefaultToken {
 		if strings.Trim(line, " ") == "" || line == " " {
 			parastart = true
 		} else {
-			lineToks := PairWordTokenizer(line)
+			lineToks := p.pairWordTokenizer(line)
 			for index, lineTok := range lineToks {
 				if index == 0 {
 					tokens = p.addToken(tokens, lineTok, parastart, true)
@@ -46,11 +39,16 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*DefaultToken {
 	return tokens
 }
 
+// temporary helper struct, not particularly useful
+type pairTokens struct {
+	First, Second string
+}
+
 // Adds a token to our list of tokens and provides some context for the token.
 // Is the token a non-word multipuntuation character or does it end in a comma?
 // Does the token start a paragraph?  Does it start a new line?
 func (p *DefaultWordTokenizer) addToken(tokens []*DefaultToken, pairTok *pairTokens, parastart bool, linestart bool) []*DefaultToken {
-	nonword := regexp.MustCompile(strings.Join([]string{p.NonWordChars(), ReMultiCharPunct}, "|"))
+	nonword := regexp.MustCompile(strings.Join([]string{p.NonWordChars(), p.MultiCharPunct()}, "|"))
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
 
 	if nonword.MatchString(pairTok.Second) || strings.HasSuffix(pairTok.Second, ",") {
@@ -73,11 +71,12 @@ func (p *DefaultWordTokenizer) addToken(tokens []*DefaultToken, pairTok *pairTok
 
 // Breaks the text up into words and also splits the token into two distinct
 // pieces that assist in determining what type of token we are dealing with
-func PairWordTokenizer(text string) []*pairTokens {
+func (p *DefaultWordTokenizer) pairWordTokenizer(text string) []*pairTokens {
+	endPuncts := []string{ /*`."`, `.'`, `.”`,*/ ":", ",", "?", `?"`, ".)"}
 	words := strings.Fields(text)
 	tokens := make([]*pairTokens, 0, len(words))
 
-	multi := regexp.MustCompile(ReMultiCharPunct)
+	multi := regexp.MustCompile(p.MultiCharPunct())
 
 	for _, word := range words {
 		// Skip one letter words

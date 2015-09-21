@@ -13,6 +13,7 @@ type PunctStrings interface {
 	PeriodContext() string
 	NonPunct() string
 	Punctuation() string
+	MultiCharPunct() string
 }
 
 /*
@@ -27,9 +28,7 @@ type periodContextStruct struct {
 
 // Language holds language specific regular expressions to help determine
 // information about the text that is being parsed.
-type Language struct {
-	PunctStrings
-}
+type Language struct{}
 
 // Creates a default set of properties for the Language struct
 func NewLanguage() *Language {
@@ -52,6 +51,10 @@ func (p *Language) NonPunct() string {
 
 func (p *Language) Punctuation() string {
 	return ";:,.!?"
+}
+
+func (p *Language) MultiCharPunct() string {
+	return `(?:\-{2,}|\.{2,}|(?:\.\s){2,}\.)|(\.\S)`
 }
 
 // Compile the context of a period context using a regular expression.

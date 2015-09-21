@@ -29,19 +29,45 @@ func (p *DefaultPairToken) PairTokens(tokens []*DefaultToken) [][2]*DefaultToken
 	return pairTokens
 }
 
+// Helpers to get the type of a token
+type TokenType interface {
+	// Case-normalized representation of the token.
+	GetType(string) string
+	// The type with its final period removed if it has one.
+	TypeNoPeriod() string
+	// The type with its final period removed if it is marked as a sentence break.
+	TypeNoSentPeriod() string
+}
+
+// Helpers to determine the case of the token's first letter
+type TokenFirst interface {
+	// Text based case of the first letter in the token.
+	FirstCase() string
+	// True if the token's first character is lowercase
+	FirstLower() bool
+	// True if the token's first character is uppercase.
+	FirstUpper() bool
+}
+
+// Helpers to determine what type of token we are dealing with.
+type TokenExistential interface {
+	// True if the token text is all alphabetic.
+	IsAlpha() bool
+	// True if the token text is that of an ellipsis.
+	IsEllipsis() bool
+	// True if the token text is that of an initial.
+	IsInitial() bool
+	// True if the token text is that of a number.
+	IsNumber() bool
+	// True if the token is either a number or is alphabetic.
+	IsNonPunct() bool
+}
+
 // Primary token interface that determines the context and type of a tokenized word.
 type Token interface {
-	GetType(string) string
-	TypeNoPeriod() string
-	TypeNoSentPeriod() string
-	FirstCase() string
-	FirstLower() bool
-	FirstUpper() bool
-	IsAlpha() bool
-	IsEllipsis() bool
-	IsInitial() bool
-	IsNumber() bool
-	IsNonPunct() bool
+	TokenType
+	TokenFirst
+	TokenExistential
 }
 
 // Stores a token of text with annotations produced during sentence boundary detection.
