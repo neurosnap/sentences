@@ -88,10 +88,10 @@ type Token struct {
 	reAlpha     *regexp.Regexp
 }
 
-func NewToken(token string) *Token {
+func NewToken(token string, p PunctStrings) *Token {
 	tok := Token{
 		Tok:          token,
-		PunctStrings: NewLanguage(),
+		PunctStrings: p,
 		reEllipsis:   regexp.MustCompile(`\.\.+$`),
 		reNumeric:    regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
 		reInitial:    regexp.MustCompile(`^[A-Za-z]\.$`),

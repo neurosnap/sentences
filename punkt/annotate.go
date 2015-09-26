@@ -10,13 +10,13 @@ type AnnotateTokens interface {
 
 type TypeBasedAnnotation struct {
 	*Storage
-	*Language
+	PunctStrings
 }
 
 func NewTypeBasedAnnotation() *TypeBasedAnnotation {
 	return &TypeBasedAnnotation{
-		Language: NewLanguage(),
-		Storage:  NewStorage(),
+		PunctStrings: NewLanguage(),
+		Storage:      NewStorage(),
 	}
 }
 
@@ -65,7 +65,7 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 
 type TokenBasedAnnotation struct {
 	*Storage
-	*Language
+	PunctStrings
 	TokenGrouper
 }
 

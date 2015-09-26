@@ -52,15 +52,15 @@ func (p *DefaultWordTokenizer) addToken(tokens []*Token, pairTok *pairTokens, pa
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
 
 	if nonword.MatchString(pairTok.Second) || strings.HasSuffix(pairTok.Second, ",") {
-		tokOne := NewToken(pairTok.First)
+		tokOne := NewToken(pairTok.First, p.PunctStrings)
 		tokOne.ParaStart = parastart
 		tokOne.LineStart = linestart
 
-		tokTwo := NewToken(pairTok.Second)
+		tokTwo := NewToken(pairTok.Second, p.PunctStrings)
 
 		tokens = append(tokens, tokOne, tokTwo)
 	} else {
-		token := NewToken(tok)
+		token := NewToken(tok, p.PunctStrings)
 		token.ParaStart = parastart
 		token.LineStart = linestart
 		tokens = append(tokens, token)
