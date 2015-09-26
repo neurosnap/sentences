@@ -6,33 +6,31 @@ import (
 	"unicode"
 )
 
-type PairToken interface {
-	PairTokens([]*DefaultToken) [][2]*DefaultToken
+// Groups two adjacent tokens together.
+type TokenGrouper interface {
+	Group([]*Token) [][2]*Token
 }
 
-type DefaultPairToken struct{}
+type DefaultTokenGrouper struct{}
 
-// Groups two adjacent tokens together.
-func (p *DefaultPairToken) PairTokens(tokens []*DefaultToken) [][2]*DefaultToken {
-	pairTokens := make([][2]*DefaultToken, 0, len(tokens))
+func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
+	pairTokens := make([][2]*Token, 0, len(tokens))
 
 	prevToken := tokens[0]
 	for _, tok := range tokens {
 		if prevToken == tok {
 			continue
 		}
-		pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, tok})
+		pairTokens = append(pairTokens, [2]*Token{prevToken, tok})
 		prevToken = tok
 	}
-	pairTokens = append(pairTokens, [2]*DefaultToken{prevToken, nil})
+	pairTokens = append(pairTokens, [2]*Token{prevToken, nil})
 
 	return pairTokens
 }
 
 // Helpers to get the type of a token
 type TokenType interface {
-	// Case-normalized representation of the token.
-	GetType(string) string
 	// The type with its final period removed if it has one.
 	TypeNoPeriod() string
 	// The type with its final period removed if it is marked as a sentence break.
@@ -61,59 +59,51 @@ type TokenExistential interface {
 	IsNumber() bool
 	// True if the token is either a number or is alphabetic.
 	IsNonPunct() bool
+	// Does this token end with a period?
+	HasPeriodFinal() bool
 }
 
 // Primary token interface that determines the context and type of a tokenized word.
-type Token interface {
+type TokenParser interface {
 	TokenType
 	TokenFirst
 	TokenExistential
 }
 
 // Stores a token of text with annotations produced during sentence boundary detection.
-type DefaultToken struct {
-	Token
-	*Language
-	reEllipsis  *regexp.Regexp
-	reNumeric   *regexp.Regexp
-	reInitial   *regexp.Regexp
-	reInitials  *regexp.Regexp
-	reAlpha     *regexp.Regexp
+type Token struct {
+	TokenParser
+	PunctStrings
 	Tok         string
 	Typ         string
-	PeriodFinal bool
 	SentBreak   bool
 	ParaStart   bool
 	LineStart   bool
-	Ellipsis    bool
 	Abbr        bool
+	periodFinal bool
+	reEllipsis  *regexp.Regexp
+	reNumeric   *regexp.Regexp
+	reInitial   *regexp.Regexp
+	reAlpha     *regexp.Regexp
 }
 
-func NewToken(token string) *DefaultToken {
-	tok := DefaultToken{
-		Tok:        token,
-		Language:   NewLanguage(),
-		reEllipsis: regexp.MustCompile(`\.\.+$`),
-		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
-		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
-		reInitials: regexp.MustCompile(`[A-Za-z]\.[A-Za-z]\.$`),
-		reAlpha:    regexp.MustCompile(`^[A-Za-z]+$`),
-		Ellipsis:   false,
+func NewToken(token string) *Token {
+	tok := Token{
+		Tok:          token,
+		PunctStrings: NewLanguage(),
+		reEllipsis:   regexp.MustCompile(`\.\.+$`),
+		reNumeric:    regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
+		reInitial:    regexp.MustCompile(`^[A-Za-z]\.$`),
+		reAlpha:      regexp.MustCompile(`^[A-Za-z]+$`),
 	}
-	tok.Typ = tok.GetType(token)
-	tok.PeriodFinal = strings.HasSuffix(token, ".")
-	tok.Token = &tok
+	tok.periodFinal = strings.HasSuffix(token, ".")
+	tok.TokenParser = &tok
 
 	return &tok
 }
 
-// Returns a case-normalized representation of the token.
-func (p *DefaultToken) GetType(tok string) string {
-	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
-}
-
 // The type with its final period removed if it has one.
-func (p *DefaultToken) TypeNoPeriod() string {
+func (p *Token) TypeNoPeriod() string {
 	if len(p.Typ) > 1 && string(p.Typ[len(p.Typ)-1]) == "." {
 		return string(p.Typ[:len(p.Typ)-1])
 	}
@@ -121,7 +111,7 @@ func (p *DefaultToken) TypeNoPeriod() string {
 }
 
 // The type with its final period removed if it is marked as a sentence break.
-func (p *DefaultToken) TypeNoSentPeriod() string {
+func (p *Token) TypeNoSentPeriod() string {
 	if p == nil {
 		return ""
 	}
@@ -129,11 +119,12 @@ func (p *DefaultToken) TypeNoSentPeriod() string {
 	if p.SentBreak {
 		return p.TypeNoPeriod()
 	}
+
 	return p.Typ
 }
 
 // True if the token's first character is uppercase.
-func (p *DefaultToken) FirstUpper() bool {
+func (p *Token) FirstUpper() bool {
 	if p == nil || p.Tok == "" {
 		return false
 	}
@@ -143,7 +134,7 @@ func (p *DefaultToken) FirstUpper() bool {
 }
 
 // True if the token's first character is lowercase
-func (p *DefaultToken) FirstLower() bool {
+func (p *Token) FirstLower() bool {
 	if p.Tok == "" {
 		return false
 	}
@@ -153,37 +144,42 @@ func (p *DefaultToken) FirstLower() bool {
 }
 
 // Text based case of the first letter in the token.
-func (p *DefaultToken) FirstCase() string {
+func (p *Token) FirstCase() string {
 	if p.FirstLower() {
 		return "lower"
 	} else if p.FirstUpper() {
 		return "upper"
 	}
+
 	return "none"
 }
 
 // True if the token text is that of an ellipsis.
-func (p *DefaultToken) IsEllipsis() bool {
+func (p *Token) IsEllipsis() bool {
 	return p.reEllipsis.MatchString(p.Tok)
 }
 
 // True if the token text is that of a number.
-func (p *DefaultToken) IsNumber() bool {
+func (p *Token) IsNumber() bool {
 	return strings.HasPrefix(p.Tok, "##number##")
 }
 
 // True if the token text is that of an initial.
-func (p *DefaultToken) IsInitial() bool {
+func (p *Token) IsInitial() bool {
 	return p.reInitial.MatchString(p.Tok)
 }
 
 // True if the token text is all alphabetic.
-func (p *DefaultToken) IsAlpha() bool {
+func (p *Token) IsAlpha() bool {
 	return p.reAlpha.MatchString(p.Tok)
 }
 
 // True if the token is either a number or is alphabetic.
-func (p *DefaultToken) IsNonPunct() bool {
+func (p *Token) IsNonPunct() bool {
 	nonPunct := regexp.MustCompile(p.NonPunct())
 	return nonPunct.MatchString(p.Typ)
+}
+
+func (p *Token) HasPeriodFinal() bool {
+	return p.periodFinal
 }

@@ -6,18 +6,18 @@ import (
 )
 
 type WordTokenizer interface {
-	Tokenize(string) []*DefaultToken
+	Tokenize(string) []*Token
 }
 
 type DefaultWordTokenizer struct {
-	*Language
+	PunctStrings
 }
 
 // Helps tokenize the body of text into words while also providing context for
 // the words and how they are used in the text.
-func (p *DefaultWordTokenizer) Tokenize(text string) []*DefaultToken {
+func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 	lines := strings.Split(text, "\n")
-	tokens := make([]*DefaultToken, 0, len(lines))
+	tokens := make([]*Token, 0, len(lines))
 	parastart := false
 
 	for _, line := range lines {
@@ -47,7 +47,7 @@ type pairTokens struct {
 // Adds a token to our list of tokens and provides some context for the token.
 // Is the token a non-word multipuntuation character or does it end in a comma?
 // Does the token start a paragraph?  Does it start a new line?
-func (p *DefaultWordTokenizer) addToken(tokens []*DefaultToken, pairTok *pairTokens, parastart bool, linestart bool) []*DefaultToken {
+func (p *DefaultWordTokenizer) addToken(tokens []*Token, pairTok *pairTokens, parastart bool, linestart bool) []*Token {
 	nonword := regexp.MustCompile(strings.Join([]string{p.NonWordChars(), p.MultiCharPunct()}, "|"))
 	tok := strings.Join([]string{pairTok.First, pairTok.Second}, "")
 

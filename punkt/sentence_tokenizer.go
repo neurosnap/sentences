@@ -15,11 +15,11 @@ type DefaultTokenizer struct {
 	SentenceTokenizer
 }
 
-func NewTokenizer(s *Storage) Tokenizer {
+func NewTokenizer(s *Storage) *DefaultTokenizer {
 	lang := NewLanguage()
 	annotations := []AnnotateTokens{
 		&TypeBasedAnnotation{s, lang},
-		&TokenBasedAnnotation{Storage: s, Language: lang},
+		&TokenBasedAnnotation{s, lang, &DefaultTokenGrouper{}},
 	}
 
 	return &DefaultTokenizer{
@@ -33,7 +33,7 @@ func NewTokenizer(s *Storage) Tokenizer {
 type SentenceTokenizer interface {
 	PeriodCtxTokenizer(string, WordTokenizer) []*PeriodCtx
 	HasSentBreak(string, WordTokenizer) bool
-	AnnotateTokens([]*DefaultToken, ...AnnotateTokens) []*DefaultToken
+	AnnotateTokens([]*Token, ...AnnotateTokens) []*Token
 }
 
 type PeriodCtx struct {
@@ -82,7 +82,7 @@ Given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
-func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*DefaultToken, annotate ...AnnotateTokens) []*DefaultToken {
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...AnnotateTokens) []*Token {
 	for _, ann := range annotate {
 		tokens = ann.Annotate(tokens)
 	}

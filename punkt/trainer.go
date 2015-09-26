@@ -31,7 +31,7 @@ type Trainer struct {
 	*Storage
 	WordTokenizer
 	AnnotateTokens
-	PairToken
+	TokenGrouper
 	PunctStrings
 	TypeDist             *utils.FreqDist
 	CollocationDist      *utils.FreqDist
@@ -54,7 +54,7 @@ func NewTrainer(trainText string, fileText *os.File) *Trainer {
 		Storage:           NewStorage(),
 		WordTokenizer:     &DefaultWordTokenizer{},
 		AnnotateTokens:    &TypeBasedAnnotation{},
-		PairToken:         &DefaultPairToken{},
+		TokenGrouper:      &DefaultTokenGrouper{},
 		PunctStrings:      NewLanguage(),
 		TypeDist:          utils.NewFreqDist(map[string]int{}),
 		CollocationDist:   utils.NewFreqDist(map[string]int{}),
@@ -86,7 +86,7 @@ func (p *Trainer) Train(text string, finalize bool) {
 	}
 }
 
-func (p *Trainer) trainTokens(tokens []*DefaultToken) {
+func (p *Trainer) trainTokens(tokens []*Token) {
 	p.finalized = false
 	/*
 		Find the frequency of each case-normalized type.  (Don't
@@ -100,7 +100,7 @@ func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 			p.TypeDist.Samples[tok.Typ] += 1
 		}
 
-		if tok.PeriodFinal {
+		if tok.HasPeriodFinal() {
 			p.numPeriodToks += 1
 		}
 	}
@@ -131,8 +131,8 @@ func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 	// We need total number of sentence breaks to find sentence starters
 	p.sentBreakCount += p.getSentBreakCount(tokens)
 
-	for _, tokPair := range p.PairTokens(tokens) {
-		if !tokPair[0].PeriodFinal || tokPair[1] == nil {
+	for _, tokPair := range p.TokenGrouper.Group(tokens) {
+		if !tokPair[0].HasPeriodFinal() || tokPair[1] == nil {
 			continue
 		}
 
@@ -154,7 +154,7 @@ func (p *Trainer) trainTokens(tokens []*DefaultToken) {
 	}
 }
 
-func (p *Trainer) uniqueTypes(tokens []*DefaultToken) []string {
+func (p *Trainer) uniqueTypes(tokens []*Token) []string {
 	unique := NewSetString(nil)
 
 	for _, tok := range tokens {
@@ -286,7 +286,7 @@ with different case patterns (i) overall, (ii) at
 sentence-initial positions, and (iii) at sentence-internal
 positions.
 */
-func (p *Trainer) getOrthographData(tokens []*DefaultToken) {
+func (p *Trainer) getOrthographData(tokens []*Token) {
 	context := "internal"
 
 	/*
@@ -327,8 +327,7 @@ func (p *Trainer) getOrthographData(tokens []*DefaultToken) {
 			} else {
 				context = "unknown"
 			}
-		} else if tok.Ellipsis || tok.Abbr {
-			//fmt.Println(tok.Ellipsis, tok.Abbr)
+		} else if tok.IsEllipsis() || tok.Abbr {
 			context = "unknown"
 		} else {
 			context = "internal"
@@ -340,7 +339,7 @@ func (p *Trainer) getOrthographData(tokens []*DefaultToken) {
 Returns the number of sentence breaks marked in a given set of
 augmented tokens.
 */
-func (p *Trainer) getSentBreakCount(tokens []*DefaultToken) float64 {
+func (p *Trainer) getSentBreakCount(tokens []*Token) float64 {
 	sum := 0.0
 
 	for _, tok := range tokens {
@@ -357,7 +356,7 @@ This function combines the work done by the original code's
 functions `count_orthography_context`, `get_orthography_count`,
 and `get_rare_abbreviations`.
 */
-func (p *Trainer) isRareAbbrevType(curTok, nextTok *DefaultToken) bool {
+func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 	/*
 		A word type is counted as a rare abbreviation if:
 			- it's not already marked as an abbreviation
@@ -419,7 +418,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *DefaultToken) bool {
 Returns True given a token and the token that preceds it if it
 seems clear that the token is beginning a sentence.
 */
-func (p *Trainer) isPotentialSentStarter(curTok, prevTok *DefaultToken) bool {
+func (p *Trainer) isPotentialSentStarter(curTok, prevTok *Token) bool {
 	return prevTok.SentBreak && !(prevTok.IsNumber() || prevTok.IsInitial()) && curTok.IsAlpha()
 }
 
@@ -427,7 +426,7 @@ func (p *Trainer) isPotentialSentStarter(curTok, prevTok *DefaultToken) bool {
 Returns True if the pair of tokens may form a collocation given
 log-likelihood statistics.
 */
-func (p *Trainer) isPotentialCollocation(tokOne, tokTwo *DefaultToken) bool {
+func (p *Trainer) isPotentialCollocation(tokOne, tokTwo *Token) bool {
 	return ((p.IncludeAllCollocs || p.IncludeAbbrevCollocs && tokOne.Abbr) ||
 		(tokOne.SentBreak && (tokOne.IsNumber() || tokOne.IsInitial())) &&
 			tokOne.IsNonPunct() && tokTwo.IsNonPunct())

@@ -5,7 +5,7 @@ import (
 )
 
 type AnnotateTokens interface {
-	Annotate([]*DefaultToken) []*DefaultToken
+	Annotate([]*Token) []*Token
 }
 
 type TypeBasedAnnotation struct {
@@ -33,7 +33,7 @@ Return these annotations as a tuple of three sets:
 	- abbrev_toks: The indices of all abbreviations.
 	- ellipsis_toks: The indices of all ellipsis marks.
 */
-func (a *TypeBasedAnnotation) Annotate(tokens []*DefaultToken) []*DefaultToken {
+func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 	for _, augTok := range tokens {
 		a.typeAnnotation(augTok)
 	}
@@ -41,7 +41,7 @@ func (a *TypeBasedAnnotation) Annotate(tokens []*DefaultToken) []*DefaultToken {
 
 }
 
-func (a *TypeBasedAnnotation) typeAnnotation(token *DefaultToken) {
+func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 	chars := strings.Split(token.Tok, "")
 	tokInEndChars := strings.Index(
 		a.SentEndChars(),
@@ -50,9 +50,7 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *DefaultToken) {
 
 	if tokInEndChars != -1 {
 		token.SentBreak = true
-	} else if token.IsEllipsis() {
-		token.Ellipsis = true
-	} else if token.PeriodFinal && !strings.HasSuffix(token.Tok, "..") {
+	} else if token.HasPeriodFinal() && !strings.HasSuffix(token.Tok, "..") {
 		tokNoPeriod := strings.ToLower(token.Tok[:len(chars)-1])
 		tokNoPeriodHypen := strings.Split(tokNoPeriod, "-")
 		tokLastHyphEl := string(tokNoPeriodHypen[len(tokNoPeriodHypen)-1])
@@ -68,11 +66,7 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *DefaultToken) {
 type TokenBasedAnnotation struct {
 	*Storage
 	*Language
-	*DefaultPairToken
-}
-
-func NewTokenBasedAnnotation() *TokenBasedAnnotation {
-	return &TokenBasedAnnotation{}
+	TokenGrouper
 }
 
 /*
@@ -80,20 +74,20 @@ Performs a token-based classification (section 4) over the given
 tokens, making use of the orthographic heuristic (4.1.1), collocation
 heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
 */
-func (a *TokenBasedAnnotation) Annotate(tokens []*DefaultToken) []*DefaultToken {
-	for _, tokPair := range a.PairTokens(tokens) {
+func (a *TokenBasedAnnotation) Annotate(tokens []*Token) []*Token {
+	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		a.tokenAnnotation(tokPair[0], tokPair[1])
-
 	}
+
 	return tokens
 }
 
-func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *DefaultToken) {
+func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 	if tokTwo == nil {
 		return
 	}
 
-	if !tokOne.PeriodFinal {
+	if !tokOne.HasPeriodFinal() {
 		return
 	}
 
@@ -121,7 +115,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *DefaultToken) {
 		the token is an abbreviation or an ellipsis, then decide
 		whether we should *also* classify it as a sentbreak.
 	*/
-	if (tokOne.Abbr || tokOne.Ellipsis) && !tokIsInitial {
+	if (tokOne.Abbr || tokOne.IsEllipsis()) && !tokIsInitial {
 		/*
 			[4.1.1. Orthographic Heuristic] Check if there's
 			orthogrpahic evidence about whether the next word
@@ -129,6 +123,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *DefaultToken) {
 		*/
 		isSentStarter := a.orthoHeuristic(tokTwo)
 		if isSentStarter == 1 {
+			logger.Println("HIT")
 			tokOne.SentBreak = true
 			return
 		}
@@ -140,6 +135,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *DefaultToken) {
 			sentence break.
 		*/
 		if tokTwo.FirstUpper() && a.SentStarters.items[nextTyp] != 0 {
+			logger.Println("WOWCOOL")
 			tokOne.SentBreak = true
 			return
 		}
@@ -183,7 +179,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *DefaultToken) {
 /*
 Decide whether the given token is the first token in a sentence.
 */
-func (a *TokenBasedAnnotation) orthoHeuristic(token *DefaultToken) int {
+func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
 	if token == nil {
 		return 0
 	}
