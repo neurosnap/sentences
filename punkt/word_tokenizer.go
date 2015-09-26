@@ -79,7 +79,6 @@ func (p *DefaultWordTokenizer) pairWordTokenizer(text string) []*pairTokens {
 	multi := regexp.MustCompile(p.MultiCharPunct())
 
 	for _, word := range words {
-		// Skip one letter words
 		if len(word) == 1 {
 			continue
 		}
@@ -102,7 +101,8 @@ func (p *DefaultWordTokenizer) pairWordTokenizer(text string) []*pairTokens {
 
 		multipunct := multi.FindStringIndex(word)
 		if multipunct != nil {
-			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) || multipunct[0]+multipunct[1] == len(word)) {
+			if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) ||
+				multipunct[0]+multipunct[1] == len(word)) {
 				first = word[:len(chars)-1]
 				second = "."
 			} else {

@@ -1,5 +1,7 @@
 package punkt
 
+import "encoding/json"
+
 // golang implementation of a set of strings
 // probably not the best way to do this but oh well
 type SetString map[string]int
@@ -37,6 +39,20 @@ type Storage struct {
 	Collocations SetString `json:"Collocations"`
 	SentStarters SetString `json:"SentStarters"`
 	OrthoContext SetString `json:"OrthoContext"`
+}
+
+// Primary function to load JSON training data.  By default, the sentence tokenizer
+// loads in english automatically, but other languages could be loaded into a
+// binary file using the `make <lang>` command.
+func LoadTraining(data []byte) (*Storage, error) {
+	var storage Storage
+	err := json.Unmarshal(data, &storage)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return &storage, nil
 }
 
 // Creates the default storage container
