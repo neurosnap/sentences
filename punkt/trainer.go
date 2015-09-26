@@ -47,6 +47,8 @@ type Trainer struct {
 	IncludeAllCollocs    bool
 	IncludeAbbrevCollocs bool
 	AbbrevBackoff        int
+	SentStarters         SetString
+	Collocations         SetString
 }
 
 func NewTrainer(trainText string, fileText *os.File) *Trainer {
@@ -66,6 +68,8 @@ func NewTrainer(trainText string, fileText *os.File) *Trainer {
 		SentStarter:       30,
 		MinCollocFreq:     1,
 		IncludeAllCollocs: true,
+		SentStarters:      SetString{},
+		Collocations:      SetString{},
 	}
 
 	if trainText != "" {
@@ -155,7 +159,7 @@ func (p *Trainer) trainTokens(tokens []*Token) {
 }
 
 func (p *Trainer) uniqueTypes(tokens []*Token) []string {
-	unique := NewSetString(nil)
+	unique := SetString{}
 
 	for _, tok := range tokens {
 		unique.Add(tok.Typ)
@@ -171,12 +175,10 @@ Uses data that has been gathered in training to determine likely
 collocations and sentence starters.
 */
 func (p *Trainer) FinalizeTraining() {
-	p.SentStarters.items = map[string]int{}
 	for _, ss := range p.findSentStarters() {
 		p.SentStarters.Add(ss.Typ)
 	}
 
-	p.Collocations.items = map[string]int{}
 	for _, val := range p.findCollocations() {
 		p.Collocations.Add(strings.Join([]string{val.TypOne, val.TypTwo}, ","))
 	}
@@ -404,7 +406,7 @@ func (p *Trainer) isRareAbbrevType(curTok, nextTok *Token) bool {
 	*/
 	if nextTok.FirstLower() {
 		typTwo := nextTok.TypeNoSentPeriod()
-		typTwoOrthoCtx := p.OrthoContext.items[typTwo]
+		typTwoOrthoCtx := p.OrthoContext[typTwo]
 
 		if (typTwoOrthoCtx&orthoBegUc) == 1 && (typTwoOrthoCtx&orthoMidUc) == 0 {
 			return true

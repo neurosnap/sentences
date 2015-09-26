@@ -104,7 +104,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 	   excluded in training.
 	*/
 	collocation := strings.Join([]string{typ, nextTyp}, ",")
-	if a.Collocations.items[collocation] != 0 {
+	if a.Collocations[collocation] != 0 {
 		tokOne.SentBreak = false
 		tokOne.Abbr = true
 		return
@@ -133,7 +133,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 			frequent-sentence-starters list, then label tok as a
 			sentence break.
 		*/
-		if tokTwo.FirstUpper() && a.SentStarters.items[nextTyp] != 0 {
+		if tokTwo.FirstUpper() && a.SentStarters[nextTyp] != 0 {
 			tokOne.SentBreak = true
 			return
 		}
@@ -165,7 +165,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		if isSentStarter == -1 &&
 			tokIsInitial &&
 			tokTwo.FirstUpper() &&
-			a.OrthoContext.items[nextTyp]&orthoLc == 0 {
+			a.OrthoContext[nextTyp]&orthoLc == 0 {
 
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
@@ -188,7 +188,7 @@ func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
 		}
 	}
 
-	orthoCtx := a.OrthoContext.items[token.TypeNoSentPeriod()]
+	orthoCtx := a.OrthoContext[token.TypeNoSentPeriod()]
 
 	/*
 	   If the word is capitalized, occurs at least once with a
