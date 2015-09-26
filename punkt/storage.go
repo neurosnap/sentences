@@ -1,7 +1,7 @@
 package punkt
 
-// golang implementation of a set, probably not the best way to do this
-// but oh well
+// golang implementation of a set of strings
+// probably not the best way to do this but oh well
 type SetString map[string]int
 
 func (ss SetString) Add(str string) {
@@ -55,5 +55,6 @@ func (p *Storage) IsAbbr(tokens ...string) bool {
 			return true
 		}
 	}
+
 	return false
 }
