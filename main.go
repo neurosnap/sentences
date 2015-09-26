@@ -12,10 +12,15 @@ import (
 
 var VERSION string
 
-func main() {
+type englishAnnotation struct{}
 
+func (e *englishAnnotation) Annotate(tokens []*punkt.Token) []*punkt.Token {
+	fmt.Println("MADE IT!")
+	return tokens
+}
+
+func main() {
 	b, err := data.Asset("data/english.json")
-	//b, err := ioutil.ReadFile("data/english.json")
 	if err != nil {
 		panic(err)
 	}
@@ -29,6 +34,7 @@ func main() {
 	text, _ := ioutil.ReadAll(reader)
 
 	tokenizer := punkt.NewTokenizer(training)
+	tokenizer.Annotations = append(tokenizer.Annotations, &englishAnnotation{})
 
 	sentences := punkt.Tokenize(string(text), tokenizer)
 	for _, s := range sentences {

@@ -10,22 +10,22 @@ type Tokenizer interface {
 	SentenceTokenizer
 }
 
-type DefaultTokenizer struct {
-	WordTokenizer
-	SentenceTokenizer
-}
-
-func NewTokenizer(s *Storage) *DefaultTokenizer {
+func NewTokenizer(s *Storage) *DefaultSentenceTokenizer {
 	lang := NewLanguage()
+
 	annotations := []AnnotateTokens{
 		&TypeBasedAnnotation{s, lang},
 		&TokenBasedAnnotation{s, lang, &DefaultTokenGrouper{}},
 	}
 
-	return &DefaultTokenizer{
-		&DefaultWordTokenizer{lang},
-		&DefaultSentenceTokenizer{s, lang, annotations},
+	tokenizer := &DefaultSentenceTokenizer{
+		Storage:       s,
+		PunctStrings:  lang,
+		WordTokenizer: &DefaultWordTokenizer{lang},
+		Annotations:   annotations,
 	}
+
+	return tokenizer
 }
 
 // Interface used by the Tokenize function, can be extended to correct sentence
@@ -73,6 +73,7 @@ func Tokenize(text string, t Tokenizer) []string {
 // and then uses that model to find sentence boundaries.
 type DefaultSentenceTokenizer struct {
 	*Storage
+	WordTokenizer
 	PunctStrings
 	Annotations []AnnotateTokens
 }
