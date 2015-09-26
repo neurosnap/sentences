@@ -31,6 +31,7 @@ func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
 
 // Helpers to get the type of a token
 type TokenType interface {
+	GetType(string) string
 	// The type with its final period removed if it has one.
 	TypeNoPeriod() string
 	// The type with its final period removed if it is marked as a sentence break.
@@ -96,10 +97,16 @@ func NewToken(token string) *Token {
 		reInitial:    regexp.MustCompile(`^[A-Za-z]\.$`),
 		reAlpha:      regexp.MustCompile(`^[A-Za-z]+$`),
 	}
+	tok.Typ = tok.GetType(token)
 	tok.periodFinal = strings.HasSuffix(token, ".")
 	tok.TokenParser = &tok
 
 	return &tok
+}
+
+// Returns a case-normalized representation of the token.
+func (p *Token) GetType(tok string) string {
+	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
 }
 
 // The type with its final period removed if it has one.

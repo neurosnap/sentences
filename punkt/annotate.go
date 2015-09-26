@@ -123,7 +123,6 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		*/
 		isSentStarter := a.orthoHeuristic(tokTwo)
 		if isSentStarter == 1 {
-			logger.Println("HIT")
 			tokOne.SentBreak = true
 			return
 		}
@@ -135,7 +134,6 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 			sentence break.
 		*/
 		if tokTwo.FirstUpper() && a.SentStarters.items[nextTyp] != 0 {
-			logger.Println("WOWCOOL")
 			tokOne.SentBreak = true
 			return
 		}
