@@ -1,6 +1,7 @@
 package punkt
 
 import (
+	"fmt"
 	"regexp"
 	"strings"
 	"unicode"
@@ -77,6 +78,7 @@ type Token struct {
 	PunctStrings
 	Tok         string
 	Typ         string
+	Position    int
 	SentBreak   bool
 	ParaStart   bool
 	LineStart   bool
@@ -98,10 +100,13 @@ func NewToken(token string, p PunctStrings) *Token {
 		reAlpha:      regexp.MustCompile(`^[A-Za-z]+$`),
 	}
 	tok.Typ = tok.GetType(token)
-	tok.periodFinal = strings.HasSuffix(token, ".")
 	tok.TokenParser = &tok
 
 	return &tok
+}
+
+func (p *Token) String() string {
+	return fmt.Sprintf("<Token Tok: %q, Typ: %q, SentBreak: %t, Abbr: %t>", p.Tok, p.Typ, p.SentBreak, p.Abbr)
 }
 
 // Returns a case-normalized representation of the token.
@@ -188,5 +193,5 @@ func (p *Token) IsNonPunct() bool {
 }
 
 func (p *Token) HasPeriodFinal() bool {
-	return p.periodFinal
+	return strings.HasSuffix(p.Tok, ".")
 }

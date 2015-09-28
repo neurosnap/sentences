@@ -1,8 +1,10 @@
 package punkt
 
 import (
+	"fmt"
 	"regexp"
 	"strings"
+	"unicode"
 )
 
 type WordTokenizer interface {
@@ -15,7 +17,7 @@ type DefaultWordTokenizer struct {
 
 // Helps tokenize the body of text into words while also providing context for
 // the words and how they are used in the text.
-func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
+/*func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 	lines := strings.Split(text, "\n")
 	tokens := make([]*Token, 0, len(lines))
 	parastart := false
@@ -37,11 +39,159 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 	}
 
 	return tokens
+}*/
+
+func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
+	words := strings.Split(text, " ")
+	tokens := make([]*Token, 0, len(words))
+
+	paragraphStart := false
+	lineStart := false
+	count := 0
+	for _, word := range words {
+		if word == "" {
+			count += 1
+			continue
+		}
+		// check if this word starts with a newline
+		if strings.HasPrefix(word, "\n") {
+			if strings.Count(word, "\n") > 1 || lineStart {
+				paragraphStart = true
+			}
+
+			lineStart = true
+		}
+
+		multWord := strings.Fields(word)
+		if len(multWord) > 1 {
+			for i, mult := range multWord {
+				if i != 0 {
+					lineStart = true
+					for _, char := range text[count : count+len(multWord)] {
+						if !unicode.IsSpace(char) {
+							break
+						}
+
+						count += 1
+						if count > 1 {
+							paragraphStart = true
+						}
+					}
+				}
+
+				token := NewToken(mult, p.PunctStrings)
+				token.Position = count
+				token.ParaStart = paragraphStart
+				token.LineStart = lineStart
+
+				tokens = append(tokens, token)
+
+				lineStart = false
+				paragraphStart = false
+				count += len(mult)
+			}
+		} else {
+			count += len(word)
+
+			token := NewToken(word, p.PunctStrings)
+			token.Position = count
+			token.ParaStart = paragraphStart
+			token.LineStart = lineStart
+
+			tokens = append(tokens, token)
+		}
+
+		// check if next word starts with a newline
+		if strings.HasSuffix(word, "\n") {
+			lineStart = true
+			if strings.Count(word, "\n") > 1 {
+				paragraphStart = true
+			}
+		} else {
+			lineStart = false
+		}
+
+		count += 1
+	}
+
+	finalTokens := make([]*Token, 0, len(tokens))
+	for _, token := range tokens {
+		splitTokens := p.splitToken(token)
+		if splitTokens == nil {
+			continue
+		}
+
+		finalTokens = append(finalTokens, splitTokens...)
+	}
+
+	return finalTokens
+}
+
+func (p *DefaultWordTokenizer) splitToken(token *Token) []*Token {
+	word := strings.Fields(token.Tok)[0]
+	endPuncts := []string{":", ",", "?", `?"`, ".)"}
+	nonword := regexp.MustCompile(strings.Join([]string{p.NonWordChars(), p.MultiCharPunct()}, "|"))
+	multi := regexp.MustCompile(p.MultiCharPunct())
+
+	if len(word) == 1 {
+		return nil
+	}
+
+	chars := []rune(word)
+
+	first := word
+	second := ""
+	for _, punct := range endPuncts {
+		if strings.HasSuffix(word, punct) {
+			if len(punct) > 1 {
+				first = string(chars[:len(chars)-2])
+				second = string(chars[len(chars)-2:])
+			} else {
+				first = string(chars[:len(chars)-1])
+				second = string(chars[len(chars)-1:])
+			}
+		}
+	}
+
+	multipunct := multi.FindStringIndex(word)
+	if multipunct != nil {
+		if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) ||
+			multipunct[0]+multipunct[1] == len(word)) {
+			first = word[:len(chars)-1]
+			second = "."
+		} else {
+			if multipunct[1] == len(word) {
+				first = word[:multipunct[0]]
+				second = word[multipunct[0]:]
+			} else {
+				first = word[:multipunct[1]]
+				second = word[multipunct[1]:]
+			}
+		}
+	}
+
+	tokens := make([]*Token, 0, 2)
+	if nonword.MatchString(second) || strings.HasSuffix(second, ",") {
+		token.Tok = first
+		token.Typ = token.GetType(first)
+		secondToken := NewToken(second, p.PunctStrings)
+		tokens = append(tokens, token, secondToken)
+	} else {
+		token.Tok = word
+		token.Typ = token.GetType(word)
+		tokens = append(tokens, token)
+	}
+
+	return tokens
 }
 
 // temporary helper struct, not particularly useful
 type pairTokens struct {
 	First, Second string
+}
+
+func (p *pairTokens) String() string {
+	return fmt.Sprintf("First: %q, Second: %q", p.First, p.Second)
 }
 
 // Adds a token to our list of tokens and provides some context for the token.
@@ -72,7 +222,7 @@ func (p *DefaultWordTokenizer) addToken(tokens []*Token, pairTok *pairTokens, pa
 // Breaks the text up into words and also splits the token into two distinct
 // pieces that assist in determining what type of token we are dealing with
 func (p *DefaultWordTokenizer) pairWordTokenizer(text string) []*pairTokens {
-	endPuncts := []string{ /*`."`, `.'`, `.”`,*/ ":", ",", "?", `?"`, ".)"}
+	endPuncts := []string{":", ",", "?", `?"`, ".)"}
 	words := strings.Fields(text)
 	tokens := make([]*pairTokens, 0, len(words))
 

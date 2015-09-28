@@ -52,6 +52,8 @@ func Tokenize(text string, t Tokenizer) []string {
 	sentences := make([]string, 0, len(matches))
 	lastBreak := 0
 	for _, match := range matches {
+		//logger.Println(match.Context)
+		//logger.Println(t.HasSentBreak(match.Context, t))
 		if t.HasSentBreak(match.Context, t) {
 			sentence := text[lastBreak:match.End]
 			sentence = strings.TrimSpace(sentence)
