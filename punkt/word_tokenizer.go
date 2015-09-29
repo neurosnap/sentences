@@ -53,6 +53,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 			count += 1
 			continue
 		}
+
 		// check if this word starts with a newline
 		if strings.HasPrefix(word, "\n") {
 			if strings.Count(word, "\n") > 1 || lineStart {
@@ -63,42 +64,31 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 		}
 
 		multWord := strings.Fields(word)
-		if len(multWord) > 1 {
-			for i, mult := range multWord {
-				if i != 0 {
-					lineStart = true
-					for _, char := range text[count : count+len(multWord)] {
-						if !unicode.IsSpace(char) {
-							break
-						}
+		for i, mult := range multWord {
+			if i != 0 {
+				lineStart = true
+				for _, char := range text[count : count+len(multWord)] {
+					if !unicode.IsSpace(char) {
+						break
+					}
 
-						count += 1
-						if count > 1 {
-							paragraphStart = true
-						}
+					count += 1
+					if count > 1 {
+						paragraphStart = true
 					}
 				}
-
-				token := NewToken(mult, p.PunctStrings)
-				token.Position = count
-				token.ParaStart = paragraphStart
-				token.LineStart = lineStart
-
-				tokens = append(tokens, token)
-
-				lineStart = false
-				paragraphStart = false
-				count += len(mult)
 			}
-		} else {
-			count += len(word)
 
-			token := NewToken(word, p.PunctStrings)
+			token := NewToken(mult, p.PunctStrings)
 			token.Position = count
 			token.ParaStart = paragraphStart
 			token.LineStart = lineStart
 
 			tokens = append(tokens, token)
+
+			lineStart = false
+			paragraphStart = false
+			count += len(mult)
 		}
 
 		// check if next word starts with a newline
