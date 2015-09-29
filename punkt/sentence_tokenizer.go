@@ -136,7 +136,17 @@ func (s *DefaultSentenceTokenizer) PeriodCtxTokenizer(text string, w WordTokeniz
 Returns True if the given text includes a sentence break.
 */
 func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bool {
-	tokens := w.Tokenize(text)
+	word_tokens := w.Tokenize(text)
+
+	tokens := make([]*Token, 0, len(word_tokens))
+	for _, token := range word_tokens {
+		splitTokens := s.splitToken(token)
+		if splitTokens == nil {
+			continue
+		}
+
+		tokens = append(tokens, splitTokens...)
+	}
 
 	if len(tokens) == 0 {
 		return false
@@ -149,4 +159,62 @@ func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bo
 	}
 
 	return false
+}
+
+func (s *DefaultSentenceTokenizer) splitToken(token *Token) []*Token {
+	word := strings.Fields(token.Tok)[0]
+	endPuncts := []string{":", ",", "?", `?"`, ".)"}
+	nonword := regexp.MustCompile(strings.Join([]string{s.NonWordChars(), s.MultiCharPunct()}, "|"))
+	multi := regexp.MustCompile(s.MultiCharPunct())
+
+	if len(word) == 1 {
+		return nil
+	}
+
+	chars := []rune(word)
+
+	first := word
+	second := ""
+	for _, punct := range endPuncts {
+		if strings.HasSuffix(word, punct) {
+			if len(punct) > 1 {
+				first = string(chars[:len(chars)-2])
+				second = string(chars[len(chars)-2:])
+			} else {
+				first = string(chars[:len(chars)-1])
+				second = string(chars[len(chars)-1:])
+			}
+		}
+	}
+
+	multipunct := multi.FindStringIndex(word)
+	if multipunct != nil {
+		if strings.HasSuffix(word, ".") && (multipunct[1] != len(word) ||
+			multipunct[0]+multipunct[1] == len(word)) {
+			first = word[:len(chars)-1]
+			second = "."
+		} else {
+			if multipunct[1] == len(word) {
+				first = word[:multipunct[0]]
+				second = word[multipunct[0]:]
+			} else {
+				first = word[:multipunct[1]]
+				second = word[multipunct[1]:]
+			}
+		}
+	}
+
+	tokens := make([]*Token, 0, 2)
+	if nonword.MatchString(second) || strings.HasSuffix(second, ",") {
+		token.Tok = first
+		token.Typ = token.GetType(first)
+		secondToken := NewToken(second, s.PunctStrings)
+		tokens = append(tokens, token, secondToken)
+	} else {
+		token.Tok = word
+		token.Typ = token.GetType(word)
+		tokens = append(tokens, token)
+	}
+
+	return tokens
 }
