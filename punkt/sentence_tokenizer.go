@@ -3,7 +3,7 @@ package punkt
 import (
 	"regexp"
 	"strings"
-	"time"
+	//"time"
 )
 
 type Tokenizer interface {
@@ -45,11 +45,10 @@ type PeriodCtx struct {
 }
 
 func (s *DefaultSentenceTokenizer) NTokenize(text string) []string {
-	timeit := time.Now()
+	//timeit := time.Now()
 	wordTokens := s.WordTokenizer.Tokenize(text, true)
-	elapsedTime := time.Now().Sub(timeit)
-
-	logger.Println(elapsedTime)
+	//elapsedTime := time.Now().Sub(timeit)
+	//logger.Println(elapsedTime)
 
 	tokens := make([]*Token, 0, len(wordTokens))
 	for _, token := range wordTokens {
@@ -65,7 +64,6 @@ func (s *DefaultSentenceTokenizer) NTokenize(text string) []string {
 	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
 	sentences := make([]string, 0, len(annotatedTokens))
 	for _, token := range annotatedTokens {
-		//logger.Println(token)
 		if token.SentBreak {
 			sentence := text[lastBreak:token.Position]
 			sentence = strings.TrimSpace(sentence)

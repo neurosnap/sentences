@@ -50,7 +50,9 @@ or vice versa do not only introduce errors in the determination of sentence boun
 Segmentation errors propagate into further components which rely on accurate
 sentence segmentation and subsequent analyses are most likely affected negatively.
 {{sentence_break}}
-Walker et al. (2001), for example, stress the importance of correct sentence boundary
+Walker et al.
+{{sentence_break}}
+(2001), for example, stress the importance of correct sentence boundary
 disambiguation for machine translation and Kiss and Strunk (2002b) show that errors
 in sentence boundary detection lead to a higher error rate in part-of-speech tagging.
 {{sentence_break}}

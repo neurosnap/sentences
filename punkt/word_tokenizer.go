@@ -18,27 +18,46 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPunctuation bool) []*To
 	lastSpace := 0
 	lineStart := false
 	paragraphStart := false
+	getNextWord := false
+
 	for i := 0; i < len(text); i++ {
 		char := rune(text[i])
-		if unicode.IsSpace(char) {
-			token := NewToken(text[lastSpace:i], p.PunctStrings)
-			token.Position = i
-			token.ParaStart = paragraphStart
-			token.LineStart = lineStart
-			logger.Println(token)
-			tokens = append(tokens, token)
+		if !unicode.IsSpace(char) {
+			continue
+		}
 
-			lastSpace = i
-
-			if char == '\n' {
-				if lineStart {
-					paragraphStart = true
-				}
-				lineStart = true
-			} else {
-				lineStart = false
-				paragraphStart = false
+		if char == '\n' {
+			if lineStart {
+				paragraphStart = true
 			}
+			lineStart = true
+		}
+
+		word := strings.TrimSpace(text[lastSpace:i])
+		if word == "" {
+			continue
+		}
+
+		hasSentencePunct := p.HasSentencePunct(word)
+
+		if onlyPunctuation && !hasSentencePunct && !getNextWord {
+			lastSpace = i
+			continue
+		}
+
+		token := NewToken(word, p.PunctStrings)
+		token.Position = i
+		token.ParaStart = paragraphStart
+		token.LineStart = lineStart
+		tokens = append(tokens, token)
+
+		lastSpace = i
+		lineStart = false
+		paragraphStart = false
+		if hasSentencePunct {
+			getNextWord = true
+		} else {
+			getNextWord = false
 		}
 	}
 
