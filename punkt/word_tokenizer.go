@@ -6,25 +6,34 @@ import (
 )
 
 type WordTokenizer interface {
-	Tokenize(string) []*Token
+	Tokenize(string, bool) []*Token
 }
 
 type DefaultWordTokenizer struct {
 	PunctStrings
 }
 
-func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
+func (p *DefaultWordTokenizer) Tokenize(text string, onlyPunctuation bool) []*Token {
 	words := strings.Split(text, " ")
 	tokens := make([]*Token, 0, len(words))
 
 	paragraphStart := false
 	lineStart := false
+	getNextWord := false
 	count := 0
 	for _, word := range words {
 		if word == "" {
 			count += 1
 			continue
 		}
+
+		if onlyPunctuation && !p.HasSentencePunct(word) && !getNextWord {
+			count += len(word) + 1
+			getNextWord = false
+			continue
+		}
+
+		getNextWord = true
 
 		// check if this word starts with a newline
 		if strings.HasPrefix(word, "\n") {
@@ -52,6 +61,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 			}
 
 			count += len(mult)
+			//logger.Println(count, mult)
 			token := NewToken(mult, p.PunctStrings)
 			token.Position = count
 			token.ParaStart = paragraphStart

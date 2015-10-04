@@ -3,6 +3,7 @@ package punkt
 import (
 	"regexp"
 	"strings"
+	"time"
 )
 
 type Tokenizer interface {
@@ -44,7 +45,12 @@ type PeriodCtx struct {
 }
 
 func (s *DefaultSentenceTokenizer) NTokenize(text string) []string {
-	wordTokens := s.WordTokenizer.Tokenize(text)
+	timeit := time.Now()
+	wordTokens := s.WordTokenizer.Tokenize(text, true)
+	elapsedTime := time.Now().Sub(timeit)
+
+	logger.Println(elapsedTime)
+
 	tokens := make([]*Token, 0, len(wordTokens))
 	for _, token := range wordTokens {
 		splitTokens := s.splitToken(token)
@@ -169,7 +175,7 @@ func (s *DefaultSentenceTokenizer) PeriodCtxTokenizer(text string, w WordTokeniz
 Returns True if the given text includes a sentence break.
 */
 func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bool {
-	word_tokens := w.Tokenize(text)
+	word_tokens := w.Tokenize(text, true)
 
 	tokens := make([]*Token, 0, len(word_tokens))
 	for _, token := range word_tokens {

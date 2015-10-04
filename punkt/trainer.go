@@ -84,7 +84,7 @@ func NewTrainer(trainText string, fileText *os.File) *Trainer {
 }
 
 func (p *Trainer) Train(text string, finalize bool) {
-	p.trainTokens(p.WordTokenizer.Tokenize(text))
+	p.trainTokens(p.WordTokenizer.Tokenize(text, true))
 	if finalize {
 		p.FinalizeTraining()
 	}

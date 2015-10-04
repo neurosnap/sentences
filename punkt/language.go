@@ -14,6 +14,7 @@ type PunctStrings interface {
 	NonPunct() string
 	Punctuation() string
 	MultiCharPunct() string
+	HasSentencePunct(string) bool
 }
 
 /*
@@ -51,6 +52,19 @@ func (p *Language) NonPunct() string {
 
 func (p *Language) Punctuation() string {
 	return ";:,.!?"
+}
+
+func (p *Language) HasSentencePunct(text string) bool {
+	endPunct := `.!?`
+	for _, char := range endPunct {
+		for _, achar := range text {
+			if char == achar {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 func (p *Language) MultiCharPunct() string {
