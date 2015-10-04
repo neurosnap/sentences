@@ -26,7 +26,7 @@ dutch:
 	go-bindata -o data/dutch.go data/dutch.json
 
 english:
-	go-bindata -o data/english.go data/english.json
+	go-bindata -pkg="data" -o data/english.go data/english.json
 
 estonian:
 	go-bindata -o data/estonian.go data/estonian.json

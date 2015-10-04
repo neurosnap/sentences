@@ -36,7 +36,7 @@ func main() {
 	tokenizer := punkt.NewTokenizer(training)
 	tokenizer.Annotations = append(tokenizer.Annotations, &englishAnnotation{})
 
-	sentences := punkt.Tokenize(string(text), tokenizer)
+	sentences := tokenizer.Tokenize(string(text))
 	for _, s := range sentences {
 		fmt.Printf("%q\n", s)
 	}

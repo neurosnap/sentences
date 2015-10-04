@@ -68,7 +68,7 @@ func TestEnglish(t *testing.T) {
 		expected := strings.Split(expected_text, "{{sentence_break}}")
 
 		t.Log(f[0])
-		sentences := tokenizer.NTokenize(actual_text)
+		sentences := tokenizer.Tokenize(actual_text)
 		for index, s := range sentences {
 			if strings.TrimSpace(s) != strings.TrimSpace(expected[index]) {
 				t.Logf("Actual  : %q", s)
