@@ -51,6 +51,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 				}
 			}
 
+			count += len(mult)
 			token := NewToken(mult, p.PunctStrings)
 			token.Position = count
 			token.ParaStart = paragraphStart
@@ -60,7 +61,6 @@ func (p *DefaultWordTokenizer) Tokenize(text string) []*Token {
 
 			lineStart = false
 			paragraphStart = false
-			count += len(mult)
 		}
 
 		// check if next word starts with a newline

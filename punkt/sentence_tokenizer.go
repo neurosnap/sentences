@@ -43,6 +43,39 @@ type PeriodCtx struct {
 	End int
 }
 
+func (s *DefaultSentenceTokenizer) NTokenize(text string) []string {
+	wordTokens := s.WordTokenizer.Tokenize(text)
+	tokens := make([]*Token, 0, len(wordTokens))
+	for _, token := range wordTokens {
+		splitTokens := s.splitToken(token)
+		if splitTokens == nil {
+			continue
+		}
+
+		tokens = append(tokens, splitTokens...)
+	}
+
+	lastBreak := 0
+	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
+	sentences := make([]string, 0, len(annotatedTokens))
+	for _, token := range annotatedTokens {
+		//logger.Println(token)
+		if token.SentBreak {
+			sentence := text[lastBreak:token.Position]
+			sentence = strings.TrimSpace(sentence)
+			if sentence == "" {
+				continue
+			}
+
+			sentences = append(sentences, sentence)
+			lastBreak = token.Position
+		}
+	}
+
+	sentences = append(sentences, text[lastBreak:])
+	return sentences
+}
+
 /*
 Breaks text into sentences using the SentenceTokenizer interface
 */
@@ -208,7 +241,12 @@ func (s *DefaultSentenceTokenizer) splitToken(token *Token) []*Token {
 	if nonword.MatchString(second) || strings.HasSuffix(second, ",") {
 		token.Tok = first
 		token.Typ = token.GetType(first)
+
 		secondToken := NewToken(second, s.PunctStrings)
+		secondToken.Position = token.Position
+
+		token.Position = token.Position - len(second)
+
 		tokens = append(tokens, token, secondToken)
 	} else {
 		token.Tok = word

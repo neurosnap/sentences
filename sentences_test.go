@@ -9,7 +9,7 @@ import (
 	"github.com/neurosnap/sentences/punkt"
 )
 
-func loadTokenizer(data string) punkt.Tokenizer {
+func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
 	b, err := td.Asset(data)
 	if err != nil {
 		panic(err)
@@ -68,7 +68,7 @@ func TestEnglish(t *testing.T) {
 		expected := strings.Split(expected_text, "{{sentence_break}}")
 
 		t.Log(f[0])
-		sentences := punkt.Tokenize(actual_text, tokenizer)
+		sentences := tokenizer.NTokenize(actual_text)
 		for index, s := range sentences {
 			if strings.TrimSpace(s) != strings.TrimSpace(expected[index]) {
 				t.Log("Actual: ", s)

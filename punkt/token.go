@@ -106,7 +106,7 @@ func NewToken(token string, p PunctStrings) *Token {
 }
 
 func (p *Token) String() string {
-	return fmt.Sprintf("<Token Tok: %q, Typ: %q, SentBreak: %t, Abbr: %t>", p.Tok, p.Typ, p.SentBreak, p.Abbr)
+	return fmt.Sprintf("<Token Tok: %q, Typ: %q, SentBreak: %t, Abbr: %t, Position: %d>", p.Tok, p.Typ, p.SentBreak, p.Abbr, p.Position)
 }
 
 // Returns a case-normalized representation of the token.
