@@ -201,7 +201,7 @@ func (s *DefaultSentenceTokenizer) HasSentBreak(text string, w WordTokenizer) bo
 }
 
 func (s *DefaultSentenceTokenizer) splitToken(token *Token) []*Token {
-	word := strings.Fields(token.Tok)[0]
+	word := strings.TrimSpace(token.Tok)
 	endPuncts := []string{":", ",", "?", `?"`, ".)"}
 	nonword := regexp.MustCompile(strings.Join([]string{s.NonWordChars(), s.MultiCharPunct()}, "|"))
 	multi := regexp.MustCompile(s.MultiCharPunct())

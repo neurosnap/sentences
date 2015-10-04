@@ -71,9 +71,9 @@ func TestEnglish(t *testing.T) {
 		sentences := tokenizer.NTokenize(actual_text)
 		for index, s := range sentences {
 			if strings.TrimSpace(s) != strings.TrimSpace(expected[index]) {
-				t.Log("Actual: ", s)
+				t.Logf("Actual  : %q", s)
 				t.Log("--------")
-				t.Log("Expected: ", strings.TrimSpace(expected[index]))
+				t.Logf("Expected: %q", strings.TrimSpace(expected[index]))
 				t.Fatalf("%s line %d: Actual sentence does not match expected sentence", f[0], index)
 			}
 		}

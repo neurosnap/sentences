@@ -14,6 +14,38 @@ type DefaultWordTokenizer struct {
 }
 
 func (p *DefaultWordTokenizer) Tokenize(text string, onlyPunctuation bool) []*Token {
+	tokens := []*Token{}
+	lastSpace := 0
+	lineStart := false
+	paragraphStart := false
+	for i := 0; i < len(text); i++ {
+		char := rune(text[i])
+		if unicode.IsSpace(char) {
+			token := NewToken(text[lastSpace:i], p.PunctStrings)
+			token.Position = i
+			token.ParaStart = paragraphStart
+			token.LineStart = lineStart
+			logger.Println(token)
+			tokens = append(tokens, token)
+
+			lastSpace = i
+
+			if char == '\n' {
+				if lineStart {
+					paragraphStart = true
+				}
+				lineStart = true
+			} else {
+				lineStart = false
+				paragraphStart = false
+			}
+		}
+	}
+
+	return tokens
+}
+
+func (p *DefaultWordTokenizer) OTokenize(text string, onlyPunctuation bool) []*Token {
 	words := strings.Split(text, " ")
 	tokens := make([]*Token, 0, len(words))
 
