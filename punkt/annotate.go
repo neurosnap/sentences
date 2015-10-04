@@ -42,7 +42,7 @@ func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 }
 
 func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
-	chars := strings.Split(token.Tok, "")
+	chars := []rune(token.Tok)
 	tokInEndChars := strings.Index(
 		a.SentEndChars(),
 		token.Tok,

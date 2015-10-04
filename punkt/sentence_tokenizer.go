@@ -52,27 +52,22 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 		// split a token by special punctuation
 		// TODO: get rid of this bloated piece of shit
 		splitTokens := s.splitToken(token)
-		if splitTokens == nil {
-			continue
-		}
-
 		tokens = append(tokens, splitTokens...)
 	}
 
 	lastBreak := 0
+	// Think of AnnotateTokens as a pipeline that we send our tokens through to process.
 	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
 	sentences := make([]string, 0, len(annotatedTokens))
 	for _, token := range annotatedTokens {
-		if token.SentBreak {
-			sentence := text[lastBreak:token.Position]
-			sentence = strings.TrimSpace(sentence)
-			if sentence == "" {
-				continue
-			}
-
-			sentences = append(sentences, sentence)
-			lastBreak = token.Position
+		if !token.SentBreak {
+			continue
 		}
+
+		sentence := text[lastBreak:token.Position]
+		sentences = append(sentences, sentence)
+
+		lastBreak = token.Position
 	}
 
 	sentences = append(sentences, text[lastBreak:])

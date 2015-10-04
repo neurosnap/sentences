@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/neurosnap/sentences/utils"
+	. "github.com/neurosnap/punkt"
 )
 
 type AbbrevType struct {
@@ -33,9 +33,9 @@ type Trainer struct {
 	AnnotateTokens
 	TokenGrouper
 	PunctStrings
-	TypeDist             *utils.FreqDist
-	CollocationDist      *utils.FreqDist
-	SentStarterDist      *utils.FreqDist
+	TypeDist             *FreqDist
+	CollocationDist      *FreqDist
+	SentStarterDist      *FreqDist
 	sentBreakCount       float64
 	numPeriodToks        float64
 	Abbrev               float64
@@ -58,9 +58,9 @@ func NewTrainer(trainText string, fileText *os.File) *Trainer {
 		AnnotateTokens:    &TypeBasedAnnotation{},
 		TokenGrouper:      &DefaultTokenGrouper{},
 		PunctStrings:      NewLanguage(),
-		TypeDist:          utils.NewFreqDist(map[string]int{}),
-		CollocationDist:   utils.NewFreqDist(map[string]int{}),
-		SentStarterDist:   utils.NewFreqDist(map[string]int{}),
+		TypeDist:          NewFreqDist(map[string]int{}),
+		CollocationDist:   NewFreqDist(map[string]int{}),
+		SentStarterDist:   NewFreqDist(map[string]int{}),
 		finalized:         true,
 		Abbrev:            0.3,
 		AbbrevBackoff:     5,
