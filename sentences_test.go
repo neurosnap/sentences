@@ -60,6 +60,8 @@ func TestEnglish(t *testing.T) {
 		getFileLocation(prefix, "duma.txt", "duma_s.txt"),
 		getFileLocation(prefix, "demolitions.txt", "demolitions_s.txt"),
 		getFileLocation(prefix, "qa.txt", "qa_s.txt"),
+		getFileLocation(prefix, "anarchy.txt", "anarchy_s.txt"),
+		getFileLocation(prefix, "ethicist.txt", "ethicist_s.txt"),
 	}
 
 	for _, f := range test_files {
@@ -71,7 +73,7 @@ func TestEnglish(t *testing.T) {
 		sentences := tokenizer.Tokenize(actual_text)
 		for index, s := range sentences {
 			if strings.TrimSpace(s) != strings.TrimSpace(expected[index]) {
-				t.Logf("Actual  : %q", s)
+				t.Logf("Actual  : %q", strings.TrimSpace(s))
 				t.Log("--------")
 				t.Logf("Expected: %q", strings.TrimSpace(expected[index]))
 				t.Fatalf("%s line %d: Actual sentence does not match expected sentence", f[0], index)

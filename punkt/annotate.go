@@ -184,7 +184,6 @@ func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
 	}
 
 	orthoCtx := a.OrthoContext[token.TypeNoSentPeriod()]
-
 	/*
 	   If the word is capitalized, occurs at least once with a
 	   lower case first letter, and never occurs with an upper case

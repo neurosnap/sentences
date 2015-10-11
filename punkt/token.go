@@ -111,7 +111,9 @@ func (p *Token) String() string {
 
 // Returns a case-normalized representation of the token.
 func (p *Token) GetType(tok string) string {
-	return p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
+	typ := p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
+	// removing comma from typ
+	return strings.Replace(typ, ",", "", -1)
 }
 
 // The type with its final period removed if it has one.
@@ -206,6 +208,18 @@ func (p *Token) HasSentEndChars() bool {
 
 	for _, ender := range enders {
 		if strings.HasSuffix(p.Tok, ender) {
+			return true
+		}
+	}
+
+	parens := []string{
+		`.[`, `.(`, `."`, `.'`,
+		`?[`, `?(`,
+		`![`, `!(`,
+	}
+
+	for _, paren := range parens {
+		if strings.Index(p.Tok, paren) != -1 {
 			return true
 		}
 	}
