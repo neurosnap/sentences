@@ -205,7 +205,7 @@ func (p *Token) HasPeriodFinal() bool {
 // Find any punctuation excluding the period final
 func (p *Token) HasSentEndChars() bool {
 	enders := []string{
-		`."`, `.'`, `.)`, `.’`, /*`.”`,*/
+		`."`, `.'`, `.)`, /*`.’`, `.”`,*/
 		`?`, `?"`, `?'`, `?)`, /*`?’`, `?”`,*/
 		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
 	}

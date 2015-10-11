@@ -62,6 +62,11 @@ func TestEnglish(t *testing.T) {
 		getFileLocation(prefix, "qa.txt", "qa_s.txt"),
 		getFileLocation(prefix, "anarchy.txt", "anarchy_s.txt"),
 		getFileLocation(prefix, "ethicist.txt", "ethicist_s.txt"),
+		getFileLocation(prefix, "self_reliance.txt", "self_reliance_s.txt"),
+		getFileLocation(prefix, "punct.txt", "punct_s.txt"),
+		getFileLocation(prefix, "clinton.txt", "clinton_s.txt"),
+		getFileLocation(prefix, "markets.txt", "markets_s.txt"),
+		getFileLocation(prefix, "nyfed.txt", "nyfed_s.txt"),
 	}
 
 	for _, f := range test_files {
