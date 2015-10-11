@@ -38,17 +38,12 @@ func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 		a.typeAnnotation(augTok)
 	}
 	return tokens
-
 }
 
 func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 	chars := []rune(token.Tok)
-	tokInEndChars := strings.Index(
-		a.SentEndChars(),
-		token.Tok,
-	)
 
-	if tokInEndChars != -1 {
+	if token.HasSentEndChars() {
 		token.SentBreak = true
 	} else if token.HasPeriodFinal() && !strings.HasSuffix(token.Tok, "..") {
 		tokNoPeriod := strings.ToLower(token.Tok[:len(chars)-1])

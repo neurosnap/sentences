@@ -195,3 +195,20 @@ func (p *Token) IsNonPunct() bool {
 func (p *Token) HasPeriodFinal() bool {
 	return strings.HasSuffix(p.Tok, ".")
 }
+
+// Find any punctuation excluding the period final
+func (p *Token) HasSentEndChars() bool {
+	enders := []string{
+		`."`, `.'`, `.)`, `.’`, /*`.”`,*/
+		`?`, `?"`, `?'`, `?)`, /*`?’`, `?”`,*/
+		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
+	}
+
+	for _, ender := range enders {
+		if strings.HasSuffix(p.Tok, ender) {
+			return true
+		}
+	}
+
+	return false
+}
