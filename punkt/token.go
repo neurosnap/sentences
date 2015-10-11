@@ -112,6 +112,10 @@ func (p *Token) String() string {
 // Returns a case-normalized representation of the token.
 func (p *Token) GetType(tok string) string {
 	typ := p.reNumeric.ReplaceAllString(strings.ToLower(tok), "##number##")
+	if len(typ) == 1 {
+		return typ
+	}
+
 	// removing comma from typ
 	return strings.Replace(typ, ",", "", -1)
 }
