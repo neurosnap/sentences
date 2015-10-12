@@ -37,6 +37,19 @@ func NewTokenizer(s *Storage) *DefaultSentenceTokenizer {
 	return tokenizer
 }
 
+/*
+Given a set of tokens augmented with markers for line-start and
+paragraph-start, returns an iterator through those tokens with full
+annotation including predicted sentence breaks.
+*/
+func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...AnnotateTokens) []*Token {
+	for _, ann := range annotate {
+		tokens = ann.Annotate(tokens)
+	}
+
+	return tokens
+}
+
 func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 	// Use the default word tokenizer but only grab the tokens that
 	// relate to a sentence ending punctuation.  This means grab the word
@@ -60,17 +73,4 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 
 	sentences = append(sentences, text[lastBreak:])
 	return sentences
-}
-
-/*
-Given a set of tokens augmented with markers for line-start and
-paragraph-start, returns an iterator through those tokens with full
-annotation including predicted sentence breaks.
-*/
-func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...AnnotateTokens) []*Token {
-	for _, ann := range annotate {
-		tokens = ann.Annotate(tokens)
-	}
-
-	return tokens
 }

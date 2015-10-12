@@ -60,6 +60,7 @@ func NewStorage() *Storage {
 	return &Storage{SetString{}, SetString{}, SetString{}, SetString{}}
 }
 
+// Used in the training to add a type to the ortho context
 func (p *Storage) addOrthoContext(typ string, flag int) {
 	p.OrthoContext[typ] |= flag
 }

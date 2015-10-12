@@ -41,8 +41,6 @@ type TokenType interface {
 
 // Helpers to determine the case of the token's first letter
 type TokenFirst interface {
-	// Text based case of the first letter in the token.
-	FirstCase() string
 	// True if the token's first character is lowercase
 	FirstLower() bool
 	// True if the token's first character is uppercase.
@@ -63,6 +61,8 @@ type TokenExistential interface {
 	IsNonPunct() bool
 	// Does this token end with a period?
 	HasPeriodFinal() bool
+	// Does this token end with a punctuation and a quote?
+	HasSentEndChars() bool
 }
 
 // Primary token interface that determines the context and type of a tokenized word.
@@ -143,7 +143,7 @@ func (p *Token) TypeNoSentPeriod() string {
 
 // True if the token's first character is uppercase.
 func (p *Token) FirstUpper() bool {
-	if p == nil || p.Tok == "" {
+	if p.Tok == "" {
 		return false
 	}
 
@@ -159,17 +159,6 @@ func (p *Token) FirstLower() bool {
 
 	runes := []rune(p.Tok)
 	return unicode.IsLower(runes[0])
-}
-
-// Text based case of the first letter in the token.
-func (p *Token) FirstCase() string {
-	if p.FirstLower() {
-		return "lower"
-	} else if p.FirstUpper() {
-		return "upper"
-	}
-
-	return "none"
 }
 
 // True if the token text is that of an ellipsis.
