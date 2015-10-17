@@ -36,3 +36,51 @@ var orthoMap = map[[2]string]int{
 	[2]string{"internal", "lower"}: orthoMidLc,
 	[2]string{"unknown", "lower"}:  orthoUnkLc,
 }
+
+type Ortho interface {
+	Heuristic(*Token) int
+}
+
+type OrthoContext struct {
+	*Storage
+	PunctStrings
+	TokenType
+	TokenFirst
+}
+
+/*
+Decide whether the given token is the first token in a sentence.
+*/
+func (o *OrthoContext) Heuristic(token *Token) int {
+	if token == nil {
+		return 0
+	}
+
+	for _, punct := range o.PunctStrings.Punctuation() {
+		if token.Tok == string(punct) {
+			return 0
+		}
+	}
+
+	orthoCtx := o.Storage.OrthoContext[o.TokenType.TypeNoSentPeriod(token)]
+	/*
+	   If the word is capitalized, occurs at least once with a
+	   lower case first letter, and never occurs with an upper case
+	   first letter sentence-internally, then it's a sentence starter.
+	*/
+	if o.TokenFirst.FirstUpper(token) && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
+		return 1
+	}
+
+	/*
+		If the word is lower case, and either (a) we've seen it used
+		with upper case, or (b) we've never seen it used
+		sentence-initially with lower case, then it's not a sentence
+		starter.
+	*/
+	if o.TokenFirst.FirstLower(token) && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
+		return 0
+	}
+
+	return -1
+}

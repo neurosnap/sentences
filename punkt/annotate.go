@@ -25,7 +25,9 @@ func NewTypeBasedAnnotation(s *Storage, p PunctStrings, e TokenExistential) *Typ
 func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTokens {
 	return []AnnotateTokens{
 		&TypeBasedAnnotation{s, p, word},
-		&TokenBasedAnnotation{s, p, word, &DefaultTokenGrouper{}},
+		&TokenBasedAnnotation{s, p, word, &DefaultTokenGrouper{}, &OrthoContext{
+			s, p, word, word,
+		}},
 	}
 }
 
@@ -72,6 +74,7 @@ type TokenBasedAnnotation struct {
 	PunctStrings
 	TokenParser
 	TokenGrouper
+	Ortho
 }
 
 /*
@@ -92,13 +95,13 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		return
 	}
 
-	if !a.HasPeriodFinal(tokOne) {
+	if !a.TokenParser.HasPeriodFinal(tokOne) {
 		return
 	}
 
-	typ := a.TypeNoPeriod(tokOne)
-	nextTyp := a.TypeNoSentPeriod(tokTwo)
-	tokIsInitial := a.IsInitial(tokOne)
+	typ := a.TokenParser.TypeNoPeriod(tokOne)
+	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
+	tokIsInitial := a.TokenParser.IsInitial(tokOne)
 
 	/*
 	   [4.1.2. Collocation Heuristic] If there's a
@@ -120,13 +123,13 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		the token is an abbreviation or an ellipsis, then decide
 		whether we should *also* classify it as a sentbreak.
 	*/
-	if (tokOne.Abbr || a.IsEllipsis(tokOne)) && !tokIsInitial {
+	if (tokOne.Abbr || a.TokenParser.IsEllipsis(tokOne)) && !tokIsInitial {
 		/*
 			[4.1.1. Orthographic Heuristic] Check if there's
 			orthogrpahic evidence about whether the next word
 			starts a sentence or not.
 		*/
-		isSentStarter := a.orthoHeuristic(tokTwo)
+		isSentStarter := a.Ortho.Heuristic(tokTwo)
 		if isSentStarter == 1 {
 			tokOne.SentBreak = true
 			return
@@ -138,7 +141,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 			frequent-sentence-starters list, then label tok as a
 			sentence break.
 		*/
-		if a.FirstUpper(tokTwo) && a.SentStarters[nextTyp] != 0 {
+		if a.TokenParser.FirstUpper(tokTwo) && a.SentStarters[nextTyp] != 0 {
 			tokOne.SentBreak = true
 			return
 		}
@@ -150,7 +153,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		as sentbreaks should be reclassified as abbreviations.
 	*/
 	if tokIsInitial || typ == "##number##" {
-		isSentStarter := a.orthoHeuristic(tokTwo)
+		isSentStarter := a.Ortho.Heuristic(tokTwo)
 
 		if isSentStarter == 0 {
 			tokOne.SentBreak = false
@@ -169,7 +172,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		*/
 		if isSentStarter == -1 &&
 			tokIsInitial &&
-			a.FirstUpper(tokTwo) &&
+			a.TokenParser.FirstUpper(tokTwo) &&
 			a.OrthoContext[nextTyp]&orthoLc == 0 {
 
 			tokOne.SentBreak = false
@@ -177,41 +180,4 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 			return
 		}
 	}
-}
-
-/*
-Decide whether the given token is the first token in a sentence.
-*/
-func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
-	if token == nil {
-		return 0
-	}
-
-	for _, punct := range a.Punctuation() {
-		if token.Tok == string(punct) {
-			return 0
-		}
-	}
-
-	orthoCtx := a.OrthoContext[a.TypeNoSentPeriod(token)]
-	/*
-	   If the word is capitalized, occurs at least once with a
-	   lower case first letter, and never occurs with an upper case
-	   first letter sentence-internally, then it's a sentence starter.
-	*/
-	if a.FirstUpper(token) && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
-		return 1
-	}
-
-	/*
-		If the word is lower case, and either (a) we've seen it used
-		with upper case, or (b) we've never seen it used
-		sentence-initially with lower case, then it's not a sentence
-		starter.
-	*/
-	if a.FirstLower(token) && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
-		return 0
-	}
-
-	return -1
 }
