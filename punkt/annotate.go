@@ -11,12 +11,21 @@ type AnnotateTokens interface {
 type TypeBasedAnnotation struct {
 	*Storage
 	PunctStrings
+	TokenExistential
 }
 
-func NewTypeBasedAnnotation() *TypeBasedAnnotation {
+func NewTypeBasedAnnotation(s *Storage, p PunctStrings, e TokenExistential) *TypeBasedAnnotation {
 	return &TypeBasedAnnotation{
-		PunctStrings: NewLanguage(),
-		Storage:      NewStorage(),
+		Storage:          s,
+		PunctStrings:     p,
+		TokenExistential: e,
+	}
+}
+
+func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTokens {
+	return []AnnotateTokens{
+		&TypeBasedAnnotation{s, p, word},
+		&TokenBasedAnnotation{s, p, word, &DefaultTokenGrouper{}},
 	}
 }
 
@@ -43,9 +52,9 @@ func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 	chars := []rune(token.Tok)
 
-	if token.HasSentEndChars() {
+	if a.HasSentEndChars(token) {
 		token.SentBreak = true
-	} else if token.HasPeriodFinal() && !strings.HasSuffix(token.Tok, "..") {
+	} else if a.HasPeriodFinal(token) && !strings.HasSuffix(token.Tok, "..") {
 		tokNoPeriod := strings.ToLower(token.Tok[:len(chars)-1])
 		tokNoPeriodHypen := strings.Split(tokNoPeriod, "-")
 		tokLastHyphEl := string(tokNoPeriodHypen[len(tokNoPeriodHypen)-1])
@@ -61,6 +70,7 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 type TokenBasedAnnotation struct {
 	*Storage
 	PunctStrings
+	TokenParser
 	TokenGrouper
 }
 
@@ -82,13 +92,13 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		return
 	}
 
-	if !tokOne.HasPeriodFinal() {
+	if !a.HasPeriodFinal(tokOne) {
 		return
 	}
 
-	typ := tokOne.TypeNoPeriod()
-	nextTyp := tokTwo.TypeNoSentPeriod()
-	tokIsInitial := tokOne.IsInitial()
+	typ := a.TypeNoPeriod(tokOne)
+	nextTyp := a.TypeNoSentPeriod(tokTwo)
+	tokIsInitial := a.IsInitial(tokOne)
 
 	/*
 	   [4.1.2. Collocation Heuristic] If there's a
@@ -110,7 +120,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		the token is an abbreviation or an ellipsis, then decide
 		whether we should *also* classify it as a sentbreak.
 	*/
-	if (tokOne.Abbr || tokOne.IsEllipsis()) && !tokIsInitial {
+	if (tokOne.Abbr || a.IsEllipsis(tokOne)) && !tokIsInitial {
 		/*
 			[4.1.1. Orthographic Heuristic] Check if there's
 			orthogrpahic evidence about whether the next word
@@ -128,7 +138,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 			frequent-sentence-starters list, then label tok as a
 			sentence break.
 		*/
-		if tokTwo.FirstUpper() && a.SentStarters[nextTyp] != 0 {
+		if a.FirstUpper(tokTwo) && a.SentStarters[nextTyp] != 0 {
 			tokOne.SentBreak = true
 			return
 		}
@@ -159,7 +169,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		*/
 		if isSentStarter == -1 &&
 			tokIsInitial &&
-			tokTwo.FirstUpper() &&
+			a.FirstUpper(tokTwo) &&
 			a.OrthoContext[nextTyp]&orthoLc == 0 {
 
 			tokOne.SentBreak = false
@@ -183,13 +193,13 @@ func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
 		}
 	}
 
-	orthoCtx := a.OrthoContext[token.TypeNoSentPeriod()]
+	orthoCtx := a.OrthoContext[a.TypeNoSentPeriod(token)]
 	/*
 	   If the word is capitalized, occurs at least once with a
 	   lower case first letter, and never occurs with an upper case
 	   first letter sentence-internally, then it's a sentence starter.
 	*/
-	if token.FirstUpper() && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
+	if a.FirstUpper(token) && (orthoCtx&orthoLc > 0 && orthoCtx&orthoMidUc == 0) {
 		return 1
 	}
 
@@ -199,7 +209,7 @@ func (a *TokenBasedAnnotation) orthoHeuristic(token *Token) int {
 		sentence-initially with lower case, then it's not a sentence
 		starter.
 	*/
-	if token.FirstLower() && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
+	if a.FirstLower(token) && (orthoCtx&orthoUc > 0 || orthoCtx&orthoBegLc == 0) {
 		return 0
 	}
 

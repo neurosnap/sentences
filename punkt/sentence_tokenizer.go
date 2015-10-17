@@ -1,7 +1,5 @@
 package punkt
 
-//"time"
-
 // Interface used by the Tokenize function, can be extended to correct sentence
 // boundaries that punkt misses.
 type SentenceTokenizer interface {
@@ -19,18 +17,32 @@ type DefaultSentenceTokenizer struct {
 	Annotations []AnnotateTokens
 }
 
-func NewTokenizer(s *Storage) *DefaultSentenceTokenizer {
+// Sane defaults for the sentence tokenizer
+func NewSentenceTokenizer(s *Storage) *DefaultSentenceTokenizer {
 	lang := NewLanguage()
+	word := NewWordTokenizer(lang)
 
-	annotations := []AnnotateTokens{
-		&TypeBasedAnnotation{s, lang},
-		&TokenBasedAnnotation{s, lang, &DefaultTokenGrouper{}},
-	}
+	annotations := NewAnnotations(s, lang, word)
 
 	tokenizer := &DefaultSentenceTokenizer{
 		Storage:       s,
 		PunctStrings:  lang,
-		WordTokenizer: &DefaultWordTokenizer{lang},
+		WordTokenizer: word,
+		Annotations:   annotations,
+	}
+
+	return tokenizer
+
+}
+
+// Wraps around DST doing the work for customizing the tokenizer
+func NewTokenizer(s *Storage, word WordTokenizer, lang PunctStrings) *DefaultSentenceTokenizer {
+	annotations := NewAnnotations(s, lang, word)
+
+	tokenizer := &DefaultSentenceTokenizer{
+		Storage:       s,
+		PunctStrings:  lang,
+		WordTokenizer: word,
 		Annotations:   annotations,
 	}
 

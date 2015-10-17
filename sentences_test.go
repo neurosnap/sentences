@@ -20,7 +20,7 @@ func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
 		panic(err)
 	}
 
-	return punkt.NewTokenizer(training)
+	return punkt.NewSentenceTokenizer(training)
 }
 
 func readFile(fname string) string {

@@ -73,53 +73,9 @@ func main() {
 
     // create the default sentence tokenizer
     tokenizer := punkt.NewSentenceTokenizer(training)
-    sentences := punkt.Tokenize(text, tokenizer)
-
+    sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
         fmt.Println(s)
     }
 }
-```
-
-Got some abbreviations you want to add to the list?
-```
-tokenizer := punkt.NewSentenceTokenizer(storage)
-
-tokenizer.AbbrevTypes.Add("al")
-tokenizer.AbbrevTypes.Add("etc")
-
-sentences := Tokenize(text, tokenizer)
-```
-
-Want to extend the tokenizer?  In my mind there is one method in particular
-that will yield a ton of extendability: `AnnotateTokens`
-
-This method conducts both the first and second pass annotations that determine
-abbreviations, period context, and sentence boundaries.
-
-```
-type CustomSentenceTokenizer struct {
-    *punkt.DefaultSentenceTokenizer
-}
-
-func (s *CustomSentenceTokenizer) AnnotateTokens(tokens []*punkt.DefaultToken) {
-    tokens = s.AnnotateFirstPass(tokens)
-    tokens = s.AnnotateSecondPass(tokens)
-
-    // Do a third pass and find any sentence boundaries that were missed by punkt
-
-    return tokens
-}
-
-tokenizer := &CustomSentenceTokenize{
-    &punkt.DefaultSentenceTokenizer{
-        Base: punkt.NewBase(),
-        Punctuation: punkt.Punctuation,
-    },
-}
-
-tokenizer.Storage = training
-tokenizer.SentenceTokenizer = tokenizer
-
-punkt.Tokenize(text, tokenizer)
 ```
