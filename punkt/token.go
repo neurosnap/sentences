@@ -13,6 +13,10 @@ type TokenGrouper interface {
 type DefaultTokenGrouper struct{}
 
 func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
+	if len(tokens) == 0 {
+		return nil
+	}
+
 	pairTokens := make([][2]*Token, 0, len(tokens))
 
 	prevToken := tokens[0]
