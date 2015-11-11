@@ -68,6 +68,10 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
 	// before and after the punctuation.
 	tokens := s.WordTokenizer.Tokenize(text, true)
 
+	if len(tokens) == 0 {
+		return []string{text}
+	}
+
 	lastBreak := 0
 	// Think of AnnotateTokens as a pipeline that we send our tokens through to process.
 	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
