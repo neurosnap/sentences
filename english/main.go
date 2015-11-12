@@ -80,6 +80,10 @@ type MultiPunctWordAnnotation struct {
 
 func (a *MultiPunctWordAnnotation) Annotate(tokens []*punkt.Token) []*punkt.Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
+		if len(tokPair) < 2 || tokPair[1] == nil {
+			continue
+		}
+
 		a.tokenAnnotation(tokPair[0], tokPair[1])
 	}
 
