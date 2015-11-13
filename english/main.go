@@ -12,16 +12,18 @@ type WordTokenizer struct {
 	sentences.DefaultWordTokenizer
 }
 
-func NewSentenceTokenizer(s *sentences.Storage) *sentences.DefaultSentenceTokenizer {
+func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceTokenizer, error) {
 	training := s
 
 	if training == nil {
 		b, err := data.Asset("data/english.json")
 		if err != nil {
+			return nil, err
 		}
 
 		training, err = sentences.LoadTraining(b)
 		if err != nil {
+			return nil, err
 		}
 	}
 
@@ -44,7 +46,7 @@ func NewSentenceTokenizer(s *sentences.Storage) *sentences.DefaultSentenceTokeni
 		Annotations:   annotations,
 	}
 
-	return tokenizer
+	return tokenizer, nil
 }
 
 func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
