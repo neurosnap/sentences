@@ -81,8 +81,8 @@ func main() {
 }
 ```
 
-English Optimization
---------------------
+English
+-------
 
 This package attempts to fix some problems I noticed for english.
 
