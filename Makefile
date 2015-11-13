@@ -6,6 +6,9 @@ MINOR=$(word 2, $(subst ., , $(CURRENT_VERSION)))
 PATCH=$(word 3, $(subst ., , $(CURRENT_VERSION)))
 VER ?= $(MAJOR).$(MINOR).$(shell echo $$(($(PATCH)+1)))
 
+test:
+	go test ./...
+
 build:
 	go build -ldflags "-X main.VERSION=$(CURRENT_VERSION)"
 

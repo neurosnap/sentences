@@ -199,8 +199,8 @@ func (p *DefaultWordTokenizer) HasPeriodFinal(t *Token) bool {
 // Find any punctuation excluding the period final
 func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 	enders := []string{
-		`."`, `.'`, `.)`, /*`.’`, `.”`,*/
-		`?`, `?"`, `?'`, `?)`, /*`?’`, `?”`,*/
+		`."`, `.'`, `.)`,
+		`?`, `?"`, `?'`, `?)`,
 		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
 	}
 

@@ -4,6 +4,7 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/neurosnap/sentences/data"
 	"github.com/neurosnap/sentences/punkt"
 )
 
@@ -12,20 +13,32 @@ type WordTokenizer struct {
 }
 
 func NewSentenceTokenizer(s *punkt.Storage) *punkt.DefaultSentenceTokenizer {
+	training := s
+
+	if training == nil {
+		b, err := data.Asset("data/english.json")
+		if err != nil {
+		}
+
+		training, err = punkt.LoadTraining(b)
+		if err != nil {
+		}
+	}
+
 	lang := punkt.NewLanguage()
 	word := NewWordTokenizer(lang)
-	annotations := punkt.NewAnnotations(s, lang, word)
+	annotations := punkt.NewAnnotations(training, lang, word)
 
 	multiPunct := &MultiPunctWordAnnotation{
-		s, word,
+		training, word,
 		&punkt.DefaultTokenGrouper{},
-		&punkt.OrthoContext{s, lang, word, word},
+		&punkt.OrthoContext{training, lang, word, word},
 	}
 
 	annotations = append(annotations, multiPunct)
 
 	tokenizer := &punkt.DefaultSentenceTokenizer{
-		Storage:       s,
+		Storage:       training,
 		PunctStrings:  lang,
 		WordTokenizer: word,
 		Annotations:   annotations,
