@@ -35,7 +35,7 @@ The default command line utility pre-loads the english training data, so loading
 it is not necessary.
 
 ```
-go install -o sentences github.com/neurosnap/sentences/cmd
+go install github.com/neurosnap/sentences/cmd/sentences
 ```
 
 
@@ -52,7 +52,6 @@ Use it
 ```
 import (
     "fmt"
-    "io/ioutil"
 
     "github.com/neurosnap/sentences"
     "github.com/neurosnap/sentences/data"
@@ -95,6 +94,8 @@ import (
 )
 
 func main() {
+    text := "Hi there. Cool."
+
     tokenizer := english.NewSentenceTokenizer(nil)
     sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
