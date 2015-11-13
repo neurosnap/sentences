@@ -1,4 +1,4 @@
-package punkt
+package sentences
 
 type PunctStrings interface {
 	NonPunct() string

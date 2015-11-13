@@ -4,15 +4,15 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/neurosnap/sentences"
 	"github.com/neurosnap/sentences/data"
-	"github.com/neurosnap/sentences/punkt"
 )
 
 type WordTokenizer struct {
-	punkt.DefaultWordTokenizer
+	sentences.DefaultWordTokenizer
 }
 
-func NewSentenceTokenizer(s *punkt.Storage) *punkt.DefaultSentenceTokenizer {
+func NewSentenceTokenizer(s *sentences.Storage) *sentences.DefaultSentenceTokenizer {
 	training := s
 
 	if training == nil {
@@ -20,24 +20,24 @@ func NewSentenceTokenizer(s *punkt.Storage) *punkt.DefaultSentenceTokenizer {
 		if err != nil {
 		}
 
-		training, err = punkt.LoadTraining(b)
+		training, err = sentences.LoadTraining(b)
 		if err != nil {
 		}
 	}
 
-	lang := punkt.NewLanguage()
+	lang := sentences.NewLanguage()
 	word := NewWordTokenizer(lang)
-	annotations := punkt.NewAnnotations(training, lang, word)
+	annotations := sentences.NewAnnotations(training, lang, word)
 
 	multiPunct := &MultiPunctWordAnnotation{
 		training, word,
-		&punkt.DefaultTokenGrouper{},
-		&punkt.OrthoContext{training, lang, word, word},
+		&sentences.DefaultTokenGrouper{},
+		&sentences.OrthoContext{training, lang, word, word},
 	}
 
 	annotations = append(annotations, multiPunct)
 
-	tokenizer := &punkt.DefaultSentenceTokenizer{
+	tokenizer := &sentences.DefaultSentenceTokenizer{
 		Storage:       training,
 		PunctStrings:  lang,
 		WordTokenizer: word,
@@ -47,7 +47,7 @@ func NewSentenceTokenizer(s *punkt.Storage) *punkt.DefaultSentenceTokenizer {
 	return tokenizer
 }
 
-func NewWordTokenizer(p punkt.PunctStrings) *WordTokenizer {
+func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
 	word := &WordTokenizer{}
 	word.PunctStrings = p
 
@@ -55,7 +55,7 @@ func NewWordTokenizer(p punkt.PunctStrings) *WordTokenizer {
 }
 
 // Find any punctuation excluding the period final
-func (e *WordTokenizer) HasSentEndChars(t *punkt.Token) bool {
+func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	enders := []string{
 		`."`, `.'`, `.)`, `.’`, `.”`,
 		`?`, `?"`, `?'`, `?)`, `?’`, `?”`,
@@ -85,13 +85,13 @@ func (e *WordTokenizer) HasSentEndChars(t *punkt.Token) bool {
 
 // Attempts to tease out custom Abbreviations, e.g. F.B.I.
 type MultiPunctWordAnnotation struct {
-	*punkt.Storage
-	punkt.TokenParser
-	punkt.TokenGrouper
-	punkt.Ortho
+	*sentences.Storage
+	sentences.TokenParser
+	sentences.TokenGrouper
+	sentences.Ortho
 }
 
-func (a *MultiPunctWordAnnotation) Annotate(tokens []*punkt.Token) []*punkt.Token {
+func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*sentences.Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		if len(tokPair) < 2 || tokPair[1] == nil {
 			continue
@@ -103,7 +103,7 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*punkt.Token) []*punkt.Toke
 	return tokens
 }
 
-func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *punkt.Token) {
+func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
 	reAbbr := regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
 		return

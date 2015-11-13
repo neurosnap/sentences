@@ -1,4 +1,4 @@
-package punkt
+package sentences
 
 /*
 The following constants are used to describe the orthographic

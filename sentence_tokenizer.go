@@ -1,4 +1,4 @@
-package punkt
+package sentences
 
 // Interface used by the Tokenize function, can be extended to correct sentence
 // boundaries that punkt misses.

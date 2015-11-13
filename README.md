@@ -35,7 +35,7 @@ The default command line utility pre-loads the english training data, so loading
 it is not necessary.
 
 ```
-go install github.com/neurosnap/sentences
+go install -o sentences github.com/neurosnap/sentences/cmd
 ```
 
 

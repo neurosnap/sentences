@@ -1,4 +1,4 @@
-package main
+package sentences
 
 import (
 	"io/ioutil"
@@ -6,21 +6,20 @@ import (
 	"testing"
 
 	td "github.com/neurosnap/sentences/data"
-	"github.com/neurosnap/sentences/punkt"
 )
 
-func loadTokenizer(data string) *punkt.DefaultSentenceTokenizer {
+func loadTokenizer(data string) *DefaultSentenceTokenizer {
 	b, err := td.Asset(data)
 	if err != nil {
 		panic(err)
 	}
 
-	training, err := punkt.LoadTraining(b)
+	training, err := LoadTraining(b)
 	if err != nil {
 		panic(err)
 	}
 
-	return punkt.NewSentenceTokenizer(training)
+	return NewSentenceTokenizer(training)
 }
 
 func readFile(fname string) string {
