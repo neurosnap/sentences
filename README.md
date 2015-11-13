@@ -53,7 +53,9 @@ Use it
 import (
     "fmt"
     "io/ioutil"
-    "github.com/neurosnap/sentences/punkt"
+
+    "github.com/neurosnap/sentences"
+    "github.com/neurosnap/sentences/data"
 )
 
 func main() {
@@ -69,10 +71,31 @@ func main() {
     b, _ := data.Asset("data/english.json");
 
     // load the training data
-    training, _ := punkt.LoadTraining(data)
+    training, _ := sentences.LoadTraining(data)
 
     // create the default sentence tokenizer
-    tokenizer := punkt.NewSentenceTokenizer(training)
+    tokenizer := sentences.NewSentenceTokenizer(training)
+    sentences := tokenizer.Tokenize(text)
+    for _, s := range sentences {
+        fmt.Println(s)
+    }
+}
+```
+
+English Optimization
+--------------------
+
+This package attempts to fix some problems I noticed for english.
+
+```
+import (
+    "fmt"
+
+    "github.com/neurosnap/sentences/english"
+)
+
+func main() {
+    tokenizer := english.NewSentenceTokenizer(nil)
     sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
         fmt.Println(s)
