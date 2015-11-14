@@ -1,10 +1,12 @@
 package sentences
 
+import "fmt"
+
 // Interface used by the Tokenize function, can be extended to correct sentence
 // boundaries that punkt misses.
 type SentenceTokenizer interface {
 	AnnotateTokens([]*Token, ...AnnotateTokens) []*Token
-	Tokenize(string) []string
+	Tokenize(string) []*Sentence
 }
 
 // A sentence tokenizer which uses an unsupervised algorithm to build a model
@@ -62,31 +64,46 @@ func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...A
 	return tokens
 }
 
-func (s *DefaultSentenceTokenizer) Tokenize(text string) []string {
+/*
+Container to hold sentences, provides the character positions
+as well as the text for that sentence.
+*/
+type Sentence struct {
+	Start, End int
+	Text       string
+}
+
+func (s Sentence) String() string {
+	return fmt.Sprintf("<Sentence [%d:%d]>", s.Start, s.End)
+}
+
+func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 	// Use the default word tokenizer but only grab the tokens that
 	// relate to a sentence ending punctuation.  This means grab the word
 	// before and after the punctuation.
 	tokens := s.WordTokenizer.Tokenize(text, true)
 
 	if len(tokens) == 0 {
-		return []string{text}
+		return nil
 	}
 
 	lastBreak := 0
 	// Think of AnnotateTokens as a pipeline that we send our tokens through to process.
 	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
-	sentences := make([]string, 0, len(annotatedTokens))
+	sentences := make([]*Sentence, 0, len(annotatedTokens))
 	for _, token := range annotatedTokens {
 		if !token.SentBreak {
 			continue
 		}
 
-		sentence := text[lastBreak:token.Position]
+		sentence := &Sentence{lastBreak, token.Position, text[lastBreak:token.Position]}
 		sentences = append(sentences, sentence)
 
 		lastBreak = token.Position
 	}
 
-	sentences = append(sentences, text[lastBreak:])
+	lastChar := len(text)
+	sentence := &Sentence{lastBreak, lastChar, text[lastBreak:lastChar]}
+	sentences = append(sentences, sentence)
 	return sentences
 }

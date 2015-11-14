@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-var tokenizer = NewSentenceTokenizer(nil)
+var tokenizer, _ = NewSentenceTokenizer(nil)
 
 func TestEnglishSmartQuotes(t *testing.T) {
 	t.Log("Tokenizer should break sentences that end in smart quotes ...")
@@ -22,8 +22,8 @@ func TestEnglishSmartQuotes(t *testing.T) {
 	}
 
 	for index, sent := range actual {
-		if sent != expected[index] {
-			t.Fatalf("Actual: %s\nExpected: %s", sent, expected[index])
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
 		}
 	}
 }
@@ -44,8 +44,8 @@ func TestEnglishCustomAbbrev(t *testing.T) {
 	}
 
 	for index, sent := range actual {
-		if sent != expected[index] {
-			t.Fatalf("Actual: %s\nExpected: %s", sent, expected[index])
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
 		}
 	}
 }
