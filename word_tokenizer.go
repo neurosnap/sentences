@@ -62,6 +62,10 @@ func NewWordTokenizer(p PunctStrings) *DefaultWordTokenizer {
 }
 
 func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*Token {
+	if len(text) == 0 {
+		return nil
+	}
+
 	tokens := make([]*Token, 0, 50)
 	lastSpace := 0
 	lineStart := false
@@ -108,6 +112,12 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 		} else {
 			getNextWord = false
 		}
+	}
+
+	if len(tokens) == 0 {
+		token := NewToken(text)
+		token.Position = len(text)
+		tokens = append(tokens, token)
 	}
 
 	return tokens
