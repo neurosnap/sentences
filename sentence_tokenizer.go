@@ -69,8 +69,9 @@ Container to hold sentences, provides the character positions
 as well as the text for that sentence.
 */
 type Sentence struct {
-	Start, End int
-	Text       string
+	Start int    `json:"start"`
+	End   int    `json:"end"`
+	Text  string `json:"text"`
 }
 
 func (s Sentence) String() string {
