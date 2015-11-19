@@ -48,4 +48,45 @@ func TestEnglishCustomAbbrev(t *testing.T) {
 			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
 		}
 	}
+
+	actual_text = "An abbreviation near the end of a G.D. sentence.  J.G. Wentworth was cool."
+	actual = tokenizer.Tokenize(actual_text)
+
+	expected = []string{
+		"An abbreviation near the end of a G.D. sentence.",
+		"  J.G. Wentworth was cool.",
+	}
+
+	if len(actual) != len(expected) {
+		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
+	}
+
+	for index, sent := range actual {
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
+		}
+	}
+}
+
+func TestEnglishSupervisedAbbrev(t *testing.T) {
+	t.Log("Tokenizer should detect list of supervised abbreviations.")
+
+	actual_text := "I am a Sgt. in the army.  I am a No. 1 student.  The Gov. of Michigan is a dick."
+	actual := tokenizer.Tokenize(actual_text)
+
+	expected := []string{
+		"I am a Sgt. in the army.",
+		"  I am a No. 1 student.",
+		"  The Gov. of Michigan is a dick.",
+	}
+
+	if len(actual) != len(expected) {
+		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
+	}
+
+	for index, sent := range actual {
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
+		}
+	}
 }

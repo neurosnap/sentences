@@ -27,6 +27,12 @@ func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceToken
 		}
 	}
 
+	// supervisor abbreviations
+	abbrevs := []string{"sgt", "gov", "no"}
+	for _, abbr := range abbrevs {
+		training.AbbrevTypes.Add(abbr)
+	}
+
 	lang := sentences.NewLanguage()
 	word := NewWordTokenizer(lang)
 	annotations := sentences.NewAnnotations(training, lang, word)
