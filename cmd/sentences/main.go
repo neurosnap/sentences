@@ -24,6 +24,7 @@ var sentencesCmd = &cobra.Command{
 	Long:  "A utility that will break up a blob of text into sentences.",
 	Run: func(cmd *cobra.Command, args []string) {
 		var text []byte
+		var err error
 
 		if ver {
 			fmt.Println(VERSION)
@@ -32,10 +33,25 @@ var sentencesCmd = &cobra.Command{
 		}
 
 		if fname != "" {
-			text, _ = ioutil.ReadFile(fname)
+			text, err = ioutil.ReadFile(fname)
+			if err != nil {
+				panic(err)
+			}
 		} else {
+			stat, err := os.Stdin.Stat()
+			if err != nil {
+				panic(err)
+			}
+
+			if (stat.Mode() & os.ModeCharDevice) != 0 {
+				return
+			}
+
 			reader := bufio.NewReader(os.Stdin)
-			text, _ = ioutil.ReadAll(reader)
+			text, err = ioutil.ReadAll(reader)
+			if err != nil {
+				panic(err)
+			}
 		}
 
 		tokenizer, err := english.NewSentenceTokenizer(nil)
