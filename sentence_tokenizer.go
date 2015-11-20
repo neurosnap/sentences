@@ -65,6 +65,44 @@ func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...A
 }
 
 /*
+Fully annotated word tokens.  This allows for adhoc adjustments to the tokens
+*/
+func (s *DefaultSentenceTokenizer) AnnotatedTokens(text string) []*Token {
+	// Use the default word tokenizer but only grab the tokens that
+	// relate to a sentence ending punctuation.  This means grab the word
+	// before and after the punctuation.
+	tokens := s.WordTokenizer.Tokenize(text, true)
+
+	if len(tokens) == 0 {
+		return nil
+	}
+
+	return s.AnnotateTokens(tokens, s.Annotations...)
+}
+
+/*
+Instead of returning an array of sentences, this method returns only the positions
+for the sentence boundaries.
+*/
+func (s *DefaultSentenceTokenizer) SentencePositions(text string) []int {
+	annotatedTokens := s.AnnotatedTokens(text)
+
+	positions := make([]int, 0, len(annotatedTokens))
+	for _, token := range annotatedTokens {
+		if !token.SentBreak {
+			continue
+		}
+
+		positions = append(positions, token.Position)
+	}
+
+	lastChar := len(text)
+	positions = append(positions, lastChar)
+
+	return positions
+}
+
+/*
 Container to hold sentences, provides the character positions
 as well as the text for that sentence.
 */
@@ -79,18 +117,9 @@ func (s Sentence) String() string {
 }
 
 func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
-	// Use the default word tokenizer but only grab the tokens that
-	// relate to a sentence ending punctuation.  This means grab the word
-	// before and after the punctuation.
-	tokens := s.WordTokenizer.Tokenize(text, true)
-
-	if len(tokens) == 0 {
-		return nil
-	}
+	annotatedTokens := s.AnnotatedTokens(text)
 
 	lastBreak := 0
-	// Think of AnnotateTokens as a pipeline that we send our tokens through to process.
-	annotatedTokens := s.AnnotateTokens(tokens, s.Annotations...)
 	sentences := make([]*Sentence, 0, len(annotatedTokens))
 	for _, token := range annotatedTokens {
 		if !token.SentBreak {
@@ -106,5 +135,6 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 	lastChar := len(text)
 	sentence := &Sentence{lastBreak, lastChar, text[lastBreak:lastChar]}
 	sentences = append(sentences, sentence)
+
 	return sentences
 }
