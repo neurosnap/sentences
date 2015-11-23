@@ -33,7 +33,7 @@ func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceToken
 		training.AbbrevTypes.Add(abbr)
 	}
 
-	lang := sentences.NewLanguage()
+	lang := sentences.NewPunctStrings()
 	word := NewWordTokenizer(lang)
 	annotations := sentences.NewAnnotations(training, lang, word)
 

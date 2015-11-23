@@ -21,7 +21,7 @@ type DefaultSentenceTokenizer struct {
 
 // Sane defaults for the sentence tokenizer
 func NewSentenceTokenizer(s *Storage) *DefaultSentenceTokenizer {
-	lang := NewLanguage()
+	lang := NewPunctStrings()
 	word := NewWordTokenizer(lang)
 
 	annotations := NewAnnotations(s, lang, word)
