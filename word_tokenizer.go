@@ -61,6 +61,8 @@ func NewWordTokenizer(p PunctStrings) *DefaultWordTokenizer {
 	return &DefaultWordTokenizer{p}
 }
 
+// Breaks text into words while preserving their character position, whether it starts
+// a new line, and new paragraph.
 func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*Token {
 	if len(text) == 0 {
 		return nil

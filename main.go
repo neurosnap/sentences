@@ -6,8 +6,7 @@ portuguese, slovene, spanish, swedish, and turkish.
 
 An unsupervised multilingual sentence boundary detection library for golang.
 The goal of this library is to be able to break up any text into a list of
-sentences in multiple languages without creating special heuristics for any
-language in particular. The way the punkt system accomplishes this goal is
+sentences in multiple languages.  The way the punkt system accomplishes this goal is
 through training the tokenizer with text in that given language.
 Once the likelyhoods of abbreviations, collocations, and sentence starters are
 determined, finding sentence boundaries becomes easier.

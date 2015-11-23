@@ -18,6 +18,7 @@ var ver bool
 var fname string
 var delim string
 
+// Primary command for sentence tokenization
 var sentencesCmd = &cobra.Command{
 	Use:   "sentences",
 	Short: "Sentence tokenizer",

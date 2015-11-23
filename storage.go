@@ -3,7 +3,7 @@ package sentences
 import "encoding/json"
 
 // golang implementation of a set of strings
-// probably not the best way to do this but oh well
+// probably not the best way to do this but oh well.
 type SetString map[string]int
 
 func (ss SetString) Add(str string) {

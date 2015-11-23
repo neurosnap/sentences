@@ -116,6 +116,7 @@ func (s Sentence) String() string {
 	return fmt.Sprintf("<Sentence [%d:%d]>", s.Start, s.End)
 }
 
+// Splits text input into sentence tokens.
 func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 	annotatedTokens := s.AnnotatedTokens(text)
 

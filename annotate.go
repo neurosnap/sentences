@@ -4,10 +4,26 @@ import (
 	"strings"
 )
 
+/* Annotation interface used for the sentence tokenizer to add properties to
+any given token during tokenization.
+*/
 type AnnotateTokens interface {
 	Annotate([]*Token) []*Token
 }
 
+/*
+Perform the first pass of annotation, which makes decisions
+based purely based on the word type of each word:
+	* '?', '!', and '.' are marked as sentence breaks.
+	* sequences of two or more periods are marked as ellipsis.
+	* any word ending in '.' that's a known abbreviation is marked as an abbreviation.
+	* any other word ending in '.' is marked as a sentence break.
+
+Return these annotations as a tuple of three sets:
+	* sentbreak_toks: The indices of all sentence breaks.
+	* abbrev_toks: The indices of all abbreviations.
+	* ellipsis_toks: The indices of all ellipsis marks.
+*/
 type TypeBasedAnnotation struct {
 	*Storage
 	PunctStrings
@@ -22,6 +38,7 @@ func NewTypeBasedAnnotation(s *Storage, p PunctStrings, e TokenExistential) *Typ
 	}
 }
 
+// Default annotations that the tokenizer uses
 func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTokens {
 	return []AnnotateTokens{
 		&TypeBasedAnnotation{s, p, word},
@@ -31,19 +48,6 @@ func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTo
 	}
 }
 
-/*
-Perform the first pass of annotation, which makes decisions
-based purely based on the word type of each word:
-	- '?', '!', and '.' are marked as sentence breaks.
-	- sequences of two or more periods are marked as ellipsis.
-	- any word ending in '.' that's a known abbreviation is marked as an abbreviation.
-	- any other word ending in '.' is marked as a sentence break.
-
-Return these annotations as a tuple of three sets:
-	- sentbreak_toks: The indices of all sentence breaks.
-	- abbrev_toks: The indices of all abbreviations.
-	- ellipsis_toks: The indices of all ellipsis marks.
-*/
 func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 	for _, augTok := range tokens {
 		a.typeAnnotation(augTok)
@@ -69,6 +73,11 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 	}
 }
 
+/*
+Performs a token-based classification (section 4) over the given
+tokens, making use of the orthographic heuristic (4.1.1), collocation
+heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
+*/
 type TokenBasedAnnotation struct {
 	*Storage
 	PunctStrings
@@ -77,11 +86,6 @@ type TokenBasedAnnotation struct {
 	Ortho
 }
 
-/*
-Performs a token-based classification (section 4) over the given
-tokens, making use of the orthographic heuristic (4.1.1), collocation
-heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
-*/
 func (a *TokenBasedAnnotation) Annotate(tokens []*Token) []*Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		a.tokenAnnotation(tokPair[0], tokPair[1])

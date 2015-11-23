@@ -12,6 +12,7 @@ type WordTokenizer struct {
 	sentences.DefaultWordTokenizer
 }
 
+// English customized sentence tokenizer.
 func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceTokenizer, error) {
 	training := s
 
