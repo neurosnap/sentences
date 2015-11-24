@@ -3,8 +3,8 @@ Sentences - A command line sentence tokenizer written in Golang
 
 This command line utility will convert a blob of text into a list of sentences.
 
-[Demo](http://sentences.erock.io)
-[Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
+* [Demo](http://sentences.erock.io)
+* [Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
 Notice
 ------
@@ -25,18 +25,18 @@ go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
 
 #### Linux
 
-[Linux 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-386.tar.gz)
-[Linux AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-amd64.tar.gz)
+* [Linux 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-386.tar.gz)
+* [Linux AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-amd64.tar.gz)
 
 #### Mac
 
-[Darwin 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-386.tar.gz)
-[Darwin AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-amd64.tar.gz)
+* [Darwin 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-386.tar.gz)
+* [Darwin AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-amd64.tar.gz)
 
 #### Windows
 
-[Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
-[Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
+* [Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
+* [Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
 
 Get it
 ------
@@ -98,7 +98,7 @@ func main() {
     tokenizer := english.NewSentenceTokenizer(nil)
     sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
-        fmt.Println(s)
+        fmt.Println(s.Text)
     }
 }
 ```
