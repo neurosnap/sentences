@@ -4,6 +4,7 @@ Sentences - A command line sentence tokenizer written in Golang
 This command line utility will convert a blob of text into a list of sentences.
 
 [Demo](http://sentences.erock.io)
+[Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
 Notice
 ------
@@ -88,7 +89,7 @@ This package attempts to fix some problems I noticed for english.
 import (
     "fmt"
 
-    "github.com/neurosnap/sentences/english"
+    "gopkg.in/neurosnap/sentences.v1"
 )
 
 func main() {

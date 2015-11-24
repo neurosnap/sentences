@@ -1,4 +1,5 @@
-/* Split a body of text into sentences using the Punkt sentence tokenizer.
+/* This golang package will convert a blob of text into a list of sentences.
+
 This package attempts to support a multitude of languages:
 czech, danish, dutch, english, estonian, finnish,
 french, german, greek, italian, norwegian, polish,
