@@ -18,6 +18,7 @@ Install
 -------
 
 ```
+go get gopkg.in/neurosnap/sentences.v1
 go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
 ```
 
@@ -37,6 +38,11 @@ go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
 
 * [Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
 * [Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
+
+Command-Line
+------------
+
+![Command line](sentences.gif?raw=true)
 
 Get it
 ------
