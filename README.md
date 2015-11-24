@@ -1,23 +1,9 @@
-Sentences - Punkt Sentence Tokenizer
-====================================
+Sentences - A command line sentence tokenizer written in Golang
+===============================================================
 
-An unsupervised multilingual sentence boundary detection library for golang.
-The goal of this library is to be able to break up any text into a list of sentences
-in multiple languages without creating special heuristics for any language in particular.
-The way the punkt system accomplishes this goal is through training the tokenizer
-with text in that given language.  Once the likelyhoods of abbreviations, collocations,
-and sentence starters are determined, finding sentence boundaries becomes easier.
+This command line utility will convert a blob of text into a list of sentences.
 
-There are many problems that arise when tokenizing text into sentences, the primary
-issue being abbreviations.  The punkt system attempts to determine whether a  word
-is an abbrevation, an end to a sentence, or even both through training the system with text
-in the given language.  The punkt system incorporates both token- and type-based
-analysis on the text through two different phases of annotation.
-
-Original Research Article
--------------------------
-
-[Unsupervised multilingual sentence boundary detection](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=BAE5C34E5C3B9DC60DFC4D93B85D8BB1?doi=10.1.1.85.5017&rep=rep1&type=pdf)
+[Demo](http://sentences.erock.io)
 
 Notice
 ------
@@ -27,23 +13,35 @@ welcome anyone willing to test the other languages to submit updates as needed.
 
 This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
-Command line
-------------
-
-Currently very simple, it takes `stdin` and outputs a sentence on each line.
-The default command line utility pre-loads the english training data, so loading
-it is not necessary.
+Install
+-------
 
 ```
-go install github.com/neurosnap/sentences/cmd/sentences
+go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
 ```
 
+### Binaries
+
+#### Linux
+
+[Linux 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-386.tar.gz)
+[Linux AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-amd64.tar.gz)
+
+#### Mac
+
+[Darwin 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-386.tar.gz)
+[Darwin AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-amd64.tar.gz)
+
+#### Windows
+
+[Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
+[Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
 
 Get it
 ------
 
 ```
-go get github.com/neurosnap/sentences
+go get gopkg.in/neurosnap/sentences.v1
 ```
 
 Use it
@@ -53,8 +51,8 @@ Use it
 import (
     "fmt"
 
-    "github.com/neurosnap/sentences"
-    "github.com/neurosnap/sentences/data"
+    "gopkg.in/neurosnap/sentences.v1"
+    "gopkg.in/neurosnap/sentences.v1/data"
 )
 
 func main() {
@@ -76,7 +74,7 @@ func main() {
     tokenizer := sentences.NewSentenceTokenizer(training)
     sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
-        fmt.Println(s)
+        fmt.Println(s.Text)
     }
 }
 ```
@@ -103,3 +101,22 @@ func main() {
     }
 }
 ```
+
+A Punkt Tokenizer
+-----------------
+
+An unsupervised multilingual sentence boundary detection library for golang.
+The goal of this library is to be able to break up any text into a list of sentences
+in multiple languages without creating special heuristics for any language in particular.
+The way the punkt system accomplishes this goal is through training the tokenizer
+with text in that given language.  Once the likelyhoods of abbreviations, collocations,
+and sentence starters are determined, finding sentence boundaries becomes easier.
+
+There are many problems that arise when tokenizing text into sentences, the primary
+issue being abbreviations.  The punkt system attempts to determine whether a  word
+is an abbrevation, an end to a sentence, or even both through training the system with text
+in the given language.  The punkt system incorporates both token- and type-based
+analysis on the text through two different phases of annotation.
+
+[Unsupervised multilingual sentence boundary detection](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=BAE5C34E5C3B9DC60DFC4D93B85D8BB1?doi=10.1.1.85.5017&rep=rep1&type=pdf)
+
