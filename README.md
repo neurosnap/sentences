@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/neurosnap/sentences.svg)](https://travis-ci.org/neurosnap/sentences)
+[![GODOC](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
+
+<a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="center" height="80"></a>
+
 Sentences - A command line sentence tokenizer written in Golang
 ===============================================================
 
@@ -9,8 +14,12 @@ This command line utility will convert a blob of text into a list of sentences.
 Notice
 ------
 
-I have not tested this tokenizer in any other language besides English.  I
-welcome anyone willing to test the other languages to submit updates as needed.
+I have not tested this tokenizer in any other language besides English.  By default
+the command line utility loads english. I welcome anyone willing to test the
+other languages to submit updates as needed.
+
+A primary goal for this package is to be multilingual so I'm willing to help in
+any way possible.
 
 This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
@@ -39,8 +48,8 @@ go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
 * [Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
 * [Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
 
-Command-Line
-------------
+Command
+-------
 
 ![Command line](sentences.gif?raw=true)
 
@@ -69,9 +78,8 @@ func main() {
     former U.S. Rep. Carolyn Cheeks Kilpatrick to file; Stallings challenged the
     law in court and won. Kilpatrick mounted a write-in campaign, but Stallings won.`
 
-    // English data is loaded in by default
     // Compiling language specific data into a binary file can be accomplished
-    // by using `make <lang>` and then using the same method below
+    // by using `make <lang>` and then loading the `json` data:
     b, _ := data.Asset("data/english.json");
 
     // load the training data
@@ -80,6 +88,7 @@ func main() {
     // create the default sentence tokenizer
     tokenizer := sentences.NewSentenceTokenizer(training)
     sentences := tokenizer.Tokenize(text)
+
     for _, s := range sentences {
         fmt.Println(s.Text)
     }
@@ -99,7 +108,7 @@ import (
 )
 
 func main() {
-    text := "Hi there. Cool."
+    text := "Hi there. Does this really work?"
 
     tokenizer := english.NewSentenceTokenizer(nil)
     sentences := tokenizer.Tokenize(text)
@@ -109,12 +118,19 @@ func main() {
 }
 ```
 
+Customizable
+------------
+
+Sentences was built around composability, most major components of this package
+can be extended.
+
+Eager to make adhoc changes but don't know how to start?
+Have a look at `github.com/neurosnap/sentences/english` for a solid example.
+
 A Punkt Tokenizer
 -----------------
 
 An unsupervised multilingual sentence boundary detection library for golang.
-The goal of this library is to be able to break up any text into a list of sentences
-in multiple languages without creating special heuristics for any language in particular.
 The way the punkt system accomplishes this goal is through training the tokenizer
 with text in that given language.  Once the likelyhoods of abbreviations, collocations,
 and sentence starters are determined, finding sentence boundaries becomes easier.
