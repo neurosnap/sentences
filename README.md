@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/neurosnap/sentences.svg)](https://travis-ci.org/neurosnap/sentences)
 [![GODOC](https://godoc.org/github.com/nathany/looper?status.svg)](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
-<a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="left" height="200"></a>
+<a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="left" height="230"></a>
 
 Sentences - A command line sentence tokenizer
 =============================================
