@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/neurosnap/sentences.svg)](https://travis-ci.org/neurosnap/sentences)
 [![GODOC](https://godoc.org/github.com/nathany/looper?status.svg)](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 <a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="left" height="230"></a>
 
