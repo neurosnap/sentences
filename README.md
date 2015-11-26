@@ -1,27 +1,15 @@
 [![Build Status](https://travis-ci.org/neurosnap/sentences.svg)](https://travis-ci.org/neurosnap/sentences)
-[![GODOC](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
+[![GODOC](https://godoc.org/github.com/nathany/looper?status.svg)](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
-<a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="center" height="80"></a>
+<a href="https://github.com/hackraft/gophericons"><img src="gopher.png" align="left" height="200"></a>
 
-Sentences - A command line sentence tokenizer written in Golang
-===============================================================
+Sentences - A command line sentence tokenizer
+=============================================
 
 This command line utility will convert a blob of text into a list of sentences.
 
 * [Demo](http://sentences.erock.io)
 * [Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
-
-Notice
-------
-
-I have not tested this tokenizer in any other language besides English.  By default
-the command line utility loads english. I welcome anyone willing to test the
-other languages to submit updates as needed.
-
-A primary goal for this package is to be multilingual so I'm willing to help in
-any way possible.
-
-This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
 Install
 -------
@@ -126,6 +114,18 @@ can be extended.
 
 Eager to make adhoc changes but don't know how to start?
 Have a look at `github.com/neurosnap/sentences/english` for a solid example.
+
+Notice
+------
+
+I have not tested this tokenizer in any other language besides English.  By default
+the command line utility loads english. I welcome anyone willing to test the
+other languages to submit updates as needed.
+
+A primary goal for this package is to be multilingual so I'm willing to help in
+any way possible.
+
+This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
 A Punkt Tokenizer
 -----------------
