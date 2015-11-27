@@ -52,7 +52,7 @@ go get gopkg.in/neurosnap/sentences.v1
 Use it
 ------
 
-```
+```Go
 import (
     "fmt"
 
@@ -89,7 +89,7 @@ English
 
 This package attempts to fix some problems I noticed for english.
 
-```
+```Go
 import (
     "fmt"
 
