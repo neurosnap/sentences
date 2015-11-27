@@ -9,7 +9,7 @@ Sentences - A command line sentence tokenizer
 
 This command line utility will convert a blob of text into a list of sentences.
 
-* [Demo](http://sents.erock.io)
+* [Demo](http://sentences.erock.io)
 * [Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
 Install
