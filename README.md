@@ -99,7 +99,11 @@ import (
 func main() {
     text := "Hi there. Does this really work?"
 
-    tokenizer := english.NewSentenceTokenizer(nil)
+    tokenizer, err := english.NewSentenceTokenizer(nil)
+    if err != nil {
+        panic(err)
+    }
+
     sentences := tokenizer.Tokenize(text)
     for _, s := range sentences {
         fmt.Println(s.Text)

@@ -17,7 +17,8 @@ if __name__ == '__main__':
         if not filename.endswith('.xml'):
             continue
 
-        print(filename)
+        print("Processing file: {}".format(filename))
+
         fname = os.path.join(path, filename)
         tree = ET.parse(fname)
 
