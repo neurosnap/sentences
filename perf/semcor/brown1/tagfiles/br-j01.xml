@@ -1,0 +1,2286 @@
+<contextfile concordance="brown">
+<context filename="br-j01" paras="yes">
+<p pnum="1">
+<s snum="1">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="RB" lemma="recently" wnsn="1" lexsn="4:02:00::">recently</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="1" lexsn="2:30:00::">become</wf>
+<wf cmd="done" pos="JJ" lemma="practical" wnsn="1" lexsn="3:00:00::">practical</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="new" wnsn="1" lexsn="3:00:00::">new</wf>
+<wf cmd="done" pos="NN" lemma="source" wnsn="2" lexsn="1:10:00::">source</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" rdf="heavenly_bodies" pos="NN" lemma="heavenly_body" wnsn="1" lexsn="1:17:00::">bodies</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="atmosphere" wnsn="5" lexsn="1:17:00::">atmospheres</wf>
+<punc>.</punc>
+</s>
+<s snum="2">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">results</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="present" wnsn="1" lexsn="3:00:01::">present</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="consistent" wnsn="1" lexsn="3:00:00::">consistent</wf>
+<wf cmd="done" pos="JJ" ot="notag">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="conductivity" wnsn="1" lexsn="1:19:00::">conductivity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="done" pos="NN" lemma="layer" wnsn="2" lexsn="1:15:00::">layer</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="derive" wnsn="1" lexsn="2:31:00::">derived</wf>
+<wf cmd="done" pos="VB" ot="notag">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="infrared_emission" wnsn="1" lexsn="1:19:00::">infrared_emission</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="done" pos="NN" lemma="eclipse" wnsn="1" lexsn="1:11:00::">eclipses</wf>
+<punc>(</punc>
+<wf cmd="done" pos="RB" lemma="e.g." wnsn="1" lexsn="4:02:00::">e.g.</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Garstung</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="3">
+<wf cmd="ignore" pos="WRB">When</wf>
+<wf cmd="done" pos="RB" lemma="sufficiently" wnsn="1" lexsn="4:02:00::">sufficiently</wf>
+<wf cmd="done" pos="JJ" lemma="accurate" wnsn="1" lexsn="3:00:00::">accurate</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="complete" wnsn="1" lexsn="3:00:00::">complete</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">measurements</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="available" wnsn="1" lexsn="3:00:00::">available</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="possible" wnsn="1" lexsn="3:00:00::">possible</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="set" wnsn="2" lexsn="2:31:04::">set</wf>
+<wf cmd="done" pos="NN" lemma="limit" wnsn="1" lexsn="1:07:00::">limits</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="electrical" wnsn="1" lexsn="3:01:00::">electrical</wf>
+<wf cmd="done" pos="NN" lemma="characteristic" wnsn="1" lexsn="1:09:00::">characteristics</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="subsurface" wnsn="1" lexsn="3:00:00::">subsurface</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">materials</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="2">
+<s snum="4">
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">Observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planet</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="2" lexsn="2:42:00::">has</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="extensive" wnsn="1" lexsn="5:00:00:large:00">extensive</wf>
+<wf cmd="done" pos="NN" lemma="atmosphere" wnsn="5" lexsn="1:17:00::">atmosphere</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="probe" wnsn="1" lexsn="2:32:00::">probe</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="atmosphere" wnsn="5" lexsn="1:17:00::">atmosphere</wf>
+<wf cmd="done" pos="RB" lemma="to_a_greater_extent" wnsn="1" lexsn="4:02:01::">to_a_greater_extent</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">those</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="done" pos="JJ" lemma="short" wnsn="2" lexsn="3:00:01::">shorter</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="done" pos="NN" lemma="case" wnsn="1" lexsn="1:11:00::">cases</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">give</wf>
+<wf cmd="done" pos="RB" lemma="otherwise" wnsn="1" lexsn="4:02:01::">otherwise</wf>
+<wf cmd="done" pos="JJ" lemma="unobtainable" wnsn="1" lexsn="5:00:00:unavailable:00">unobtainable</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="characteristic" wnsn="1" lexsn="1:09:00::">characteristics</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="solid" wnsn="2" lexsn="3:00:01::">solid</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<punc>.</punc>
+</s>
+<s snum="5">
+<wf cmd="done" pos="NN" lemma="radio_observation" wnsn="1" lexsn="1:04:00::">Radio_observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="venus" wnsn="1" lexsn="1:17:00::">Venus</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="RB" lemma="already" wnsn="1" lexsn="4:02:00::">already</wf>
+<wf cmd="done" pos="VB" lemma="supply" wnsn="1" lexsn="2:40:00::">supplied</wf>
+<wf cmd="done" pos="JJ" lemma="unexpected" wnsn="1" lexsn="3:00:00::">unexpected</wf>
+<wf cmd="done" pos="JJ" lemma="experimental" wnsn="1" lexsn="3:01:00::">experimental</wf>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="physical" wnsn="2" lexsn="3:01:00::">physical</wf>
+<wf cmd="done" pos="NN" lemma="condition" wnsn="1" lexsn="1:26:00::">conditions</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<punc>.</punc>
+</s>
+<s snum="6">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="observed" wnsn="1" lexsn="5:00:00:determined:00">observed</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="venus" wnsn="1" lexsn="1:17:00::">Venus</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="much" wnsn="1" lexsn="4:02:00::">much</wf>
+<wf cmd="done" pos="JJ" lemma="high" wnsn="1" lexsn="3:00:02::">higher</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="expected" wnsn="1" lexsn="3:00:00::">expected</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">although</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="spectrum" wnsn="1" lexsn="1:19:00::">spectrum</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="1" lexsn="2:32:01::">indicated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurements</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="done" pos="IN" ot="notag">near</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="10" wnsn="1" lexsn="5:00:00:cardinal:00">10</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" ot="notag">like</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black_body</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="CD" ot="notag">600</wf>
+<punc>`</punc>
+<wf cmd="done" pos="NN" lemma="k" wnsn="1" lexsn="1:23:05::">K</wf>
+<punc>.</punc>
+</s>
+<s snum="7">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">result</wf>
+<wf cmd="done" pos="VB" lemma="suggest" wnsn="3" lexsn="2:32:02::">suggests</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="NN" lemma="high_temperature" wnsn="1" lexsn="1:07:00::">high_temperature</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="solid" wnsn="2" lexsn="3:00:01::">solid</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planet</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">although</wf>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="possibility" wnsn="4" lexsn="1:09:01::">possibility</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="observed" wnsn="1" lexsn="5:00:00:determined:00">observed</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="combination" wnsn="1" lexsn="1:14:00::">combination</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">both</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="non" wnsn="0" lexsn="5:00:00:negative:02">non</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="component" wnsn="1" lexsn="1:09:00::">components</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="observed" wnsn="1" lexsn="5:00:00:determined:00">observed</wf>
+<wf cmd="done" pos="NN" lemma="spectrum" wnsn="1" lexsn="1:19:00::">spectrum</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black_body</wf>
+<wf cmd="done" pos="RB" lemma="merely" wnsn="1" lexsn="4:02:00::">merely</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="coincidence" wnsn="1" lexsn="1:11:00::">coincidence</wf>
+<punc>.</punc>
+</s>
+<s snum="8">
+<wf cmd="ignore" pos="IN">For</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="case" wnsn="4" lexsn="1:09:00::">case</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="done" pos="NN" lemma="spectrum" wnsn="1" lexsn="1:19:00::">spectrum</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="definitely" wnsn="1" lexsn="4:02:00::">definitely</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="ignore" pos="IN">like</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="spectrum" wnsn="1" lexsn="1:19:00::">spectrum</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black-body</wf>
+<wf cmd="done" pos="NN" lemma="radiator" wnsn="1" lexsn="1:17:00::">radiator</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="seem" wnsn="1" lexsn="2:39:00::">seems</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="likely" wnsn="1" lexsn="3:00:00::">likely</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reaching</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="earth" wnsn="1" lexsn="1:17:00::">earth</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="combination" wnsn="1" lexsn="1:14:00::">combination</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="atmosphere" wnsn="5" lexsn="1:17:00::">atmosphere</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="non" wnsn="0" lexsn="5:00:00:negative:02">non</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="component" wnsn="1" lexsn="1:09:00::">components</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="3">
+<s snum="9">
+<wf cmd="ignore" pos="IN">Of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="remaining" wnsn="0" lexsn="5:00:00:other:00">remaining</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="only" wnsn="2" lexsn="4:02:01::">only</wf>
+<wf cmd="done" pos="NN" lemma="mars" wnsn="1" lexsn="1:17:00::">Mars</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="saturn" wnsn="1" lexsn="1:17:00::">Saturn</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="NN" lemma="radio_source" wnsn="1" lexsn="1:17:00::">radio_sources</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="much" wnsn="1" lexsn="3:00:00::">much</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="available" wnsn="1" lexsn="3:00:00::">available</wf>
+<punc>.</punc>
+</s>
+<s snum="10">
+<wf cmd="done" pos="NN" lemma="mars" wnsn="1" lexsn="1:17:00::">Mars</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="done" pos="RB" lemma="twice" wnsn="1" lexsn="4:02:00::">twice</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_length</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="observed" wnsn="1" lexsn="5:00:00:determined:00">observed</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="reasonable" wnsn="1" lexsn="3:00:00::">reasonable</wf>
+<wf cmd="done" pos="NN" lemma="agreement" wnsn="2" lexsn="1:07:00::">agreement</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">might</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="predict" wnsn="1" lexsn="2:32:00::">predicted</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="basis" wnsn="2" lexsn="1:09:00::">basis</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="known" wnsn="1" lexsn="3:00:00::">known</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="mars" wnsn="1" lexsn="1:17:00::">Mars</wf>
+<punc>.</punc>
+</s>
+<s snum="11">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="saturn" wnsn="1" lexsn="1:17:00::">Saturn</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="JJ" lemma="limited" wnsn="1" lexsn="3:00:00::">limited</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="RB" lemma="again" wnsn="1" lexsn="4:02:00::">again</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="measured" wnsn="0" lexsn="3:00:00::">measured</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="done" pos="VB" lemma="seem" wnsn="1" lexsn="2:39:00::">seems</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="consistent" wnsn="1" lexsn="3:00:00::">consistent</wf>
+<wf cmd="done" pos="JJ" ot="notag">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="origin" wnsn="1" lexsn="1:15:00::">origin</wf>
+<punc>.</punc>
+</s>
+<s snum="12">
+<wf cmd="ignore" pos="DT">No</wf>
+<wf cmd="done" pos="NN" lemma="attempt" wnsn="1" lexsn="1:04:00::">attempts</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="2" lexsn="2:30:00::">measure</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="remaining" wnsn="0" lexsn="5:00:00:other:00">remaining</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="report" wnsn="2" lexsn="2:32:04::">reported</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="distance" wnsn="1" lexsn="1:07:00::">distances</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="small" wnsn="1" lexsn="3:00:00::">small</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameters</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="low_temperature" wnsn="1" lexsn="1:07:00::">low_temperatures</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="radio" wnsn="1" lexsn="3:01:00::">radio</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reaching</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="earth" wnsn="1" lexsn="1:17:00::">earth</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="NN" lemma="source" wnsn="1" lexsn="1:15:00::">sources</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<punc>.</punc>
+</s>
+<s snum="13">
+<wf cmd="done" pos="RB" ot="complexprep">In_spite</wf>
+<wf cmd="done" pos="RB" ot="notag">of</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="large" wnsn="1" lexsn="3:00:00::">large</wf>
+<wf cmd="done" pos="NN" lemma="radio_reflector" wnsn="1" lexsn="1:06:00::">radio_reflectors</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="improve" wnsn="1" lexsn="2:30:01::">improved</wf>
+<wf cmd="done" pos="VB" lemma="amplify" wnsn="1" lexsn="2:30:00::">amplifying</wf>
+<wf cmd="done" pos="NN" lemma="technique" wnsn="1" lexsn="1:09:00::">techniques</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="RB" lemma="now" wnsn="2" lexsn="4:02:00::">now</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="1" lexsn="2:30:00::">becoming</wf>
+<wf cmd="done" pos="JJ" lemma="available" wnsn="1" lexsn="3:00:00::">available</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="2" lexsn="2:30:00::">make</wf>
+<wf cmd="done" pos="VB" ot="notag">it</wf>
+<wf cmd="done" pos="JJ" lemma="possible" wnsn="1" lexsn="3:00:00::">possible</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observe</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" ot="notag">most</wf>
+<wf cmd="done" pos="JJ" ot="notag">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="a_few" wnsn="1" lexsn="5:00:00:few:00">a_few</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">years</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="4">
+<s snum="14">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="study" wnsn="1" lexsn="1:04:00::">study</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="done" pos="VB" lemma="begin" wnsn="1" lexsn="2:30:00::">began</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="detection" wnsn="2" lexsn="1:04:00::">detection</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">1.25</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_length</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Dicke</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Beringer</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1946</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="15">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="follow" wnsn="2" lexsn="2:42:00::">followed</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="comprehensive" wnsn="1" lexsn="3:00:00::">comprehensive</wf>
+<wf cmd="done" pos="NN" lemma="series" wnsn="1" lexsn="1:14:00::">series</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">1.25</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="cycle" wnsn="1" lexsn="1:28:00::">cycles</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Piddington</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Minnett</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1949</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="16">
+<wf cmd="ignore" pos="PRP">They</wf>
+<wf cmd="done" pos="VB" lemma="deduce" wnsn="1" lexsn="2:31:00::">deduced</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurements</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="whole" wnsn="1" lexsn="3:00:00::">whole</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VB" lemma="vary" wnsn="2" lexsn="2:42:00::">varied</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="lunation" wnsn="1" lexsn="1:28:00::">lunation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="roughly" wnsn="1" lexsn="4:02:00::">roughly</wf>
+<wf cmd="done" pos="JJ" lemma="sinusoidal" wnsn="1" lexsn="5:00:00:curved:00">sinusoidal</wf>
+<wf cmd="done" pos="NN" lemma="fashion" wnsn="2" lexsn="1:04:00::">fashion</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="amplitude" wnsn="1" lexsn="1:11:00::">amplitude</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="considerably" wnsn="1" lexsn="4:02:01::">considerably</wf>
+<wf cmd="done" pos="RB" ot="complexprep">less_than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="amplitude" wnsn="1" lexsn="1:11:00::">amplitude</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="infrared_emission" wnsn="1" lexsn="1:19:00::">infrared_emission</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="3" lexsn="2:42:00::">measured</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Pettit</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Nicholson</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1930</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Pettit</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1935</wf>
+<punc>)</punc>
+<punc>;</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="maximum" wnsn="1" lexsn="1:23:00::">maximum</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="done" pos="VB" lemma="come" wnsn="3" lexsn="2:30:01::">came</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="CD" ot="notag">1</wf>
+<wf cmd="done" pos="CD" ot="notag">2</wf>
+<wf cmd="done" pos="NN" lemma="day" wnsn="1" lexsn="1:28:00::">days</wf>
+<wf cmd="ignore" pos="IN">after</wf>
+<wf cmd="done" pos="NN" lemma="full_moon" wnsn="1" lexsn="1:28:00::">Full_Moon</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="again" wnsn="1" lexsn="4:02:00::">again</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="contrast" wnsn="1" lexsn="1:24:00::">contrast</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="infrared_emission" wnsn="1" lexsn="1:19:00::">infrared_emission</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="2" lexsn="2:38:00::">reaches</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="NN" lemma="maximum" wnsn="1" lexsn="1:23:00::">maximum</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="NN" lemma="full_moon" wnsn="1" lexsn="1:28:00::">Full_Moon</wf>
+<punc>.</punc>
+</s>
+<s snum="17">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Piddington</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Minnett</wf>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explained</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="pointing_out" wnsn="1" lexsn="1:10:00::">pointing_out</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="JJ" lemma="rocklike" wnsn="1" lexsn="5:00:00:hard:01">rocklike</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">materials</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="likely" wnsn="1" lexsn="3:00:00::">likely</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="make_up" wnsn="1" lexsn="2:42:00::">make_up</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VB" ot="notag">would</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="RB" lemma="partially" wnsn="1" lexsn="4:02:00::">partially</wf>
+<wf cmd="done" pos="JJ" lemma="transparent" wnsn="1" lexsn="5:00:00:clear:02">transparent</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="NN" lemma="radio_wave" wnsn="1" lexsn="1:19:00::">radio_waves</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">although</wf>
+<wf cmd="done" pos="JJ" lemma="opaque" wnsn="1" lexsn="3:00:00::">opaque</wf>
+<wf cmd="done" pos="JJ" ot="notag">to</wf>
+<wf cmd="done" pos="NN" lemma="infrared_radiation" wnsn="1" lexsn="1:19:00::">infrared_radiation</wf>
+<punc>.</punc>
+</s>
+<s snum="18">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="infrared_emission" wnsn="1" lexsn="1:19:00::">infrared_emission</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="done" pos="RB" lemma="then" wnsn="2" lexsn="4:02:02::">then</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assumed</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="originate" wnsn="1" lexsn="2:42:00::">originate</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="done" pos="VB" lemma="originate" wnsn="1" lexsn="2:42:00::">originates</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="done" pos="NN" lemma="depth" wnsn="1" lexsn="1:07:00::">depth</wf>
+<wf cmd="done" pos="IN" ot="notag">beneath</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="done" pos="JJ" lemma="due_to" wnsn="0" lexsn="5:00:00:attributable:00">due_to</wf>
+<wf cmd="done" pos="NN" lemma="solar_radiation" wnsn="1" lexsn="1:19:00::">solar_radiation</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="reduce" wnsn="1" lexsn="2:30:00::">reduced</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="amplitude" wnsn="1" lexsn="1:11:00::">amplitude</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="shift" wnsn="3" lexsn="2:38:02::">shifted</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="phase" wnsn="3" lexsn="1:28:01::">phase</wf>
+<punc>.</punc>
+</s>
+<s snum="19">
+<wf cmd="ignore" pos="IN">Since</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="absorption" wnsn="2" lexsn="1:22:02::">absorption</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="radio_wave" wnsn="1" lexsn="1:19:00::">radio_waves</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="rocklike" wnsn="1" lexsn="5:00:00:hard:01">rocklike</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="done" pos="VB" lemma="vary" wnsn="2" lexsn="2:42:00::">varies</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_length</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="possible" wnsn="1" lexsn="3:00:00::">possible</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="sample" wnsn="1" lexsn="2:34:00::">sample</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="different" wnsn="1" lexsn="3:00:00::">different</wf>
+<wf cmd="done" pos="NN" lemma="depth" wnsn="1" lexsn="1:07:00::">depths</wf>
+<wf cmd="ignore" pos="IN">beneath</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="possibly" wnsn="1" lexsn="4:02:00::">possibly</wf>
+<wf cmd="done" pos="VB" lemma="detect" wnsn="1" lexsn="2:39:00::">detect</wf>
+<wf cmd="done" pos="NN" lemma="change" wnsn="2" lexsn="1:24:00::">changes</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="structure" wnsn="1" lexsn="1:06:00::">structure</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="composition" wnsn="2" lexsn="1:07:01::">composition</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="5">
+<s snum="20">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planet</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="RB" lemma="first" wnsn="2" lexsn="4:02:02::">first</wf>
+<wf cmd="done" pos="VB" lemma="detect" wnsn="0" lexsn="2:31:00::">detected</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1955</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Burke</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Franklin</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1955</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" lemma="identify" wnsn="1" lexsn="2:31:00::">identified</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="origin" wnsn="1" lexsn="1:15:00::">origin</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="interference" wnsn="3" lexsn="1:11:00::">interference</wf>
+<wf cmd="done" pos="JJ" ot="notag">like</wf>
+<wf cmd="done" pos="NN" lemma="radio_noise" wnsn="1" lexsn="1:11:00::">radio_noise</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="record" wnsn="1" lexsn="1:10:03::">records</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="15" wnsn="1" lexsn="5:00:00:cardinal:00">15</wf>
+<wf cmd="done" pos="NN" lemma="meter" wnsn="1" lexsn="1:23:00::">meters</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_length</wf>
+<wf cmd="done" pos="IN" ot="notag">as</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<punc>.</punc>
+</s>
+<s snum="21">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="JJ" lemma="sporadic" wnsn="1" lexsn="3:00:00::">sporadic</wf>
+<wf cmd="done" pos="NN" lemma="type" wnsn="1" lexsn="1:09:00::">type</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="discuss" wnsn="1" lexsn="2:32:01::">discussed</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Burke</wf>
+<punc>(</punc>
+<wf cmd="done" pos="NN" ot="notag">chap.</wf>
+<wf cmd="done" pos="CD" ot="notag">13</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gallet</wf>
+<punc>(</punc>
+<wf cmd="done" pos="NN" ot="notag">chap.</wf>
+<wf cmd="done" pos="CD" ot="notag">14</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="22">
+<wf cmd="done" pos="JJ" lemma="steady" wnsn="1" lexsn="3:00:00::">Steady</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="presumably" wnsn="1" lexsn="4:02:00::">presumably</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="origin" wnsn="1" lexsn="1:15:00::">origin</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="venus" wnsn="1" lexsn="1:17:00::">Venus</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">3.15</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="CD" ot="notag">9.4</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="mars" wnsn="1" lexsn="1:17:00::">Mars</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">3.15</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1956</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mayer</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">McCullough</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sloanaker</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" ot="notag">b</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" ot="notag">c</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="saturn" wnsn="1" lexsn="1:17:00::">Saturn</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">3.75</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1957</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Drake</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Ewen</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="23">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="RB" lemma="relatively" wnsn="1" lexsn="4:02:00::">relatively</wf>
+<wf cmd="done" pos="JJ" lemma="short" wnsn="1" lexsn="3:00:02::">short</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="2" lexsn="1:28:05::">time</wf>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="JJ" lemma="early" wnsn="1" lexsn="3:00:00::">early</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="venus" wnsn="1" lexsn="1:17:00::">Venus</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="additional" wnsn="0" lexsn="5:00:00:added:00">additional</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="range" wnsn="1" lexsn="1:07:00::">range</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="CD" ot="notag">0.8</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="CD" ot="notag">10.2</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave-length</wf>
+<wf cmd="done" pos="NN" lemma="range" wnsn="1" lexsn="1:07:00::">range</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="CD" ot="notag">3.03</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="CD" ot="notag">68</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="6">
+<s snum="24">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="observable" wnsn="1" lexsn="5:00:00:noticeable:00">observable</wf>
+<wf cmd="done" pos="NN" lemma="characteristic" wnsn="1" lexsn="1:09:00::">characteristics</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="radio_radiation" wnsn="1" lexsn="1:19:00::">radio_radiation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="polarization" wnsn="1" lexsn="1:19:00::">polarization</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="1" lexsn="1:15:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="arrival" wnsn="1" lexsn="1:04:00::">arrival</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="wave" wnsn="3" lexsn="1:11:00::">waves</wf>
+<punc>.</punc>
+</s>
+<s snum="25">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="maximum" wnsn="1" lexsn="3:00:00::">maximum</wf>
+<wf cmd="done" pos="JJ" lemma="angular" wnsn="1" lexsn="3:01:00::">angular</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="earth" wnsn="1" lexsn="1:17:00::">earth</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="1" wnsn="1" lexsn="5:00:00:cardinal:00">1</wf>
+<wf cmd="done" pos="NN" lemma="minute_of_arc" wnsn="1" lexsn="1:23:00::">minute_of_arc</wf>
+<punc>.</punc>
+</s>
+<s snum="26">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="much" wnsn="1" lexsn="4:02:00::">much</wf>
+<wf cmd="done" pos="JJ" lemma="smaller" wnsn="1" lexsn="5:00:00:small:00">smaller</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="highest" wnsn="0" lexsn="5:00:00:maximal:00">highest</wf>
+<wf cmd="done" pos="NN" lemma="resolution" wnsn="2" lexsn="1:19:00::">resolution</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="RB" lemma="even" wnsn="1" lexsn="4:02:00::">even</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="large" wnsn="1" lexsn="3:00:00::">large</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflectors</wf>
+<wf cmd="done" pos="RB" lemma="now" wnsn="2" lexsn="4:02:00::">now</wf>
+<wf cmd="done" pos="IN" ot="notag">under</wf>
+<wf cmd="done" pos="NN" lemma="construction" wnsn="1" lexsn="1:04:00::">construction</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="consequently" wnsn="1" lexsn="4:02:00::">consequently</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="different" wnsn="1" lexsn="3:00:00::">different</wf>
+<wf cmd="done" pos="NN" lemma="region" wnsn="1" lexsn="1:15:00::">regions</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="MD">cannot</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="resolve" wnsn="5" lexsn="2:39:00::">resolved</wf>
+<punc>.</punc>
+</s>
+<s snum="27">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="possible" wnsn="1" lexsn="3:00:00::">possible</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="however" wnsn="1" lexsn="4:02:00::">however</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">put</wf>
+<wf cmd="done" pos="JJ" lemma="useful" wnsn="1" lexsn="3:00:00::">useful</wf>
+<wf cmd="done" pos="NN" lemma="limit" wnsn="1" lexsn="1:07:00::">limits</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameters</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_source" wnsn="1" lexsn="1:17:00::">radio_sources</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observing</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="large" wnsn="1" lexsn="3:00:00::">large</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflectors</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="interferometer" wnsn="1" lexsn="1:06:00::">interferometers</wf>
+<punc>.</punc>
+</s>
+<s snum="28">
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">Measurements</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="polarization" wnsn="1" lexsn="1:19:00::">polarization</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="RB" lemma="presently" wnsn="2" lexsn="4:02:00::">presently</wf>
+<wf cmd="done" pos="VB" lemma="limit" wnsn="0" lexsn="2:41:00::">limited</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="apparatus" wnsn="1" lexsn="1:06:00::">apparatus</wf>
+<wf cmd="done" pos="NN" lemma="sensitivity" wnsn="2" lexsn="1:07:00::">sensitivity</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="remain" wnsn="1" lexsn="2:30:00::">remain</wf>
+<wf cmd="done" pos="JJ" lemma="difficult" wnsn="1" lexsn="3:00:00::">difficult</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="earth" wnsn="1" lexsn="1:17:00::">earth</wf>
+<punc>.</punc>
+</s>
+<s snum="29">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">been</wf>
+<wf cmd="done" pos="JJ" lemma="few" wnsn="1" lexsn="3:00:00::">few</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurements</wf>
+<wf cmd="done" pos="RB" lemma="specifically" wnsn="1" lexsn="4:02:00::">specifically</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="determination" wnsn="1" lexsn="1:04:00::">determination</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="polarization" wnsn="1" lexsn="1:19:00::">polarization</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<punc>.</punc>
+</s>
+<s snum="30">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurements</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="other" pos="NNP" pn="other" ot="notag">NRL</wf>
+<wf cmd="done" pos="JJ" lemma="50" wnsn="1" lexsn="5:00:00:cardinal:00">50</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="foot" wnsn="2" lexsn="1:23:00::">foot</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflector</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="NN" lemma="altitude" wnsn="1" lexsn="1:07:00::">altitude</wf>
+<wf cmd="done" pos="NN" lemma="azimuth" wnsn="1" lexsn="1:25:00::">azimuth</wf>
+<wf cmd="done" pos="JJ" lemma="mounted" wnsn="1" lexsn="5:00:00:affixed:00">mounted</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="9" lexsn="2:32:04::">shown</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="systematic" wnsn="1" lexsn="3:00:00::">systematic</wf>
+<wf cmd="done" pos="NN" lemma="change" wnsn="2" lexsn="1:24:00::">change</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="local" wnsn="1" lexsn="3:00:01::">local</wf>
+<wf cmd="done" pos="NN" lemma="hour_angle" wnsn="1" lexsn="1:15:00::">hour_angle</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="measured" wnsn="0" lexsn="3:00:00::">measured</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensities</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="venus" wnsn="1" lexsn="1:17:00::">Venus</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="substantial" wnsn="1" lexsn="5:00:00:considerable:00">substantial</wf>
+<wf cmd="done" pos="NN" lemma="part" wnsn="3" lexsn="1:17:00::">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="RB" lemma="linearly" wnsn="1" lexsn="4:02:00::">linearly</wf>
+<wf cmd="done" pos="VB" lemma="polarize" wnsn="1" lexsn="2:30:02::">polarized</wf>
+<punc>.</punc>
+</s>
+<s snum="31">
+<wf cmd="done" pos="JJ" lemma="recent" wnsn="1" lexsn="5:00:00:new:00">Recent</wf>
+<wf cmd="done" pos="NN" lemma="interferometer" wnsn="1" lexsn="1:06:00::">interferometer</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurements</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Radhakrishnan</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Roberts</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1960</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="9" lexsn="2:32:04::">shown</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">960</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="mc" wnsn="1" lexsn="1:28:00::">Mc</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="jupiter" wnsn="1" lexsn="1:17:00::">Jupiter</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="RB" lemma="partially" wnsn="1" lexsn="4:02:00::">partially</wf>
+<wf cmd="done" pos="VB" lemma="polarize" wnsn="1" lexsn="2:30:02::">polarized</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="originate_in" wnsn="1" lexsn="2:42:00::">originate_in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="region" wnsn="1" lexsn="1:15:00::">region</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="larger" wnsn="1" lexsn="5:00:00:large:00">larger</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="visible" wnsn="1" lexsn="3:00:00::">visible</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<punc>.</punc>
+</s>
+<s snum="32">
+<wf cmd="done" pos="JJ" lemma="other_than" wnsn="0" lexsn="5:00:00:other:00">Other_than</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="significant" wnsn="1" lexsn="3:00:00::">significant</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">result</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" ot="notag">most_of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="done" pos="RB" lemma="now" wnsn="2" lexsn="4:02:00::">now</wf>
+<wf cmd="done" pos="JJ" lemma="available" wnsn="1" lexsn="3:00:00::">available</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="restrict" wnsn="1" lexsn="2:30:02::">restricted</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="7">
+<s snum="33">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="concept" wnsn="1" lexsn="1:09:00::">concept</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="apparent" wnsn="2" lexsn="5:00:00:superficial:00">apparent</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black-body</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="done" pos="JJ" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="describe" wnsn="2" lexsn="2:32:01::">describe</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<wf cmd="done" pos="VB" lemma="receive" wnsn="1" lexsn="2:40:00::">received</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<punc>.</punc>
+</s>
+<s snum="34">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="VB" lemma="receive" wnsn="1" lexsn="2:40:00::">received</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="compare" wnsn="1" lexsn="2:31:00::">compared</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="1" lexsn="1:19:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="hypothetical" wnsn="1" lexsn="5:00:00:theoretical:00">hypothetical</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black-body</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="subtend" wnsn="1" lexsn="2:42:00::">subtends</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="3" lexsn="3:00:04::">same</wf>
+<wf cmd="done" pos="NN" lemma="solid_angle" wnsn="1" lexsn="1:25:00::">solid_angle</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="visible" wnsn="1" lexsn="3:00:00::">visible</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planet</wf>
+<punc>.</punc>
+</s>
+<s snum="35">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="apparent" wnsn="2" lexsn="5:00:00:superficial:00">apparent</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black-body</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">must</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assumed</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black_body</wf>
+<wf cmd="done" pos="JJ" ot="notag">in_order_that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="intensity" wnsn="1" lexsn="1:07:03::">intensity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="equal" wnsn="1" lexsn="2:42:00::">equal</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="observed" wnsn="1" lexsn="5:00:00:determined:00">observed</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<punc>.</punc>
+</s>
+<s snum="36">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="use" wnsn="1" lexsn="1:04:00::">use</wf>
+<wf cmd="done" pos="RB" ot="notag">of</wf>
+<wf cmd="done" pos="RB" ot="notag">this</wf>
+<wf cmd="done" pos="NN" lemma="concept" wnsn="1" lexsn="1:09:00::">concept</wf>
+<wf cmd="done" pos="VBZ" ot="notag">does</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="specify" wnsn="2" lexsn="2:32:02::">specify</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="origin" wnsn="1" lexsn="1:15:00::">origin</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="2" lexsn="4:02:01::">only</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planet</wf>
+<wf cmd="done" pos="RB" lemma="really" wnsn="1" lexsn="4:02:03::">really</wf>
+<wf cmd="done" pos="VB" lemma="radiate" wnsn="1" lexsn="2:43:00::">radiates</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black_body</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="apparent" wnsn="2" lexsn="5:00:00:superficial:00">apparent</wf>
+<wf cmd="done" pos="NN" lemma="blackbody" wnsn="1" lexsn="1:17:00::">black-body</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="VB" lemma="correspond" wnsn="2" lexsn="2:42:04::">correspond</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="physical" wnsn="2" lexsn="3:01:00::">physical</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="emitting" wnsn="0" lexsn="3:44:00::">emitting</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="8">
+<s snum="37">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="radio_radiation" wnsn="1" lexsn="1:19:00::">radio_radiation</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="sun" wnsn="1" lexsn="1:17:00::">sun</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="reflect" wnsn="4" lexsn="2:43:00::">reflected</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="negligible" wnsn="1" lexsn="5:00:00:minimal:00">negligible</wf>
+<wf cmd="done" pos="VB" lemma="compare" wnsn="1" lexsn="2:31:00::">compared</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="thermal_emission" wnsn="1" lexsn="1:22:00::">thermal_emission</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="NN" lemma="centimeter" wnsn="1" lexsn="1:23:00::">centimeter</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">except</wf>
+<wf cmd="done" pos="RB" lemma="possibly" wnsn="1" lexsn="4:02:00::">possibly</wf>
+<wf cmd="done" pos="RB" ot="notag">at</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="exceptional" wnsn="1" lexsn="5:00:00:extraordinary:00">exceptional</wf>
+<wf cmd="done" pos="NN" lemma="outburst" wnsn="2" lexsn="1:11:00::">outbursts</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="solar" wnsn="1" lexsn="3:01:00::">solar</wf>
+<wf cmd="done" pos="NN" lemma="radio_noise" wnsn="1" lexsn="1:11:00::">radio_noise</wf>
+<punc>.</punc>
+</s>
+<s snum="38">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="quiescent" wnsn="1" lexsn="5:00:00:inactive:07">quiescent</wf>
+<wf cmd="done" pos="NN" lemma="level" wnsn="2" lexsn="1:26:01::">level</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="centimeter" wnsn="1" lexsn="1:23:00::">centimeter</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave-length</wf>
+<wf cmd="done" pos="NN" lemma="solar_radiation" wnsn="1" lexsn="1:19:00::">solar_radiation</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="increase" wnsn="1" lexsn="2:30:00::">increase</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="average" wnsn="1" lexsn="5:00:02:normal:01">average</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="less" wnsn="0" lexsn="1:23:00::">less</wf>
+<wf cmd="done" pos="RB" ot="notag">than</wf>
+<wf cmd="done" pos="JJ" lemma="1" wnsn="1" lexsn="5:00:00:cardinal:00">1</wf>
+<punc>`</punc>
+<wf cmd="done" pos="NN" lemma="k" wnsn="1" lexsn="1:23:05::">K</wf>
+<punc>.</punc>
+</s>
+<s snum="39">
+<wf cmd="ignore" pos="IN">At</wf>
+<wf cmd="done" pos="NN" lemma="meter" wnsn="1" lexsn="1:23:00::">meter</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="increase" wnsn="5" lexsn="1:04:00::">increase</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="order" wnsn="2" lexsn="1:07:01::">order</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="10" wnsn="1" lexsn="5:00:00:cardinal:00">10</wf>
+<punc>`</punc>
+<wf cmd="done" pos="NN" lemma="k" wnsn="1" lexsn="1:23:05::">K</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="average" wnsn="1" lexsn="5:00:02:normal:01">average</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperatures</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="near" wnsn="1" lexsn="3:00:00::">nearer</wf>
+<wf cmd="done" pos="NN" lemma="planet" wnsn="1" lexsn="1:17:00::">planets</wf>
+<wf cmd="done" pos="VB" ot="notag">would</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<punc>.</punc>
+</s>
+<s snum="40">
+<wf cmd="done" pos="RB" lemma="therefore" wnsn="1" lexsn="4:02:00::">Therefore</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="neglect" wnsn="1" lexsn="2:31:00::">neglecting</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="extreme" wnsn="1" lexsn="5:00:00:intense:00">extreme</wf>
+<wf cmd="done" pos="NN" lemma="outburst" wnsn="2" lexsn="1:11:00::">outbursts</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="reflect" wnsn="4" lexsn="2:43:00::">reflected</wf>
+<wf cmd="done" pos="NN" lemma="solar_radiation" wnsn="1" lexsn="1:19:00::">solar_radiation</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">cause</wf>
+<wf cmd="done" pos="JJ" lemma="sizable" wnsn="1" lexsn="5:00:00:large:00">sizable</wf>
+<wf cmd="done" pos="NN" lemma="error" wnsn="2" lexsn="1:07:00::">errors</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">measurements</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="planetary" wnsn="1" lexsn="3:01:00::">planetary</wf>
+<wf cmd="done" pos="NN" lemma="radiation" wnsn="2" lexsn="1:04:00::">radiation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="centimeter" wnsn="1" lexsn="1:23:00::">centimeter</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="decimeter" wnsn="1" lexsn="1:23:00::">decimeter</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave-length</wf>
+<wf cmd="done" pos="NN" lemma="range" wnsn="1" lexsn="1:07:00::">range</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="9">
+<s snum="41">
+<wf cmd="done" pos="NN" lemma="radio_observation" wnsn="1" lexsn="1:04:00::">Radio_observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" ot="notag">made</wf>
+<wf cmd="done" pos="VB" ot="notag">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="range" wnsn="1" lexsn="1:07:00::">range</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="CD" ot="notag">4.3</wf>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="CD" ot="notag">75</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">results</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="summarize" wnsn="1" lexsn="2:32:00::">summarized</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="table" wnsn="1" lexsn="1:14:00::">Table</wf>
+<wf cmd="done" pos="CD" ot="notag">1</wf>
+<punc>.</punc>
+</s>
+<s snum="42">
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">Observations</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">1.5</wf>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="done" pos="JJ" lemma="optical" wnsn="1" lexsn="3:01:01::">optical</wf>
+<wf cmd="done" pos="NN" lemma="technique" wnsn="1" lexsn="1:09:00::">techniques</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sinton</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1955</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1956</wf>
+<punc>,</punc>
+<punc>;</punc>
+<wf cmd="done" pos="RB" lemma="see_also" wnsn="0" lexsn="4:02:00::">see_also</wf>
+<wf cmd="done" pos="NN" ot="notag">chap.</wf>
+<wf cmd="done" pos="CD" ot="notag">11</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="43">
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">Not</wf>
+<wf cmd="done" pos="JJ" lemma="all" wnsn="1" lexsn="3:00:00::">all</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="observer" wnsn="2" lexsn="1:18:01::">observers</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="2" lexsn="3:00:00::">same</wf>
+<wf cmd="done" pos="NN" lemma="procedure" wnsn="1" lexsn="1:04:00::">procedures</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="7" lexsn="2:31:00::">made</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="2" lexsn="3:00:00::">same</wf>
+<wf cmd="done" pos="NN" lemma="assumption" wnsn="2" lexsn="1:09:00::">assumptions</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="distribution" wnsn="1" lexsn="1:09:00::">distribution</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" pos="VB" lemma="reduce" wnsn="4" lexsn="2:40:04::">reducing</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="together" wnsn="4" lexsn="4:02:00::">together</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="1" lexsn="1:07:00::">differences</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="method" wnsn="1" lexsn="1:09:00::">methods</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="VB" lemma="calibrate" wnsn="1" lexsn="2:30:00::">calibrating</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antennae</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="receiver" wnsn="1" lexsn="1:06:00::">receivers</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" ot="notag">must</wf>
+<wf cmd="done" pos="VB" lemma="account_for" wnsn="1" lexsn="2:42:00::">account_for</wf>
+<wf cmd="done" pos="JJ" lemma="much" wnsn="1" lexsn="3:00:00::">much</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="disagreement" wnsn="2" lexsn="1:07:00::">disagreement</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="measured" wnsn="0" lexsn="3:00:00::">measured</wf>
+<wf cmd="done" pos="NN" lemma="radio_brightness" wnsn="1" lexsn="1:07:00::">radio_brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperatures</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="10">
+<s snum="44">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">4.3</wf>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Coates</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1959</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">6</wf>
+<punc>'</punc>
+<wf cmd="done" pos="CD" ot="notag">.7</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="JJ" lemma="small" wnsn="1" lexsn="3:00:00::">small</wf>
+<wf cmd="done" pos="RB" lemma="enough" wnsn="1" lexsn="4:02:00::">enough</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="allow" wnsn="6" lexsn="2:31:00::">allow</wf>
+<wf cmd="done" pos="NN" lemma="resolution" wnsn="2" lexsn="1:19:00::">resolution</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="some" wnsn="1" lexsn="3:00:00::">some</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="larger" wnsn="1" lexsn="5:00:00:large:00">larger</wf>
+<wf cmd="done" pos="NN" lemma="feature" wnsn="1" lexsn="1:09:00::">features</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="contour" wnsn="1" lexsn="1:10:00::">contour</wf>
+<wf cmd="done" pos="NN" lemma="diagram" wnsn="1" lexsn="1:06:00::">diagrams</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">made</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="distribution" wnsn="1" lexsn="1:09:00::">distribution</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="phase" wnsn="1" lexsn="1:28:00::">phases</wf>
+<punc>.</punc>
+</s>
+<s snum="45">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="4" lexsn="2:32:02::">indicate</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="maria" wnsn="1" lexsn="1:17:00::">maria</wf>
+<wf cmd="done" pos="VB" lemma="heat_up" wnsn="1" lexsn="2:30:01::">heat_up</wf>
+<wf cmd="done" pos="JJ" lemma="more" wnsn="1" lexsn="3:00:01::">more</wf>
+<wf cmd="done" pos="RB" lemma="rapidly" wnsn="1" lexsn="4:02:00::">rapidly</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" lemma="cool_off" wnsn="1" lexsn="2:37:00::">cool_off</wf>
+<wf cmd="done" pos="RB" lemma="more" wnsn="1" lexsn="4:02:00::">more</wf>
+<wf cmd="done" pos="RB" lemma="rapidly" wnsn="1" lexsn="4:02:00::">rapidly</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="mountainous" wnsn="1" lexsn="5:00:00:rough:00">mountainous</wf>
+<wf cmd="done" pos="NN" lemma="region" wnsn="1" lexsn="1:15:00::">regions</wf>
+<punc>.</punc>
+</s>
+<s snum="46">
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Mare_Imbrium</wf>
+<wf cmd="done" pos="VB" lemma="seem" wnsn="1" lexsn="2:39:00::">seems</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="exception" wnsn="1" lexsn="1:09:00::">exception</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="remain" wnsn="1" lexsn="2:30:00::">remains</wf>
+<wf cmd="done" pos="JJ" lemma="cool" wnsn="1" lexsn="3:00:01::">cooler</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="region" wnsn="1" lexsn="1:15:00::">regions</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="surround" wnsn="1" lexsn="2:35:00::">surround</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>.</punc>
+</s>
+<s snum="47">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="NN" lemma="contour" wnsn="1" lexsn="1:10:00::">contour</wf>
+<wf cmd="done" pos="NN" lemma="diagram" wnsn="1" lexsn="1:06:00::">diagrams</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" lemma="suggest" wnsn="3" lexsn="2:32:02::">suggest</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="rather" wnsn="2" lexsn="4:02:04::">rather</wf>
+<wf cmd="done" pos="JJ" lemma="rapid" wnsn="1" lexsn="5:00:00:fast:01">rapid</wf>
+<wf cmd="done" pos="NN" lemma="falloff" wnsn="1" lexsn="1:22:00::">falloff</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_brightness" wnsn="1" lexsn="1:07:00::">radio_brightness</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="latitude" wnsn="1" lexsn="1:15:00::">latitude</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="11">
+<s snum="48">
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">Very</wf>
+<wf cmd="done" pos="RB" lemma="recently" wnsn="1" lexsn="4:02:00::">recently</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="8" wnsn="1" lexsn="5:00:00:cardinal:00">8</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_length</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflector</wf>
+<wf cmd="done" pos="JJ" lemma="22" wnsn="1" lexsn="5:00:00:cardinal:00">22</wf>
+<wf cmd="done" pos="NN" lemma="meter" wnsn="1" lexsn="1:23:00::">meters</wf>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="resultant" wnsn="1" lexsn="5:00:00:subsequent:00">resultant</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="done" pos="NN" lemma="width" wnsn="1" lexsn="1:07:00::">width</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="done" pos="JJ" lemma="2" wnsn="1" lexsn="5:00:00:cardinal:00">2</wf>
+<punc>'</punc>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Amenitskii</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Noskova</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Salomonovich</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1960</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="49">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="constant" wnsn="1" lexsn="5:00:00:invariable:00">constant</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="NN" lemma="contour" wnsn="1" lexsn="1:10:00::">contours</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="RB" lemma="much" wnsn="1" lexsn="4:02:00::">much</wf>
+<wf cmd="done" pos="JJ" lemma="smooth" wnsn="4" lexsn="5:00:00:graceful:00">smoother</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">those</wf>
+<wf cmd="done" pos="VB" lemma="observe" wnsn="1" lexsn="2:39:02::">observed</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">4.3</wf>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Coates</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1959</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="apparently" wnsn="1" lexsn="4:02:00::">apparently</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="8" wnsn="1" lexsn="5:00:00:cardinal:00">8</wf>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="RB" lemma="nearly" wnsn="1" lexsn="4:02:00::">nearly</wf>
+<wf cmd="done" pos="RB" lemma="so" wnsn="1" lexsn="4:02:02::">so</wf>
+<wf cmd="done" pos="JJ" lemma="sensitive" wnsn="1" lexsn="3:00:01::">sensitive</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="1" lexsn="1:07:00::">differences</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surface</wf>
+<wf cmd="done" pos="NN" lemma="feature" wnsn="1" lexsn="1:09:00::">features</wf>
+<punc>.</punc>
+</s>
+<s snum="50">
+<wf cmd="done" pos="JJ" lemma="such" wnsn="0" lexsn="5:00:01:specified:00">Such</wf>
+<wf cmd="done" pos="JJ" lemma="high-resolution" wnsn="1" lexsn="3:00:00::">high-resolution</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" ot="notag">needed</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="several" wnsn="3" lexsn="5:00:00:different:00">several</wf>
+<wf cmd="done" pos="NN" lemma="wavelength" wnsn="1" lexsn="1:07:00::">wave_lengths</wf>
+<wf cmd="done" pos="IN" ot="notag">in_order_that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="RB" lemma="properly" wnsn="1" lexsn="4:02:00::">properly</wf>
+<wf cmd="done" pos="VB" lemma="interpret" wnsn="1" lexsn="2:31:00::">interpreted</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="12">
+<s snum="51">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mayer</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">McCullough</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sloanaker</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">3.15</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sloanaker</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">10.3</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="RB" lemma="previously" wnsn="1" lexsn="4:02:00::">previously</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="publish" wnsn="1" lexsn="2:36:01::">published</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="RB" lemma="briefly" wnsn="2" lexsn="4:02:03::">briefly</wf>
+<wf cmd="done" pos="VB" lemma="describe" wnsn="2" lexsn="2:32:01::">described</wf>
+<punc>.</punc>
+</s>
+<s snum="52">
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">Measurements</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">3.15</wf>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="JJ" lemma="11" wnsn="1" lexsn="5:00:00:cardinal:00">11</wf>
+<wf cmd="done" pos="NN" lemma="day" wnsn="3" lexsn="1:28:01::">days</wf>
+<wf cmd="done" pos="VB" lemma="spread" wnsn="1" lexsn="2:35:00::">spread</wf>
+<wf cmd="done" pos="VB" ot="notag">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="interval" wnsn="1" lexsn="1:28:00::">interval</wf>
+<wf cmd="done" pos="NN" lemma="may" wnsn="1" lexsn="1:28:00::">May</wf>
+<wf cmd="done" pos="CD" ot="notag">3</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="NN" lemma="june" wnsn="1" lexsn="1:28:00::">June</wf>
+<wf cmd="done" pos="CD" ot="notag">19</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1956</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="50" wnsn="1" lexsn="5:00:00:cardinal:00">50</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="foot" wnsn="2" lexsn="1:23:00::">foot</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflector</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">U.S._Naval_Research_Laboratory</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Washington</wf>
+<punc>.</punc>
+</s>
+<s snum="53">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="half-intensity" wnsn="1" lexsn="1:07:00::">half-intensity</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="9" wnsn="1" lexsn="5:00:00:cardinal:00">9</wf>
+<punc>'</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="angle" wnsn="1" lexsn="1:25:00::">angle</wf>
+<wf cmd="done" pos="VB" lemma="subtend" wnsn="1" lexsn="2:42:00::">subtended</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VB" lemma="include" wnsn="1" lexsn="2:42:00::">included</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="entire" wnsn="1" lexsn="5:00:01:whole:00">entire</wf>
+<wf cmd="done" pos="JJ" lemma="main" wnsn="1" lexsn="5:00:00:important:00">main</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="part" wnsn="2" lexsn="1:06:00::">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="first" wnsn="1" lexsn="3:00:00::">first</wf>
+<wf cmd="done" pos="NN" lemma="side" wnsn="1" lexsn="1:15:02::">side</wf>
+<wf cmd="done" pos="NN" lemma="lobe" wnsn="1" lexsn="1:08:00::">lobes</wf>
+<punc>.</punc>
+</s>
+<s snum="54">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="pattern" wnsn="1" lexsn="1:09:00::">patterns</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="power" wnsn="2" lexsn="1:19:00::">power</wf>
+<wf cmd="done" pos="NN" lemma="gain" wnsn="3" lexsn="1:07:01::">gain</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="peak" wnsn="0" lexsn="1:25:00::">peak</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="DT" ot="notag">both</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="3" lexsn="2:42:00::">measured</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mayer</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">McCullough</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sloanaker</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<wf cmd="done" pos="NN" ot="notag">b</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="so" wnsn="2" lexsn="4:02:06::">so</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="absolute" wnsn="1" lexsn="3:00:00::">absolute</wf>
+<wf cmd="done" pos="NN" lemma="power" wnsn="2" lexsn="1:19:00::">power</wf>
+<wf cmd="done" pos="NN" lemma="sensitivity" wnsn="2" lexsn="1:07:00::">sensitivity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="solid_angle" wnsn="1" lexsn="1:25:00::">solid_angle</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="know" wnsn="1" lexsn="2:31:01::">known</wf>
+<punc>.</punc>
+</s>
+<s snum="55">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="ratio" wnsn="1" lexsn="1:24:01::">ratio</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="measured" wnsn="0" lexsn="3:00:00::">measured</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="temperature_change" wnsn="1" lexsn="1:22:00::">temperature_change</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="drift" wnsn="1" lexsn="1:19:00::">drift</wf>
+<wf cmd="done" pos="NN" lemma="scan" wnsn="1" lexsn="1:04:00::">scan</wf>
+<wf cmd="ignore" pos="IN">across</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="average" wnsn="1" lexsn="5:00:02:normal:01">average</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assuming</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="sky" wnsn="1" lexsn="1:17:00::">sky</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="negligible" wnsn="1" lexsn="5:00:00:minimal:00">negligible</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="find" wnsn="2" lexsn="2:39:02::">found</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="JJ" lemma="graphical" wnsn="1" lexsn="3:01:00::">graphical</wf>
+<wf cmd="done" pos="NN" lemma="integration" wnsn="3" lexsn="1:04:03::">integration</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="directivity" wnsn="1" lexsn="1:07:00::">directivity</wf>
+<wf cmd="done" pos="NN" lemma="diagram" wnsn="1" lexsn="1:06:00::">diagram</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="done" pos="CD" ot="notag">0.85</wf>
+<punc>.</punc>
+</s>
+<s snum="56">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="measured" wnsn="0" lexsn="3:00:00::">measured</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="good" wnsn="1" lexsn="3:00:01::">good</wf>
+<wf cmd="done" pos="NN" lemma="approximation" wnsn="1" lexsn="1:09:00::">approximation</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="center" wnsn="4" lexsn="1:15:00::">center</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="lunar" wnsn="1" lexsn="3:01:00::">lunar</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="narrow" wnsn="1" lexsn="3:00:00::">narrow</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="NN" lemma="distribution" wnsn="1" lexsn="1:09:00::">distribution</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="central" wnsn="0" lexsn="3:01:00::">central</wf>
+<wf cmd="done" pos="NN" lemma="portion" wnsn="2" lexsn="1:06:00::">portion</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="nearly" wnsn="1" lexsn="4:02:00::">nearly</wf>
+<wf cmd="done" pos="JJ" lemma="uniform" wnsn="1" lexsn="3:00:00::">uniform</wf>
+<punc>.</punc>
+</s>
+<s snum="57">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">result</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<punc>`</punc>
+<wf cmd="done" pos="NN" lemma="k" wnsn="1" lexsn="1:23:05::">K</wf>
+<punc>)</punc>
+<wf cmd="done" pos="NN" ot="notag">**f</wf>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="phase" wnsn="1" lexsn="1:28:00::">phase</wf>
+<wf cmd="done" pos="NN" lemma="angle" wnsn="1" lexsn="1:25:00::">angle</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="NN">|qt</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="3" lexsn="2:42:00::">measured</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="degree" wnsn="4" lexsn="1:23:00::">degrees</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="new_moon" wnsn="1" lexsn="1:28:00::">new_moon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="probable" wnsn="2" lexsn="5:00:00:likely:00">probable</wf>
+<wf cmd="done" pos="NN" lemma="error" wnsn="2" lexsn="1:07:00::">errors</wf>
+<wf cmd="done" pos="VB" lemma="include" wnsn="1" lexsn="2:42:00::">include</wf>
+<wf cmd="done" pos="JJ" lemma="absolute" wnsn="1" lexsn="3:00:00::">absolute</wf>
+<wf cmd="done" pos="IN" ot="complexprep">as_well_as</wf>
+<wf cmd="done" pos="JJ" lemma="relative" wnsn="1" lexsn="3:00:00::">relative</wf>
+<wf cmd="done" pos="NN" lemma="error" wnsn="2" lexsn="1:07:00::">errors</wf>
+<punc>.</punc>
+</s>
+<s snum="58">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="1" lexsn="1:19:00::">result</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="plot" wnsn="2" lexsn="2:36:00::">plotted</wf>
+<wf cmd="ignore" pos="IN">along</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">8.6</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="1" lexsn="1:04:01::">observations</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gibson</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="figure" wnsn="1" lexsn="1:10:00::">figure</wf>
+<wf cmd="done" pos="CD" ot="notag">1</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>.</punc>
+</s>
+<s snum="59">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="lunation" wnsn="1" lexsn="1:28:00::">lunation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="very_much" wnsn="1" lexsn="4:02:01::">very_much</wf>
+<wf cmd="done" pos="RB" ot="notag">less_than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">8.6</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="mm" wnsn="1" lexsn="1:23:00::">mm</wf>
+<wf cmd="done" pos="NN" lemma="emission" wnsn="1" lexsn="1:04:00::">emission</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" ot="notag">would</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="explanation" wnsn="1" lexsn="1:10:00::">explanation</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Piddington</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Minnett</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1949</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="60">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="discussion" wnsn="2" lexsn="1:10:00::">discussion</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="follow" wnsn="8" lexsn="2:42:02::">follows</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="2" lexsn="1:28:05::">time</wf>
+<wf cmd="done" pos="NN" lemma="average" wnsn="1" lexsn="1:09:00::">average</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radio_emission" wnsn="1" lexsn="1:19:00::">radio_emission</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="VB" lemma="refer" wnsn="1" lexsn="2:32:01::">referred</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="constant" wnsn="1" lexsn="5:00:00:invariable:00">constant</wf>
+<wf cmd="done" pos="NN" lemma="component" wnsn="1" lexsn="1:09:00::">component</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="superimposed" wnsn="0" lexsn="5:00:00:added:00">superimposed</wf>
+<wf cmd="done" pos="JJ" lemma="periodic" wnsn="0" lexsn="5:00:00:rhythmical:00">periodic</wf>
+<wf cmd="done" pos="NN" lemma="variation" wnsn="1" lexsn="1:11:01::">variation</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="called" wnsn="0" lexsn="5:00:00:titled:00">called</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="variable" wnsn="1" lexsn="3:00:00::">variable</wf>
+<wf cmd="done" pos="NN" lemma="component" wnsn="1" lexsn="1:09:00::">component</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="13">
+<s snum="61">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="CD" ot="notag">10.3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="cm" wnsn="1" lexsn="1:23:00::">cm</wf>
+<wf cmd="done" pos="NN" lemma="observation" wnsn="2" lexsn="1:04:00::">observation</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Sloanaker</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="NN" lemma="may" wnsn="1" lexsn="1:28:00::">May</wf>
+<wf cmd="done" pos="CD" ot="notag">20</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1958</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">84</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="foot" wnsn="2" lexsn="1:23:00::">foot</wf>
+<wf cmd="done" pos="NN" lemma="reflector" wnsn="1" lexsn="1:06:00::">reflector</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Maryland_Point_Observatory</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">U.S._Naval_Research_Laboratory</wf>
+<punc>.</punc>
+</s>
+<s snum="62">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="age" wnsn="1" lexsn="1:07:00::">age</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="2" wnsn="1" lexsn="5:00:00:cardinal:00">2</wf>
+<wf cmd="done" pos="NN" lemma="day" wnsn="1" lexsn="1:28:00::">days</wf>
+<punc>.</punc>
+</s>
+<s snum="63">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="half-intensity" wnsn="1" lexsn="1:07:00::">half-intensity</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="main" wnsn="1" lexsn="5:00:00:important:00">main</wf>
+<wf cmd="done" pos="NN" lemma="lobe" wnsn="1" lexsn="1:08:00::">lobe</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="18" wnsn="1" lexsn="5:00:00:cardinal:00">18</wf>
+<punc>'</punc>
+<wf cmd="done" pos="CD" ot="notag">.5</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="brightness" wnsn="1" lexsn="1:07:00::">brightness</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="reduce" wnsn="1" lexsn="2:30:00::">reduced</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assuming</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="gaussian_shape" wnsn="1" lexsn="1:09:00::">Gaussian_shape</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="antenna" wnsn="1" lexsn="1:06:00::">antenna</wf>
+<wf cmd="done" pos="NN" lemma="beam" wnsn="1" lexsn="1:10:00::">beam</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="uniformly" wnsn="1" lexsn="4:02:00::">uniformly</wf>
+<wf cmd="done" pos="JJ" lemma="bright" wnsn="1" lexsn="3:00:00::">bright</wf>
+<wf cmd="done" pos="NN" lemma="disk" wnsn="1" lexsn="1:25:00::">disk</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="moon" wnsn="1" lexsn="1:17:01::">moon</wf>
+<punc>.</punc>
+</s>
+</p>
+</context>
+</contextfile>

@@ -144,3 +144,11 @@ analysis on the text through two different phases of annotation.
 
 [Unsupervised multilingual sentence boundary detection](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=BAE5C34E5C3B9DC60DFC4D93B85D8BB1?doi=10.1.1.85.5017&rep=rep1&type=pdf)
 
+Performance
+-----------
+
+Using [Brown Corpus](http://www.hit.uib.no/icame/brown/bcm.html) which is annotated American English
+text, we compare this package with other libraries across multiple programming languages.
+
+
+

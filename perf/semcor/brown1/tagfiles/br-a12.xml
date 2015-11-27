@@ -1,0 +1,2568 @@
+<contextfile concordance="brown">
+<context filename="br-a12" paras="yes">
+<p pnum="1">
+<s snum="1">
+<wf cmd="done" pos="DT" ot="notag">A</wf>
+<wf cmd="done" pos="NN" lemma="texas" wnsn="1" lexsn="1:15:00::">Texas</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VBZ" ot="notag">does</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="RB" lemma="even" wnsn="1" lexsn="4:02:00::">even</wf>
+<wf cmd="done" pos="VB" lemma="know" wnsn="7" lexsn="2:31:15::">know</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">plays</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Eldon_Moritz</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="rank" wnsn="1" lexsn="2:31:13::">ranks</wf>
+<wf cmd="done" pos="JJ" lemma="fourth" wnsn="1" lexsn="5:00:00:ordinal:00">fourth</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Southwest_Conference</wf>
+<wf cmd="done" pos="VB" lemma="score" wnsn="1" lexsn="2:33:00::">scoring</wf>
+<wf cmd="ignore" pos="IN">after</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="1" lexsn="1:04:00::">games</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="2">
+<s snum="2">
+<wf cmd="done" pos="NN" lemma="time" wnsn="5" lexsn="1:03:00::">Time</wf>
+<wf cmd="done" pos="VB" lemma="stand_still" wnsn="1" lexsn="2:38:00::">stands_still</wf>
+<wf cmd="ignore" pos="DT">every</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">time</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="26" wnsn="1" lexsn="5:00:00:cardinal:00">26</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">year</wf>
+<wf cmd="done" pos="JJ" lemma="old" wnsn="1" lexsn="3:00:02::">old</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Army_Signal_Corps</wf>
+<wf cmd="done" pos="NN" lemma="veteran" wnsn="2" lexsn="1:18:01::">veteran</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="go_into" wnsn="1" lexsn="2:38:00::">goes_into</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="8" lexsn="1:15:02::">field</wf>
+<punc>.</punc>
+</s>
+<s snum="3">
+<wf cmd="ignore" pos="IN">Although</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="RB" lemma="never" wnsn="1" lexsn="4:02:00::">never</wf>
+<wf cmd="done" pos="VB" ot="notag">gets</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="clock" wnsn="1" lexsn="1:06:00::">clock</wf>
+<wf cmd="done" pos="VB" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="run" wnsn="19" lexsn="2:41:00::">running</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="7" lexsn="2:39:00::">gets</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="big" wnsn="1" lexsn="3:00:01::">big</wf>
+<wf cmd="done" pos="NN" lemma="kick" wnsn="2" lexsn="1:12:00::">kick</wf>
+<punc>-</punc>
+<wf cmd="done" pos="JJ" lemma="several" wnsn="1" lexsn="5:00:00:some(a):00">several</wf>
+<wf cmd="ignore" pos="DT">every</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="in_fact" wnsn="1" lexsn="4:02:00::">in_fact</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">out</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="football" wnsn="1" lexsn="1:04:00::">football</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="3">
+<s snum="4">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VBZ" ot="notag">does</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="RB" lemma="even" wnsn="1" lexsn="4:02:00::">even</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">have</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="nose" wnsn="1" lexsn="1:08:00::">nose</wf>
+<wf cmd="done" pos="NN" lemma="guard" wnsn="3" lexsn="1:06:00::">guard</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="hip_pad" wnsn="1" lexsn="1:06:00::">hip_pads</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="RB" ot="notag">the</wf>
+<wf cmd="done" pos="RB" lemma="most" wnsn="1" lexsn="4:02:00::">most</wf>
+<wf cmd="done" pos="JJ" lemma="valuable" wnsn="1" lexsn="3:00:00::">valuable</wf>
+<wf cmd="done" pos="NN" lemma="member" wnsn="1" lexsn="1:18:00::">members</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorn</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="RB" lemma="heavily" wnsn="1" lexsn="4:02:00::">heavily</wf>
+<wf cmd="done" pos="VB" lemma="favor" wnsn="2" lexsn="2:31:00::">favored</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<wf cmd="done" pos="IN" ot="notag">over</wf>
+<wf cmd="done" pos="NN" lemma="oklahoma" wnsn="1" lexsn="1:15:00::">Oklahoma</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NNP" pn="other" ot="notag">cotton_bowl</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="4">
+<s snum="5">
+<wf cmd="ignore" pos="DT">That</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="RB" lemma="already" wnsn="1" lexsn="4:02:00::">already</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicked</wf>
+<wf cmd="done" pos="JJ" lemma="14" wnsn="1" lexsn="5:00:00:cardinal:00">14</wf>
+<wf cmd="done" pos="NN" lemma="extra_points" wnsn="0" lexsn="1:04:00::">extra_points</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="15" wnsn="1" lexsn="5:00:00:cardinal:00">15</wf>
+<wf cmd="done" pos="NN" lemma="try" wnsn="1" lexsn="1:04:00::">tries</wf>
+<punc>.</punc>
+</s>
+<s snum="6">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="run" wnsn="17" lexsn="2:42:03::">ran</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="string" wnsn="4" lexsn="1:14:00::">string</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="successful" wnsn="1" lexsn="3:00:00::">successful</wf>
+<wf cmd="done" pos="NN" lemma="conversion" wnsn="3" lexsn="1:04:02::">conversions</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="JJ" lemma="13" wnsn="1" lexsn="5:00:00:cardinal:00">13</wf>
+<wf cmd="done" pos="JJ" lemma="straight" wnsn="1" lexsn="5:00:00:continuous:01">straight</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="done" pos="CD" ot="notag">one</wf>
+<wf cmd="done" pos="VB" lemma="go" wnsn="4" lexsn="2:30:04::">went</wf>
+<wf cmd="done" pos="RB" lemma="astray" wnsn="1" lexsn="4:02:00::">astray</wf>
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">last</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<wf cmd="done" pos="NN" lemma="night" wnsn="1" lexsn="1:28:00::">night</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">41</wf>
+<punc>-</punc>
+<wf cmd="done" pos="JJ" lemma="8" wnsn="1" lexsn="5:00:00:cardinal:00">8</wf>
+<wf cmd="done" pos="NN" lemma="slaughter" wnsn="2" lexsn="1:11:00::">slaughter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Washington_State</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="5">
+<s snum="7">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="list" wnsn="2" lexsn="2:41:00::">listed</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorn</wf>
+<wf cmd="done" pos="NN" lemma="roster" wnsn="1" lexsn="1:10:01::">roster</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="right" wnsn="1" lexsn="3:00:00::">right</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="position" wnsn="9" lexsn="1:04:02::">position</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="letter" wnsn="1" lexsn="2:40:00::">lettered</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">1956</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<punc>.</punc>
+</s>
+<s snum="8">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="done" pos="VB" lemma="ask" wnsn="1" lexsn="2:32:00::">ask</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Darrell_Royal</wf>
+<wf cmd="ignore" pos="WP">what</wf>
+<wf cmd="done" pos="NN" lemma="position" wnsn="9" lexsn="1:04:02::">position</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">plays</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="4" lexsn="2:30:03::">get</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="quick" wnsn="1" lexsn="5:00:00:fast:01">quick</wf>
+<wf cmd="done" pos="NN" lemma="response" wnsn="3" lexsn="1:10:01::">response</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="done" pos="NN" lemma="place-kicker" wnsn="1" lexsn="1:18:00::">place_kicker</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="6">
+<s snum="9">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="CD" ot="notag">208</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="pound" wnsn="1" lexsn="1:23:09::">pound</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="6" wnsn="1" lexsn="5:00:00:cardinal:00">6</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="foot" wnsn="2" lexsn="1:23:00::">foot</wf>
+<wf cmd="done" pos="JJ" lemma="1" wnsn="1" lexsn="5:00:00:cardinal:00">1</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="inch" wnsn="1" lexsn="1:23:00::">inch</wf>
+<wf cmd="done" pos="NN" lemma="senior" wnsn="1" lexsn="1:18:00::">senior</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Stamford</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VB" lemma="practice" wnsn="2" lexsn="2:31:00::">practices</wf>
+<wf cmd="done" pos="NN" lemma="nothing" wnsn="1" lexsn="1:23:00::">nothing</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="NN" lemma="place-kicking" wnsn="1" lexsn="1:04:00::">place-kicking</wf>
+<punc>.</punc>
+</s>
+<s snum="10">
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">Last</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">year</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="work_out" wnsn="4" lexsn="2:29:00::">worked_out</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="VB" lemma="get_into" wnsn="1" lexsn="2:42:00::">get_into</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="single" wnsn="1" lexsn="3:00:00::">single</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="1" lexsn="1:04:00::">game</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="7">
+<s snum="11">
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">year</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Royal</wf>
+<wf cmd="done" pos="VB" lemma="tell" wnsn="1" lexsn="2:32:04::">told</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">'d</wf>
+<wf cmd="done" pos="VB" lemma="work_on" wnsn="1" lexsn="2:41:00::">work_on</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="done" pos="NN" lemma="place-kicking" wnsn="1" lexsn="1:04:00::">place-kicking</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="think" wnsn="2" lexsn="2:31:03::">thought</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<punc>.</punc>
+</s>
+<s snum="12">
+<punc>``</punc>
+<wf cmd="done" pos="RB" ot="notag">So</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="start" wnsn="1" lexsn="2:30:00::">started</wf>
+<wf cmd="done" pos="VB" lemma="practice" wnsn="2" lexsn="2:31:00::">practicing</wf>
+<wf cmd="done" pos="RB" ot="notag">on</wf>
+<wf cmd="done" pos="RB" ot="notag">it</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="spring_training" wnsn="1" lexsn="1:28:00::">spring_training</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="8">
+<s snum="13">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="bother" wnsn="2" lexsn="2:37:00::">bothered</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="first" wnsn="1" lexsn="3:00:00::">first</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">games</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">year</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="8" lexsn="2:29:00::">pulled</wf>
+<wf cmd="done" pos="NN" lemma="muscle" wnsn="1" lexsn="1:08:00::">muscle</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="thigh" wnsn="1" lexsn="1:08:00::">thigh</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="JJ" lemma="right" wnsn="1" lexsn="3:00:00::">right</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicking</wf>
+<punc>)</punc>
+<wf cmd="done" pos="NN" lemma="leg" wnsn="1" lexsn="1:08:01::">leg</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="3" lexsn="1:11:00::">result</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="several" wnsn="1" lexsn="5:00:00:some(a):00">several</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="JJ" lemma="successful" wnsn="1" lexsn="3:00:00::">successful</wf>
+<wf cmd="done" pos="NN" lemma="conversion" wnsn="3" lexsn="1:04:02::">conversions</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="go" wnsn="1" lexsn="2:38:00::">gone</wf>
+<wf cmd="done" pos="RB" lemma="barely" wnsn="1" lexsn="4:02:00::">barely</wf>
+<wf cmd="done" pos="RB" lemma="far" wnsn="2" lexsn="4:02:00::">far</wf>
+<wf cmd="done" pos="RB" lemma="enough" wnsn="1" lexsn="4:02:00::">enough</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="9">
+<s snum="14">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="leg" wnsn="1" lexsn="1:08:01::">leg</wf>
+<wf cmd="done" pos="VB" lemma="feel" wnsn="4" lexsn="2:29:00::">feels</wf>
+<wf cmd="done" pos="RB" lemma="fine" wnsn="1" lexsn="4:02:00::">fine</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="result" wnsn="3" lexsn="1:11:00::">result</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="hope" wnsn="3" lexsn="2:31:00::">hopes</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="start" wnsn="1" lexsn="2:30:00::">start</wf>
+<wf cmd="done" pos="VB" lemma="practice" wnsn="2" lexsn="2:31:00::">practicing</wf>
+<wf cmd="done" pos="NN" lemma="field_goal" wnsn="1" lexsn="1:04:00::">field_goals</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>.</punc>
+</s>
+<s snum="15">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicked</wf>
+<wf cmd="done" pos="JJ" lemma="several" wnsn="1" lexsn="5:00:00:some(a):00">several</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">playing</wf>
+<wf cmd="done" pos="VB" ot="notag">at</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Stamford_High_School</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="include" wnsn="1" lexsn="2:42:00::">including</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="0" lexsn="5:00:02:single(a):00">one</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="done" pos="VB" lemma="beat" wnsn="1" lexsn="2:33:00::">beat</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Anson</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="CD" ot="notag">0</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="CD" ot="notag">1953</wf>
+<wf cmd="done" pos="NN" lemma="district" wnsn="1" lexsn="1:15:00::">district</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="10">
+<s snum="16">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicked</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="CD" ot="notag">110</wf>
+<wf cmd="done" pos="NN" lemma="extra_points" wnsn="0" lexsn="1:04:00::">extra_points</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">135</wf>
+<wf cmd="done" pos="NN" lemma="try" wnsn="1" lexsn="1:04:00::">tries</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">years</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="high_school" wnsn="1" lexsn="1:14:00::">high_school</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="21" lexsn="2:40:02::">made</wf>
+<wf cmd="done" pos="JJ" lemma="26" wnsn="1" lexsn="5:00:00:cardinal:00">26</wf>
+<wf cmd="done" pos="IN" ot="complexprep">in_a_row</wf>
+<wf cmd="done" pos="RB" ot="notag">at</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">time</wf>
+<punc>.</punc>
+</s>
+<s snum="17">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="RB" lemma="never" wnsn="1" lexsn="4:02:00::">never</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="done" pos="VB" lemma="miss" wnsn="5" lexsn="2:38:00::">miss</wf>
+<wf cmd="done" pos="CD" ot="notag">one</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="playoff_game" wnsn="1" lexsn="1:04:00::">playoff_game</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicked</wf>
+<wf cmd="done" pos="RB" lemma="about" wnsn="1" lexsn="4:02:00::">about</wf>
+<wf cmd="done" pos="JJ" lemma="20" wnsn="1" lexsn="5:00:00:cardinal:00">20</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="five" wnsn="1" lexsn="5:00:00:cardinal:00">five</wf>
+<wf cmd="done" pos="NN" lemma="playoff_game" wnsn="1" lexsn="1:04:00::">playoff_games</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="done" pos="JJ" lemma="last" wnsn="3" lexsn="5:00:00:closing:00">last</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">years</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="11">
+<s snum="18">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VB" lemma="come" wnsn="2" lexsn="2:38:04::">came</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="NN" lemma="texas" wnsn="1" lexsn="1:15:00::">Texas</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1954</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="freshman" wnsn="1" lexsn="1:18:00::">freshman</wf>
+<wf cmd="done" pos="NN" lemma="football" wnsn="1" lexsn="1:04:00::">football</wf>
+<wf cmd="done" pos="NN" lemma="effort" wnsn="1" lexsn="1:04:00::">efforts</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="hamper" wnsn="1" lexsn="2:30:00::">hampered</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<wf cmd="done" pos="NN" lemma="injury" wnsn="1" lexsn="1:26:00::">injury</wf>
+<punc>.</punc>
+</s>
+<s snum="19">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="miss" wnsn="1" lexsn="2:39:00::">missed</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="CD" ot="notag">1955</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="operation" wnsn="6" lexsn="1:04:00::">operation</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="ailing" wnsn="1" lexsn="5:00:00:ill:01">ailing</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="1" lexsn="4:02:00::">then</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">played</wf>
+<wf cmd="done" pos="CD" ot="notag">77</wf>
+<wf cmd="done" pos="NN" lemma="minute" wnsn="1" lexsn="1:28:00::">minutes</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1956</wf>
+<punc>.</punc>
+</s>
+<s snum="20">
+<wf cmd="ignore" pos="PRP$">His</wf>
+<wf cmd="done" pos="JJ" lemma="statistical" wnsn="1" lexsn="3:01:00::">statistical</wf>
+<wf cmd="done" pos="NN" lemma="record" wnsn="3" lexsn="1:23:00::">record</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">year</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas</wf>
+<wf cmd="done" pos="VB" lemma="win" wnsn="1" lexsn="2:33:00::">won</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="lose" wnsn="2" lexsn="2:33:00::">lost</wf>
+<wf cmd="done" pos="JJ" lemma="nine" wnsn="1" lexsn="5:00:00:cardinal:00">nine</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="far" wnsn="1" lexsn="4:02:02::">far</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="JJ" lemma="impressive" wnsn="1" lexsn="3:00:00::">impressive</wf>
+<punc>:</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="carry" wnsn="16" lexsn="2:35:08::">carried</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="net" wnsn="2" lexsn="5:00:00:ultimate:00">net</wf>
+<wf cmd="done" pos="NN" lemma="gain" wnsn="3" lexsn="1:07:01::">gain</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="10" wnsn="1" lexsn="5:00:00:cardinal:00">10</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="punt" wnsn="1" lexsn="2:35:01::">punted</wf>
+<wf cmd="done" pos="RB" lemma="once" wnsn="1" lexsn="4:02:00::">once</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="CD" ot="notag">39</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="catch" wnsn="4" lexsn="2:35:00::">caught</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="1" lexsn="1:04:04::">pass</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="JJ" lemma="13" wnsn="1" lexsn="5:00:00:cardinal:00">13</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="12">
+<s snum="21">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="go_into" wnsn="1" lexsn="2:38:00::">went_into</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Army</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="march" wnsn="1" lexsn="1:28:00::">March</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">1957</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="return" wnsn="1" lexsn="2:38:00::">returned</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="year" wnsn="1" lexsn="1:28:01::">years</wf>
+<wf cmd="done" pos="RB" lemma="later" wnsn="1" lexsn="4:02:01::">later</wf>
+<punc>.</punc>
+</s>
+<s snum="22">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="RB" lemma="scholastically" wnsn="1" lexsn="4:02:00::">scholastically</wf>
+<wf cmd="done" pos="JJ" lemma="ineligible" wnsn="1" lexsn="3:00:00::">ineligible</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1959</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="merely" wnsn="1" lexsn="4:02:00::">merely</wf>
+<wf cmd="done" pos="JJ" lemma="present" wnsn="2" lexsn="3:00:02::">present</wf>
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">last</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="13">
+<s snum="23">
+<wf cmd="done" pos="NN" lemma="place" wnsn="8" lexsn="1:04:00::">Place_kicking</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="largely" wnsn="1" lexsn="4:02:00::">largely</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="matter" wnsn="1" lexsn="1:09:01::">matter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="timing" wnsn="1" lexsn="1:07:00::">timing</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<wf cmd="done" pos="VB" lemma="declare" wnsn="1" lexsn="2:32:00::">declared</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="14">
+<s snum="24">
+<punc>``</punc>
+<wf cmd="done" pos="RB" lemma="once" wnsn="2" lexsn="4:02:02::">Once</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="7" lexsn="2:39:00::">get</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="feel" wnsn="1" lexsn="1:09:00::">feel</wf>
+<wf cmd="done" pos="RB" ot="notag">of</wf>
+<wf cmd="done" pos="RB" ot="notag">it</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="JJ" lemma="much" wnsn="1" lexsn="3:00:00::">much</wf>
+<wf cmd="done" pos="RB" ot="notag">to</wf>
+<wf cmd="done" pos="RB" ot="notag">it</wf>
+<punc>.</punc>
+</s>
+<s snum="25">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBP" ot="notag">'ve</wf>
+<wf cmd="done" pos="VB" lemma="try" wnsn="1" lexsn="2:41:00::">tried</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="teach" wnsn="1" lexsn="2:32:00::">teach</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="NN" lemma="boy" wnsn="1" lexsn="1:18:00::">boys</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kick</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP">them</wf>
+<wf cmd="ignore" pos="MD">can't</wf>
+<wf cmd="done" pos="VB" ot="notag">seem</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="7" lexsn="2:39:00::">get</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="feel" wnsn="1" lexsn="1:09:00::">feel</wf>
+<punc>.</punc>
+</s>
+<s snum="26">
+<wf cmd="done" pos="NN" lemma="practice" wnsn="2" lexsn="1:04:02::">Practice</wf>
+<wf cmd="done" pos="VB" lemma="help" wnsn="1" lexsn="2:41:00::">helps</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="15" lexsn="2:30:01::">get</wf>
+<wf cmd="ignore" pos="PRP$">your</wf>
+<wf cmd="done" pos="NN" lemma="timing" wnsn="1" lexsn="1:07:00::">timing</wf>
+<wf cmd="done" pos="JJ" lemma="down" wnsn="5" lexsn="5:00:00:perfect:00">down</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="15">
+<s snum="27">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="done" pos="RB" lemma="kind_of" wnsn="1" lexsn="4:02:00::">kind_of</wf>
+<wf cmd="done" pos="JJ" ot="notag">like</wf>
+<wf cmd="done" pos="NN" lemma="golf" wnsn="1" lexsn="1:04:00::">golf</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="VB" lemma="swing" wnsn="5" lexsn="2:35:00::">swing</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="club" wnsn="5" lexsn="1:06:01::">club</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="RB" lemma="often" wnsn="1" lexsn="4:02:00::">often</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">your</wf>
+<wf cmd="done" pos="NN" lemma="timing" wnsn="1" lexsn="1:07:00::">timing</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="2" lexsn="2:30:00::">gets</wf>
+<wf cmd="done" pos="JJ" lemma="off" wnsn="2" lexsn="5:00:00:unsatisfactory:00">off</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="16">
+<s snum="28">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Moritz</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="however" wnsn="1" lexsn="4:02:00::">however</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicks</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="done" pos="JJ" lemma="10" wnsn="1" lexsn="5:00:00:cardinal:00">10</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="JJ" lemma="12" wnsn="1" lexsn="5:00:00:cardinal:00">12</wf>
+<wf cmd="done" pos="NN" lemma="extra_points" wnsn="0" lexsn="1:04:00::">extra_points</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">each</wf>
+<wf cmd="done" pos="NN" lemma="practice_session" wnsn="1" lexsn="1:04:00::">practice_session</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="17">
+<s snum="29">
+<punc>``</punc>
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kick</wf>
+<wf cmd="done" pos="RB" lemma="too_much" wnsn="1" lexsn="4:02:00::">too_much</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">your</wf>
+<wf cmd="done" pos="NN" lemma="leg" wnsn="1" lexsn="1:08:01::">leg</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="2" lexsn="2:30:00::">gets</wf>
+<wf cmd="done" pos="RB" lemma="kinda" wnsn="1" lexsn="4:02:00::">kinda</wf>
+<wf cmd="done" pos="JJ" lemma="dead" wnsn="3" lexsn="5:00:00:tired:00">dead</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explained</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="18">
+<s snum="30">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="JJ" lemma="first" wnsn="1" lexsn="3:00:00::">first</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">games</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorns</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="1" lexsn="2:40:00::">had</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="CD" ot="notag">41</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="score" wnsn="1" lexsn="2:33:00::">scored</wf>
+<wf cmd="done" pos="JJ" lemma="16" wnsn="1" lexsn="5:00:00:cardinal:00">16</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="JJ" lemma="40" wnsn="1" lexsn="5:00:00:cardinal:00">40</wf>
+<wf cmd="done" pos="NN" lemma="percent" wnsn="1" lexsn="1:24:00::">per_cent</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="done" pos="NN" lemma="passing" wnsn="1" lexsn="1:04:03::">passing</wf>
+<wf cmd="done" pos="NN" lemma="yardage" wnsn="1" lexsn="1:07:00::">yardage</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">games</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">447</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="JJ" lemma="30" wnsn="1" lexsn="5:00:00:cardinal:00">30</wf>
+<wf cmd="done" pos="NN" lemma="completion" wnsn="1" lexsn="1:04:02::">completions</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">56</wf>
+<wf cmd="done" pos="NN" lemma="attempt" wnsn="1" lexsn="1:04:00::">attempts</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="JJ" lemma="22" wnsn="1" lexsn="5:00:00:cardinal:00">22</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="done" pos="JJ" lemma="short" wnsn="2" lexsn="3:00:01::">short</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="done" pos="NN" lemma="passing" wnsn="1" lexsn="1:04:03::">passing</wf>
+<wf cmd="done" pos="NN" lemma="yardage" wnsn="1" lexsn="1:07:00::">yardage</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">1959</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="21" lexsn="2:40:02::">made</wf>
+<wf cmd="done" pos="CD" ot="notag">469</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="CD" ot="notag">37</wf>
+<wf cmd="done" pos="NN" lemma="completion" wnsn="1" lexsn="1:04:02::">completions</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">86</wf>
+<wf cmd="done" pos="NN" lemma="try" wnsn="1" lexsn="1:04:00::">tries</wf>
+<punc>.</punc>
+</s>
+<s snum="31">
+<wf cmd="done" pos="NN" lemma="tailback" wnsn="1" lexsn="1:18:00::">Tailback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">James_Saxton</wf>
+<wf cmd="done" pos="RB" lemma="already" wnsn="1" lexsn="4:02:00::">already</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="surpass" wnsn="1" lexsn="2:42:00::">surpassed</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="rushing" wnsn="1" lexsn="1:04:00::">rushing</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="JJ" lemma="brilliant" wnsn="1" lexsn="5:00:00:superior:02">brilliant</wf>
+<wf cmd="done" pos="NN" lemma="sophomore" wnsn="1" lexsn="1:18:00::">sophomore</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="net" wnsn="1" lexsn="2:40:00::">netted</wf>
+<wf cmd="done" pos="CD" ot="notag">271</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="CD" ot="notag">55</wf>
+<wf cmd="done" pos="NN" lemma="carry" wnsn="1" lexsn="1:04:00::">carries</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="RB" lemma="now" wnsn="2" lexsn="4:02:00::">now</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">has</wf>
+<wf cmd="done" pos="CD" ot="notag">273</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="22" wnsn="1" lexsn="5:00:00:cardinal:00">22</wf>
+<wf cmd="done" pos="NN" lemma="try" wnsn="1" lexsn="1:04:00::">tries</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">games</wf>
+<punc>.</punc>
+</s>
+<s snum="32">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Saxton</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="second_half" wnsn="1" lexsn="1:28:00::">second-half</wf>
+<wf cmd="done" pos="NN" lemma="appearance" wnsn="2" lexsn="1:11:00::">appearance</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">was</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Washington_State</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">plays</wf>
+<punc>:</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="return" wnsn="7" lexsn="2:35:01::">returned</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="kickoff" wnsn="1" lexsn="1:04:00::">kickoff</wf>
+<wf cmd="done" pos="JJ" lemma="30" wnsn="1" lexsn="5:00:00:cardinal:00">30</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="gain" wnsn="5" lexsn="2:33:00::">gained</wf>
+<wf cmd="done" pos="JJ" lemma="five" wnsn="1" lexsn="5:00:00:cardinal:00">five</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="line" wnsn="3" lexsn="1:14:01::">line</wf>
+<wf cmd="done" pos="RB" lemma="and_then" wnsn="1" lexsn="4:02:00::">and_then</wf>
+<wf cmd="done" pos="VB" lemma="uncork" wnsn="1" lexsn="2:35:01::">uncorked</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="CD" ot="notag">56</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yard</wf>
+<wf cmd="done" pos="NN" lemma="touchdown" wnsn="1" lexsn="1:04:00::">touchdown</wf>
+<wf cmd="done" pos="NN" lemma="run" wnsn="5" lexsn="1:04:02::">run</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="done" pos="VB" lemma="retire" wnsn="2" lexsn="2:41:02::">retiring</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="bench" wnsn="0" lexsn="1:06:02::">bench</wf>
+<punc>.</punc>
+</s>
+<s snum="33">
+<wf cmd="done" pos="NN" lemma="wingback" wnsn="1" lexsn="1:18:00::">Wingback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Jack_Collins</wf>
+<wf cmd="done" pos="VB" lemma="injure" wnsn="1" lexsn="2:29:00::">injured</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Washington_State</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="VB" lemma="insist" wnsn="1" lexsn="2:32:00::">insists</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="ready" wnsn="1" lexsn="3:00:00::">ready</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Oklahoma</wf>
+<punc>.</punc>
+</s>
+<s snum="34">
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">Last</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Royal</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="inform" wnsn="1" lexsn="2:32:00::">informed</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="JJ" lemma="three" wnsn="1" lexsn="5:00:00:cardinal:00">three</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorns</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">were</wf>
+<wf cmd="ignore" pos="IN">among</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="conference" wnsn="2" lexsn="1:14:01::">conference</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="JJ" lemma="top" wnsn="1" lexsn="3:00:00::">top</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="rushing" wnsn="1" lexsn="1:04:00::">rushing</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>:</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">That</wf>
+<wf cmd="done" pos="VBD" ot="notag">won't</wf>
+<wf cmd="done" pos="VB" lemma="last" wnsn="1" lexsn="2:42:00::">last</wf>
+<wf cmd="done" pos="RB" lemma="long" wnsn="1" lexsn="4:02:00::">long</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="35">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<punc>;</punc>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">had</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorns</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="top" wnsn="1" lexsn="3:00:00::">top</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="19">
+<s snum="36">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="JJ" lemma="good" wnsn="1" lexsn="3:00:01::">good</wf>
+<wf cmd="done" pos="NN" lemma="feeling" wnsn="3" lexsn="1:26:00::">feeling</wf>
+<wf cmd="done" pos="VB" lemma="prevail" wnsn="2" lexsn="2:42:01::">prevailed</wf>
+<wf cmd="done" pos="VB" ot="notag">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">SMU</wf>
+<wf cmd="done" pos="VB" lemma="coach" wnsn="1" lexsn="2:32:00::">coaching</wf>
+<wf cmd="done" pos="NN" lemma="staff" wnsn="3" lexsn="1:14:00::">staff</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="NN" lemma="attention" wnsn="1" lexsn="1:09:00::">attention</wf>
+<wf cmd="done" pos="RB" lemma="quickly" wnsn="1" lexsn="4:02:00::">quickly</wf>
+<wf cmd="done" pos="VB" lemma="turn" wnsn="2" lexsn="2:30:04::">turned</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="JJ" lemma="next" wnsn="1" lexsn="5:00:00:succeeding(a):00">next</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="problem" wnsn="1" lexsn="1:26:00::">problem</wf>
+<punc>:</punc>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Rice_University</wf>
+<punc>.</punc>
+</s>
+<s snum="37">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Mustangs</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="20">
+<s snum="38">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="done" pos="VBP" ot="notag">'re</wf>
+<wf cmd="done" pos="RB" lemma="just" wnsn="1" lexsn="4:02:00::">just</wf>
+<wf cmd="done" pos="RB" lemma="real" wnsn="1" lexsn="4:02:01::">real</wf>
+<wf cmd="done" pos="JJ" lemma="happy" wnsn="1" lexsn="3:00:00::">happy</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="player" wnsn="1" lexsn="1:18:01::">players</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">Coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Bill_Meek</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" ot="notag">9</wf>
+<punc>-</punc>
+<wf cmd="done" pos="CD" ot="notag">7</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Air_Force_Academy</wf>
+<punc>.</punc>
+</s>
+<s snum="39">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="think" wnsn="1" lexsn="2:31:01::">think</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="big" wnsn="2" lexsn="5:00:00:important:00">big</wf>
+<wf cmd="done" pos="NN" lemma="thing" wnsn="6" lexsn="1:09:02::">thing</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="done" pos="NN" lemma="kid" wnsn="1" lexsn="1:18:00::">kids</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="third" wnsn="1" lexsn="5:00:00:ordinal:00">third</wf>
+<wf cmd="done" pos="JJ" lemma="straight" wnsn="1" lexsn="5:00:00:continuous:01">straight</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<wf cmd="done" pos="VB" lemma="stay" wnsn="4" lexsn="2:42:02::">stayed</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="RB" lemma="there" wnsn="1" lexsn="4:02:00::">there</wf>
+<wf cmd="done" pos="VB" lemma="pitch" wnsn="1" lexsn="2:35:00::">pitching</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="1" lexsn="2:42:00::">kept</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="2" lexsn="1:07:00::">pressure</wf>
+<wf cmd="done" pos="JJ" lemma="on" wnsn="1" lexsn="3:00:00::">on</wf>
+<punc>.</punc>
+</s>
+<s snum="40">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="VB" ot="notag">the</wf>
+<wf cmd="done" pos="JJ" lemma="first" wnsn="1" lexsn="3:00:00::">first</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">time</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VBP" ot="notag">'ve</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">been</wf>
+<wf cmd="done" pos="RB" lemma="ahead" wnsn="1" lexsn="4:02:00::">ahead</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="season" wnsn="1" lexsn="1:28:02::">season</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">John_Richey</wf>
+<wf cmd="done" pos="VB" lemma="kick" wnsn="1" lexsn="2:35:01::">kicked</wf>
+<wf cmd="ignore" pos="WP">what</wf>
+<wf cmd="done" pos="VB" lemma="prove" wnsn="1" lexsn="2:42:00::">proved</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="winning" wnsn="0" lexsn="5:00:02:successful:00">winning</wf>
+<wf cmd="done" pos="NN" lemma="field_goal" wnsn="1" lexsn="1:04:00::">field_goal</wf>
+<punc>)</punc>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="21">
+<s snum="41">
+<wf cmd="done" pos="NN" lemma="assistant" wnsn="1" lexsn="1:18:00::">Assistant</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">John_Cudmore</wf>
+<wf cmd="done" pos="VB" lemma="describe" wnsn="2" lexsn="2:32:01::">described</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="good" wnsn="1" lexsn="3:00:01::">good</wf>
+<wf cmd="done" pos="NN" lemma="feeling" wnsn="3" lexsn="1:26:00::">feeling</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="think" wnsn="1" lexsn="2:31:01::">think</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="part" wnsn="4" lexsn="1:09:02::">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coaches</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="player" wnsn="1" lexsn="1:18:01::">players</wf>
+<punc>.</punc>
+</s>
+<s snum="42">
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="done" pos="VB" lemma="need" wnsn="0" lexsn="2:37:00::">needed</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="7" lexsn="2:39:00::">got</wf>
+<wf cmd="done" pos="VB" ot="notag">it</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="22">
+<s snum="43">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="express" wnsn="1" lexsn="2:32:01::">expressed</wf>
+<wf cmd="done" pos="JJ" lemma="particular" wnsn="3" lexsn="5:00:00:uncommon:00">particular</wf>
+<wf cmd="done" pos="NN" lemma="gratification" wnsn="1" lexsn="1:26:00::">gratification</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="defensive" wnsn="1" lexsn="3:00:00::">defensive</wf>
+<wf cmd="done" pos="NN" lemma="performance" wnsn="3" lexsn="1:04:00::">performances</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="end" wnsn="8" lexsn="1:18:00::">end</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Happy_Nelson</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Billy_Gannon</wf>
+<punc>.</punc>
+</s>
+<s snum="44">
+<wf cmd="ignore" pos="DT">Both</wf>
+<wf cmd="done" pos="VB" lemma="turn_in" wnsn="0" lexsn="2:36:02::">turned_in</wf>
+<wf cmd="done" pos="JJ" lemma="top" wnsn="0" lexsn="5:00:00:maximal:00">top</wf>
+<wf cmd="done" pos="NN" lemma="job" wnsn="2" lexsn="1:04:01::">jobs</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="second" wnsn="1" lexsn="5:00:00:ordinal:00">second</wf>
+<wf cmd="done" pos="JJ" lemma="straight" wnsn="1" lexsn="5:00:00:continuous:01">straight</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="23">
+<s snum="45">
+<punc>``</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Nelson</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">played</wf>
+<wf cmd="done" pos="JJ" lemma="magnificent" wnsn="1" lexsn="5:00:00:impressive:00">magnificent</wf>
+<wf cmd="done" pos="NN" lemma="football" wnsn="1" lexsn="1:04:00::">football</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="praise" wnsn="1" lexsn="2:32:00::">praised</wf>
+<punc>.</punc>
+</s>
+<s snum="46">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="knock_down" wnsn="1" lexsn="2:35:01::">knocked_down</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="interference" wnsn="4" lexsn="1:04:01::">interference</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="done" pos="JJ" lemma="key" wnsn="1" lexsn="5:00:00:important:00">key</wf>
+<wf cmd="done" pos="NN" lemma="stop" wnsn="2" lexsn="1:04:00::">stops</wf>
+<wf cmd="done" pos="JJ" ot="notag">lots_of</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<punc>.</punc>
+</s>
+<s snum="47">
+<wf cmd="ignore" pos="CC">And</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">caused</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fumble" wnsn="1" lexsn="1:04:00::">fumble</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="VB" lemma="set_up" wnsn="4" lexsn="2:30:00::">set_up</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="done" pos="NN" lemma="touchdown" wnsn="1" lexsn="1:04:00::">touchdown</wf>
+<punc>.</punc>
+</s>
+<s snum="48">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="break" wnsn="2" lexsn="2:30:00::">broke</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="boy" wnsn="1" lexsn="1:18:00::">boy</wf>
+<punc>(</punc>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Air_Force</wf>
+<wf cmd="done" pos="NN" lemma="fullback" wnsn="1" lexsn="1:18:00::">fullback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Nick_Arshinkoff</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="knock" wnsn="3" lexsn="2:35:00::">knocked</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<wf cmd="done" pos="JJ" lemma="loose" wnsn="2" lexsn="5:00:00:uncontrolled:00">loose</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="football" wnsn="2" lexsn="1:06:00::">football</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="24">
+<s snum="49">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gannon</wf>
+<wf cmd="done" pos="VB" lemma="contribute" wnsn="2" lexsn="2:40:00::">contributed</wf>
+<wf cmd="done" pos="JJ" lemma="saving" wnsn="1" lexsn="5:00:00:good:02">saving</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3;4" lexsn="1:04:05::;1:04:04::">plays</wf>
+<wf cmd="done" pos="NN" ot="notag">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Falcons</wf>
+<punc>'</punc>
+<wf cmd="done" pos="JJ" lemma="aerial" wnsn="0" lexsn="5:00:00:overhead:00">aerial</wf>
+<wf cmd="done" pos="NN" lemma="thrust" wnsn="3" lexsn="1:04:00::">thrusts</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="late" wnsn="1" lexsn="3:00:00::">late</wf>
+<wf cmd="done" pos="NN" lemma="stage" wnsn="1" lexsn="1:28:00::">stages</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="25">
+<s snum="50">
+<wf cmd="done" pos="CD" ot="notag">One</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">was</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="fourth" wnsn="1" lexsn="5:00:00:ordinal:00">fourth</wf>
+<wf cmd="done" pos="NN" lemma="down" wnsn="2" lexsn="1:04:00::">down</wf>
+<wf cmd="done" pos="NN" lemma="screen_pass" wnsn="1" lexsn="1:04:00::">screen_pass</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Mustang</wf>
+<wf cmd="done" pos="CD" ot="notag">21</wf>
+<wf cmd="ignore" pos="IN">after</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="incomplete" wnsn="1" lexsn="3:00:00::">incomplete</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="1" lexsn="1:04:04::">pass</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gannon</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="territory" wnsn="1" lexsn="1:15:00::">territory</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="26">
+<s snum="51">
+<punc>``</punc>
+<wf cmd="done" pos="RB" ot="complexprep">As_soon_as</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="start" wnsn="1" lexsn="2:30:00::">started</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="form" wnsn="3" lexsn="2:42:02::">form</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gannon</wf>
+<wf cmd="done" pos="VB" lemma="spot" wnsn="1" lexsn="2:39:00::">spotted</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>.</punc>
+</s>
+<s snum="52">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="time" wnsn="1" lexsn="2:30:00::">timed</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="RB" lemma="just_right" wnsn="1" lexsn="4:02:00::">just_right</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="break_through" wnsn="1" lexsn="2:30:02::">broke_through</wf>
+<wf cmd="done" pos="RB" lemma="there" wnsn="1" lexsn="4:02:00::">there</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="boy" wnsn="1" lexsn="1:18:00::">boy</wf>
+<punc>(</punc>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Terry_Isaacson</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">had</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="2" lexsn="1:28:05::">time</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="turn_around" wnsn="1" lexsn="2:38:00::">turn_around</wf>
+<punc>.</punc>
+</s>
+<s snum="53">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="RB" lemma="really" wnsn="1" lexsn="4:02:03::">really</wf>
+<wf cmd="done" pos="VB" lemma="crucify" wnsn="2" lexsn="2:37:00::">crucified</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<punc>.</punc>
+</s>
+<s snum="54">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="nail" wnsn="3" lexsn="2:35:02::">nailed</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yard</wf>
+<wf cmd="done" pos="NN" lemma="loss" wnsn="1" lexsn="1:21:01::">loss</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="27">
+<s snum="55">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Air_Force's</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="final" wnsn="1" lexsn="5:00:00:closing:00">final</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">play</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="long" wnsn="2" lexsn="3:00:01::">long</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="3" lexsn="1:04:02::">pass</wf>
+<wf cmd="done" pos="NN" ot="notag">by</wf>
+<wf cmd="done" pos="NN" lemma="quarterback" wnsn="1" lexsn="1:18:00::">quarterback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Bob_McNaughton</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gannon</wf>
+<wf cmd="done" pos="VB" lemma="intercept" wnsn="1" lexsn="2:35:00::">intercepted</wf>
+<wf cmd="done" pos="JJ" ot="notag">on</wf>
+<wf cmd="done" pos="JJ" ot="notag">his</wf>
+<wf cmd="done" pos="JJ" lemma="own" wnsn="1" lexsn="5:00:00:personal:00">own</wf>
+<wf cmd="done" pos="CD" ot="notag">44</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="return" wnsn="7" lexsn="2:35:01::">returned</wf>
+<wf cmd="done" pos="JJ" lemma="22" wnsn="1" lexsn="5:00:00:cardinal:00">22</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="28">
+<s snum="56">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="RB" lemma="just" wnsn="1" lexsn="4:02:00::">just</wf>
+<wf cmd="done" pos="VB" lemma="lie" wnsn="2" lexsn="2:35:00::">lay</wf>
+<wf cmd="done" pos="RB" ot="notag">back</wf>
+<wf cmd="done" pos="RB" lemma="there" wnsn="1" lexsn="4:02:00::">there</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="wait" wnsn="1" lexsn="2:42:00::">waited</wf>
+<wf cmd="done" pos="VB" ot="notag">for</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>.</punc>
+</s>
+<s snum="57">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="RB" lemma="almost" wnsn="1" lexsn="4:02:00::">almost</wf>
+<wf cmd="done" pos="VB" lemma="bring" wnsn="1" lexsn="2:38:00::">brought</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="RB" lemma="back" wnsn="1" lexsn="4:02:04::">back</wf>
+<wf cmd="done" pos="RB" lemma="all_the_way" wnsn="1" lexsn="4:02:09::">all_the_way</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="29">
+<s snum="58">
+<wf cmd="ignore" pos="IN">Except</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="sophomore" wnsn="1" lexsn="1:18:00::">sophomore</wf>
+<wf cmd="done" pos="NN" lemma="center" wnsn="10" lexsn="1:18:00::">center</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mike_Kelsey</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="fullback" wnsn="1" lexsn="1:18:00::">fullback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mike_Rice</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expects</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="squad" wnsn="2" lexsn="1:14:00::">squad</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="RB" lemma="physically" wnsn="1" lexsn="4:02:00::">physically</wf>
+<wf cmd="done" pos="JJ" lemma="sound" wnsn="4" lexsn="5:00:00:healthy:00">sound</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Rice</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="30">
+<s snum="59">
+<punc>``</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Kelsey</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="doubtful" wnsn="1" lexsn="5:00:00:questionable:00">doubtful</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Rice</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>.</punc>
+</s>
+<s snum="60">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="out_of_action" wnsn="0" lexsn="5:00:00:injured:00">out_of_action</wf>
+<wf cmd="ignore" pos="PDT">all</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>.</punc>
+</s>
+<s snum="61">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VBD" ot="notag">got</wf>
+<wf cmd="done" pos="VB" lemma="hit" wnsn="2" lexsn="2:35:01::">hit</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="blind" wnsn="1" lexsn="3:00:00::">blind</wf>
+<wf cmd="done" pos="NN" lemma="side" wnsn="3" lexsn="1:08:00::">side</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="split_end" wnsn="1" lexsn="1:18:00::">split_end</wf>
+<wf cmd="done" pos="VB" lemma="come_back" wnsn="0" lexsn="2:38:00::">coming_back</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="second" wnsn="1" lexsn="5:00:00:ordinal:00">second</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">play</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>.</punc>
+</s>
+<s snum="62">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">is</wf>
+<wf cmd="done" pos="RB" lemma="definitely" wnsn="1" lexsn="4:02:00::">definitely</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="done" pos="NN" lemma="ligament" wnsn="1" lexsn="1:08:00::">ligament</wf>
+<wf cmd="done" pos="NN" lemma="damage" wnsn="1" lexsn="1:11:00::">damage</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="31">
+<s snum="63">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Rice</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">played</wf>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="done" pos="VB" lemma="injure" wnsn="1" lexsn="2:29:00::">injuring</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<wf cmd="done" pos="JJ" ot="notag">in</wf>
+<wf cmd="done" pos="JJ" ot="notag">the</wf>
+<wf cmd="done" pos="NN" lemma="opener" wnsn="1" lexsn="1:11:00::">opener</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Maryland</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="32">
+<s snum="64">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="done" pos="VB" lemma="look" wnsn="2" lexsn="2:39:01::">looking</wf>
+<wf cmd="done" pos="RB" lemma="a_lot" wnsn="1" lexsn="4:02:00::">a_lot</wf>
+<wf cmd="done" pos="JJ" lemma="better" wnsn="2" lexsn="3:00:02::">better</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="done" pos="JJ" lemma="able" wnsn="1" lexsn="3:00:00::">able</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="run" wnsn="1" lexsn="2:38:00::">run</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explained</wf>
+<punc>.</punc>
+</s>
+<s snum="65">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="let" wnsn="1" lexsn="2:41:00::">let</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="JJ" ot="notag">a_lot</wf>
+<wf cmd="done" pos="JJ" ot="notag">of</wf>
+<wf cmd="done" pos="NN" lemma="running" wnsn="2" lexsn="1:04:01::">running</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="RB" lemma="n't" wnsn="0" lexsn="4:02:00::">n't</wf>
+<wf cmd="done" pos="VB" lemma="know" wnsn="1" lexsn="2:31:01::">know</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="able" wnsn="1" lexsn="3:00:00::">able</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="33">
+<s snum="66">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="done" pos="NN" lemma="player" wnsn="1" lexsn="1:18:01::">players</wf>
+<wf cmd="done" pos="VB" lemma="see" wnsn="7" lexsn="2:39:03::">saw</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Air_Force</wf>
+<wf cmd="done" pos="NN" lemma="film" wnsn="1" lexsn="1:10:01::">film</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="run" wnsn="1" lexsn="2:38:00::">ran</wf>
+<wf cmd="done" pos="VB" ot="notag">for</wf>
+<wf cmd="done" pos="NN" lemma="30_minutes" wnsn="1" lexsn="1:28:00::">30_minutes</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="1" lexsn="4:02:00::">then</wf>
+<wf cmd="done" pos="VB" lemma="go" wnsn="1" lexsn="2:38:00::">went</wf>
+<wf cmd="done" pos="RB" lemma="in" wnsn="0" lexsn="4:02:00::">in</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reserve" wnsn="3" lexsn="1:18:00::">reserves</wf>
+<wf cmd="done" pos="VB" lemma="scrimmage" wnsn="1" lexsn="2:36:00::">scrimmaged</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="CD" ot="notag">45</wf>
+<wf cmd="done" pos="NN" lemma="minute" wnsn="1" lexsn="1:28:00::">minutes</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="34">
+<s snum="67">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="work" wnsn="1" lexsn="2:41:02::">work</wf>
+<wf cmd="done" pos="RB" lemma="hard" wnsn="1" lexsn="4:02:00::">hard</wf>
+<wf cmd="done" pos="NN" lemma="tuesday" wnsn="1" lexsn="1:28:00::">Tuesday</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="wednesday" wnsn="1" lexsn="1:28:00::">Wednesday</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="thursday" wnsn="1" lexsn="1:28:00::">Thursday</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Meek</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" lemma="probably" wnsn="1" lexsn="4:02:00::">probably</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="8" lexsn="2:36:00::">have</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="good" wnsn="1" lexsn="3:00:01::">good</wf>
+<wf cmd="done" pos="NN" lemma="scrimmage" wnsn="1" lexsn="1:04:01::">scrimmage</wf>
+<wf cmd="done" pos="NN" lemma="friday" wnsn="1" lexsn="1:28:00::">Friday</wf>
+<punc>.</punc>
+</s>
+<s snum="68">
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="work_out" wnsn="4" lexsn="2:29:00::">work_out</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="hour" wnsn="1" lexsn="1:28:00::">hour</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="1" lexsn="4:02:00::">then</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="work" wnsn="6" lexsn="2:29:00::">work</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="tuesday" wnsn="1" lexsn="1:28:00::">Tuesday</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="next" wnsn="1" lexsn="5:00:00:succeeding(a):00">next</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="1" lexsn="4:02:00::">then</wf>
+<wf cmd="done" pos="VB" lemma="taper_off" wnsn="1" lexsn="2:42:00::">taper_off</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="35">
+<s snum="69">
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">SMU</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Owls</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Rice_Stadium</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="houston" wnsn="1" lexsn="1:15:00::">Houston</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="night_game" wnsn="1" lexsn="1:04:00::">night_game</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="oct" pos="NN" lemma="oct" wnsn="1" lexsn="1:28:00::">Oct.</wf>
+<wf cmd="done" pos="CD" ot="notag">21</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="36">
+<s snum="70">
+<punc>-</punc>
+<wf cmd="done" pos="VB" lemma="hold" wnsn="1" lexsn="2:42:00::">Held</wf>
+<wf cmd="done" pos="IN" ot="complexprep">out_of</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas_Tech</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="sweat_suit" wnsn="1" lexsn="1:06:00::">sweat_suits</wf>
+<wf cmd="done" pos="VB" lemma="drill" wnsn="3" lexsn="2:31:00::">drill</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Lubbock</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="NN" lemma="tackle" wnsn="1" lexsn="1:18:00::">tackle</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Richard_Stafford</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="undergo" wnsn="0" lexsn="2:39:00::">undergoing</wf>
+<wf cmd="done" pos="NN" lemma="treatment" wnsn="1" lexsn="1:04:00::">treatment</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="leg" wnsn="1" lexsn="1:08:01::">leg</wf>
+<wf cmd="done" pos="NN" lemma="injury" wnsn="2" lexsn="1:11:00::">injury</wf>
+<wf cmd="done" pos="VB" lemma="suffer" wnsn="2" lexsn="2:29:01::">suffered</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Raiders</wf>
+<punc>'</punc>
+<wf cmd="done" pos="CD" ot="notag">38</wf>
+<punc>-</punc>
+<wf cmd="done" pos="CD" ot="notag">7</wf>
+<wf cmd="done" pos="NN" lemma="loss" wnsn="3" lexsn="1:04:00::">loss</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas_A+M</wf>
+<punc>.</punc>
+</s>
+<s snum="71">
+<wf cmd="ignore" pos="IN">Because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="JJ" lemma="important" wnsn="1" lexsn="3:00:00::">important</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="arkansas" wnsn="1" lexsn="1:15:00::">Arkansas</wf>
+<wf cmd="done" pos="VB" lemma="come_up" wnsn="2" lexsn="2:30:00::">coming_up</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Baylor</wf>
+<wf cmd="done" pos="VB" lemma="work_out" wnsn="4" lexsn="2:29:00::">worked_out</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="rain" wnsn="1" lexsn="1:19:00::">rain</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="mud" wnsn="1" lexsn="1:27:00::">mud</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="done" pos="NN" lemma="mud" wnsn="1" lexsn="1:27:00::">mud</wf>
+<punc>.</punc>
+</s>
+<s snum="72">
+<wf cmd="done" pos="NN" lemma="end" wnsn="8" lexsn="1:18:00::">End</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gene_Raesz</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VB" lemma="break" wnsn="3" lexsn="2:30:06::">broke</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="hand" wnsn="1" lexsn="1:08:00::">hand</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Owl</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">LSU</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">was</wf>
+<wf cmd="done" pos="RB" lemma="back" wnsn="1" lexsn="4:02:04::">back</wf>
+<wf cmd="done" pos="VB" lemma="work_out" wnsn="4" lexsn="2:29:00::">working_out</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Rice_Monday</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">John_Nichols</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="sophomore" wnsn="1" lexsn="1:18:00::">sophomore</wf>
+<wf cmd="done" pos="NN" lemma="guard" wnsn="2" lexsn="1:18:01::">guard</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="move_back" wnsn="1" lexsn="2:38:00::">moved_back</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="done" pos="NN" lemma="action" wnsn="3" lexsn="1:04:03::">action</wf>
+<wf cmd="ignore" pos="IN">after</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="idleness" wnsn="1" lexsn="1:04:00::">idleness</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ankle" wnsn="1" lexsn="1:08:00::">ankle</wf>
+<wf cmd="done" pos="NN" lemma="injury" wnsn="2" lexsn="1:11:00::">injury</wf>
+<punc>.</punc>
+</s>
+<s snum="73">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas_Aggies</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="4" lexsn="2:30:03::">got</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="day_off" wnsn="1" lexsn="1:28:00::">day_off</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="special" wnsn="2" lexsn="5:00:00:extraordinary:00">special</wf>
+<wf cmd="done" pos="NN" lemma="gift" wnsn="1" lexsn="1:21:00::">gift</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">Coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Jim_Myers</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="NN" lemma="conference" wnsn="2" lexsn="1:14:01::">conference</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">last</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<wf cmd="done" pos="NN" lemma="night" wnsn="1" lexsn="1:28:00::">night</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Myers</wf>
+<wf cmd="done" pos="VB" lemma="announce" wnsn="1" lexsn="2:32:00::">announced</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">George_Hargett</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="shake_up" wnsn="1" lexsn="2:38:00::">shaken_up</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Tech</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Trinity</wf>
+<wf cmd="done" pos="NN" lemma="saturday" wnsn="1" lexsn="1:28:00::">Saturday</wf>
+<punc>.</punc>
+</s>
+<s snum="74">
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">Halfback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Bud_Priddy</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="slow" wnsn="1" lexsn="2:30:00::">slowed</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="RB" lemma="almost" wnsn="1" lexsn="4:02:00::">almost</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="month" wnsn="2" lexsn="1:28:00::">month</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="slowly" wnsn="1" lexsn="4:02:02::">slowly</wf>
+<wf cmd="done" pos="VB" lemma="mend" wnsn="2" lexsn="2:30:01::">mending</wf>
+<wf cmd="done" pos="VB" lemma="sprain" wnsn="1" lexsn="2:29:00::">sprained</wf>
+<wf cmd="done" pos="NN" lemma="ankle" wnsn="1" lexsn="1:08:00::">ankle</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="join" wnsn="1" lexsn="2:41:00::">joined</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">TCU</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="workout" wnsn="1" lexsn="1:04:00::">workout</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="37">
+<s snum="75">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="dallas" wnsn="1" lexsn="1:15:00::">Dallas</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">were</wf>
+<wf cmd="done" pos="RB" lemma="back" wnsn="1" lexsn="4:02:04::">back</wf>
+<wf cmd="done" pos="JJ" lemma="home" wnsn="1" lexsn="3:00:00::">home</wf>
+<wf cmd="done" pos="NN" lemma="monday" wnsn="1" lexsn="1:28:00::">Monday</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="JJ" lemma="third" wnsn="1" lexsn="5:00:00:ordinal:00">third</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">American_Football_League</wf>
+<wf cmd="done" pos="NN" lemma="start" wnsn="1" lexsn="1:11:00::">starts</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="19" wnsn="1" lexsn="5:00:00:cardinal:00">19</wf>
+<punc>-</punc>
+<wf cmd="done" pos="JJ" lemma="12" wnsn="1" lexsn="5:00:00:cardinal:00">12</wf>
+<wf cmd="done" pos="NN" lemma="triumph" wnsn="1" lexsn="1:11:00::">triumph</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Denver_Broncos</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="NN" lemma="visit" wnsn="2" lexsn="1:14:00::">visit</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="short" wnsn="1" lexsn="3:00:02::">short</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="38">
+<s snum="76">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="9" lexsn="2:40:01::">have</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="JJ" lemma="more" wnsn="2" lexsn="3:00:02::">more</wf>
+<wf cmd="done" pos="NN" lemma="road_game" wnsn="1" lexsn="1:04:00::">road_games</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Buffalo</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="houston" wnsn="1" lexsn="1:15:00::">Houston</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">play</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="home_folks" wnsn="0" lexsn="1:14:00::">home_folks</wf>
+<wf cmd="done" pos="RB" lemma="again" wnsn="1" lexsn="4:02:00::">again</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="look" wnsn="2" lexsn="2:39:01::">looks</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Hank_Stram</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="men" wnsn="1" lexsn="1:14:00::">men</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="meet" wnsn="10" lexsn="2:33:00::">meet</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Bills</wf>
+<wf cmd="done" pos="RB" ot="notag">just_as</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="develop" wnsn="5" lexsn="2:42:00::">developing</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="kind" wnsn="1" lexsn="1:09:00::">kind</wf>
+<wf cmd="done" pos="NN" ot="notag">of</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="preseason" wnsn="1" lexsn="1:28:00::">pre-season</wf>
+<wf cmd="done" pos="NN" lemma="reckoning" wnsn="1" lexsn="1:09:00::">reckonings</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="39">
+<s snum="77">
+<wf cmd="done" rdf="location" pos="NNP" lemma="location" wnsn="1" lexsn="1:03:00::" pn="location">Buffalo</wf>
+<wf cmd="done" pos="NN" lemma="coach" wnsn="1" lexsn="1:18:01::">coach</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Buster_Ramsey</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="2" lexsn="2:42:01::">become</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="JJ" lemma="greatest" wnsn="0" lexsn="5:00:00:best:00">greatest</wf>
+<wf cmd="done" pos="NN" lemma="collector" wnsn="2" lexsn="1:18:00::">collectors</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="quarterback" wnsn="1" lexsn="1:18:00::">quarterbacks</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="apparently" wnsn="1" lexsn="4:02:00::">apparently</wf>
+<wf cmd="done" pos="RB" lemma="now" wnsn="2" lexsn="4:02:00::">now</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="find" wnsn="7" lexsn="2:40:01::">found</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="productive" wnsn="3" lexsn="5:00:00:successful:00">productive</wf>
+<wf cmd="done" pos="NN" lemma="pair" wnsn="3" lexsn="1:14:00::">pair</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="JJ" ot="notag">ex</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">National_Football_Leaguers</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">M._C._Reynolds</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Warren_Rabb</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="40">
+<s snum="78">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Rabb</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="former" wnsn="2" lexsn="5:00:01:past:00">former</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Louisiana_State</wf>
+<wf cmd="done" pos="NN" lemma="field_general" wnsn="1" lexsn="1:18:00::">field_general</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="come_off" wnsn="1" lexsn="2:35:00::">came_off</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="bench" wnsn="0" lexsn="1:06:02::">bench</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="debut" wnsn="1" lexsn="1:04:00::">debut</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Bills</wf>
+<wf cmd="done" pos="NN" lemma="sunday" wnsn="1" lexsn="1:28:00::">Sunday</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="direct" wnsn="8" lexsn="2:36:02::">directed</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="JJ" lemma="new" wnsn="1" lexsn="3:00:00::">new</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="CD" ot="notag">22</wf>
+<punc>-</punc>
+<wf cmd="done" pos="CD" ot="notag">12</wf>
+<wf cmd="done" pos="JJ" lemma="upset" wnsn="3" lexsn="5:00:00:unexpected:00">upset</wf>
+<wf cmd="done" pos="NN" lemma="victory" wnsn="1" lexsn="1:11:00::">victory</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Houston_Oilers</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="defend" wnsn="3" lexsn="2:33:02::">defending</wf>
+<wf cmd="done" pos="NN" lemma="league" wnsn="1" lexsn="1:14:01::">league</wf>
+<wf cmd="done" pos="NN" lemma="champion" wnsn="1" lexsn="1:18:01::">champions</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="41">
+<s snum="79">
+<punc>``</punc>
+<wf cmd="done" pos="RB" lemma="just" wnsn="2" lexsn="4:02:05::">Just</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="done" pos="NN" lemma="luck" wnsn="2" lexsn="1:19:00::">luck</wf>
+<punc>''</punc>
+<punc>!</punc>
+<wf cmd="done" pos="VB" lemma="exclaim" wnsn="2" lexsn="2:32:01::">exclaimed</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Stram</wf>
+<punc>.</punc>
+</s>
+<s snum="80">
+<punc>``</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Buster</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="solve" wnsn="1" lexsn="2:31:00::">solve</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="quarterback" wnsn="1" lexsn="1:18:00::">quarterback</wf>
+<wf cmd="done" pos="NN" lemma="problem" wnsn="1" lexsn="1:26:00::">problem</wf>
+<wf cmd="done" pos="RB" ot="complexprep">just_as</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VB" lemma="head" wnsn="1" lexsn="2:38:00::">head</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="way" wnsn="3" lexsn="1:15:00::">way</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="42">
+<s snum="81">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Ramsey</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">has</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="thing" wnsn="7" lexsn="1:10:00::">thing</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="mutter" wnsn="1" lexsn="2:32:01::">mutter</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="PRP">himself</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="dallas" wnsn="1" lexsn="1:15:00::">Dallas</wf>
+<wf cmd="done" pos="JJ" lemma="defensive" wnsn="1" lexsn="3:00:00::">defensive</wf>
+<wf cmd="done" pos="NN" lemma="unit" wnsn="3" lexsn="1:14:00::">unit</wf>
+<wf cmd="done" pos="VB" lemma="turn_in" wnsn="0" lexsn="2:36:02::">turned_in</wf>
+<wf cmd="done" pos="JJ" lemma="another" wnsn="0" lexsn="5:00:00:added:00">another</wf>
+<wf cmd="done" pos="JJ" lemma="splendid" wnsn="1" lexsn="5:00:00:beautiful:00">splendid</wf>
+<wf cmd="done" pos="NN" lemma="effort" wnsn="1" lexsn="1:04:00::">effort</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" pos="NN" lemma="denver" wnsn="1" lexsn="1:15:00::">Denver</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="done" pos="JJ" lemma="able" wnsn="1" lexsn="3:00:00::">able</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="whip" wnsn="2" lexsn="2:33:00::">whip</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="dangerous" wnsn="1" lexsn="3:00:00::">dangerous</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Broncs</wf>
+<wf cmd="ignore" pos="IN">without</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="VB" lemma="fullback" wnsn="1" lexsn="2:33:00::">fullbacking</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="top" wnsn="1" lexsn="3:00:00::">top</wf>
+<wf cmd="done" pos="NN" lemma="star" wnsn="2" lexsn="1:18:01::">star</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Jack_Spikes</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">though</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="team" wnsn="1" lexsn="1:14:00::">team</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="place-kicking" wnsn="1" lexsn="1:04:00::">place-kicking</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="done" pos="VB" lemma="nurse" wnsn="1" lexsn="2:29:00::">nursing</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="knee" wnsn="1" lexsn="1:08:00::">knee</wf>
+<wf cmd="done" pos="NN" lemma="injury" wnsn="2" lexsn="1:11:00::">injury</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="43">
+<s snum="82">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP$">Our</wf>
+<wf cmd="done" pos="JJ" lemma="interior" wnsn="1" lexsn="3:00:00::">interior</wf>
+<wf cmd="done" pos="NN" lemma="line" wnsn="3" lexsn="1:14:01::">line</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">our</wf>
+<wf cmd="done" pos="NN" lemma="linebacker" wnsn="1" lexsn="1:18:00::">linebackers</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="1" lexsn="2:33:00::">played</wf>
+<wf cmd="done" pos="RB" lemma="exceptionally" wnsn="1" lexsn="4:02:00::">exceptionally</wf>
+<wf cmd="done" pos="RB" lemma="well" wnsn="1" lexsn="4:02:00::">well</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Stram_Monday</wf>
+<wf cmd="ignore" pos="IN">after</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="done" pos="NN" lemma="staff" wnsn="1" lexsn="1:14:01::">staff</wf>
+<wf cmd="done" pos="VB" lemma="review" wnsn="1" lexsn="2:31:00::">reviewed</wf>
+<wf cmd="done" pos="NN" lemma="movie" wnsn="1" lexsn="1:10:00::">movies</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>.</punc>
+</s>
+<s snum="83">
+<punc>``</punc>
+<wf cmd="done" pos="RB" lemma="in_fact" wnsn="1" lexsn="4:02:00::">In_fact</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="done" pos="JJ" lemma="whole" wnsn="1" lexsn="3:00:00::">whole</wf>
+<wf cmd="done" pos="JJ" lemma="defensive" wnsn="1" lexsn="3:00:00::">defensive</wf>
+<wf cmd="done" pos="NN" lemma="unit" wnsn="3" lexsn="1:14:00::">unit</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="1" lexsn="2:41:01::">did</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="good" wnsn="1" lexsn="3:00:01::">good</wf>
+<wf cmd="done" pos="NN" lemma="job" wnsn="2" lexsn="1:04:01::">job</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="44">
+<s snum="84">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<wf cmd="done" pos="VB" lemma="win" wnsn="1" lexsn="2:33:00::">won</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="NN" lemma="control" wnsn="5" lexsn="1:04:00::">control</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="quarterback" wnsn="1" lexsn="1:18:00::">Quarterback</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Cotton_Davidson</wf>
+<wf cmd="done" pos="VB" lemma="throw" wnsn="1" lexsn="2:35:00::">throwing</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="JJ" lemma="17" wnsn="1" lexsn="5:00:00:cardinal:00">17</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="1" lexsn="1:04:04::">passes</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="45">
+<s snum="85">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">We</wf>
+<wf cmd="done" pos="RB" lemma="always" wnsn="1" lexsn="4:02:00::">always</wf>
+<wf cmd="done" pos="VB" lemma="like" wnsn="1" lexsn="2:37:01::">like</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="3" lexsn="2:40:00::">keep</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="RB" lemma="much" wnsn="2" lexsn="4:02:03::">much</wf>
+<wf cmd="done" pos="JJ" ot="notag">as</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" pos="NN" lemma="denver" wnsn="1" lexsn="1:15:00::">Denver</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">have</wf>
+<wf cmd="done" pos="JJ" lemma="such" wnsn="1" lexsn="5:00:00:much(a):00">such</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="explosive" wnsn="2" lexsn="5:00:00:unstable:00">explosive</wf>
+<wf cmd="done" pos="NN" lemma="attack" wnsn="1" lexsn="1:04:00::">attack</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explained</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Stram</wf>
+<punc>.</punc>
+</s>
+<s snum="86">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">They</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="go_along" wnsn="1" lexsn="2:41:00::">going_along</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="do" wnsn="5" lexsn="2:36:02::">doing</wf>
+<wf cmd="done" pos="JJ" lemma="little" wnsn="2" lexsn="3:00:03::">little</wf>
+<wf cmd="done" pos="NN" lemma="damage" wnsn="1" lexsn="1:11:00::">damage</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="3" lexsn="4:02:01::">then</wf>
+<wf cmd="done" pos="NN" ot="notag">bang</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" ot="notag">bang</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" lemma="hit" wnsn="4" lexsn="2:38:00::">hit</wf>
+<wf cmd="done" pos="JJ" lemma="a_couple_of" wnsn="1" lexsn="5:00:00:few:00">a_couple_of</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="3" lexsn="1:04:02::">passes</wf>
+<wf cmd="done" pos="NN" ot="notag">on</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="touchdown" wnsn="1" lexsn="1:04:00::">touchdowns</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="put" wnsn="2" lexsn="2:35:05::">put</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" pos="JJ" lemma="in_trouble" wnsn="0" lexsn="5:00:00:troubled:00">in_trouble</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="46">
+<s snum="87">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Broncs</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="done" pos="VB" lemma="hit" wnsn="4" lexsn="2:38:00::">hit</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="JJ" lemma="quick" wnsn="1" lexsn="5:00:00:fast:01">quick</wf>
+<wf cmd="done" pos="NN" lemma="strike" wnsn="2" lexsn="1:04:02::">strikes</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="final_period" wnsn="1" lexsn="1:28:00::">final_period</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="NN" lemma="dallas" wnsn="1" lexsn="1:15:00::">Dallas</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="1" lexsn="2:40:00::">had</wf>
+<wf cmd="done" pos="JJ" lemma="enough" wnsn="1" lexsn="5:00:00:sufficient:00">enough</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="lead" wnsn="1" lexsn="1:07:02::">lead</wf>
+<wf cmd="done" pos="NN" ot="notag">to</wf>
+<wf cmd="done" rdf="hold_off" pos="VB" lemma="hold_off" wnsn="1" lexsn="2:33:00::">hold</wf>
+<wf cmd="ignore" pos="PRP">them</wf>
+<wf cmd="ignore" dc="-2" pos="RB">off</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="47">
+<s snum="88">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="principal" wnsn="1" lexsn="5:00:00:important:00">principal</wf>
+<wf cmd="done" pos="NN" lemma="tactic" wnsn="1" lexsn="1:09:00::">tactic</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="controlling" wnsn="0" lexsn="1:04:00::">controlling</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="14" lexsn="2:40:02::">giving</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Abner_Haynes</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="flashy" wnsn="2" lexsn="5:00:00:colorful:03">flashy</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<punc>.</punc>
+</s>
+<s snum="89">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="call_upon" wnsn="0" lexsn="2:32:00::">called_upon</wf>
+<wf cmd="done" pos="JJ" lemma="26" wnsn="1" lexsn="5:00:00:cardinal:00">26</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="1" lexsn="1:11:00::">times</wf>
+<punc>-</punc>
+<wf cmd="done" pos="JJ" lemma="more" wnsn="2" lexsn="3:00:02::">more</wf>
+<wf cmd="done" pos="JJ" ot="notag">than</wf>
+<wf cmd="done" pos="JJ" lemma="all_of" wnsn="0" lexsn="3:00:00::">all_of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="NN" lemma="carrier" wnsn="1" lexsn="1:18:03::">carriers</wf>
+<wf cmd="done" pos="JJ" lemma="combined" wnsn="0" lexsn="5:00:00:joint:00">combined</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="deliver" wnsn="3" lexsn="2:40:01::">delivered</wf>
+<wf cmd="done" pos="CD" ot="notag">145</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="48">
+<s snum="90">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texans</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">made</wf>
+<wf cmd="ignore" pos="PRP">themselves</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="comforting" wnsn="1" lexsn="5:00:00:satisfactory:00">comforting</wf>
+<wf cmd="done" pos="NN" lemma="break" wnsn="2" lexsn="1:11:01::">break</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="opening" wnsn="1" lexsn="3:00:00::">opening</wf>
+<wf cmd="done" pos="NN" lemma="kickoff" wnsn="1" lexsn="1:04:00::">kickoff</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" pos="NN" lemma="denver" wnsn="1" lexsn="1:15:00::">Denver</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Al_Carmichael</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="jar" wnsn="2" lexsn="2:38:00::">jarred</wf>
+<wf cmd="done" pos="JJ" lemma="loose" wnsn="2" lexsn="5:00:00:uncontrolled:00">loose</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Dave_Grayson</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="speedy" wnsn="1" lexsn="5:00:00:fast:01">speedy</wf>
+<wf cmd="done" pos="NN" lemma="halfback" wnsn="1" lexsn="1:18:00::">halfback</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="hit" wnsn="2" lexsn="2:35:01::">hit</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="guard" wnsn="2" lexsn="1:18:01::">Guard</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Al_Reynolds</wf>
+<wf cmd="done" pos="VB" lemma="claim" wnsn="2" lexsn="2:40:00::">claimed</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="dallas" wnsn="1" lexsn="1:15:00::">Dallas</wf>
+<punc>.</punc>
+</s>
+<s snum="91">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="JJ" lemma="quick" wnsn="1" lexsn="5:00:00:fast:01">quick</wf>
+<wf cmd="done" pos="NN" lemma="touchdown" wnsn="1" lexsn="1:04:00::">touchdown</wf>
+<wf cmd="done" pos="VB" lemma="result" wnsn="1" lexsn="2:42:00::">resulted</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="49">
+<s snum="92">
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">That</wf>
+<wf cmd="done" pos="VB" lemma="permit" wnsn="2" lexsn="2:41:00::">permitted</wf>
+<wf cmd="ignore" pos="PRP">us</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="start" wnsn="1" lexsn="2:30:00::">start</wf>
+<wf cmd="done" pos="NN" lemma="controlling" wnsn="0" lexsn="1:04:00::">controlling</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ball" wnsn="1" lexsn="1:06:01::">ball</wf>
+<wf cmd="done" pos="RB" lemma="right_away" wnsn="1" lexsn="4:02:00::">right_away</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Stram</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="quip" wnsn="1" lexsn="2:32:00::">quipping</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="think" wnsn="2" lexsn="2:31:03::">think</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">'ll</wf>
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">put</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">play</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="book" wnsn="2" lexsn="1:06:00::">book</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="50">
+<s snum="93">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="early" wnsn="1" lexsn="3:00:00::">early</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Southwest_Conference</wf>
+<wf cmd="done" pos="NN" lemma="football" wnsn="1" lexsn="1:04:00::">football</wf>
+<wf cmd="done" pos="NN" lemma="leader" wnsn="1" lexsn="1:18:00::">leaders</wf>
+<punc>-</punc>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Arkansas</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas_A+M</wf>
+<punc>-</punc>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">made</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="big" wnsn="1" lexsn="3:00:01::">big</wf>
+<wf cmd="done" pos="NN" lemma="dent" wnsn="1" lexsn="1:19:00::">dent</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="statistic" wnsn="1" lexsn="1:09:00::">statistics</wf>
+<wf cmd="done" pos="JJ" lemma="last" wnsn="1" lexsn="5:00:00:past:00">last</wf>
+<wf cmd="done" pos="NN" lemma="week" wnsn="1" lexsn="1:28:00::">week</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="51">
+<s snum="94">
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas</wf>
+<punc>'</punc>
+<wf cmd="done" pos="CD" ot="notag">545</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yard</wf>
+<wf cmd="done" pos="NN" lemma="spree" wnsn="1" lexsn="1:04:00::">spree</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Washington_State</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="9" lexsn="2:36:03::">gave</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Longhorns</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="done" pos="NN" lemma="offense" wnsn="1" lexsn="1:04:02::">offense</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="CD" ot="notag">1512</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">1065</wf>
+<wf cmd="done" pos="NN" lemma="rushing" wnsn="1" lexsn="1:04:00::">rushing</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="CD" ot="notag">447</wf>
+<wf cmd="done" pos="NN" lemma="passing" wnsn="1" lexsn="1:04:03::">passing</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="new" wnsn="1" lexsn="3:00:00::">new</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">SWC</wf>
+<wf cmd="done" pos="NN" lemma="high" wnsn="1" lexsn="1:07:00::">high</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="52">
+<s snum="95">
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Arkansas</wf>
+<wf cmd="done" pos="VB" lemma="combine" wnsn="3" lexsn="2:35:01::">combined</wf>
+<wf cmd="done" pos="CD" ot="notag">280</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="done" pos="NN" lemma="rushing" wnsn="1" lexsn="1:04:00::">rushing</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="CD" ot="notag">64</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="done" pos="NN" lemma="passing" wnsn="1" lexsn="1:04:03::">passing</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="JJ" lemma="5" wnsn="1" lexsn="5:00:00:cardinal:00">5</wf>
+<wf cmd="done" pos="NN" lemma="completion" wnsn="1" lexsn="1:04:02::">completions</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="7" wnsn="1" lexsn="5:00:00:cardinal:00">7</wf>
+<wf cmd="done" pos="NN" lemma="toss" wnsn="2" lexsn="1:04:00::">tosses</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="tough" wnsn="1" lexsn="3:00:03::">tough</wf>
+<wf cmd="done" pos="NN" lemma="defense" wnsn="3" lexsn="1:14:01::">defense</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="whip" wnsn="2" lexsn="2:33:00::">whip</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">TCU</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">A+M</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="CD" ot="notag">38</wf>
+<punc>-</punc>
+<wf cmd="done" pos="NN" lemma="point" wnsn="10" lexsn="1:23:01::">point</wf>
+<wf cmd="done" pos="NN" lemma="bulge" wnsn="1" lexsn="1:25:00::">bulge</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas_Tech</wf>
+<wf cmd="done" pos="VB" lemma="run_up" wnsn="1" lexsn="2:30:00::">ran_up</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="JJ" lemma="biggest" wnsn="0" lexsn="5:00:00:large:00">biggest</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="done" pos="NN" ot="notag">loop</wf>
+<wf cmd="done" pos="NN" lemma="play" wnsn="3" lexsn="1:04:05::">play</wf>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="done" pos="CD" ot="notag">1950</wf>
+<punc>.</punc>
+</s>
+<s snum="96">
+<wf cmd="done" pos="VB" lemma="complete" wnsn="4" lexsn="2:33:00::">Completing</wf>
+<wf cmd="done" pos="JJ" lemma="12" wnsn="1" lexsn="5:00:00:cardinal:00">12</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="15" wnsn="1" lexsn="5:00:00:cardinal:00">15</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="1" lexsn="1:04:04::">passes</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="CD" ot="notag">174</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Aggies</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">had</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="total" wnsn="1" lexsn="1:06:00::">total</wf>
+<wf cmd="done" pos="NN" lemma="offense" wnsn="1" lexsn="1:04:02::">offense</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="CD" ot="notag">361</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="53">
+<s snum="97">
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas</wf>
+<wf cmd="done" pos="VB" lemma="lead" wnsn="4" lexsn="2:38:00::">leads</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" ot="notag">per</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="done" pos="NN" lemma="rushing" wnsn="1" lexsn="1:04:00::">rushing</wf>
+<wf cmd="done" pos="NN" lemma="average" wnsn="1" lexsn="1:09:00::">averages</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">355</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="passing" wnsn="1" lexsn="1:04:03::">passing</wf>
+<wf cmd="done" pos="CD" ot="notag">149</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Baylor</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="CD" ot="notag">126</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="done" pos="JJ" lemma="idle" wnsn="1" lexsn="3:00:00::">idle</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Baylor</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">has</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="best" wnsn="1" lexsn="3:00:00::">best</wf>
+<wf cmd="done" pos="JJ" lemma="defensive" wnsn="1" lexsn="3:00:00::">defensive</wf>
+<wf cmd="done" pos="NN" lemma="record" wnsn="3" lexsn="1:23:00::">record</wf>
+<punc>(</punc>
+<wf cmd="done" pos="CD" ot="notag">187.5</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="IN">per</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Texas</wf>
+<punc>'</punc>
+<wf cmd="done" pos="CD" ot="notag">189</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="98">
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">A+M</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="4" lexsn="2:40:04::">has</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="best" wnsn="1" lexsn="3:00:00::">best</wf>
+<wf cmd="done" pos="NN" lemma="defense" wnsn="3" lexsn="1:14:01::">defense</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="done" pos="NN" lemma="pass" wnsn="1" lexsn="1:04:04::">passes</wf>
+<punc>,</punc>
+<wf cmd="done" pos="CD" ot="notag">34.7</wf>
+<wf cmd="done" pos="NN" lemma="yard" wnsn="1" lexsn="1:23:00::">yards</wf>
+<wf cmd="ignore" pos="IN">per</wf>
+<wf cmd="done" pos="NN" lemma="game" wnsn="2" lexsn="1:04:03::">game</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="54">
+<s snum="99">
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">Not</wf>
+<wf cmd="done" pos="JJ" lemma="satisfied" wnsn="1" lexsn="5:00:00:contented:00">satisfied</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="various" wnsn="2" lexsn="5:00:00:individual:00">various</wf>
+<wf cmd="done" pos="JJ" lemma="unofficial" wnsn="1" lexsn="3:00:00::">unofficial</wf>
+<wf cmd="done" pos="NN" lemma="check" wnsn="2" lexsn="1:09:00::">checks</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="liveliness" wnsn="1" lexsn="1:04:00::">liveliness</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="baseball" wnsn="2" lexsn="1:06:00::">baseballs</wf>
+<wf cmd="done" pos="RB" lemma="currently" wnsn="1" lexsn="4:02:00::">currently</wf>
+<wf cmd="done" pos="JJ" lemma="in_use" wnsn="1" lexsn="5:00:00:occupied:00">in_use</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_league" wnsn="1" lexsn="1:14:00::">major_leagues</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="order" wnsn="2" lexsn="2:32:00::">ordered</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="JJ" lemma="own" wnsn="1" lexsn="5:00:00:personal:00">own</wf>
+<wf cmd="done" pos="NN" lemma="test" wnsn="1" lexsn="1:09:02::">tests</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="in_progress" wnsn="0" lexsn="5:00:00:current:00">in_progress</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" rdf="group" pos="NNP" lemma="group" wnsn="1" lexsn="1:03:00::" pn="group">Massachusetts_Institute_of_Technology</wf>
+<punc>.</punc>
+</s>
+</p>
+</context>
+</contextfile>

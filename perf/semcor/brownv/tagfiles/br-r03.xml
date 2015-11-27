@@ -1,0 +1,2648 @@
+<contextfile concordance="brown">
+<context filename="br-r03" paras="yes">
+<p pnum="1">
+<s snum="1">
+<wf cmd="tag" pos="JJ">Needless</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">say</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">furious</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="tag" pos="JJ">unparalleled</wf>
+<wf cmd="tag" pos="NN">intrusion</wf>
+<wf cmd="ignore" pos="IN">upon</wf>
+<wf cmd="tag" pos="NN">free_enterprise</wf>
+<punc>.</punc>
+</s>
+<s snum="2">
+<wf cmd="ignore" pos="WRB">How</wf>
+<wf cmd="done" pos="VB" lemma="dare" wnsn="1" lexsn="2:41:00::">dared</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="demand" wnsn="1" lexsn="2:32:00::">demand</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="snoop" wnsn="1" lexsn="2:32:00::">snoop</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="RB">in_private</wf>
+<wf cmd="tag" pos="JJ">financial</wf>
+<wf cmd="tag" pos="NNS">records</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNS">disbursements</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">confidential</wf>
+<wf cmd="tag" pos="NNS">contracts</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">agreements</wf>
+<punc>?</punc>
+</s>
+<s snum="3">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" ot="notag">is</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="IN">though</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">historic</wf>
+<wf cmd="tag" pos="JJ">three-hour</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">coast-to-coast</wf>
+<wf cmd="tag" pos="NN">radio_broadcast</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="buy" wnsn="1" lexsn="2:40:00::">bought</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="follow" wnsn="2" lexsn="2:42:00::">following</wf>
+<wf cmd="tag" pos="NNP">Father_Coughlin</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="preempt" pos="VB" lemma="preempt" wnsn="1" lexsn="2:40:00::">pre_empting</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Eddie_Cantor</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Manhattan_Merry-go-round</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNP">Major_Bowes</wf>
+<wf cmd="tag" pos="NN">shows</wf>
+<punc>)</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">That</wf>
+<wf cmd="tag" pos="NN">Man</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">White_House</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">like</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="tag" pos="NN">despot</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">yore</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="insist" wnsn="1" lexsn="2:32:00::">insisted</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="done" pos="VB" lemma="read" wnsn="1" lexsn="2:31:00::">reading</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">diary</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="raid" wnsn="2" lexsn="2:38:00::">raiding</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">larder</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="ransack" wnsn="2" lexsn="2:35:02::">ransacking</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">lingerie</wf>
+<punc>!</punc>
+<punc>''</punc>
+</s>
+<s snum="4">
+<wf cmd="ignore" pos="PRP$">My</wf>
+<wf cmd="tag" pos="JJ">impassioned</wf>
+<wf cmd="tag" pos="NN">plea</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">civil_rights</wf>
+<wf cmd="done" pos="VB" lemma="create" wnsn="2" lexsn="2:36:02::">created</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">landslide</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">correspondence</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">sponsor</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" pos="VB" lemma="ask" wnsn="2" lexsn="2:32:01::">asked</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="consider" wnsn="3" lexsn="2:31:01::">consider</wf>
+<wf cmd="done" pos="VB" lemma="replace" wnsn="2" lexsn="2:41:00::">replacing</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Eddie_Cantor</wf>
+<wf cmd="tag" pos="NN">comedy</wf>
+<wf cmd="tag" pos="NN">hour</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">permanent</wf>
+<wf cmd="tag" pos="NN">basis</wf>
+<punc>.</punc>
+</s>
+<s snum="5">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="ignore" pos="WP">what</wf>
+<wf cmd="tag" pos="NN">quarter</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">poor</wf>
+<wf cmd="tag" pos="JJ">defenseless</wf>
+<wf cmd="tag" pos="NN">woman</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expect</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">dictator</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" rdf="make_bold" pos="VB" lemma="make_bold" wnsn="1" lexsn="2:41:00::">make</wf>
+<wf cmd="tag" pos="RB">so</wf>
+<wf cmd="tag" pos="JJ">bold</wf>
+<wf cmd="tag" pos="RB">as</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="close" wnsn="3" lexsn="2:41:00::">close</wf>
+<wf cmd="tag" pos="JJ">all_of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">banks</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="JJ">great</wf>
+<wf cmd="tag" pos="NN">nation</wf>
+<punc>?</punc>
+</s>
+<s snum="6">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="JJ">savage</wf>
+<wf cmd="tag" pos="NN">barbarian</wf>
+<wf cmd="tag" pos="NNS">hordes</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">red</wf>
+<wf cmd="tag" pos="NNP">Russian_Communism</wf>
+<wf cmd="done" pos="VB" lemma="descend" wnsn="1" lexsn="2:38:00::">descended</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Athens</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="tag" pos="JJ">mighty</wf>
+<wf cmd="tag" pos="NNP">Metronome</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="sack" wnsn="1" lexsn="2:40:00::">sacking</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="despoil" wnsn="1" lexsn="2:40:00::">despoiling</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="tag" pos="JJ">Bolshevistic</wf>
+<wf cmd="tag" pos="NN">battle</wf>
+<wf cmd="tag" pos="NN">cry</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="soak" wnsn="2" lexsn="2:40:00::">Soak</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">rich</wf>
+<punc>'</punc>
+<punc>!</punc>
+</s>
+<s snum="7">
+<wf cmd="ignore" pos="IN">After</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="JJ">unspeakable</wf>
+<wf cmd="tag" pos="NN">siege</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="last" wnsn="1" lexsn="2:42:00::">lasting</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJR">better</wf>
+<wf cmd="tag" pos="NN">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">months</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="announce" wnsn="1" lexsn="2:32:00::">announced</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VB" lemma="owe" wnsn="1" lexsn="2:40:01::">owed</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">government</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">tax</wf>
+<wf cmd="tag" pos="NN">debt</wf>
+<wf cmd="tag" pos="RB">in_excess</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="CD">eight</wf>
+<wf cmd="tag" pos="CD">million</wf>
+<wf cmd="tag" pos="NNS">dollars</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="tag" pos="RB">always</wf>
+<wf cmd="done" pos="VB" lemma="remain" wnsn="1" lexsn="2:30:00::">remained</wf>
+<wf cmd="tag" pos="JJ">aloof</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">iniquitous</wf>
+<wf cmd="tag" pos="NNS">practices</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NN">paying</wf>
+<wf cmd="tag" pos="NNS">taxes</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">salary</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="earn" wnsn="1" lexsn="2:40:01::">earned</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">little</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="tag" pos="RB">legally</wf>
+<wf cmd="done" pos="VB" lemma="inherit" wnsn="1" lexsn="2:40:00::">inherited</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NNP">Morris</wf>
+<punc>'</punc>
+<wf cmd="tag" pos="JJ">helpless</wf>
+<wf cmd="tag" pos="NN">relict</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VB" lemma="sting" wnsn="3" lexsn="2:32:00::">stung</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">personal</wf>
+<wf cmd="tag" pos="NN">bill</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">astronomical</wf>
+<wf cmd="tag" pos="NNS">proportions</wf>
+<wf cmd="tag" pos="RB">as</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VB" lemma="wipe_out" wnsn="1" lexsn="2:34:00::">wipe_out</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="RB">all_but</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">fraction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">poor</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">hard-come-by</wf>
+<wf cmd="tag" pos="NNS">savings</wf>
+<punc>.</punc>
+</s>
+<s snum="8">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="tag" pos="RB">also</wf>
+<wf cmd="tag" pos="RB">publicly</wf>
+<wf cmd="done" pos="VB" lemma="reprimand" wnsn="1" lexsn="2:32:00::">reprimanded</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="drag_through_the_mud" wnsn="1" lexsn="2:32:00::">dragged_through_the_mud</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">radical</wf>
+<wf cmd="tag" pos="NN">press</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="2" lexsn="2:30:00::">made</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">figure</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">fun</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">leftist</wf>
+<wf cmd="tag" pos="NNS">publications</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NNP">New_Republic</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NN">New_Yorker</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Time</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">Christian_Science</wf>
+<wf cmd="tag" pos="NNP">Monitor</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="2">
+<s snum="9">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="tag" pos="RB">then</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="avail" wnsn="1" lexsn="2:34:00::">availed</wf>
+<wf cmd="ignore" pos="PRP">myself</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">rights</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">citizen</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="declare" wnsn="4" lexsn="2:32:04::">declared</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">income_tax</wf>
+<wf cmd="tag" pos="JJ">unconstitutional</wf>
+<punc>.</punc>
+</s>
+<s snum="10">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NN">litigation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">costly</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">seemingly</wf>
+<wf cmd="tag" pos="JJ">endless</wf>
+<punc>.</punc>
+</s>
+<s snum="11">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="fight" wnsn="2" lexsn="2:33:01::">fought</wf>
+<wf cmd="ignore" pos="IN">like</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">tigress</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">time</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="appeal" wnsn="1" lexsn="2:41:00::">appealed</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">case</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">Supreme_Court</wf>
+<punc>(</punc>
+<wf cmd="tag" pos="CD">1937</wf>
+<punc>)</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Mr._Roosevelt</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">henchmen</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="3" lexsn="2:41:04::">done</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">dirty</wf>
+<wf cmd="tag" pos="NN">work</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="RB">all_too</wf>
+<wf cmd="tag" pos="RB">well</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" pos="VB" lemma="go" wnsn="2" lexsn="2:41:00::">going</wf>
+<wf cmd="tag" pos="RB">so_far</wf>
+<wf cmd="tag" pos="RB">as</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="attempt" wnsn="1" lexsn="2:41:00::">attempt</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="pack" wnsn="5" lexsn="2:41:00::">pack</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJS">highest</wf>
+<wf cmd="tag" pos="NN">tribunal</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">land</wf>
+<wf cmd="tag" pos="RB">in_order_to</wf>
+<wf cmd="done" pos="VB" lemma="defeat" wnsn="2" lexsn="2:41:00::">defeat</wf>
+<wf cmd="tag" pos="JJ">little</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>.</punc>
+</s>
+<s snum="12">
+<wf cmd="tag" pos="JJ">Presidential</wf>
+<wf cmd="tag" pos="NN">coercion</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="succeed" wnsn="1" lexsn="2:41:00::">succeeded</wf>
+<wf cmd="tag" pos="RB">not_only</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="VB" lemma="poison" wnsn="1" lexsn="2:41:00::">poisoning</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">courtiers</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">toadies</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">sycophants</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">bench</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">been</wf>
+<wf cmd="tag" pos="RB">so</wf>
+<wf cmd="tag" pos="JJ">far-reaching</wf>
+<wf cmd="tag" pos="RB">as</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="discourage" wnsn="3" lexsn="2:32:02::">discourage</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="tag" pos="NN">lawyer</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">nation</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="VB" lemma="represent" wnsn="8" lexsn="2:41:06::">representing</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>!</punc>
+</s>
+<s snum="13">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">ready</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">like</wf>
+<wf cmd="tag" pos="NNP">Portia</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="present" wnsn="2" lexsn="2:32:00::">present</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">own</wf>
+<wf cmd="tag" pos="NN">brief</wf>
+<punc>.</punc>
+</s>
+<s snum="14">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">Supreme_Court</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="tag" pos="RB">n't</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" pos="VB" lemma="hear" wnsn="3" lexsn="2:41:00::">hear</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">case</wf>
+<punc>!</punc>
+</s>
+<s snum="15">
+<wf cmd="ignore" pos="PRP$">My</wf>
+<wf cmd="tag" pos="NN">plea</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="tag" pos="RB">unanimously</wf>
+<wf cmd="done" pos="VB" lemma="vote_down" wnsn="1" lexsn="2:41:00::">voted_down</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="throw_out" wnsn="5" lexsn="2:32:01::">thrown_out</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="16">
+<wf cmd="tag" pos="RB">Again</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">name</wf>
+<wf cmd="done" pos="VB" lemma="be_on" wnsn="1" lexsn="2:30:00::">was_on</wf>
+<wf cmd="ignore" pos="PDT">all</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">front</wf>
+<wf cmd="tag" pos="NNS">pages</wf>
+<punc>.</punc>
+</s>
+<s snum="17">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="seem" wnsn="2" lexsn="2:39:01::">seemed</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">persona_non_grata</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="RB">every_quarter</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="tag" pos="RB">entirely</wf>
+<wf cmd="ignore" pos="IN">without</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">staunch</wf>
+<wf cmd="tag" pos="NN">following</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">noted</wf>
+<wf cmd="tag" pos="JJ">political</wf>
+<wf cmd="tag" pos="NNS">thinkers</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">students</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">jurisprudence</wf>
+<punc>.</punc>
+</s>
+<s snum="18">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="tag" pos="NNP">Charles_Evans_Hughes</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNP">Miss_Poitrine</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NNS">limitations</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="NN">actress</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="exceed" wnsn="3" lexsn="2:33:00::">exceeded</wf>
+<wf cmd="tag" pos="RB">only</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">logic</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">litigant</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="19">
+<wf cmd="tag" pos="NN">Albert_Einstein</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="quote" wnsn="1" lexsn="2:32:00::">quoted</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">saying</wf>
+<punc>:</punc>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NNS">workings</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">woman</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NN">mind</wf>
+<wf cmd="done" pos="VB" lemma="amaze" wnsn="2" lexsn="2:31:01::">amaze</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="20">
+<wf cmd="tag" pos="NN">Henry_Ford</wf>
+<wf cmd="done" pos="VB" lemma="speak" wnsn="1" lexsn="2:32:00::">spoke</wf>
+<wf cmd="tag" pos="RB">of</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="RB">utterly</wf>
+<wf cmd="tag" pos="JJ">astounding</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="21">
+<wf cmd="tag" pos="NNP">Heywood_Broun</wf>
+<wf cmd="done" pos="VB" lemma="write" wnsn="2" lexsn="2:32:00::">wrote</wf>
+<punc>:</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNP">Belle_Poitrine</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="RB">the_most</wf>
+<wf cmd="tag" pos="JJ">original</wf>
+<wf cmd="tag" pos="NN">thinker</wf>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="tag" pos="NNP">Caligula</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="tag" pos="NNP">F._D._R.</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="0" lexsn="2:42:05::">had</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="concede" wnsn="2" lexsn="2:32:01::">concede</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">rest</wf>
+<wf cmd="tag" pos="RB">of_this</wf>
+<wf cmd="tag" pos="NN">nation</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="4" lexsn="2:39:00::">showed</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">foresight</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">patriotism</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNP">Miss_Poitrine</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">America</wf>
+<wf cmd="done" pos="VB" ot="notag">would</wf>
+<wf cmd="tag" pos="RB">rapidly</wf>
+<wf cmd="done" pos="VB" lemma="resemble" wnsn="1" lexsn="2:42:00::">resemble</wf>
+<wf cmd="tag" pos="JJ">ancient</wf>
+<wf cmd="tag" pos="NNP">Babylon</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNP">Nineveh</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="3">
+<s snum="22">
+<wf cmd="tag" pos="RB">Not_only</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">court</wf>
+<wf cmd="tag" pos="NNS">costs</wf>
+<wf cmd="tag" pos="JJ">prohibitive</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="subject" wnsn="0" lexsn="2:31:00::">subjected</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="tag" pos="JJ">crippling</wf>
+<wf cmd="tag" pos="NNS">fines</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">in_addition</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="JJ">usurious</wf>
+<wf cmd="tag" pos="NN">interest</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">unpaid</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">debts</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">governmen</wf>
+<wf cmd="done" pos="VB" lemma="claim" wnsn="1" lexsn="2:32:00::">claimed</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="tag" pos="NNP">Metronome</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="owe" wnsn="1" lexsn="2:40:01::">owed</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">severe</wf>
+<wf cmd="tag" pos="JJ">financial</wf>
+<wf cmd="tag" pos="NN">blow</wf>
+<punc>.</punc>
+</s>
+<s snum="23">
+<wf cmd="ignore" pos="CC">Nor</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NNP">Manny</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">notoriety</wf>
+<wf cmd="done" rdf="do_good" pos="VB" lemma="do_good" wnsn="1" lexsn="2:40:00::">done</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">career</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="tag" pos="JJ">good</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="24">
+<wf cmd="ignore" pos="PRP$">My</wf>
+<wf cmd="tag" pos="NNS">enemies</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="tag" pos="RB">only_too</wf>
+<wf cmd="tag" pos="JJ">anxious</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="level" wnsn="1" lexsn="2:33:02::">level</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="NNS">charges</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">reactionary</wf>
+<punc>''</punc>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">robber</wf>
+<wf cmd="tag" pos="NN">baroness</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">traitor</wf>
+<punc>''</punc>
+<punc>!</punc>
+</s>
+<s snum="25">
+<wf cmd="tag" pos="NN">Traitor</wf>
+<wf cmd="tag" pos="RB">indeed</wf>
+<punc>!</punc>
+</s>
+<s snum="26">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="point" wnsn="1" lexsn="2:32:00::">point</wf>
+<wf cmd="tag" pos="RB">now</wf>
+<wf cmd="tag" pos="RB">with_pride</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">fact</wf>
+<wf cmd="tag" pos="RB">that</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="ignore" pos="IN">ere</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Committee</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NNP">Un-American_Activities</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Minute_Women</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Economic_Council</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">other</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">notable</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">watchdog</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NNS">organizations</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="tag" pos="RB">so_much</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="hear" wnsn="2" lexsn="2:31:00::">heard</wf>
+<wf cmd="done" pos="VB" ot="notag">of</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="NNP">Hollywood</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="JJ">leading</wf>
+<wf cmd="tag" pos="NN">bulwark</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="tag" pos="NN">communism</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="fight" wnsn="2" lexsn="2:33:01::">fighting</wf>
+<wf cmd="tag" pos="RB">single-handedly</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">creeping</wf>
+<wf cmd="tag" pos="NN">socialism</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">insuperable</wf>
+<wf cmd="tag" pos="NNS">odds</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">Fascio-Communist</wf>
+<wf cmd="tag" pos="NNS">troops</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">NRA</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">PWA</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">WPA</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">CCC</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="NN">army</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="RB">more_than</wf>
+<wf cmd="tag" pos="CD">twenty-two</wf>
+<wf cmd="tag" pos="CD">million</wf>
+<wf cmd="tag" pos="NNS">mercenaries</wf>
+<wf cmd="ignore" pos="WP">whom</wf>
+<wf cmd="tag" pos="NNP">F._D._R.</wf>
+<wf cmd="done" pos="VB" lemma="employ" wnsn="2" lexsn="2:41:00::">employed</wf>
+<wf cmd="tag" pos="RB">secretly</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">transparent</wf>
+<wf cmd="tag" pos="NN">ruse</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">regular</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">relief</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NNS">checks</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="4">
+<s snum="27">
+<wf cmd="tag" pos="JJ">Needless</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">say</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">art</wf>
+<wf cmd="done" pos="VB" lemma="suffer" wnsn="5" lexsn="2:30:00::">suffered</wf>
+<wf cmd="tag" pos="RB">drastically</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="tag" pos="JJ">turbulent</wf>
+<wf cmd="tag" pos="NN">period</wf>
+<punc>.</punc>
+</s>
+<s snum="28">
+<wf cmd="ignore" pos="MD">Could</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="tag" pos="RB">otherwise</wf>
+<punc>?</punc>
+</s>
+<s snum="29">
+<wf cmd="tag" pos="RB">Even_though</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="tag" pos="RB">always</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="2" lexsn="2:42:00::">had</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">genius</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="throw" wnsn="2" lexsn="2:38:00::">throwing</wf>
+<wf cmd="done" pos="VB" ot="notag">myself</wf>
+<wf cmd="done" pos="VB" ot="notag">into</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="DT">every</wf>
+<wf cmd="tag" pos="NN">role</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="play" wnsn="4" lexsn="2:36:02::">playing</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBZ" ot="notag">'s</wf>
+<wf cmd="tag" pos="JJ">worth</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="tag" pos="NN">actress</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="3" lexsn="2:41:04::">do</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="JJS">best</wf>
+<wf cmd="tag" pos="NN">work</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">fortune</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">reputation</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">livelihood</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">home</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="NN">nation</wf>
+<wf cmd="ignore" pos="PRP">itself</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="JJ">imperilled</wf>
+<punc>.</punc>
+</s>
+<s snum="30">
+<wf cmd="tag" pos="JJ">Such</wf>
+<wf cmd="tag" pos="NN">sweeping</wf>
+<wf cmd="tag" pos="NNS">distractions</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="tag" pos="RB">hardly</wf>
+<wf cmd="tag" pos="JJ">conducive</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNP">Oscar</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">winning</wf>
+<wf cmd="tag" pos="NNS">performances</wf>
+<punc>.</punc>
+</s>
+<s snum="31">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="try" wnsn="1" lexsn="2:41:00::">tried</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJS">hardest</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="JJ">little</wf>
+<wf cmd="tag" pos="NN">help</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">say</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">husband</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">leading_man</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="tag" pos="RB">somehow</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">outside</wf>
+<wf cmd="tag" pos="NNS">pressures</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">severe</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="5">
+<s snum="32">
+<wf cmd="done" pos="VBG" ot="notag">Having</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">unflagging</wf>
+<wf cmd="tag" pos="NN">effort</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">devotion</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" lemma="achieve" wnsn="1" lexsn="2:41:00::">achieved</wf>
+<wf cmd="tag" pos="NN">stardom</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">fortune</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">world-renowned</wf>
+<wf cmd="tag" pos="NN">wife</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="NN">age</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="tag" pos="RBS">most</wf>
+<wf cmd="tag" pos="NN">young_men</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="cast" wnsn="2" lexsn="2:40:13::">casting</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="tag" pos="JJ">first</wf>
+<wf cmd="tag" pos="NN">vote</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VB" lemma="proceed" wnsn="1" lexsn="2:32:00::">proceeded</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="neglect" wnsn="3" lexsn="2:31:05::">neglect</wf>
+<wf cmd="ignore" pos="PRP">them</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<punc>.</punc>
+</s>
+<s snum="33">
+<wf cmd="tag" pos="RB">Never</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">quick</wf>
+<wf cmd="tag" pos="NN">study</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="tag" pos="RB">now</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="tag" pos="NN">attempt</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="learn" wnsn="3" lexsn="2:31:03::">learn</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">lines</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">many_a</wf>
+<wf cmd="tag" pos="NN">mile</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="waste" wnsn="2" lexsn="2:34:05::">wasted</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">many_a</wf>
+<wf cmd="tag" pos="NN">scene</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="RB">sometimes</wf>
+<wf cmd="done" pos="VB" lemma="involve" wnsn="1" lexsn="2:42:01::">involving</wf>
+<wf cmd="tag" pos="JJ">as_many</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="JJ">a_thousand</wf>
+<wf cmd="tag" pos="NN">fellow</wf>
+<wf cmd="tag" pos="NNS">thespians</wf>
+<punc>-</punc>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="take" wnsn="16" lexsn="2:32:02::">taken</wf>
+<wf cmd="tag" pos="CD">thirty</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="CD">forty</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="CD">fifty</wf>
+<wf cmd="tag" pos="NNS">times</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="tag" pos="NNP">Miss_Poitrine</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NN">co-star</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">helpmate</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="tag" pos="RB">never</wf>
+<wf cmd="done" pos="VB" lemma="learn" wnsn="3" lexsn="2:31:03::">learned</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">part</wf>
+<punc>.</punc>
+</s>
+<s snum="34">
+<wf cmd="ignore" pos="DT">Each</wf>
+<wf cmd="tag" pos="NN">time</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" ot="idiom">went_up</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">lines</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="tag" pos="NN">patient</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">helpful</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">apologetic</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="indulge" wnsn="2" lexsn="2:34:00::">indulged</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="tag" pos="NNS">outbursts</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">temperament</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">profanity</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">abuse</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="blame" wnsn="1" lexsn="2:32:00::">blaming</wf>
+<wf cmd="tag" pos="NNS">others</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="go" wnsn="4" lexsn="2:30:04::">going</wf>
+<wf cmd="done" pos="VB" ot="notag">into</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">sulks</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJR">more</wf>
+<wf cmd="tag" pos="NNS">occasions</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="care" wnsn="3" lexsn="2:37:00::">care</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="count" wnsn="1" lexsn="2:32:00::">count</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="storm" wnsn="1" lexsn="2:42:00::">storming</wf>
+<wf cmd="ignore" pos="IN">off</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">set</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">rest</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">day</wf>
+<punc>.</punc>
+</s>
+<s snum="35">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NNS">finances</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="RB">never</wf>
+<wf cmd="tag" pos="JJ">privileged</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="know" wnsn="1" lexsn="2:31:01::">know</wf>
+<wf cmd="tag" pos="RB">exactly</wf>
+<wf cmd="ignore" pos="WRB">how</wf>
+<wf cmd="tag" pos="JJ">much</wf>
+<wf cmd="tag" pos="NN">money</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="salt_away" wnsn="1" lexsn="2:40:00::">salted_away</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="36">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VB" lemma="pay" wnsn="1" lexsn="2:40:00::">paid</wf>
+<wf cmd="done" pos="VB" ot="notag">for</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="JJ">little</wf>
+<wf cmd="tag" pos="NN">home</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">food</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">liquor</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">servants</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NNS">bills</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">tailor</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">Los_Angeles</wf>
+<wf cmd="tag" pos="NNP">Athletic_Club</wf>
+<punc>.</punc>
+</s>
+<s snum="37">
+<wf cmd="tag" pos="RB">Never</wf>
+<wf cmd="tag" pos="RB">once</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="buy" wnsn="1" lexsn="2:40:00::">buy</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">single</wf>
+<wf cmd="tag" pos="NN">gift</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="JJ">third</wf>
+<wf cmd="tag" pos="NN">anniversary</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="1" lexsn="2:40:03::">gave</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">dislocated</wf>
+<wf cmd="tag" pos="NN">jaw</wf>
+<punc>.</punc>
+</s>
+<s snum="38">
+<punc>(</punc>
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="tag" pos="RB">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">another</wf>
+<wf cmd="tag" pos="NN">story</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+<s snum="39">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="JJ">private</wf>
+<wf cmd="tag" pos="NNS">monies</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="tag" pos="RB">rapidly</wf>
+<wf cmd="done" pos="VB" lemma="dissipate" wnsn="3" lexsn="2:34:00::">dissipated</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">drinking</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">gaming</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">carousing</wf>
+<punc>.</punc>
+</s>
+<s snum="40">
+<wf cmd="tag" pos="RB">More_than</wf>
+<wf cmd="tag" pos="RB">once</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="confront" wnsn="1" lexsn="2:33:00::">confronted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="tag" pos="JJ">professional</wf>
+<wf cmd="tag" pos="NNS">gamblers</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">bookies</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">loan</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">sharks</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="NNS">gangsters</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">thugs</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">finger</wf>
+<wf cmd="tag" pos="NNS">men</wf>
+<punc>''</punc>
+<punc>-</punc>
+<wf cmd="tag" pos="NNS">people</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">class</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" pos="VB" lemma="know" wnsn="1" lexsn="2:31:01::">know</wf>
+<wf cmd="done" pos="VB" lemma="exist" wnsn="1" lexsn="2:42:00::">existed</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="repay" wnsn="2" lexsn="2:40:01::">repay</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">husband</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="JJ">staggering</wf>
+<wf cmd="tag" pos="NNS">losses</wf>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="RB">or_else</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="41">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="shudder" wnsn="2" lexsn="2:38:00::">shuddered</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="think" wnsn="5" lexsn="2:36:00::">think</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="tag" pos="NN">someone</wf>
+<wf cmd="tag" pos="RB">so</wf>
+<wf cmd="tag" pos="JJ">dear</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="done" pos="VB" lemma="associate" wnsn="2" lexsn="2:41:02::">associate</wf>
+<wf cmd="done" pos="VB" ot="notag">with</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">sinister</wf>
+<wf cmd="tag" pos="NN">milieu</wf>
+<punc>.</punc>
+</s>
+<s snum="42">
+<wf cmd="ignore" pos="CC">And</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="JJ">different</wf>
+<wf cmd="tag" pos="NNS">times</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="JJ">turbulent</wf>
+<wf cmd="tag" pos="NN">marriage</wf>
+<wf cmd="tag" pos="JJ">strange</wf>
+<wf cmd="tag" pos="NNS">girls</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJS">commonest</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNS">accents</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="telephone" wnsn="1" lexsn="2:32:00::">telephoned</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="announce" wnsn="1" lexsn="2:32:00::">announce</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="sire" wnsn="1" lexsn="2:29:00::">sired</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="tag" pos="JJ">unborn</wf>
+<wf cmd="tag" pos="NNS">children</wf>
+<punc>!</punc>
+</s>
+<s snum="43">
+<wf cmd="done" pos="VB" lemma="have" wnsn="2" lexsn="2:42:00::">Having</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJS">deepest</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">maternal</wf>
+<wf cmd="tag" pos="NNS">instincts</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">heart</wf>
+<wf cmd="tag" pos="RB">fairly</wf>
+<wf cmd="done" pos="VB" lemma="bleed" wnsn="1" lexsn="2:29:00::">bled</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="think_of" wnsn="4" lexsn="2:31:02::">thought_of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">darling</wf>
+<wf cmd="tag" pos="JJ">pink</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">white</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">bundles</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">heaven</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" ot="notag">have</wf>
+<wf cmd="tag" pos="RB">proudly</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="1" lexsn="2:40:03::">given</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">husband</wf>
+<punc>.</punc>
+</s>
+<s snum="44">
+<punc>``</punc>
+<wf cmd="ignore" pos="UH">Ah</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" rdf="are" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">'re</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">old</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="tag" pos="RB">invariably</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="JJ">ungallant</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">untrue</wf>
+<wf cmd="tag" pos="NN">retort</wf>
+<wf cmd="ignore" pos="WRB">whenever</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="suggest" wnsn="1" lexsn="2:32:00::">suggested</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="start" wnsn="5" lexsn="2:36:00::">starting</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">family</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="45">
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="2" lexsn="2:30:00::">made</wf>
+<wf cmd="done" pos="VB" ot="notag">it</wf>
+<wf cmd="tag" pos="RB">abundantly</wf>
+<wf cmd="tag" pos="JJ">clear</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="care_for" wnsn="1" lexsn="2:37:01::">care_for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">company</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">own</wf>
+<wf cmd="tag" pos="JJ">precious</wf>
+<wf cmd="tag" pos="NN">daughter</wf>
+<punc>.</punc>
+</s>
+<s snum="46">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="tag" pos="RB">now</wf>
+<wf cmd="done" pos="VB" lemma="feel" wnsn="2" lexsn="2:31:00::">felt</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="tag" pos="JJ">wiser_to</wf>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="9" lexsn="2:42:01::">keep</wf>
+<wf cmd="tag" pos="NNP">Baby-dear</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">school</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">summers</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">camp</wf>
+<wf cmd="done" pos="VB" lemma="run" wnsn="4" lexsn="2:41:02::">run</wf>
+<wf cmd="done" pos="VB" ot="notag">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">Society_of_Friends</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="NN">year</wf>
+<wf cmd="tag" pos="RB">around</wf>
+<punc>.</punc>
+</s>
+<s snum="47">
+<wf cmd="ignore" pos="PRP$">Her</wf>
+<wf cmd="tag" pos="NN">presence</wf>
+<wf cmd="tag" pos="RB">only</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="2" lexsn="2:30:00::">made</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="tag" pos="RBR">more</wf>
+<wf cmd="tag" pos="JJ">distant</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">irritable</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">hurry</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="VB" lemma="buy" wnsn="1" lexsn="2:40:00::">buying</wf>
+<wf cmd="tag" pos="NNP">Chateau_Belletch</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="neglect" wnsn="2" lexsn="2:41:00::">neglected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="consider" wnsn="3" lexsn="2:31:01::">consider</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">room</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNP">Baby-dear</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">so</wf>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="tag" pos="NN">place</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">put</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">anyhow</wf>
+<punc>.</punc>
+</s>
+<s snum="48">
+<punc>(</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="tag" pos="RB">sometimes</wf>
+<wf cmd="done" pos="VB" lemma="feel" wnsn="2" lexsn="2:31:00::">feel</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="tag" pos="NNP">God</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">His</wf>
+<wf cmd="tag" pos="JJ">infinite</wf>
+<wf cmd="tag" pos="NN">wisdom</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="want" wnsn="1" lexsn="2:37:00::">wants</wf>
+<wf cmd="ignore" pos="PRP">us</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="3" lexsn="2:39:06::">have</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="tag" pos="JJ">inexplicable</wf>
+<wf cmd="tag" pos="JJ">little</wf>
+<wf cmd="tag" pos="NNS">lapses</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">memory</wf>
+<punc>.</punc>
+</s>
+<s snum="49">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="tag" pos="RB">almost</wf>
+<wf cmd="tag" pos="RB">always</wf>
+<wf cmd="done" pos="VB" lemma="work_out" wnsn="2" lexsn="2:42:00::">works_out</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJS">best</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+</p>
+<p pnum="6">
+<s snum="50">
+<wf cmd="tag" pos="RB">Yet</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="adore" wnsn="1" lexsn="2:37:00::">adored</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="tag" pos="NN">man</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Letch_Feeley</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">why</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">cannot</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="3" lexsn="2:32:03::">say</wf>
+<punc>.</punc>
+</s>
+<s snum="51">
+<wf cmd="ignore" pos="IN">With</wf>
+<wf cmd="tag" pos="JJ">faint</wf>
+<wf cmd="tag" pos="NN">heart</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">brave</wf>
+<wf cmd="tag" pos="NN">smile</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="endure" wnsn="1" lexsn="2:31:00::">endured</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="tag" pos="NNS">absences</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NNP">Chateau_Belletch</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">coldness</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">indifference</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NNS">slights</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">abuse</wf>
+<punc>.</punc>
+</s>
+<s snum="52">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NNS">times</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" lemma="recall" wnsn="1" lexsn="2:31:00::">recall</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="tag" pos="RB">publicly</wf>
+<wf cmd="done" pos="VB" lemma="humiliate" wnsn="1" lexsn="2:37:00::">humiliated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="JJ">lovely</wf>
+<wf cmd="tag" pos="NN">dinner_parties</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="NNP">Trianon</wf>
+<wf cmd="tag" pos="NN">Suite</wf>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">collation</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="postpone" wnsn="1" lexsn="2:42:00::">postponed</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="postpone" wnsn="1" lexsn="2:42:00::">postponed</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="postpone" wnsn="1" lexsn="2:42:00::">postponed</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">only</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="serve" wnsn="6" lexsn="2:34:00::">served</wf>
+<wf cmd="tag" pos="JJ">dry</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">overcooked</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">table</wf>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">host</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NN">chair</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">vacant</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">splash</wf>
+<wf cmd="tag" pos="NN">party</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">new</wf>
+<wf cmd="tag" pos="NN">pool</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="5" lexsn="2:30:00::">had</wf>
+<wf cmd="done" pos="VB" lemma="build" wnsn="1" lexsn="2:36:00::">built</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">hope</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" rdf="keep_away" pos="VB" lemma="keep_away" wnsn="1" lexsn="2:41:00::">keeping</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="tag" pos="RB">away</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="JJ">public</wf>
+<wf cmd="tag" pos="NNS">beaches</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">certain</wf>
+<wf cmd="tag" pos="NNP">Aquacutie</wf>
+<wf cmd="done" pos="VB" lemma="stay" wnsn="1" lexsn="2:30:00::">stayed</wf>
+<wf cmd="tag" pos="JJ">underwater</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJR">better</wf>
+<wf cmd="tag" pos="NN">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="NN">hour</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">lovely</wf>
+<wf cmd="tag" pos="NNP">Epiphany</wf>
+<wf cmd="tag" pos="NN">party</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="NNP">Errol_Flynn</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">on_which</wf>
+<wf cmd="tag" pos="JJ">sacred</wf>
+<wf cmd="tag" pos="NN">occasion</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VB" lemma="steal_away" wnsn="1" lexsn="2:38:00::">stole_away</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="JJ">unknown</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">starlet</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="leave" wnsn="2" lexsn="2:31:05::">leaving</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">high</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">dry</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="get" wnsn="5" lexsn="2:38:00::">get</wf>
+<wf cmd="tag" pos="RB">home</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="JJS">best</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<punc>.</punc>
+</s>
+<s snum="53">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">sampling</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">insults</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="endure" wnsn="4" lexsn="2:39:00::">endured</wf>
+<punc>.</punc>
+</s>
+<s snum="54">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="tag" pos="NNP">Mrs._Letch_Feeley</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="tag" pos="NN">wonder</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">once</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">social</wf>
+<wf cmd="tag" pos="NN">arbiter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNP">Filmdom</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="exclude" wnsn="2" lexsn="2:41:00::">excluded</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">smart</wf>
+<wf cmd="tag" pos="NNS">entertainments</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="6" lexsn="2:36:02::">given</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Astaires</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Coopers</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Gables</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Colmans</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Rathbones</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Taylors</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Thalbergs</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">such</wf>
+<wf cmd="tag" pos="JJ">devout</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">closely_knit</wf>
+<wf cmd="tag" pos="NNS">families</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Barrymores</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNPS">Crosbys</wf>
+<punc>?</punc>
+</s>
+<s snum="55">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="JJ">antisocial</wf>
+<wf cmd="tag" pos="NN">conduct</wf>
+<wf cmd="done" pos="VB" lemma="increase" wnsn="1" lexsn="2:30:00::">increased</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="NNS">invitations</wf>
+<wf cmd="done" pos="VB" lemma="decrease" wnsn="1" lexsn="2:30:00::">decreased</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">heart</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">was</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">mouth</wf>
+<wf cmd="ignore" pos="WRB">whenever</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="8" lexsn="2:29:01::">played</wf>
+<wf cmd="tag" pos="NN">hostess</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">fashionable</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">screenland</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NN">gathering</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="7">
+<s snum="56">
+<wf cmd="ignore" pos="IN">Between</wf>
+<wf cmd="tag" pos="CD">1935</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="CD">1939</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="6" lexsn="2:36:01::">made</wf>
+<wf cmd="tag" pos="CD">ten</wf>
+<wf cmd="tag" pos="NNS">films</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">each</wf>
+<wf cmd="tag" pos="RBR">less</wf>
+<wf cmd="tag" pos="JJ">successful</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">both</wf>
+<wf cmd="tag" pos="RB">artistically</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">commercially</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>.</punc>
+</s>
+<s snum="57">
+<wf cmd="ignore" pos="PRP$">Our</wf>
+<wf cmd="tag" pos="JJ">last</wf>
+<wf cmd="tag" pos="NN">joint_venture</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Sainted_Lady</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="RB">deeply</wf>
+<wf cmd="tag" pos="JJ">religious</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="done" pos="VB" lemma="base" wnsn="1" lexsn="2:31:00::">based</wf>
+<wf cmd="tag" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">life</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNP">Mother_Cabrini</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="time" wnsn="2" lexsn="2:31:00::">timed</wf>
+<wf cmd="tag" pos="RB">so_that</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="tag" pos="NN">release</wf>
+<wf cmd="tag" pos="NN">date</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="coincide" wnsn="2" lexsn="2:30:00::">coincide</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">beatification</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNP">America</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="JJ">first</wf>
+<wf cmd="tag" pos="NN">saint</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NNP">November</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="CD">1938</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">fiasco</wf>
+<wf cmd="tag" pos="RB">from_start_to_finish</wf>
+<punc>.</punc>
+</s>
+<s snum="58">
+<wf cmd="ignore" pos="IN">As</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="4" lexsn="2:36:02::">playing</wf>
+<wf cmd="tag" pos="NNP">Mother_Cabrini</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">picture</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="RB">actually</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="NN">mine</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="RB">nearly</wf>
+<wf cmd="ignore" pos="DT">every</wf>
+<wf cmd="tag" pos="NN">scene</wf>
+<wf cmd="done" pos="VB" lemma="build" wnsn="1" lexsn="2:36:00::">built</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>.</punc>
+</s>
+<s snum="59">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="tag" pos="RB">in_order_to</wf>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="1" lexsn="2:42:00::">keep</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="tag" pos="JJ">in_the_public_eye</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">out</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">trouble</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="write" wnsn="1" lexsn="2:36:00::">wrote</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">part</wf>
+<wf cmd="tag" pos="RB">especially</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP">him</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">dashing</wf>
+<wf cmd="tag" pos="NN">ruffian</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="see" wnsn="1" lexsn="2:39:00::">sees</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">light</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="save" wnsn="1" lexsn="2:41:01::">saved</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">inspiring</wf>
+<wf cmd="tag" pos="NN">example</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNP">Mother_Cabrini</wf>
+<punc>.</punc>
+</s>
+<s snum="60">
+<wf cmd="ignore" pos="CC">And</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="appreciate" wnsn="1" lexsn="2:37:00::">appreciate</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NNS">efforts</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">behalf</wf>
+<punc>?</punc>
+</s>
+<s snum="61">
+<wf cmd="done" pos="VBD" ot="notag">Did</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="trouble" wnsn="4" lexsn="2:41:01::">trouble</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="memorize" wnsn="1" lexsn="2:31:00::">memorize</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="RB">very</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="tag" pos="NN">part</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="5" lexsn="2:30:00::">had</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">tailor-made</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NNS">specifications</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">role</wf>
+<wf cmd="tag" pos="RB">eventually</wf>
+<wf cmd="tag" pos="JJ">cut_down</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="JJ">short</wf>
+<wf cmd="tag" pos="NNS">speeches</wf>
+<punc>?</punc>
+</s>
+<s snum="62">
+<wf cmd="done" pos="VBD" ot="notag">Did</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="4" lexsn="2:39:00::">show</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">rest</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">cast</wf>
+<punc>-</punc>
+<wf cmd="done" pos="VB" lemma="number" wnsn="1" lexsn="2:42:00::">numbering</wf>
+<wf cmd="tag" pos="CD">four</wf>
+<wf cmd="tag" pos="CD">thousand</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">consideration</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="VB" lemma="arrive_at" wnsn="1" lexsn="2:38:00::">arriving_at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<wf cmd="tag" pos="RB">punctually</wf>
+<punc>-</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="tag" pos="RB">at_all</wf>
+<punc>?</punc>
+</s>
+<s snum="63">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<punc>!</punc>
+</s>
+<s snum="64">
+<wf cmd="ignore" pos="DT">The</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">shooting</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VB" lemma="go_on" wnsn="1" lexsn="2:42:00::">went_on</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="CD">eight</wf>
+<wf cmd="tag" pos="NNS">months</wf>
+<punc>!</punc>
+</s>
+<s snum="65">
+<wf cmd="tag" pos="JJ">Most_of</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="NN">working_days</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="spend" wnsn="1" lexsn="2:42:00::">spent</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">telephone</wf>
+<wf cmd="done" pos="VB" lemma="call" wnsn="3" lexsn="2:32:01::">calling</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">bookies</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">illegal</wf>
+<wf cmd="tag" pos="NN">gambling_dens</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">certain</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">residential</wf>
+<wf cmd="tag" pos="NN">club</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">young_actresses</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">more_than</wf>
+<wf cmd="tag" pos="JJ">a_hundred</wf>
+<wf cmd="tag" pos="JJ">different</wf>
+<wf cmd="tag" pos="NNS">bars</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">steam_room</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">athletic</wf>
+<wf cmd="tag" pos="NN">club</wf>
+<punc>.</punc>
+</s>
+<s snum="66">
+<wf cmd="ignore" pos="WRB">Whenever</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="deign" wnsn="1" lexsn="2:41:00::">deigned</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="appear" wnsn="2" lexsn="2:30:00::">appear</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="JJ">hung_over</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">uncooperative</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">rude</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">insulting</wf>
+<punc>.</punc>
+</s>
+<s snum="67">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="tag" pos="JJ">many</wf>
+<wf cmd="tag" pos="JJ">tasteless</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">irreverent</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">unfunny</wf>
+<wf cmd="tag" pos="NNS">remarks</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">not_only</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">title_role</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="tag" pos="NN">religion</wf>
+<wf cmd="tag" pos="RB">in_general</wf>
+<punc>.</punc>
+</s>
+<s snum="68">
+<wf cmd="ignore" pos="IN">By</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">time</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="release" wnsn="4" lexsn="2:32:00::">released</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="CD">million</wf>
+<wf cmd="tag" pos="NNS">dollars</wf>
+<wf cmd="tag" pos="JJ">over-spent</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">war</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">imminent</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">public</wf>
+<wf cmd="tag" pos="RB">apparently</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="forget" wnsn="1" lexsn="2:31:01::">forgotten</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="tag" pos="NNP">Mother_Cabrini</wf>
+<punc>.</punc>
+</s>
+<s snum="69">
+<wf cmd="tag" pos="NNS">Thanks</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NNP">Letch_Feeley</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">terrible</wf>
+<wf cmd="tag" pos="NN">strain</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="impose" wnsn="2" lexsn="2:32:00::">imposed</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">notices</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="tag" pos="JJ">few</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">unfavorable</wf>
+<punc>.</punc>
+</s>
+<s snum="70">
+<wf cmd="tag" pos="RB">Only</wf>
+<wf cmd="tag" pos="NNP">George_Santayana</wf>
+<wf cmd="done" pos="VB" lemma="seem" wnsn="1" lexsn="2:39:00::">seemed</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="understand" wnsn="2" lexsn="2:31:01::">understand</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="appreciate" wnsn="3" lexsn="2:40:00::">appreciate</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="ignore" pos="PRP">he</wf>
+<wf cmd="done" pos="VB" lemma="write" wnsn="2" lexsn="2:32:00::">wrote</wf>
+<punc>:</punc>
+<punc>``</punc>
+<wf cmd="tag" pos="NNP">Miss_Poitrine</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="perpetrate" wnsn="1" lexsn="2:41:00::">perpetrated</wf>
+<wf cmd="tag" pos="RB">the_most</wf>
+<wf cmd="tag" pos="JJ">eloquent</wf>
+<wf cmd="tag" pos="NN">argument</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Protestant</wf>
+<wf cmd="tag" pos="NN">faith</wf>
+<wf cmd="tag" pos="RB">yet</wf>
+<wf cmd="done" pos="VB" lemma="unleash" wnsn="3" lexsn="2:35:02::">unleashed</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="tag" pos="NNP">Hollywood</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="71">
+<wf cmd="ignore" pos="CC">But</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="tag" pos="NN">consolation</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="8">
+<s snum="72">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">rare</wf>
+<wf cmd="tag" pos="NN">fit</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">anger</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">spite</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="farm_out" wnsn="1" lexsn="2:41:00::">farmed_out</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">own</wf>
+<wf cmd="tag" pos="NN">husband</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RBS">most</wf>
+<wf cmd="tag" pos="JJ">undistinguished</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="6" lexsn="2:36:01::">make</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">picture</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">form</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">punishment</wf>
+<punc>.</punc>
+</s>
+<s snum="73">
+<punc>(</punc>
+<wf cmd="ignore" pos="DT">An</wf>
+<wf cmd="tag" pos="NN">actor</wf>
+<wf cmd="ignore" pos="MD">must</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="2" lexsn="2:42:00::">have</wf>
+<wf cmd="tag" pos="NN">discipline</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+<s snum="74">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="call" wnsn="1" lexsn="2:32:02::">called</wf>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NNP">Diet</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNPS">Worms</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="feel" wnsn="2" lexsn="2:31:00::">felt</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="RB">just</wf>
+<wf cmd="ignore" pos="WP">what</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VB" lemma="deserve" wnsn="1" lexsn="2:42:00::">deserved</wf>
+<punc>.</punc>
+</s>
+<s snum="75">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="turn_out" wnsn="4" lexsn="2:42:02::">turned_out</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">life</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">Martin_Luther</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="NNS">things</wf>
+<punc>!</punc>
+</s>
+<s snum="76">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">disaster</wf>
+<punc>!</punc>
+</s>
+<s snum="77">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="tag" pos="NNS">clothes</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="tag" pos="RB">simply</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="project" wnsn="1" lexsn="2:32:00::">project</wf>
+<punc>.</punc>
+</s>
+<s snum="78">
+<wf cmd="ignore" pos="PRP">He</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="laugh_off" wnsn="1" lexsn="2:32:00::">laughed_off</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">screen</wf>
+<punc>.</punc>
+</s>
+<s snum="79">
+<wf cmd="tag" pos="RB">At_the_same_time</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">however</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="avail" wnsn="1" lexsn="2:34:00::">availed</wf>
+<wf cmd="ignore" pos="PRP">myself</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNS">services</wf>
+<wf cmd="tag" pos="RB">of_that</wf>
+<wf cmd="tag" pos="JJ">great</wf>
+<wf cmd="tag" pos="NNP">English</wf>
+<wf cmd="tag" pos="NN">actor</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">master</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">make-up</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Sir_Gauntley_Pratt</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="2" lexsn="2:36:01::">do</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">quickie</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">called</wf>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NN">Mystery</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NNP">Mad_Marquess</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">in_which</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="play" wnsn="4" lexsn="2:36:02::">played</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">young</wf>
+<wf cmd="tag" pos="NNP">American</wf>
+<wf cmd="tag" pos="NN">girl</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VB" lemma="inherit" wnsn="1" lexsn="2:40:00::">inherits</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">haunted</wf>
+<wf cmd="tag" pos="NN">castle</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">the_English</wf>
+<wf cmd="tag" pos="NNS">moors</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="fill" wnsn="3" lexsn="2:42:00::">filled</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="JJ">secret</wf>
+<wf cmd="tag" pos="NNS">passages</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">sliding</wf>
+<wf cmd="tag" pos="NNS">panels</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">unbeknownst</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">anyone</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="tag" pos="RB">still</wf>
+<wf cmd="done" pos="VB" lemma="occupy" wnsn="2" lexsn="2:42:00::">occupied</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="JJ">eccentric</wf>
+<wf cmd="tag" pos="NN">maniac</wf>
+<punc>.</punc>
+</s>
+<s snum="80">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">potboiler</wf>
+<punc>''</punc>
+<wf cmd="done" pos="VB" lemma="make" wnsn="6" lexsn="2:36:01::">made</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">shoestring</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="RB">sort_of</wf>
+<wf cmd="tag" pos="NN">film</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="like" wnsn="2" lexsn="2:37:05::">like</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="0" lexsn="2:42:05::">had</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="done" pos="VB" lemma="look" wnsn="3" lexsn="2:29:00::">look</wf>
+<wf cmd="tag" pos="JJ">blank</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="scream" wnsn="1" lexsn="2:32:01::">scream</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">great_deal</wf>
+<punc>.</punc>
+</s>
+<s snum="81">
+<wf cmd="ignore" pos="PRP$">My</wf>
+<wf cmd="tag" pos="NN">heart</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">was</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">oddly_enough</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="remain" wnsn="1" lexsn="2:30:00::">remains</wf>
+<wf cmd="tag" pos="RB">the_most</wf>
+<wf cmd="tag" pos="RB">financially</wf>
+<wf cmd="tag" pos="JJ">successful</wf>
+<wf cmd="tag" pos="NN">picture</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NN">career</wf>
+<punc>.</punc>
+</s>
+<s snum="82">
+<punc>(</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="watch" wnsn="3" lexsn="2:39:05::">watched</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">television</wf>
+<wf cmd="tag" pos="JJ">late</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">night</wf>
+<wf cmd="tag" pos="JJ">last</wf>
+<wf cmd="tag" pos="NN">week</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>``</punc>
+<wf cmd="done" pos="VB" lemma="stand_up" wnsn="2" lexsn="2:33:00::">stands_up</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="RB">remarkably</wf>
+<wf cmd="tag" pos="RB">well</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="tag" pos="CD">twenty</wf>
+<wf cmd="tag" pos="NNS">years</wf>
+<wf cmd="tag" pos="RB">later</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+</p>
+<p pnum="9">
+<s snum="83">
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="done" pos="VB" lemma="return" wnsn="1" lexsn="2:38:00::">returned</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="NN">debacle</wf>
+<wf cmd="tag" pos="JJ">unrepentant</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RBR">more</wf>
+<wf cmd="tag" pos="JJ">badly_behaved</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="tag" pos="RB">before</wf>
+<punc>.</punc>
+</s>
+<s snum="84">
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="tag" pos="RB">really</wf>
+<wf cmd="done" pos="VB" lemma="love" wnsn="3" lexsn="2:37:01::">loved</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="tag" pos="NN">boy</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">feverish</wf>
+<wf cmd="tag" pos="NN">attempt</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="preserve" wnsn="2" lexsn="2:40:00::">preserve</wf>
+<wf cmd="ignore" pos="PRP$">our</wf>
+<wf cmd="tag" pos="NN">marriage</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="try" wnsn="1" lexsn="2:41:00::">try</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="revive" wnsn="1" lexsn="2:29:01::">revive</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">wonderful</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">wonderful</wf>
+<wf cmd="tag" pos="NN">person</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="done" pos="VBD" ot="notag">had</wf>
+<wf cmd="tag" pos="RB">once</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">been</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="take" wnsn="7" lexsn="2:38:10::">took</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="NNS">troubles</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NNP">Momma</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="hope" wnsn="2" lexsn="2:37:00::">hoping</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP$">her</wf>
+<wf cmd="tag" pos="JJ">earthy</wf>
+<wf cmd="tag" pos="NN">advice</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="help" wnsn="2" lexsn="2:29:00::">help</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="10">
+<s snum="85">
+<punc>``</punc>
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="tag" pos="RB">only</wf>
+<wf cmd="done" pos="VB" lemma="think_of" wnsn="5" lexsn="2:36:00::">think_of</wf>
+<wf cmd="tag" pos="NN">something</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">near</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="absorb" wnsn="4" lexsn="2:35:00::">absorb</wf>
+<wf cmd="ignore" pos="PRP$">his</wf>
+<wf cmd="tag" pos="JJ">boundless</wf>
+<wf cmd="tag" pos="NN">energy</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>.</punc>
+</s>
+<s snum="86">
+<punc>``</punc>
+<wf cmd="ignore" pos="WP">What</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="NNP">Letch</wf>
+<wf cmd="tag" pos="JJ">interested</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<punc>''</punc>
+<punc>?</punc>
+</s>
+</p>
+<p pnum="11">
+<s snum="87">
+<punc>``</punc>
+<wf cmd="tag" pos="NNS">Bookies</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">booze</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">babes</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="tag" pos="NNP">Momma</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<wf cmd="tag" pos="RB">bluntly</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="12">
+<s snum="88">
+<wf cmd="ignore" pos="PRP$">Her</wf>
+<wf cmd="tag" pos="NN">reply</wf>
+<wf cmd="done" pos="VB" lemma="sting" wnsn="1" lexsn="2:39:02::">stung</wf>
+<wf cmd="ignore" pos="PRP">me</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">important</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="let" wnsn="1" lexsn="2:41:00::">let</wf>
+<wf cmd="ignore" pos="PRP$">my</wf>
+<wf cmd="tag" pos="JJ">hurt</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">make</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="tag" pos="NN">difference</wf>
+<punc>.</punc>
+</s>
+<s snum="89">
+<punc>``</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="tag" pos="RB">n't</wf>
+<wf cmd="done" rdf="turn_into" pos="VB" lemma="turn_into" wnsn="0" lexsn="2:42:00::">turn</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">gambling_hell</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">saloon</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">I</wf>
+<wf cmd="done" pos="VB" lemma="say" wnsn="1" lexsn="2:32:00::">said</wf>
+<punc>.</punc>
+</s>
+</p>
+</context>
+</contextfile>

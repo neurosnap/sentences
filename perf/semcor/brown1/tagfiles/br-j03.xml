@@ -1,0 +1,2388 @@
+<contextfile concordance="brown">
+<context filename="br-j03" paras="yes">
+<p pnum="1">
+<s snum="1">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="NN" lemma="band" wnsn="6" lexsn="1:10:00::">band</wf>
+<wf cmd="done" pos="NN" lemma="viscometer" wnsn="1" lexsn="1:06:00::">viscometer</wf>
+<wf cmd="done" pos="VB" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="1" lexsn="2:39:02::">shown</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="figure" wnsn="1" lexsn="1:10:00::">Figure</wf>
+<wf cmd="done" pos="JJ" lemma="2" wnsn="1" lexsn="5:00:00:cardinal:00">2</wf>
+<punc>.</punc>
+</s>
+<s snum="2">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="consist_of" wnsn="0" lexsn="2:42:00::">consists_of</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="flat" wnsn="1" lexsn="5:00:00:even:01">flat</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="1" lexsn="1:06:00::">surfaces</wf>
+<wf cmd="done" pos="VB" lemma="hold" wnsn="1" lexsn="2:42:00::">held</wf>
+<wf cmd="done" pos="RB" lemma="apart" wnsn="1" lexsn="4:02:03::">apart</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="shim" wnsn="1" lexsn="1:06:00::">shims</wf>
+<punc>.</punc>
+</s>
+<s snum="3">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="small" wnsn="1" lexsn="3:00:00::">small</wf>
+<wf cmd="done" pos="NN" lemma="well" wnsn="2" lexsn="1:06:03::">well</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="top" wnsn="2" lexsn="1:15:00::">top</wf>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="RB" ot="notag">which</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="paste" wnsn="1" lexsn="1:27:01::">paste</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="test" wnsn="1" lexsn="2:41:00::">tested</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">placed</wf>
+<punc>.</punc>
+</s>
+<s snum="4">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="cellulose_acetate" wnsn="1" lexsn="1:27:00::">cellulose_acetate</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="1" lexsn="2:35:00::">pulled</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="1" lexsn="2:35:00::">pulls</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="paste" wnsn="1" lexsn="1:27:01::">paste</wf>
+<wf cmd="done" pos="RB" ot="notag">with</wf>
+<wf cmd="done" pos="RB" ot="notag">it</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="parallel" wnsn="1" lexsn="3:00:00::">parallel</wf>
+<wf cmd="done" pos="NN" lemma="face" wnsn="4" lexsn="1:06:02::">faces</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<punc>.</punc>
+</s>
+<s snum="5">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="use" wnsn="1" lexsn="1:04:00::">use</wf>
+<wf cmd="done" pos="NN" lemma="weight" wnsn="4" lexsn="1:06:00::">weights</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="hang_on" wnsn="1" lexsn="2:35:00::">hung_on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="end" wnsn="1" lexsn="1:15:00::">end</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="allow" wnsn="2" lexsn="2:32:00::">allowed</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="1" lexsn="2:35:00::">pull</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="done" pos="JJ" ot="notag">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="test" wnsn="1" lexsn="2:41:00::">tested</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<punc>.</punc>
+</s>
+<s snum="6">
+<wf cmd="ignore" pos="IN">After</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reached</wf>
+<wf cmd="done" pos="NN" lemma="terminal_velocity" wnsn="1" lexsn="1:28:00::">terminal_velocity</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="2" lexsn="1:28:05::">time</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="travel" wnsn="1" lexsn="2:38:00::">travel</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="known" wnsn="1" lexsn="3:00:00::">known</wf>
+<wf cmd="done" pos="NN" lemma="distance" wnsn="1" lexsn="1:07:00::">distance</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="record" wnsn="1" lexsn="2:32:00::">recorded</wf>
+<punc>.</punc>
+</s>
+<s snum="7">
+<wf cmd="ignore" pos="IN">By</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="use" wnsn="1" lexsn="1:04:00::">use</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="various" wnsn="1" lexsn="5:00:02:different:00">various</wf>
+<wf cmd="done" pos="NN" lemma="weight" wnsn="4" lexsn="1:06:00::">weights</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">force</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="graph" wnsn="1" lexsn="1:10:00::">graph</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<punc>.</punc>
+</s>
+<s snum="8">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="instrument" wnsn="1" lexsn="1:06:00::">instrument</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="work" wnsn="1" lexsn="1:04:00::">work</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="slight" wnsn="0" lexsn="5:00:00:little(a):03">slight</wf>
+<wf cmd="done" pos="NN" lemma="modification" wnsn="2" lexsn="1:06:00::">modification</wf>
+<wf cmd="done" pos="RB" ot="notag">of</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="done" pos="RB" lemma="previously" wnsn="1" lexsn="4:02:00::">previously</wf>
+<wf cmd="done" pos="VB" lemma="describe" wnsn="2" lexsn="2:32:01::">described</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="2">
+<s snum="9">
+<wf cmd="done" pos="RB" ot="notag">In</wf>
+<wf cmd="done" pos="RB" ot="notag">this</wf>
+<wf cmd="done" pos="NN" lemma="test" wnsn="1" lexsn="1:09:02::">test</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="1" lexsn="2:35:00::">pulled</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="motor" wnsn="1" lexsn="1:06:00::">motor</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="pulley" wnsn="1" lexsn="1:06:00::">pulley</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="clearance" wnsn="1" lexsn="1:07:00::">clearance</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="CD" ot="notag">0.002</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">each</wf>
+<wf cmd="done" pos="NN" lemma="side" wnsn="4" lexsn="1:15:00::">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<punc>.</punc>
+</s>
+<s snum="10">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">gives</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>.</punc>
+</s>
+<s snum="11">
+<wf cmd="ignore" pos="DT">This</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="however" wnsn="1" lexsn="4:02:00::">however</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="consider" wnsn="1" lexsn="2:31:00::">considered</wf>
+<wf cmd="done" pos="JJ" lemma="approximate" wnsn="1" lexsn="5:00:00:inexact:00">approximate</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pulley" wnsn="1" lexsn="1:06:00::">pulley</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="increase" wnsn="1" lexsn="2:30:00::">increased</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="buildup" wnsn="1" lexsn="1:04:00::">build-up</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="RB" lemma="occasionally" wnsn="1" lexsn="4:02:00::">occasionally</wf>
+<wf cmd="done" pos="VB" lemma="remove" wnsn="1" lexsn="2:30:00::">removed</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pulley" wnsn="1" lexsn="1:06:00::">pulley</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="run" wnsn="2" lexsn="1:04:06::">runs</wf>
+<punc>.</punc>
+</s>
+<s snum="12">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="face" wnsn="4" lexsn="1:06:02::">face</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">block</wf>
+<wf cmd="done" pos="VB" lemma="contain" wnsn="1" lexsn="2:42:00::">contained</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="hole" wnsn="4" lexsn="1:25:00::">hole</wf>
+<wf cmd="done" pos="JJ" lemma="1" wnsn="1" lexsn="5:00:00:cardinal:00">1</wf>
+<wf cmd="done" pos="JJ" lemma="16" wnsn="1" lexsn="5:00:00:cardinal:00">16</wf>
+<punc>''</punc>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="NN" lemma="diameter" wnsn="1" lexsn="1:07:00::">diameter</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="lead" wnsn="6" lexsn="2:42:00::">led</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">measurement</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="3">
+<s snum="13">
+<wf cmd="ignore" pos="IN">Although</wf>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">were</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<wf cmd="done" pos="JJ" lemma="four" wnsn="1" lexsn="5:00:00:cardinal:00">four</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="done" pos="VB" lemma="test" wnsn="1" lexsn="2:41:00::">tested</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="JJ" lemma="apparent" wnsn="1" lexsn="5:00:00:obvious:00">apparent</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">were</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="JJ" lemma="distinct" wnsn="1" lexsn="5:00:00:different:00">distinct</wf>
+<wf cmd="done" pos="NN" lemma="type" wnsn="1" lexsn="1:09:00::">types</wf>
+<punc>.</punc>
+</s>
+<s snum="14">
+<wf cmd="done" pos="NN" lemma="two" wnsn="1" lexsn="1:23:00::">Two</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="4" lexsn="2:39:00::">showed</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="high" wnsn="1" lexsn="3:00:02::">high</wf>
+<wf cmd="done" pos="JJ" lemma="positive" wnsn="1" lexsn="3:00:01::">positive</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" pos="VB" lemma="undergo" wnsn="0" lexsn="2:39:00::">undergoing</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="4" lexsn="2:39:00::">showed</wf>
+<wf cmd="done" pos="JJ" lemma="small" wnsn="1" lexsn="3:00:00::">small</wf>
+<wf cmd="done" pos="JJ" lemma="negative" wnsn="1" lexsn="3:00:02::">negative</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressures</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">were</wf>
+<wf cmd="done" pos="JJ" lemma="negligible" wnsn="1" lexsn="5:00:00:minimal:00">negligible</wf>
+<wf cmd="done" pos="IN" ot="complexprep">in_comparison_with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="amount" wnsn="2" lexsn="1:07:00::">amount</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="positive" wnsn="1" lexsn="3:00:01::">positive</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressures</wf>
+<wf cmd="done" pos="VB" lemma="generate" wnsn="1" lexsn="2:36:00::">generated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="4">
+<s snum="15">
+<wf cmd="done" pos="NN" lemma="figure" wnsn="1" lexsn="1:10:00::">Figure</wf>
+<wf cmd="done" pos="JJ" lemma="3" wnsn="1" lexsn="5:00:00:cardinal:00">3</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="1" lexsn="2:39:02::">shows</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="silicone" wnsn="1" lexsn="1:27:00::">silicone</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="label" wnsn="1" lexsn="2:32:00::">labeled</wf>
+<wf cmd="done" pos="CD" ot="notag">12500</wf>
+<wf cmd="done" pos="NN" lemma="cps" wnsn="1" lexsn="1:28:00::">cps</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">gave</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="high" wnsn="1" lexsn="3:00:02::">high</wf>
+<wf cmd="done" pos="JJ" lemma="positive" wnsn="0" lexsn="3:00:02::">positive</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<punc>.</punc>
+</s>
+<s snum="16">
+<wf cmd="ignore" pos="IN">Although</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tape" wnsn="1" lexsn="1:06:00::">tape</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="run" wnsn="10" lexsn="2:36:01::">run</wf>
+<wf cmd="done" pos="VB" ot="notag">for</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="done" pos="JJ" lemma="1" wnsn="1" lexsn="5:00:00:cardinal:00">1</wf>
+<wf cmd="done" pos="NN" lemma="hr" wnsn="1" lexsn="1:28:00::">hr.</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="steady" wnsn="1" lexsn="3:00:00::">steady</wf>
+<wf cmd="done" pos="NN" lemma="state" wnsn="2" lexsn="1:03:00::">state</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reached</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="conclude" wnsn="1" lexsn="2:31:00::">concluded</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reason" wnsn="2" lexsn="1:10:01::">reason</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="back" wnsn="1" lexsn="3:00:00::">back</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="done" pos="VB" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="build_up" wnsn="0" lexsn="2:30:01::">built_up</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="done" pos="VB" lemma="feed" wnsn="3" lexsn="2:34:03::">fed</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">blocks</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="JJ" lemma="available" wnsn="1" lexsn="3:00:00::">available</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="very" wnsn="1" lexsn="4:02:00::">very</wf>
+<wf cmd="done" pos="JJ" lemma="slow" wnsn="1" lexsn="3:00:01::">slow</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<punc>.</punc>
+</s>
+<s snum="17">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="NN" lemma="system" wnsn="7" lexsn="1:09:01::">system</wf>
+<wf cmd="done" pos="VB" ot="notag">had_to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBD" ot="notag">did</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="depend_upon" wnsn="1" lexsn="2:42:00::">depend_upon</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="feeding" wnsn="1" lexsn="1:04:00::">feeding</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">measurements</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="1" lexsn="2:41:00::">made</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="reasonable" wnsn="1" lexsn="3:00:00::">reasonable</wf>
+<wf cmd="done" pos="NN" lemma="time" wnsn="2" lexsn="1:28:05::">time</wf>
+<punc>.</punc>
+</s>
+<s snum="18">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="JJ" lemma="back" wnsn="1" lexsn="3:00:00::">back</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="RB" lemma="then" wnsn="1" lexsn="4:02:00::">then</wf>
+<wf cmd="done" pos="VB" lemma="introduce" wnsn="2" lexsn="2:36:00::">introduced</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="rise" wnsn="2" lexsn="1:04:00::">rise</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="fall" wnsn="4" lexsn="1:17:00::">fall</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="2" lexsn="2:32:03::">indicated</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="JJ" lemma="great" wnsn="1" lexsn="5:00:01:large:00">greater</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">block</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="back" wnsn="1" lexsn="3:00:00::">back</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<punc>.</punc>
+</s>
+<s snum="19">
+<wf cmd="ignore" pos="IN">By</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="NN" lemma="method" wnsn="1" lexsn="1:09:00::">method</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="determine" wnsn="1" lexsn="2:32:00::">determined</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="2" lexsn="2:40:00::">exerted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="sample" wnsn="1" lexsn="1:09:00::">sample</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="polybutene" wnsn="1" lexsn="1:27:00::">polybutene</wf>
+<punc>(</punc>
+<wf cmd="done" pos="NN" lemma="molecular_weight" wnsn="1" lexsn="1:07:00::">molecular_weight</wf>
+<wf cmd="done" pos="VB" lemma="report" wnsn="1" lexsn="2:32:00::">reported</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="done" pos="CD" ot="notag">770</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="done" pos="NN" lemma="half" wnsn="1" lexsn="1:23:00::">half</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="atmosphere" wnsn="2" lexsn="1:23:00::">atmosphere</wf>
+<punc>.</punc>
+</s>
+<s snum="20">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="actual" wnsn="1" lexsn="3:00:00::">actual</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="determine" wnsn="1" lexsn="2:32:00::">determined</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">was</wf>
+<wf cmd="done" pos="RB" lemma="beyond" wnsn="1" lexsn="4:02:01::">beyond</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="upper_limit" wnsn="1" lexsn="1:23:00::">upper_limit</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="apparatus" wnsn="1" lexsn="1:06:00::">apparatus</wf>
+<wf cmd="done" pos="JJ" lemma="on_hand" wnsn="1" lexsn="5:00:00:available:00">on_hand</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="5">
+<s snum="21">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">gave</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="small" wnsn="1" lexsn="3:00:00::">small</wf>
+<wf cmd="done" pos="JJ" lemma="negative" wnsn="1" lexsn="3:00:02::">negative</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressures</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">were</wf>
+<wf cmd="done" pos="NN" lemma="polybutene" wnsn="1" lexsn="1:27:00::">polybutenes</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="NN" lemma="molecular_weight" wnsn="1" lexsn="1:07:00::">molecular_weights</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="state" wnsn="1" lexsn="2:32:00::">stated</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="done" pos="CD" ot="notag">520</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="CD" ot="notag">300</wf>
+<punc>.</punc>
+</s>
+<s snum="22">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="CD" ot="notag">one</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expect</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="RB" lemma="less" wnsn="1" lexsn="4:02:00::">less</wf>
+<wf cmd="done" pos="JJ" lemma="viscoelastic" wnsn="1" lexsn="5:00:00:elastic:00">viscoelastic</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="RB" lemma="more" wnsn="1" lexsn="4:02:00::">more</wf>
+<wf cmd="done" pos="JJ" lemma="newtonian" wnsn="1" lexsn="3:01:00::">Newtonian</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="PRP$">their</wf>
+<wf cmd="done" pos="JJ" lemma="lower" wnsn="0" lexsn="5:00:00:bottom(a):00">lower</wf>
+<wf cmd="done" pos="NN" lemma="molecular_weight" wnsn="1" lexsn="1:07:00::">molecular_weight</wf>
+<punc>.</punc>
+</s>
+<s snum="23">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="maximum" wnsn="1" lexsn="3:00:00::">maximum</wf>
+<wf cmd="done" pos="NN" lemma="suction" wnsn="1" lexsn="1:19:00::">suction</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="done" pos="CD" ot="notag">3.25</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="test" wnsn="0" lexsn="5:00:00:empirical:00">test</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="3" lexsn="2:42:00::">measured</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="top" wnsn="2" lexsn="1:15:00::">top</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="block" wnsn="1" lexsn="1:06:00::">block</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="steady" wnsn="1" lexsn="3:00:00::">steady</wf>
+<wf cmd="done" pos="NN" lemma="state" wnsn="2" lexsn="1:03:00::">states</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="RB" lemma="apparently" wnsn="1" lexsn="4:02:00::">apparently</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reached</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<punc>.</punc>
+</s>
+<s snum="24">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="presume" wnsn="1" lexsn="2:31:00::">presumed</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="JJ" lemma="negative" wnsn="1" lexsn="3:00:02::">negative</wf>
+<wf cmd="done" pos="NN" lemma="head" wnsn="6" lexsn="1:19:00::">head</wf>
+<wf cmd="done" pos="VBD" lemma="be" wnsn="1" lexsn="2:42:03::">was</wf>
+<wf cmd="done" pos="JJ" lemma="associated" wnsn="0" lexsn="5:00:00:related:02">associated</wf>
+<wf cmd="done" pos="VB" ot="notag">with</wf>
+<wf cmd="done" pos="JJ" lemma="some" wnsn="0" lexsn="5:00:00:unspecified:00">some</wf>
+<wf cmd="done" pos="JJ" lemma="geometric" wnsn="2" lexsn="3:01:00::">geometric</wf>
+<wf cmd="done" pos="NN" lemma="factor" wnsn="1" lexsn="1:11:00::">factor</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="assembly" wnsn="2" lexsn="1:04:01::">assembly</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="done" pos="JJ" lemma="different" wnsn="1" lexsn="3:00:00::">different</wf>
+<wf cmd="done" pos="NN" lemma="reading" wnsn="3" lexsn="1:09:02::">readings</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="1" lexsn="3:00:02::">same</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="only" wnsn="0" lexsn="5:00:00:single(a):00">only</wf>
+<wf cmd="done" pos="JJ" lemma="apparent" wnsn="0" lexsn="5:00:00:visible:00">apparent</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="1" lexsn="1:07:00::">difference</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="assembly" wnsn="2" lexsn="1:04:01::">assembly</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="disassembly" wnsn="1" lexsn="1:04:00::">disassembly</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="apparatus" wnsn="1" lexsn="1:06:00::">apparatus</wf>
+<punc>.</punc>
+</s>
+<s snum="25">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="JJ" lemma="negative" wnsn="1" lexsn="3:00:02::">negative</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explained</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="velocity" wnsn="1" lexsn="1:28:00::">velocity</wf>
+<wf cmd="done" pos="NN" lemma="head" wnsn="6" lexsn="1:19:00::">head</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="IN">since</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="JJ" lemma="sufficient" wnsn="1" lexsn="3:00:00::">sufficient</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="explain" wnsn="1" lexsn="2:32:00::">explain</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reading" wnsn="3" lexsn="1:09:02::">readings</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="JJ" lemma="several" wnsn="1" lexsn="5:00:00:some(a):00">several</wf>
+<wf cmd="done" pos="NN" lemma="magnitude" wnsn="2" lexsn="1:24:00::">magnitudes</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="6">
+<s snum="26">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="NN" lemma="experiment" wnsn="2" lexsn="1:09:00::">experiments</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="consider" wnsn="1" lexsn="2:31:00::">considered</wf>
+<wf cmd="done" pos="JJ" lemma="exploratory" wnsn="1" lexsn="3:00:00::">exploratory</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="1" lexsn="4:02:02::">only</wf>
+<punc>.</punc>
+</s>
+<s snum="27">
+<wf cmd="done" pos="RB" lemma="however" wnsn="1" lexsn="4:02:00::">However</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="done" pos="VB" lemma="demonstrate" wnsn="0" lexsn="2:39:00::">demonstrate</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="presence" wnsn="1" lexsn="1:26:00::">presence</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="large" wnsn="1" lexsn="3:00:00::">large</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressures</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="presence" wnsn="1" lexsn="1:26:00::">presence</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="flat" wnsn="1" lexsn="5:00:00:even:01">flat</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">fields</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="forecast" wnsn="1" lexsn="2:32:00::">forecast</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="theory" wnsn="2" lexsn="1:09:01::">theory</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="first" wnsn="1" lexsn="3:00:00::">first</wf>
+<wf cmd="done" pos="NN" lemma="part" wnsn="1" lexsn="1:24:00::">part</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="paper" wnsn="2" lexsn="1:10:01::">paper</wf>
+<punc>.</punc>
+</s>
+<s snum="28">
+<wf cmd="ignore" pos="PRP">They</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">give</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="aid" wnsn="1" lexsn="2:41:00::">aid</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="design" wnsn="1" lexsn="1:04:00::">design</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="RB" lemma="more" wnsn="1" lexsn="4:02:00::">more</wf>
+<wf cmd="done" pos="JJ" lemma="satisfactory" wnsn="1" lexsn="3:00:00::">satisfactory</wf>
+<wf cmd="done" pos="NN" lemma="instrument" wnsn="1" lexsn="1:06:00::">instrument</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="1" lexsn="1:04:00::">measurement</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressures</wf>
+<punc>.</punc>
+</s>
+<s snum="29">
+<wf cmd="done" pos="JJ" lemma="such" wnsn="0" lexsn="5:00:01:specified:00">Such</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="instrument" wnsn="1" lexsn="1:06:00::">instrument</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="useful" wnsn="1" lexsn="3:00:00::">useful</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="characterization" wnsn="1" lexsn="1:10:00::">characterization</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="many" wnsn="1" lexsn="3:00:00::">many</wf>
+<wf cmd="done" pos="JJ" lemma="commercial" wnsn="2" lexsn="3:01:00::">commercial</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">materials</wf>
+<wf cmd="done" pos="IN" ot="complexprep">as_well_as</wf>
+<wf cmd="done" pos="JJ" lemma="theoretical" wnsn="1" lexsn="3:00:00::">theoretical</wf>
+<wf cmd="done" pos="NN" lemma="study" wnsn="1" lexsn="1:04:00::">studies</wf>
+<punc>.</punc>
+</s>
+<s snum="30">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="elasticity" wnsn="1" lexsn="1:07:00::">elasticity</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="parameter" wnsn="1" lexsn="1:09:00::">parameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="2" lexsn="1:27:00::">fluids</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="JJ" lemma="subject_to" wnsn="0" lexsn="5:00:00:amenable:00">subject_to</wf>
+<wf cmd="done" pos="JJ" lemma="simple" wnsn="1" lexsn="3:00:02::">simple</wf>
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">measurement</wf>
+<wf cmd="done" pos="RB" lemma="at_present" wnsn="1" lexsn="4:02:00::">at_present</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="parameter" wnsn="1" lexsn="1:09:00::">parameter</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="RB" lemma="probably" wnsn="1" lexsn="4:02:00::">probably</wf>
+<wf cmd="done" pos="VB" lemma="vary" wnsn="1" lexsn="2:30:01::">varying</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="unknown" wnsn="1" lexsn="3:00:00::">unknown</wf>
+<wf cmd="done" pos="NN" lemma="manner" wnsn="1" lexsn="1:07:02::">manner</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="many" wnsn="1" lexsn="3:00:00::">many</wf>
+<wf cmd="done" pos="JJ" lemma="commercial" wnsn="2" lexsn="3:01:00::">commercial</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">materials</wf>
+<punc>.</punc>
+</s>
+<s snum="31">
+<wf cmd="done" pos="JJ" lemma="such" wnsn="0" lexsn="5:00:01:specified:00">Such</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="instrument" wnsn="1" lexsn="1:06:00::">instrument</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="RB" lemma="especially" wnsn="1" lexsn="4:02:00::">especially</wf>
+<wf cmd="done" pos="JJ" lemma="useful" wnsn="1" lexsn="3:00:00::">useful</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="done" pos="JJ" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="3" lexsn="2:42:00::">measure</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="elasticity" wnsn="1" lexsn="1:07:00::">elasticity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="heavy" wnsn="0" lexsn="5:00:00:thick:02">heavy</wf>
+<wf cmd="done" pos="NN" lemma="paste" wnsn="1" lexsn="1:27:01::">pastes</wf>
+<wf cmd="done" pos="JJ" ot="complexprep">such_as</wf>
+<wf cmd="done" pos="NN" lemma="printing_ink" wnsn="1" lexsn="1:27:00::">printing_inks</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="paint" wnsn="1" lexsn="1:06:00::">paints</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="adhesive" wnsn="1" lexsn="1:27:00::">adhesives</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="molten" wnsn="1" lexsn="5:00:00:melted:00">molten</wf>
+<wf cmd="done" pos="NN" lemma="plastic" wnsn="1" lexsn="1:27:00::">plastics</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="bread_dough" wnsn="1" lexsn="1:13:00::">bread_dough</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="elasticity" wnsn="1" lexsn="1:07:00::">elasticity</wf>
+<wf cmd="done" pos="VB" ot="notag">is</wf>
+<wf cmd="done" pos="JJ" lemma="related" wnsn="1" lexsn="3:00:02::">related</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">those</wf>
+<wf cmd="done" pos="JJ" lemma="various" wnsn="1" lexsn="5:00:02:different:00">various</wf>
+<wf cmd="done" pos="NN" lemma="property" wnsn="2" lexsn="1:07:00::">properties</wf>
+<wf cmd="done" pos="VB" lemma="term" wnsn="1" lexsn="2:32:00::">termed</wf>
+<punc>``</punc>
+<wf cmd="done" pos="NN" lemma="length" wnsn="1" lexsn="1:07:00::">length</wf>
+<punc>''</punc>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="done" pos="NN" lemma="shortness" wnsn="1" lexsn="1:07:03::">shortness</wf>
+<punc>''</punc>
+<punc>,</punc>
+<punc>``</punc>
+<wf cmd="done" pos="NN" lemma="spinnability" wnsn="1" lexsn="1:07:00::">spinnability</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="ignore" pos="FW">etc.</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="RB" lemma="usually" wnsn="1" lexsn="4:02:00::">usually</wf>
+<wf cmd="done" pos="VB" lemma="judge" wnsn="1" lexsn="2:31:02::">judged</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="JJ" lemma="subjective" wnsn="1" lexsn="3:00:00::">subjective</wf>
+<wf cmd="done" pos="NN" lemma="method" wnsn="1" lexsn="1:09:00::">methods</wf>
+<wf cmd="done" pos="RB" lemma="at_present" wnsn="1" lexsn="4:02:00::">at_present</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="7">
+<s snum="32">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="actual" wnsn="1" lexsn="3:00:00::">actual</wf>
+<wf cmd="done" pos="NN" lemma="change" wnsn="4;2" lexsn="1:19:00::;1:24:00::">change</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">caused</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">field</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="multiply" wnsn="1" lexsn="2:31:00::">multiplying</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="NN" lemma="differential" wnsn="1" lexsn="1:09:00::">differential</wf>
+<wf cmd="done" pos="NNS" ot="notag">times</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBZ" ot="complexprep">just_as_it_is</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="done" pos="JJ" lemma="gravitational" wnsn="1" lexsn="3:01:00::">gravitational</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="osmotic_pressure" wnsn="1" lexsn="1:19:00::">osmotic_pressure</wf>
+<wf cmd="done" pos="NN" lemma="head" wnsn="6" lexsn="1:19:00::">head</wf>
+<punc>.</punc>
+</s>
+<s snum="33">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="molal" wnsn="1" lexsn="3:01:00::">molal</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="2" lexsn="4:02:02::">then</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="molal" wnsn="1" lexsn="3:01:00::">molal</wf>
+<wf cmd="done" pos="NN" lemma="basis" wnsn="2" lexsn="1:09:00::">basis</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="customary" wnsn="2" lexsn="5:00:00:usual:00">customary</wf>
+<wf cmd="done" pos="NN" lemma="terminology" wnsn="1" lexsn="1:10:00::">terminology</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="chemist" wnsn="1" lexsn="1:18:00::">chemists</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="8">
+<s snum="34">
+<wf cmd="ignore" pos="IN">Although</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="NN" lemma="calculation" wnsn="1" lexsn="1:04:00::">calculation</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="obvious" wnsn="1" lexsn="3:00:00::">obvious</wf>
+<wf cmd="done" pos="IN" ot="complexprep">by_analogy_with</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="gravitational_field" wnsn="1" lexsn="1:19:00::">gravitational_field</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="osmotic_pressure" wnsn="1" lexsn="1:19:00::">osmotic_pressure</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="interesting" wnsn="1" lexsn="3:00:00::">interesting</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="confirm" wnsn="1" lexsn="2:31:00::">confirm</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="method" wnsn="1" lexsn="1:09:00::">method</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="generalize" wnsn="1" lexsn="2:32:01::">generalized</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="include" wnsn="1" lexsn="2:42:00::">include</wf>
+<wf cmd="done" pos="JJ" lemma="related" wnsn="2" lexsn="3:00:01::">related</wf>
+<wf cmd="done" pos="NN" lemma="effect" wnsn="1" lexsn="1:19:00::">effects</wf>
+<punc>.</punc>
+</s>
+<s snum="35">
+<wf cmd="done" pos="VB" lemma="consider" wnsn="3" lexsn="2:31:01::">Consider</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">field</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="height" wnsn="1" lexsn="1:07:00::">height</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NNP" ot="notag">H</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="cross-sectional" wnsn="1" lexsn="3:01:00::">cross-sectional</wf>
+<wf cmd="done" pos="NN" lemma="area" wnsn="6" lexsn="1:07:00::">area</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="VB" lemma="oppose" wnsn="3" lexsn="2:42:00::">opposed</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="height" wnsn="1" lexsn="1:07:00::">height</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" ot="notag">h</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="refer" wnsn="3" lexsn="2:31:00::">referred</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="1" lexsn="3:00:02::">same</wf>
+<wf cmd="done" pos="NN" lemma="base" wnsn="2" lexsn="1:06:01::">base</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="NNP" ot="notag">H</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="cross-sectional" wnsn="1" lexsn="3:01:00::">cross-sectional</wf>
+<wf cmd="done" pos="NN" lemma="area" wnsn="6" lexsn="1:07:00::">area</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<punc>.</punc>
+</s>
+<s snum="36">
+<wf cmd="ignore" pos="IN">If</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="6" lexsn="2:42:07::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="change" wnsn="4;2" lexsn="1:19:00::;1:24:00::">change</wf>
+<wf cmd="ignore" pos="IN">per</wf>
+<wf cmd="done" pos="NN" lemma="unit" wnsn="1" lexsn="1:23:00::">unit</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gibbs</wf>
+<wf cmd="done" pos="NN" lemma="function" wnsn="1" lexsn="1:24:00::">function</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">caused</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">field</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="constant" wnsn="1" lexsn="5:00:00:invariable:00">constant</wf>
+<wf cmd="done" pos="NN" ot="notag">P</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">T</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">|r</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="6" lexsn="2:42:07::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="density" wnsn="1" lexsn="1:07:00::">density</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="then" wnsn="2" lexsn="4:02:02::">then</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="total" wnsn="1" lexsn="5:00:00:whole:00">total</wf>
+<wf cmd="done" pos="NN" lemma="potential_energy" wnsn="1" lexsn="1:19:00::">potential_energy</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="system" wnsn="3" lexsn="1:27:00::">system</wf>
+<wf cmd="ignore" pos="IN">above</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reference" wnsn="3" lexsn="1:10:06::">reference</wf>
+<wf cmd="done" pos="NN" lemma="height" wnsn="1" lexsn="1:07:00::">height</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>.</punc>
+</s>
+<s snum="37">
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="work" wnsn="5" lexsn="1:19:00::">work</wf>
+<wf cmd="done" pos="JJ" lemma="necessary" wnsn="1" lexsn="3:00:00::">necessary</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="fill" wnsn="1" lexsn="2:30:01::">fill</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="manometer" wnsn="1" lexsn="1:06:00::">manometer</wf>
+<wf cmd="done" pos="NN" lemma="column" wnsn="6" lexsn="1:06:01::">column</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reference" wnsn="3" lexsn="1:10:06::">reference</wf>
+<wf cmd="done" pos="NN" lemma="height" wnsn="1" lexsn="1:07:00::">height</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="NN" ot="notag">h</wf>
+<punc>.</punc>
+</s>
+<s snum="38">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="total" wnsn="0" lexsn="5:00:00:gross:00">total</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="system" wnsn="3" lexsn="1:27:00::">system</wf>
+<wf cmd="ignore" pos="IN">above</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="reference" wnsn="3" lexsn="1:10:06::">reference</wf>
+<wf cmd="done" pos="NN" lemma="height" wnsn="1" lexsn="1:07:00::">height</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">h</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="eliminate" wnsn="1" lexsn="2:30:01::">eliminated</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtain</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="equation" wnsn="1" lexsn="1:10:00::">equation</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="total" wnsn="0" lexsn="5:00:00:gross:00">total</wf>
+<wf cmd="done" pos="NN" lemma="potential_energy" wnsn="1" lexsn="1:19:00::">potential_energy</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="system" wnsn="3" lexsn="1:27:00::">system</wf>
+<wf cmd="done" pos="JJ" lemma="in_terms_of" wnsn="0" lexsn="5:00:00:related:02">in_terms_of</wf>
+<wf cmd="done" pos="NNP" ot="notag">H</wf>
+<punc>.</punc>
+</s>
+<s snum="39">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="minimum" wnsn="1" lexsn="3:00:00::">minimum</wf>
+<wf cmd="done" pos="JJ" lemma="total" wnsn="0" lexsn="5:00:00:gross:00">total</wf>
+<wf cmd="done" pos="NN" lemma="potential_energy" wnsn="1" lexsn="1:19:00::">potential_energy</wf>
+<wf cmd="done" pos="VB" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="find" wnsn="4" lexsn="2:32:00::">found</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="take" wnsn="10" lexsn="2:31:01::">taking</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="derivative" wnsn="1" lexsn="1:09:00::">derivative</wf>
+<wf cmd="done" pos="JJ" lemma="with_respect_to" wnsn="0" lexsn="5:00:00:related:02">with_respect_to</wf>
+<wf cmd="done" pos="NNP" ot="notag">H</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="equate" wnsn="2" lexsn="2:42:00::">equating</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="JJ" lemma="zero" wnsn="1" lexsn="5:00:00:cardinal:00">zero</wf>
+<punc>.</punc>
+</s>
+<s snum="40">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">gives</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<punc>.</punc>
+</s>
+<s snum="41">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="interesting" wnsn="1" lexsn="3:00:00::">interesting</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="combine" wnsn="1" lexsn="2:42:00::">combines</wf>
+<wf cmd="ignore" pos="DT">both</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="thermodynamic" wnsn="1" lexsn="3:01:00::">thermodynamic</wf>
+<wf cmd="done" pos="NN" lemma="concept" wnsn="1" lexsn="1:09:00::">concept</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="minimum" wnsn="1" lexsn="3:00:00::">minimum</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gibbs</wf>
+<wf cmd="done" pos="NN" lemma="function" wnsn="1" lexsn="1:24:00::">function</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="equilibrium" wnsn="1" lexsn="1:26:00::">equilibrium</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="minimum" wnsn="1" lexsn="3:00:00::">minimum</wf>
+<wf cmd="done" pos="JJ" lemma="mechanical" wnsn="3" lexsn="3:01:00::">mechanical</wf>
+<wf cmd="done" pos="NN" lemma="potential_energy" wnsn="1" lexsn="1:19:00::">potential_energy</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="NN" lemma="equilibrium" wnsn="1" lexsn="1:26:00::">equilibrium</wf>
+<punc>.</punc>
+</s>
+<s snum="42">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="method" wnsn="1" lexsn="1:09:00::">method</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="extend" wnsn="1" lexsn="2:30:01::">extended</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="include" wnsn="1" lexsn="2:42:00::">include</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="concentration" wnsn="1" lexsn="1:07:02::">concentration</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="1" lexsn="1:07:00::">differences</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">caused</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">fields</wf>
+<punc>.</punc>
+</s>
+<s snum="43">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="relation" wnsn="1" lexsn="1:03:00::">relation</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="done" pos="NN" lemma="osmotic_pressure" wnsn="1" lexsn="1:19:00::">osmotic_pressure</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gibbs</wf>
+<wf cmd="done" pos="NN" lemma="function" wnsn="1" lexsn="1:24:00::">function</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="develop" wnsn="7" lexsn="2:32:00::">developed</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="analogous" wnsn="1" lexsn="5:00:00:similar:00">analogous</wf>
+<wf cmd="done" pos="NN" lemma="way" wnsn="1" lexsn="1:07:01::">way</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="9">
+<s snum="44">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="above" wnsn="1" lexsn="5:00:00:preceding(a):00">above</wf>
+<wf cmd="done" pos="NN" lemma="development" wnsn="2" lexsn="1:22:02::">development</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="apply" wnsn="0" lexsn="2:41:05::">applied</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="thermodynamics_of_equilibrium" wnsn="1" lexsn="1:09:00::">thermodynamics_of_equilibrium</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="refer" wnsn="3" lexsn="2:31:00::">referred</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="RB" ot="notag">by</wf>
+<wf cmd="done" pos="DT" ot="notag">some</wf>
+<wf cmd="done" pos="RB" ot="notag">as</wf>
+<wf cmd="done" pos="NN" lemma="thermostatics" wnsn="1" lexsn="1:09:00::">thermostatics</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="steady" wnsn="0" lexsn="5:00:00:invariable:00">steady</wf>
+<wf cmd="done" pos="NN" lemma="state" wnsn="2" lexsn="1:03:00::">state</wf>
+<punc>.</punc>
+</s>
+<s snum="45">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="justify" wnsn="3" lexsn="2:32:02::">justified</wf>
+<wf cmd="done" pos="RB" lemma="thermodynamically" wnsn="1" lexsn="4:02:00::">thermodynamically</wf>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="RB" ot="notag">this</wf>
+<wf cmd="done" pos="NN" lemma="case" wnsn="2" lexsn="1:26:00::">case</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="1" lexsn="2:41:01::">done</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="separate" wnsn="1" lexsn="3:00:00::">separate</wf>
+<wf cmd="done" pos="NN" lemma="paper" wnsn="2" lexsn="1:10:01::">paper</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VBG" ot="notag">being</wf>
+<wf cmd="done" pos="VB" lemma="prepare" wnsn="1" lexsn="2:30:00::">prepared</wf>
+<punc>.</punc>
+</s>
+<s snum="46">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="1" lexsn="2:40:00::">has</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="interesting" wnsn="1" lexsn="3:00:00::">interesting</wf>
+<wf cmd="done" pos="NN" lemma="analogy" wnsn="0" lexsn="1:07:00::">analogy</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="assumption" wnsn="1" lexsn="1:10:00::">assumption</wf>
+<wf cmd="done" pos="VB" lemma="state" wnsn="1" lexsn="2:32:00::">stated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Philippoff</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="deformational" wnsn="1" lexsn="3:01:00::">deformational</wf>
+<wf cmd="done" pos="NN" lemma="mechanics" wnsn="1" lexsn="1:09:00::">mechanics</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="elastic" wnsn="1" lexsn="3:00:00::">elastic</wf>
+<wf cmd="done" pos="NN" lemma="solid" wnsn="2" lexsn="1:26:00::">solids</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="apply" wnsn="5" lexsn="2:42:01::">applied</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="NN" lemma="flowing" wnsn="1" lexsn="1:11:00::">flowing</wf>
+<wf cmd="done" pos="NN" lemma="solution" wnsn="1" lexsn="1:27:00::">solutions</wf>
+<punc>''</punc>
+<punc>.</punc>
+</s>
+<s snum="47">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">is</wf>
+<wf cmd="done" pos="JJ" lemma="one" wnsn="1" lexsn="5:00:00:cardinal:00">one</wf>
+<wf cmd="done" pos="NN" lemma="exception" wnsn="1" lexsn="1:09:00::">exception</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="above" wnsn="1" lexsn="5:00:00:preceding(a):00">above</wf>
+<wf cmd="done" pos="NN" lemma="statement" wnsn="1" lexsn="1:10:00::">statement</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VBZ" ot="notag">has</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="point_out" wnsn="1" lexsn="2:32:01::">pointed_out</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" lemma="relax" wnsn="3" lexsn="2:30:02::">relax</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="flow" wnsn="2" lexsn="2:38:00::">flowing</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">fields</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="lower" wnsn="0" lexsn="5:00:00:bottom(a):00">lower</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rates</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="VB" lemma="shear" wnsn="1" lexsn="2:35:00::">shear</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" ot="notag">so</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="statement" wnsn="1" lexsn="1:10:00::">statement</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="modify" wnsn="1" lexsn="2:30:00::">modified</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="state" wnsn="1" lexsn="2:32:00::">stating</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="mechanics" wnsn="1" lexsn="1:09:00::">mechanics</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="similar" wnsn="1" lexsn="3:00:00::">similar</wf>
+<punc>.</punc>
+</s>
+<s snum="48">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="mechanics" wnsn="1" lexsn="1:09:00::">mechanics</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="similar" wnsn="1" lexsn="3:00:00::">similar</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" lemma="infer" wnsn="2" lexsn="2:32:01::">infer</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="thermodynamics" wnsn="1" lexsn="1:09:00::">thermodynamics</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="RB" lemma="also" wnsn="1" lexsn="4:02:00::">also</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="similar" wnsn="1" lexsn="3:00:00::">similar</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="10">
+<s snum="49">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="concept" wnsn="1" lexsn="1:09:00::">concept</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="strain" wnsn="1" lexsn="1:19:00::">strain</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<wf cmd="done" pos="RB" ot="notag">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Gibbs</wf>
+<wf cmd="done" pos="NN" lemma="function" wnsn="1" lexsn="1:24:00::">function</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="0" lexsn="1:09:00::">difference</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="1" lexsn="2:34:00::">exerting</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">force</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" ot="notag">shearing</wf>
+<wf cmd="done" pos="NN" lemma="face" wnsn="4" lexsn="1:06:02::">face</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="compatible" wnsn="1" lexsn="3:00:01::">compatible</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="information" wnsn="2" lexsn="1:09:00::">information</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="JJ" lemma="optical" wnsn="1" lexsn="3:01:01::">optical</wf>
+<wf cmd="done" pos="NN" lemma="birefringence" wnsn="1" lexsn="1:19:00::">birefringence</wf>
+<wf cmd="done" pos="NN" lemma="study" wnsn="1" lexsn="1:04:00::">studies</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="done" pos="VB" lemma="undergo" wnsn="0" lexsn="2:31:00::">undergoing</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>.</punc>
+</s>
+<s snum="50">
+<wf cmd="done" pos="RB" lemma="essentially" wnsn="1" lexsn="4:02:01::">Essentially</wf>
+<wf cmd="ignore" pos="DT">these</wf>
+<wf cmd="done" pos="NN" lemma="birefringence" wnsn="1" lexsn="1:19:00::">birefringence</wf>
+<wf cmd="done" pos="NN" lemma="study" wnsn="1" lexsn="1:04:00::">studies</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="1" lexsn="2:39:02::">show</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rates</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="tension" wnsn="4" lexsn="1:19:00::">tension</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="present" wnsn="2" lexsn="3:00:02::">present</wf>
+<wf cmd="done" pos="VB" ot="notag">at</wf>
+<wf cmd="done" pos="CD" ot="notag">45</wf>
+<punc>`</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="VB" lemma="increase" wnsn="1" lexsn="2:30:00::">increases</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="maximum" wnsn="1" lexsn="3:00:00::">maximum</wf>
+<wf cmd="done" pos="NN" lemma="tension" wnsn="4" lexsn="1:19:00::">tension</wf>
+<wf cmd="done" pos="VB" lemma="move" wnsn="1" lexsn="2:38:03::">moves</wf>
+<wf cmd="done" pos="RB" lemma="asymptotically" wnsn="1" lexsn="4:02:00::">asymptotically</wf>
+<wf cmd="ignore" pos="IN">toward</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>.</punc>
+</s>
+<s snum="51">
+<wf cmd="done" pos="TO" ot="complexprep">According_to</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Philippoff</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="recoverable" wnsn="1" lexsn="3:00:00::">recoverable</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="PRP">s</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="4" lexsn="2:40:07::">given</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="done" pos="NN" ot="notag">|c</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="angle_of_extinction" wnsn="1" lexsn="1:25:00::">angle_of_extinction</wf>
+<punc>.</punc>
+</s>
+<s snum="52">
+<wf cmd="ignore" pos="IN">From</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">force</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="deformation" wnsn="1" lexsn="1:11:00::">deformation</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="possible" wnsn="1" lexsn="3:00:00::">possible</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculate</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="elastic" wnsn="1" lexsn="3:00:00::">elastic</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="deformation" wnsn="1" lexsn="1:11:00::">deformation</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="equal" wnsn="1" lexsn="3:00:00::">equal</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculated</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" ot="notag">shearing</wf>
+<wf cmd="done" pos="NN" lemma="face" wnsn="4" lexsn="1:06:02::">face</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="11">
+<s snum="53">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">is</wf>
+<wf cmd="done" pos="JJ" lemma="another" wnsn="1" lexsn="5:00:00:other:00">another</wf>
+<wf cmd="done" pos="NN" lemma="means" wnsn="2" lexsn="1:06:00::">means</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="ignore" pos="MD">should</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="4" lexsn="2:39:00::">show</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="JJ" lemma="relative" wnsn="1" lexsn="3:00:00::">relative</wf>
+<wf cmd="done" pos="NN" lemma="value" wnsn="1" lexsn="1:09:00::">value</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="stress" wnsn="5" lexsn="1:19:00::">stresses</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="viscoelastic" wnsn="1" lexsn="5:00:00:elastic:00">viscoelastic</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="done" pos="RB" ot="notag">is</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="VB" lemma="mention" wnsn="2" lexsn="2:32:00::">mentioned</wf>
+<wf cmd="done" pos="RB" lemma="as_such" wnsn="1" lexsn="4:02:00::">as_such</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="literature" wnsn="1" lexsn="1:10:00::">literature</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="shape" wnsn="1" lexsn="1:07:00::">shape</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="suspended" wnsn="1" lexsn="5:00:01:supported:00">suspended</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drops</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">fields</wf>
+<punc>.</punc>
+</s>
+<s snum="54">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="NN" lemma="droplet" wnsn="1" lexsn="1:23:00::">droplets</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="distort" wnsn="2" lexsn="2:35:01::">distorted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="normal" wnsn="1" lexsn="3:00:01::">normal</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">forces</wf>
+<wf cmd="done" pos="RB" lemma="just" wnsn="2" lexsn="4:02:05::">just</wf>
+<wf cmd="done" pos="RB" ot="notag">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="balloon" wnsn="2" lexsn="1:06:01::">balloon</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="pull" wnsn="1" lexsn="2:35:00::">pulled</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">pressed</wf>
+<wf cmd="done" pos="VB" ot="notag">out</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shape" wnsn="1" lexsn="1:07:00::">shape</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="CD" ot="notag">one</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="done" pos="NN" lemma="hand" wnsn="1" lexsn="1:08:00::">hands</wf>
+<punc>.</punc>
+</s>
+<s snum="55">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="NN" lemma="droplet" wnsn="1" lexsn="1:23:00::">droplets</wf>
+<wf cmd="done" pos="VB" lemma="appear" wnsn="1" lexsn="2:39:00::">appear</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">be</wf>
+<wf cmd="done" pos="NN" lemma="ellipsoid" wnsn="1" lexsn="1:25:00::">ellipsoids</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="RB" lemma="mathematically" wnsn="1" lexsn="4:02:00::">mathematically</wf>
+<wf cmd="done" pos="JJ" lemma="convenient" wnsn="1" lexsn="3:00:00::">convenient</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assume</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<punc>.</punc>
+</s>
+<s snum="56">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="NN" lemma="ellipsoid" wnsn="1" lexsn="1:25:00::">ellipsoids</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="conclusion" wnsn="2" lexsn="1:09:01::">conclusions</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="reasonable" wnsn="1" lexsn="3:00:00::">reasonable</wf>
+<wf cmd="done" pos="NN" lemma="approximation" wnsn="1" lexsn="1:09:00::">approximation</wf>
+<punc>.</punc>
+</s>
+<s snum="57">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="tension" wnsn="4" lexsn="1:19:00::">tension</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="minimum" wnsn="1" lexsn="3:00:00::">minimum</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="of_course" wnsn="1" lexsn="4:02:00::">of_course</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="give" wnsn="4" lexsn="2:40:07::">given</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_axis" wnsn="1" lexsn="1:09:00::">major_axis</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ellipsoid" wnsn="1" lexsn="1:25:00::">ellipsoids</wf>
+<punc>.</punc>
+</s>
+<s snum="58">
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mason</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Taylor</wf>
+<wf cmd="ignore" pos="DT">both</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="2" lexsn="2:31:00::">show</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_axis" wnsn="1" lexsn="1:09:00::">major_axis</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ellipsoid" wnsn="1" lexsn="1:25:00::">ellipsoids</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="CD" ot="notag">45</wf>
+<punc>`</punc>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rates</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VB" lemma="approach" wnsn="2" lexsn="2:42:00::">approaches</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="increased" wnsn="1" lexsn="3:00:00::">increased</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rates</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>.</punc>
+</s>
+<s snum="59">
+<punc>(</punc>
+<wf cmd="done" pos="JJ" lemma="some" wnsn="0" lexsn="5:00:00:unspecified:00">Some</wf>
+<wf cmd="done" pos="NN" lemma="suspension" wnsn="1" lexsn="1:27:00::">suspensions</wf>
+<wf cmd="done" pos="VB" lemma="break_up" wnsn="6" lexsn="2:30:03::">break_up</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="near" wnsn="1" lexsn="3:00:00::">near</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">direction</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">some</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="1" lexsn="2:30:00::">become</wf>
+<wf cmd="done" pos="JJ" lemma="asymptotic" wnsn="1" lexsn="3:01:00::">asymptotic</wf>
+<wf cmd="done" pos="RB" ot="notag">to</wf>
+<wf cmd="done" pos="RB" ot="notag">it</wf>
+<wf cmd="ignore" pos="IN">without</wf>
+<wf cmd="done" pos="NN" lemma="breakup" wnsn="2" lexsn="1:11:00::">breakup</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+<s snum="60">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="of_course" wnsn="1" lexsn="4:02:00::">of_course</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="similar" wnsn="1" lexsn="3:00:00::">similar</wf>
+<wf cmd="done" pos="NN" lemma="type" wnsn="1" lexsn="1:09:00::">type</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="behavior" wnsn="3" lexsn="1:07:00::">behavior</wf>
+<wf cmd="done" pos="RB" ot="notag">to</wf>
+<wf cmd="done" pos="RB" ot="notag">that</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="2" lexsn="2:32:03::">indicated</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="birefringence" wnsn="1" lexsn="1:19:00::">birefringence</wf>
+<wf cmd="done" pos="NN" lemma="study" wnsn="1" lexsn="1:04:00::">studies</wf>
+<punc>.</punc>
+</s>
+<s snum="61">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="relative" wnsn="1" lexsn="3:00:00::">relative</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">forces</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculated</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="various" wnsn="1" lexsn="5:00:02:different:00">various</wf>
+<wf cmd="done" pos="NN" lemma="radius_of_curvature" wnsn="1" lexsn="1:07:00::">radii_of_curvature</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="PRP">we</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assume</wf>
+<punc>:</punc>
+<punc>(</punc>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="surface_tension" wnsn="1" lexsn="1:19:00::">surface_tension</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="uniform" wnsn="1" lexsn="3:00:00::">uniform</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="2" lexsn="1:15:00::">surface</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drop</wf>
+<punc>.</punc>
+</s>
+<s snum="62">
+<punc>(</punc>
+<wf cmd="done" pos="NNP" ot="notag">B</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="DT">That</wf>
+<wf cmd="ignore" pos="IN">because</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="internal" wnsn="1" lexsn="3:00:00::">internal</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="same" wnsn="3" lexsn="3:00:04::">same</wf>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="JJ" lemma="all" wnsn="1" lexsn="3:00:00::">all</wf>
+<wf cmd="done" pos="NN" lemma="direction" wnsn="2" lexsn="1:24:00::">directions</wf>
+<punc>.</punc>
+</s>
+<s snum="63">
+<punc>(</punc>
+<wf cmd="done" pos="NN" ot="notag">C</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="kinetic" wnsn="1" lexsn="3:01:00::">kinetic</wf>
+<wf cmd="done" pos="NN" lemma="effect" wnsn="1" lexsn="1:19:00::">effects</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="negligible" wnsn="1" lexsn="5:00:00:minimal:00">negligible</wf>
+<punc>.</punc>
+</s>
+<s snum="64">
+<punc>(</punc>
+<wf cmd="done" pos="NN" ot="notag">D</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="IN">Since</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="shape" wnsn="1" lexsn="1:07:00::">shape</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drop</wf>
+<wf cmd="done" pos="VB" lemma="conform_to" wnsn="1" lexsn="2:42:01::">conforms_to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">force</wf>
+<wf cmd="done" pos="NN" lemma="field" wnsn="5" lexsn="1:19:00::">field</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBZ" ot="notag">does</wf>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="RB" lemma="appreciably" wnsn="1" lexsn="4:02:01::">appreciably</wf>
+<wf cmd="done" pos="VB" lemma="affect" wnsn="1" lexsn="2:30:00::">affect</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="distribution" wnsn="2" lexsn="1:07:00::">distribution</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="force" wnsn="2" lexsn="1:19:00::">forces</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluid</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="12">
+<s snum="65">
+<wf cmd="ignore" pos="DT">These</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="reasonable" wnsn="1" lexsn="3:00:00::">reasonable</wf>
+<wf cmd="done" pos="NN" lemma="assumption" wnsn="2" lexsn="1:09:00::">assumptions</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="done" pos="VB" lemma="suspend" wnsn="1" lexsn="2:35:00::">suspended</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="JJ" lemma="high" wnsn="1" lexsn="3:00:02::">high</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="done" pos="NN" lemma="fluid" wnsn="1" lexsn="1:27:02::">fluids</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="subject" wnsn="1" lexsn="2:39:03::">subjected</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rates</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<punc>.</punc>
+</s>
+<s snum="66">
+<wf cmd="done" pos="RB" lemma="just" wnsn="2" lexsn="4:02:05::">Just</wf>
+<wf cmd="done" pos="RB" ot="notag">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="2" lexsn="2:40:00::">exerted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="surface_tension" wnsn="1" lexsn="1:19:00::">surface_tension</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="spherical" wnsn="1" lexsn="3:01:00::">spherical</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drop</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="2" lexsn="2:40:00::">exerted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="NN" lemma="surface_tension" wnsn="1" lexsn="1:19:00::">surface_tension</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="cylindrical" wnsn="1" lexsn="5:00:00:rounded:00">cylindrical</wf>
+<wf cmd="done" pos="NN" lemma="shape" wnsn="1" lexsn="1:07:00::">shape</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="2" lexsn="2:40:00::">exerted</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="done" pos="JJ" lemma="curved" wnsn="1" lexsn="3:00:00::">curved</wf>
+<wf cmd="done" pos="NN" lemma="surface" wnsn="2" lexsn="1:15:00::">surface</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="done" pos="NN" ot="notag">|g</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="interfacial_tension" wnsn="1" lexsn="1:19:00::">interfacial_tension</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="radius_of_curvature" wnsn="1" lexsn="1:07:00::">radii_of_curvature</wf>
+<punc>.</punc>
+</s>
+<s snum="67">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="formula" wnsn="1" lexsn="1:10:00::">formula</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="4" lexsn="2:40:07::">given</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Rumscheidt</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mason</wf>
+<punc>.</punc>
+</s>
+<s snum="68">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_axis" wnsn="1" lexsn="1:09:00::">major_axis</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ellipsoid" wnsn="1" lexsn="1:25:00::">ellipsoid</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">b</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">c</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">are</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="JJ" lemma="two" wnsn="1" lexsn="5:00:00:cardinal:00">two</wf>
+<wf cmd="done" pos="NN" lemma="axis" wnsn="1" lexsn="1:09:00::">axes</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="radius_of_curvature" wnsn="1" lexsn="1:07:00::">radius_of_curvature</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" ot="notag">ab</wf>
+<wf cmd="done" pos="NN" lemma="plane" wnsn="2" lexsn="1:25:00::">plane</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="end" wnsn="1" lexsn="1:15:00::">end</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="axis" wnsn="1" lexsn="1:09:00::">axis</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="0" lexsn="1:09:00::">difference</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="ignore" pos="IN">along</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" ot="notag">b</wf>
+<wf cmd="done" pos="NN" lemma="axis" wnsn="1" lexsn="1:09:00::">axes</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="13">
+<s snum="69">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">are</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<wf cmd="done" pos="VB" lemma="publish" wnsn="1" lexsn="2:36:01::">published</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="literature" wnsn="1" lexsn="1:10:00::">literature</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="shape" wnsn="1" lexsn="1:07:00::">shape</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="JJ" lemma="low" wnsn="1" lexsn="3:00:02::">low</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drops</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="confirm" wnsn="1" lexsn="2:31:00::">confirm</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="above" wnsn="1" lexsn="5:00:00:preceding(a):00">above</wf>
+<wf cmd="done" pos="NN" lemma="formula" wnsn="1" lexsn="1:10:00::">formulas</wf>
+<punc>.</punc>
+</s>
+<s snum="70">
+<wf cmd="done" pos="RB" lemma="however" wnsn="1" lexsn="4:02:00::">However</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="5" lexsn="2:42:04::">are</wf>
+<wf cmd="done" pos="NN" lemma="photograph" wnsn="1" lexsn="1:06:00::">photographs</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="VB" lemma="suspend" wnsn="1" lexsn="2:35:00::">suspended</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drops</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="cyclohexanol_phthalate" wnsn="1" lexsn="1:27:00::">cyclohexanol_phthalate</wf>
+<punc>(</punc>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="done" pos="CD" ot="notag">155</wf>
+<wf cmd="done" pos="NN" lemma="poise" wnsn="1" lexsn="1:23:00::">poises</wf>
+<punc>)</punc>
+<wf cmd="done" pos="VB" lemma="suspend" wnsn="1" lexsn="2:35:00::">suspended</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="NN" lemma="corn_syrup" wnsn="1" lexsn="1:13:00::">corn_syrup</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="CD" ot="notag">71</wf>
+<wf cmd="done" pos="NN" lemma="poise" wnsn="1" lexsn="1:23:00::">poises</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="NN" lemma="paper" wnsn="2" lexsn="1:10:01::">paper</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Mason</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Bartok</wf>
+<punc>.</punc>
+</s>
+<s snum="71">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drops</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="of_course" wnsn="1" lexsn="4:02:00::">of_course</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" lemma="not" wnsn="1" lexsn="4:02:00::">not</wf>
+<wf cmd="done" pos="JJ" lemma="negligible" wnsn="1" lexsn="5:00:00:minimal:00">negligible</wf>
+<punc>.</punc>
+</s>
+<s snum="72">
+<wf cmd="done" pos="NN" lemma="measurement" wnsn="0" lexsn="1:07:00::">Measurements</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="photograph" wnsn="1" lexsn="1:06:00::">photograph</wf>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="RB" ot="notag">this</wf>
+<wf cmd="done" pos="NN" lemma="paper" wnsn="2" lexsn="1:10:01::">paper</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="2" lexsn="2:40:05::">give</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="maximum" wnsn="1" lexsn="3:00:00::">maximum</wf>
+<wf cmd="done" pos="NN" lemma="rate" wnsn="1" lexsn="1:28:00::">rate</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="shear" wnsn="1" lexsn="1:19:00::">shear</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>.</punc>
+</s>
+<s snum="73">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="assume" wnsn="1" lexsn="2:31:00::">assumed</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="formula" wnsn="1" lexsn="1:10:00::">formula</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="4" lexsn="2:40:07::">given</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" rdf="person" pos="NNP" lemma="person" wnsn="1" lexsn="1:03:00::" pn="person">Lodge</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="cosecant" pos="NN" lemma="cosecant" wnsn="1" lexsn="1:24:00::">cosec</wf>
+<wf cmd="done" pos="CD" ot="notag">2lc</wf>
+<wf cmd="done" pos="VB" lemma="apply" wnsn="5" lexsn="2:42:01::">applies</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="done" pos="NN" lemma="difference" wnsn="0" lexsn="1:09:00::">difference</wf>
+<wf cmd="ignore" pos="IN">along</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_axis" wnsn="1" lexsn="1:09:00::">major_axes</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculated</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="angle" wnsn="1" lexsn="1:25:00::">angle</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="inclination" wnsn="3" lexsn="1:25:01::">inclination</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="major_axis" wnsn="1" lexsn="1:09:00::">major_axis</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="PDT">this</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="interfacial_tension" wnsn="1" lexsn="1:19:00::">interfacial_tension</wf>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="calculate" wnsn="1" lexsn="2:31:00::">calculated</wf>
+<punc>.</punc>
+</s>
+<s snum="74">
+<wf cmd="ignore" pos="PRP$">Its</wf>
+<wf cmd="done" pos="NN" lemma="value" wnsn="1" lexsn="1:09:00::">value</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">was</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="above" wnsn="1" lexsn="5:00:00:preceding(a):00">above</wf>
+<wf cmd="done" pos="NN" lemma="data" wnsn="1" lexsn="1:14:00::">data</wf>
+<punc>.</punc>
+</s>
+<s snum="75">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="appear" wnsn="1" lexsn="2:39:00::">appears</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="done" pos="JJ" lemma="high" wnsn="1" lexsn="3:00:02::">high</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="expect" wnsn="1" lexsn="2:31:00::">expected</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="appreciable" wnsn="1" lexsn="5:00:00:considerable:00">appreciable</wf>
+<wf cmd="done" pos="NN" lemma="viscosity" wnsn="1" lexsn="1:07:00::">viscosity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="material" wnsn="1" lexsn="1:27:00::">material</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="drop" wnsn="1" lexsn="1:25:00::">drops</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="14">
+<s snum="76">
+<wf cmd="ignore" pos="PRP">It</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="appropriate" wnsn="1" lexsn="3:00:00::">appropriate</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="idiom">call_attention_to</wf>
+<wf cmd="done" pos="JJ" lemma="certain" wnsn="1" lexsn="5:00:00:definite:00">certain</wf>
+<wf cmd="done" pos="JJ" lemma="thermodynamic" wnsn="1" lexsn="3:01:00::">thermodynamic</wf>
+<wf cmd="done" pos="NN" lemma="property" wnsn="2" lexsn="1:07:00::">properties</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ideal_gas" wnsn="1" lexsn="1:27:00::">ideal_gas</wf>
+<wf cmd="ignore" pos="WDT">that</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">are</wf>
+<wf cmd="done" pos="JJ" lemma="analogous" wnsn="1" lexsn="5:00:00:similar:00">analogous</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="JJ" lemma="rubberlike" wnsn="1" lexsn="5:00:00:elastic:00">rubber-like</wf>
+<wf cmd="done" pos="NN" lemma="deformation" wnsn="1" lexsn="1:11:00::">deformation</wf>
+<punc>.</punc>
+</s>
+<s snum="77">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="JJ" lemma="internal" wnsn="1" lexsn="3:00:00::">internal</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ideal_gas" wnsn="1" lexsn="1:27:00::">ideal_gas</wf>
+<wf cmd="done" pos="VB" lemma="depend_on" wnsn="1" lexsn="2:42:00::">depends_on</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<wf cmd="done" pos="RB" lemma="only" wnsn="2" lexsn="4:02:01::">only</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="done" pos="JJ" lemma="independent" wnsn="1" lexsn="3:00:00::">independent</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<punc>.</punc>
+</s>
+<s snum="78">
+<wf cmd="done" pos="RB" lemma="in_other_words" wnsn="1" lexsn="4:02:00::">In_other_words</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ideal_gas" wnsn="1" lexsn="1:27:00::">ideal_gas</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="VB" lemma="compress" wnsn="1" lexsn="2:35:01::">compressed</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="1" lexsn="2:42:00::">kept</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="done" pos="JJ" lemma="constant" wnsn="1" lexsn="5:00:00:invariable:00">constant</wf>
+<wf cmd="done" pos="NN" lemma="temperature" wnsn="1" lexsn="1:07:00::">temperature</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="work" wnsn="5" lexsn="1:19:00::">work</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="3" lexsn="2:41:04::">done</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="done" pos="VB" lemma="compress" wnsn="1" lexsn="2:35:01::">compressing</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="RB" lemma="completely" wnsn="1" lexsn="4:02:04::">completely</wf>
+<wf cmd="done" pos="VB" lemma="convert" wnsn="4" lexsn="2:30:02::">converted</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="done" pos="NN" lemma="heat" wnsn="1" lexsn="1:19:00::">heat</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="transfer" wnsn="4" lexsn="2:38:00::">transferred</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="surrounding" wnsn="1" lexsn="5:00:00:close:01">surrounding</wf>
+<wf cmd="done" pos="NN" lemma="heat_sink" wnsn="1" lexsn="1:06:00::">heat_sink</wf>
+<punc>.</punc>
+</s>
+<s snum="79">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="VB" lemma="mean" wnsn="2" lexsn="2:42:00::">means</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="work" wnsn="5" lexsn="1:19:00::">work</wf>
+<wf cmd="done" pos="VB" lemma="equal" wnsn="1" lexsn="2:42:00::">equals</wf>
+<wf cmd="done" pos="NN" ot="notag">q</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="RB" lemma="in_turn" wnsn="1" lexsn="4:02:00::">in_turn</wf>
+<wf cmd="done" pos="VB" lemma="equal" wnsn="1" lexsn="2:42:00::">equals</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="15">
+<s snum="80">
+<wf cmd="ignore" pos="EX">There</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="done" pos="JJ" lemma="well-known" wnsn="1" lexsn="5:00:00:known:00">well-known</wf>
+<wf cmd="done" pos="NN" lemma="relationship" wnsn="1" lexsn="1:24:00::">relationship</wf>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="done" pos="NN" lemma="probability" wnsn="2" lexsn="1:07:00::">probability</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="NN" lemma="entropy" wnsn="0" lexsn="1:19:00::">entropy</wf>
+<wf cmd="ignore" pos="WDT">which</wf>
+<wf cmd="done" pos="VB" lemma="state" wnsn="1" lexsn="2:32:00::">states</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="done" pos="NN" ot="notag">f</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="done" pos="NN" ot="notag">\q</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="probability" wnsn="2" lexsn="1:07:00::">probability</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="done" pos="NN" lemma="state" wnsn="2" lexsn="1:03:00::">state</wf>
+<punc>(</punc>
+<wf cmd="done" pos="RB" lemma="i.e." wnsn="1" lexsn="4:02:00::">i.e.</wf>
+<punc>,</punc>
+<wf cmd="done" pos="NN" lemma="volume" wnsn="1" lexsn="1:23:00::">volume</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="NN" lemma="ideal_gas" wnsn="1" lexsn="1:27:00::">ideal_gas</wf>
+<punc>)</punc>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="reach" wnsn="1" lexsn="2:38:01::">reached</wf>
+<wf cmd="done" pos="RB" ot="notag">by</wf>
+<wf cmd="done" pos="NN" lemma="chance" wnsn="2" lexsn="1:19:00::">chance</wf>
+<wf cmd="done" pos="RB" lemma="alone" wnsn="1" lexsn="4:02:00::">alone</wf>
+<punc>.</punc>
+</s>
+<s snum="81">
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="done" pos="JJ" lemma="known" wnsn="1" lexsn="3:00:00::">known</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="NN" lemma="conformational_entropy" wnsn="0" lexsn="1:19:00::">conformational_entropy</wf>
+<punc>.</punc>
+</s>
+<s snum="82">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="done" pos="NN" lemma="conformational_entropy" wnsn="0" lexsn="1:19:00::">conformational_entropy</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<punc>,</punc>
+<wf cmd="done" pos="RB" ot="notag">in</wf>
+<wf cmd="done" pos="RB" ot="notag">this</wf>
+<wf cmd="done" pos="NN" lemma="case" wnsn="2" lexsn="1:26:00::">case</wf>
+<punc>,</punc>
+<wf cmd="done" pos="JJ" lemma="equal" wnsn="1" lexsn="3:00:00::">equal</wf>
+<wf cmd="done" pos="JJ" ot="notag">to</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="usual" wnsn="1" lexsn="3:00:00::">usual</wf>
+<wf cmd="done" pos="NN" lemma="entropy" wnsn="0" lexsn="1:19:00::">entropy</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="EX">there</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="4" lexsn="2:42:00::">are</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="NN" lemma="change" wnsn="2" lexsn="1:24:00::">changes</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="JJ" lemma="other" wnsn="1" lexsn="3:00:00::">other</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energies</wf>
+<wf cmd="done" pos="VB" lemma="involve" wnsn="1" lexsn="2:42:01::">involved</wf>
+<punc>.</punc>
+</s>
+<s snum="83">
+<wf cmd="done" pos="VB" lemma="note" wnsn="2" lexsn="2:39:00::">Note</wf>
+<wf cmd="ignore" pos="IN">that</wf>
+<wf cmd="ignore" pos="IN">though</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="ideal_gas" wnsn="1" lexsn="1:27:00::">ideal_gas</wf>
+<wf cmd="ignore" pos="PRP">itself</wf>
+<wf cmd="done" pos="VB" lemma="contain" wnsn="1" lexsn="2:42:00::">contains</wf>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="done" pos="JJ" lemma="additional" wnsn="0" lexsn="5:00:00:added:00">additional</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="JJ" lemma="compressed" wnsn="2" lexsn="5:00:00:compressible:00">compressed</wf>
+<wf cmd="done" pos="NN" lemma="gas" wnsn="1" lexsn="1:26:00::">gas</wf>
+<wf cmd="done" pos="VBZ" ot="notag">does</wf>
+<wf cmd="done" pos="VB" lemma="exert" wnsn="2" lexsn="2:40:00::">exert</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="done" pos="JJ" lemma="increased" wnsn="1" lexsn="3:00:00::">increased</wf>
+<wf cmd="done" pos="NN" lemma="pressure" wnsn="1" lexsn="1:19:00::">pressure</wf>
+<punc>.</punc>
+</s>
+<s snum="84">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="done" pos="JJ" lemma="isothermal" wnsn="1" lexsn="5:00:00:equal:00">isothermal</wf>
+<wf cmd="done" pos="NN" lemma="work" wnsn="5" lexsn="1:19:00::">work</wf>
+<wf cmd="done" pos="VB" lemma="do" wnsn="3" lexsn="2:41:04::">done</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="done" pos="NN" lemma="perfect_gas" wnsn="1" lexsn="1:27:00::">perfect_gas</wf>
+<wf cmd="ignore" pos="MD">must</wf>
+<wf cmd="done" pos="VB" lemma="come" wnsn="1" lexsn="2:38:00::">come</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="JJ" lemma="thermal" wnsn="1" lexsn="3:01:00::">thermal</wf>
+<wf cmd="done" pos="NN" lemma="energy" wnsn="1" lexsn="1:19:00::">energy</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="PRP$">its</wf>
+<wf cmd="done" pos="NN" lemma="surroundings" wnsn="1" lexsn="1:26:00::">surroundings</wf>
+<punc>.</punc>
+</s>
+</p>
+</context>
+</contextfile>

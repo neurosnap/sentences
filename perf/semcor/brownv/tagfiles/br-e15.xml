@@ -1,0 +1,2577 @@
+<contextfile concordance="brown">
+<context filename="br-e15" paras="yes">
+<p pnum="1">
+<s snum="1">
+<wf cmd="tag" pos="NNS">Directions</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="write" wnsn="3" lexsn="2:36:02::">written</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">those</wf>
+<wf cmd="ignore" pos="WP">who</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="1" lexsn="2:40:00::">had</wf>
+<wf cmd="tag" pos="JJ">previous</wf>
+<wf cmd="tag" pos="NN">experience</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="9" lexsn="2:36:09::">making</wf>
+<wf cmd="tag" pos="NN">pottery</wf>
+<punc>.</punc>
+</s>
+<s snum="2">
+<wf cmd="tag" pos="NNS">Instructions</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="VB" lemma="prepare" wnsn="1" lexsn="2:30:00::">preparing</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="1" lexsn="2:30:01::">drying</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="glaze" wnsn="1" lexsn="2:35:00::">glazing</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">firing</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="4" lexsn="2:40:07::">given</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="2">
+<s snum="3">
+<wf cmd="tag" pos="NNP">Basic</wf>
+<wf cmd="tag" pos="NN">pottery</wf>
+<wf cmd="tag" pos="NN">studio</wf>
+<wf cmd="tag" pos="NN">equipment</wf>
+<punc>.</punc>
+</s>
+<s snum="4">
+<wf cmd="tag" pos="JJ">Wooden</wf>
+<wf cmd="tag" pos="NN">butter</wf>
+<wf cmd="tag" pos="NNS">molds</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">cookie</wf>
+<wf cmd="tag" pos="NNS">presses</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="3">
+<s snum="5">
+<wf cmd="tag" pos="JJ">Ceramic</wf>
+<wf cmd="tag" pos="NN">modeling</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>:</punc>
+<wf cmd="tag" pos="JJ">red</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">white</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">buff</wf>
+<punc>.</punc>
+</s>
+<s snum="6">
+<wf cmd="tag" pos="JJ">Stoneware</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">tiles</wf>
+<punc>.</punc>
+</s>
+<s snum="7">
+<wf cmd="tag" pos="NNS">Glazes</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">one-stroke</wf>
+<wf cmd="tag" pos="JJ">ceramic</wf>
+<wf cmd="tag" pos="NNS">colors</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNS">stains</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NNS">cones</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="3" lexsn="2:32:00::">indicated</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">individual</wf>
+<wf cmd="tag" pos="NNS">instructions</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="4">
+<s snum="8">
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">Use</wf>
+<wf cmd="tag" pos="JJ">well-wedged</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">free_of</wf>
+<wf cmd="tag" pos="NN">air_bubbles</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">pliable</wf>
+<wf cmd="tag" pos="RB">enough</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="bend" wnsn="3" lexsn="2:35:00::">bend</wf>
+<wf cmd="ignore" pos="IN">without</wf>
+<wf cmd="done" pos="VB" lemma="crack" wnsn="1" lexsn="2:30:01::">cracking</wf>
+<punc>.</punc>
+</s>
+<s snum="9">
+<wf cmd="done" pos="VB" lemma="clean" wnsn="1" lexsn="2:35:00::">Clean</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NNS">molds</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">presses</wf>
+<wf cmd="tag" pos="RB">thoroughly</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="ignore" pos="MD">must</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="tag" pos="JJ">free_of</wf>
+<wf cmd="tag" pos="NN">oil</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">wax</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">dust</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="5">
+<s snum="10">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="NN">size</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="determine" wnsn="6" lexsn="2:31:03::">determine</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">amount</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VB" lemma="need" wnsn="2" lexsn="2:34:00::">needed</wf>
+<punc>.</punc>
+</s>
+<s snum="11">
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">Roll</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">thickness</wf>
+<wf cmd="done" pos="VB" lemma="indicate" wnsn="3" lexsn="2:32:00::">indicated</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="JJ">individual</wf>
+<wf cmd="tag" pos="NNS">instructions</wf>
+<punc>.</punc>
+</s>
+<s snum="12">
+<wf cmd="ignore" pos="WRB">Whenever</wf>
+<wf cmd="tag" pos="JJ">possible</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cutting</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>.</punc>
+</s>
+<s snum="13">
+<wf cmd="ignore" pos="WRB">When</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="1" lexsn="2:40:00::">has</wf>
+<wf cmd="tag" pos="RB">more_than</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">make</wf>
+<wf cmd="tag" pos="JJ">individual</wf>
+<wf cmd="tag" pos="NN">paper</wf>
+<wf cmd="tag" pos="NNS">patterns</wf>
+<punc>.</punc>
+</s>
+<s snum="14">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">paper</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">rolled</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="hold" wnsn="1;2" lexsn="2:42:00::;2:35:00::">holding</wf>
+<wf cmd="tag" pos="NN">knife</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="JJ">vertical</wf>
+<wf cmd="tag" pos="NN">position</wf>
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="tag" pos="JJR">more</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="done" pos="VB" lemma="require" wnsn="1" lexsn="2:42:00::">required</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">project</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">make</wf>
+<wf cmd="tag" pos="NN">allowance</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">defects</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="experiment" wnsn="1" lexsn="2:41:01::">experiment</wf>
+<wf cmd="done" pos="VB" ot="notag">with</wf>
+<wf cmd="tag" pos="NNS">defects</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">decoration</wf>
+<wf cmd="tag" pos="NNS">techniques</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNS">glazes</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">colors</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="15">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">cut</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="tag" pos="RB">loosely</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">carved</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="16">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtain</wf>
+<wf cmd="tag" pos="JJ">clear</wf>
+<wf cmd="tag" pos="NN">impression</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="RB">gently</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="tag" pos="RB">firmly</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="start" wnsn="1" lexsn="2:30:00::">starting</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="NN">center</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="work" wnsn="5" lexsn="2:36:00::">working</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="JJ">outer</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>.</punc>
+</s>
+<s snum="17">
+<wf cmd="done" pos="VB" lemma="trim" wnsn="1" lexsn="2:35:03::">Trim</wf>
+<wf cmd="tag" pos="JJ">excess</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="RB">away</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="JJ">outer</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>.</punc>
+</s>
+<s snum="18">
+<wf cmd="done" pos="VB" lemma="check" wnsn="1" lexsn="2:31:00::">Check</wf>
+<wf cmd="tag" pos="NN">thickness</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="build_up" wnsn="1" lexsn="2:30:02::">build_up</wf>
+<wf cmd="tag" pos="JJ">thin</wf>
+<wf cmd="tag" pos="NNS">areas</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="moisten" wnsn="1" lexsn="2:30:00::">moistening</wf>
+<wf cmd="tag" pos="NN">surface</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="RB">a_little</wf>
+<wf cmd="tag" pos="NN">water</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="add" wnsn="1" lexsn="2:30:00::">adding</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>.</punc>
+</s>
+<s snum="19">
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">Be</wf>
+<wf cmd="tag" pos="JJ">sure</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">additional</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="RB">firmly</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">place</wf>
+<wf cmd="ignore" pos="IN">without</wf>
+<wf cmd="done" pos="VB" lemma="lock_in" wnsn="1" lexsn="2:35:01::">locking_in</wf>
+<wf cmd="tag" pos="NN">air_bubbles</wf>
+<punc>.</punc>
+</s>
+<s snum="20">
+<wf cmd="done" pos="VB" lemma="allow" wnsn="2" lexsn="2:32:00::">Allow</wf>
+<wf cmd="tag" pos="NN">project</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="stand" wnsn="3" lexsn="2:42:03::">stand</wf>
+<wf cmd="done" pos="VB" ot="notag">for</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="tag" pos="CD">five</wf>
+<wf cmd="tag" pos="NNS">minutes</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">press</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">good</wf>
+<wf cmd="tag" pos="JJ">antique</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VBP" ot="notag">do</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="leave" wnsn="4" lexsn="2:30:02::">leave</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">dampness</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">cause</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="crack" wnsn="6" lexsn="2:30:02::">crack</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="6">
+<s snum="21">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="release" wnsn="3" lexsn="2:35:01::">release</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">place</wf>
+<wf cmd="tag" pos="NNS">hands</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">cupped</wf>
+<wf cmd="tag" pos="NN">position</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="tag" pos="NN">project</wf>
+<punc>;</punc>
+<wf cmd="tag" pos="RB">gently</wf>
+<wf cmd="done" pos="VB" lemma="lift" wnsn="1" lexsn="2:38:00::">lift</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<wf cmd="tag" pos="RB">on</wf>
+<wf cmd="tag" pos="RB">far</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">then</wf>
+<wf cmd="done" pos="VB" lemma="continue" wnsn="1" lexsn="2:42:01::">continue</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="release" wnsn="3" lexsn="2:35:01::">release</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<wf cmd="tag" pos="RB">completely</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="22">
+<wf cmd="tag" pos="JJ">Slight</wf>
+<wf cmd="tag" pos="NN">tapping</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">underside</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="help" wnsn="1" lexsn="2:41:00::">help</wf>
+<wf cmd="done" pos="VB" lemma="release" wnsn="3" lexsn="2:35:01::">release</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="tag" pos="RB">too_much</wf>
+<wf cmd="tag" pos="NN">agitation</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">cause</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="1" lexsn="2:30:00::">become</wf>
+<wf cmd="tag" pos="JJ">soft</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="interfere" wnsn="1" lexsn="2:41:01::">interfere</wf>
+<wf cmd="done" pos="VB" ot="notag">with</wf>
+<wf cmd="tag" pos="NN">removal</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="23">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="RB">a_piece</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">wall</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">bat</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="reverse" wnsn="2" lexsn="2:30:01::">reverse</wf>
+<wf cmd="tag" pos="NN">bat</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">action</wf>
+<punc>.</punc>
+</s>
+<s snum="24">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="prevent" wnsn="2" lexsn="2:41:00::">prevent</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="done" pos="VB" lemma="twist" wnsn="2" lexsn="2:35:02::">twisting</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="VB" lemma="bend" wnsn="3" lexsn="2:35:00::">bending</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">causing</wf>
+<wf cmd="tag" pos="NN">warping</wf>
+<wf cmd="ignore" pos="WRB">when</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fired</wf>
+<punc>.</punc>
+</s>
+<s snum="25">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">project</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">table</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">carefully</wf>
+<wf cmd="done" pos="VB" lemma="lift" wnsn="2" lexsn="2:35:00::">lift</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="RB">off</wf>
+<punc>.</punc>
+</s>
+<s snum="26">
+<wf cmd="done" pos="VB" lemma="study" wnsn="1" lexsn="2:31:02::">Study</wf>
+<wf cmd="tag" pos="NN">surface</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">defects</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="JJ">desired</wf>
+<wf cmd="tag" pos="NNS">corrections</wf>
+<punc>.</punc>
+</s>
+<s snum="27">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="RB">slightly</wf>
+<wf cmd="ignore" pos="IN">out</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">shape</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="square" wnsn="1" lexsn="2:30:00::">square</wf>
+<wf cmd="tag" pos="JJ">straight</wf>
+<wf cmd="tag" pos="NN">sides</wf>
+<wf cmd="done" pos="VB" ot="notag">with</wf>
+<wf cmd="tag" pos="NN">guide</wf>
+<wf cmd="tag" pos="NNS">sticks</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NNS">rulers</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">pressed</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="VB" lemma="smooth" wnsn="1" lexsn="2:35:00::">smooth</wf>
+<wf cmd="tag" pos="NN">round</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">damp</wf>
+<wf cmd="tag" pos="NNS">fingers</wf>
+<punc>.</punc>
+</s>
+<s snum="28">
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">background</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">smooth</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="ignore" pos="PRP">you</wf>
+<wf cmd="done" pos="VB" lemma="wish" wnsn="2" lexsn="2:37:02::">wish</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="create" wnsn="1" lexsn="2:36:00::">create</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">wood-grained</wf>
+<wf cmd="tag" pos="NN">effect</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="VB" ot="notag">be_added</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="tag" pos="NN">time</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">dull</wf>
+<wf cmd="tag" pos="NN">tool</wf>
+<wf cmd="tag" pos="JJ">such_as</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">handle</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">fine</wf>
+<wf cmd="tag" pos="NN">paintbrush</wf>
+<punc>.</punc>
+</s>
+<s snum="29">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="tag" pos="JJ">slight</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">smooth</wf>
+<wf cmd="tag" pos="NNS">grooves</wf>
+<wf cmd="tag" pos="RB">rather_than</wf>
+<wf cmd="tag" pos="NNS">cuts</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">texture</wf>
+<punc>(</punc>
+<wf cmd="tag" pos="NNS">cuts</wf>
+<wf cmd="ignore" pos="MD">could</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">cause</wf>
+<wf cmd="tag" pos="NN">air_pockets</wf>
+<wf cmd="ignore" pos="IN">under</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<wf cmd="done" pos="VB" lemma="create" wnsn="1" lexsn="2:36:00::">creating</wf>
+<wf cmd="tag" pos="NNS">pinholes</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NNS">craters</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<wf cmd="ignore" pos="IN">during</wf>
+<wf cmd="tag" pos="NN">firing</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="30">
+<wf cmd="done" pos="VB" lemma="leave" wnsn="0" lexsn="2:30:01::">Leave</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="tag" pos="RB">slowly</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="cover" wnsn="1" lexsn="2:35:00::">covered</wf>
+<wf cmd="tag" pos="RB">lightly</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">loose</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">plastic</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">cloth</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="prevent" wnsn="1" lexsn="2:41:01::">prevent</wf>
+<wf cmd="tag" pos="NN">warping</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="7">
+<s snum="31">
+<punc>(</punc>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NN">page</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">right</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<punc>)</punc>
+<punc>:</punc>
+<wf cmd="tag" pos="JJ">Stoneware</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<punc>.</punc>
+</s>
+<s snum="32">
+<wf cmd="tag" pos="NNP">Clay</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">rolled</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">4</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NN">thickness</wf>
+<punc>.</punc>
+</s>
+<s snum="33">
+<wf cmd="tag" pos="RB">Back</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">scored</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="done" pos="VB" lemma="roughen" wnsn="1" lexsn="2:35:00::">roughened</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">proper</wf>
+<wf cmd="tag" pos="NN">gripping</wf>
+<wf cmd="tag" pos="NN">surface</wf>
+<punc>.</punc>
+</s>
+<s snum="34">
+<wf cmd="ignore" pos="DT">No</wf>
+<wf cmd="tag" pos="NN">bisque</wf>
+<wf cmd="tag" pos="NN">firing</wf>
+<punc>.</punc>
+</s>
+<s snum="35">
+<wf cmd="done" pos="VB" lemma="glaze" wnsn="1" lexsn="2:35:00::">glazed</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">coats</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">Creek-Turn</wf>
+<wf cmd="tag" pos="JJ">white</wf>
+<wf cmd="tag" pos="NN">stoneware</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<punc>(</punc>
+<wf cmd="ignore" pos="DT">no</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="36">
+<wf cmd="done" pos="VB" lemma="decorate" wnsn="1" lexsn="2:36:00::">Decorated</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">unfired</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">coat</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">one-stroke</wf>
+<wf cmd="tag" pos="JJ">ceramic</wf>
+<wf cmd="tag" pos="NNS">colors</wf>
+<punc>;</punc>
+<wf cmd="tag" pos="JJ">raised</wf>
+<wf cmd="tag" pos="NNS">details</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNS">designs</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="color" wnsn="1" lexsn="2:30:00::">colored</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="tag" pos="NNS">shades</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">yellow-green</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">blue-green</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">brown</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">pink</wf>
+<punc>.</punc>
+</s>
+<s snum="37">
+<wf cmd="tag" pos="NNS">Tiles</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fired</wf>
+<wf cmd="tag" pos="RB">once</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">05</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="8">
+<s snum="38">
+<punc>(</punc>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NN">page</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">bottom</wf>
+<punc>)</punc>
+<punc>:</punc>
+<wf cmd="tag" pos="NNP">White</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">rolled</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">4</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NN">thickness</wf>
+<punc>.</punc>
+</s>
+<s snum="39">
+<wf cmd="tag" pos="NN">Bisque</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fired</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">05</wf>
+<punc>.</punc>
+</s>
+<s snum="40">
+<wf cmd="done" pos="VB" lemma="stain" wnsn="1" lexsn="2:30:01::">Stained</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">Jacquelyn</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="JJ">ceramic</wf>
+<wf cmd="tag" pos="JJ">unfired</wf>
+<wf cmd="tag" pos="NN">stain</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="polish" wnsn="1" lexsn="2:35:00::">polished</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="follow" wnsn="5" lexsn="2:41:00::">following</wf>
+<wf cmd="tag" pos="NN">manufacturer</wf>
+<wf cmd="ignore" pos="POS">'s</wf>
+<wf cmd="tag" pos="NNS">directions</wf>
+<punc>.</punc>
+</s>
+<s snum="41">
+<wf cmd="tag" pos="JJ">Opaque</wf>
+<wf cmd="tag" pos="NN">cantaloupe</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">transparent</wf>
+<wf cmd="tag" pos="NN">wood</wf>
+<wf cmd="tag" pos="JJ">brown</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<punc>.</punc>
+</s>
+<s snum="42">
+<wf cmd="ignore" pos="DT">No</wf>
+<wf cmd="tag" pos="JJ">further</wf>
+<wf cmd="tag" pos="NN">firing</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="9">
+<s snum="43">
+<punc>(</punc>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NN">page</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="tag" pos="RB">left</wf>
+<punc>)</punc>
+<punc>:</punc>
+<wf cmd="tag" pos="NN">Red_clay</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">rolled</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">2</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">thick</wf>
+<punc>.</punc>
+</s>
+<s snum="44">
+<wf cmd="tag" pos="NN">Mold</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">used</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="hold" wnsn="1;2" lexsn="2:42:00::;2:35:00::">holding</wf>
+<wf cmd="tag" pos="NN">knife</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="RB">about</wf>
+<wf cmd="tag" pos="CD">45</wf>
+<punc>`</punc>
+<wf cmd="tag" pos="NN">angle</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="form" wnsn="4" lexsn="2:30:01::">form</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="NN">undercut</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="make" wnsn="2" lexsn="2:30:00::">making</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="tag" pos="JJR">smaller</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<punc>.</punc>
+</s>
+<s snum="45">
+<wf cmd="ignore" pos="IN">While</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VBZ" ot="notag">is</wf>
+<wf cmd="tag" pos="RB">still</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">pressed</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="press" wnsn="7" lexsn="2:36:01::">press</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="RB">equally</wf>
+<wf cmd="tag" pos="JJ">spaced</wf>
+<wf cmd="tag" pos="NNS">holes</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">4</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">deep</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="tag" pos="NN">pencil_eraser</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="allow_for" wnsn="1" lexsn="2:42:00::">allow_for</wf>
+<wf cmd="tag" pos="JJ">proper</wf>
+<wf cmd="tag" pos="NN">drying</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">firing</wf>
+<punc>.</punc>
+</s>
+<s snum="46">
+<wf cmd="tag" pos="NNP">Paperweight</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="personalize" wnsn="1" lexsn="2:30:00::">personalized</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="RB">back</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="NN">leather</wf>
+<wf cmd="tag" pos="JJ">hard</wf>
+<punc>.</punc>
+</s>
+<s snum="47">
+<wf cmd="tag" pos="NN">Bisque</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fired</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">cone</wf>
+<wf cmd="tag" pos="CD">05</wf>
+<punc>.</punc>
+</s>
+<s snum="48">
+<wf cmd="tag" pos="NN">Unglazed</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="10">
+<s snum="49">
+<punc>(</punc>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NN">page</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="tag" pos="RB">left</wf>
+<punc>)</punc>
+<punc>:</punc>
+<wf cmd="done" pos="VB" lemma="remove" wnsn="1" lexsn="2:30:00::">Remove</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">bowl</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">butter</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="50">
+<wf cmd="done" pos="VB" lemma="fill" wnsn="1" lexsn="2:30:01::">Fill</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="tag" pos="NN">hole</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">bowl</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>.</punc>
+</s>
+<s snum="51">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="tag" pos="NN">paper</wf>
+<wf cmd="tag" pos="NNS">patterns</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">sections</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<punc>(</punc>
+<wf cmd="tag" pos="RB">see</wf>
+<wf cmd="tag" pos="NN">Fig.</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">opposite</wf>
+<wf cmd="tag" pos="NN">page</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="52">
+<wf cmd="tag" pos="NNS">Measurements</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">rectangular</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="obtain" wnsn="1" lexsn="2:40:00::">obtained</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="1" lexsn="2:31:00::">measuring</wf>
+<wf cmd="ignore" pos="IN">inside</wf>
+<wf cmd="tag" pos="NN">circumference</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">depth</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">butter</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="NN">bowl</wf>
+<punc>.</punc>
+</s>
+<s snum="53">
+<wf cmd="tag" pos="NN">Pattern</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">circular</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="tag" pos="NNP">B</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="6" lexsn="2:42:07::">is</wf>
+<wf cmd="tag" pos="NN">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>.</punc>
+</s>
+<s snum="54">
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">Use</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="tag" pos="NN">C</wf>
+<punc>;</punc>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="tag" pos="NN">D</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="done" pos="VB" lemma="fit" wnsn="3" lexsn="2:42:01::">fits</wf>
+<wf cmd="ignore" pos="IN">over</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="tag" pos="NN">diameter</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>.</punc>
+</s>
+<s snum="55">
+<wf cmd="tag" pos="NN">Pattern</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">inner</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="tag" pos="NN">E</wf>
+<wf cmd="done" pos="VB" lemma="fit" wnsn="2" lexsn="2:42:02::">fits</wf>
+<wf cmd="tag" pos="RB">inside</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>.</punc>
+</s>
+<s snum="56">
+<wf cmd="tag" pos="NNS">Jars</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="assemble" wnsn="1" lexsn="2:36:00::">assembled</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">bowl</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">butter</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="11">
+<s snum="57">
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">Use</wf>
+<wf cmd="tag" pos="JJ">white</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">buff</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">rolled</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="CD">3</wf>
+<wf cmd="tag" pos="CD">16</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NN">thickness</wf>
+<punc>.</punc>
+</s>
+<s snum="58">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NNS">patterns</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">rolled</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="ignore" pos="PRP">them</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">knife</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="JJ">vertical</wf>
+<wf cmd="tag" pos="NN">position</wf>
+<punc>.</punc>
+</s>
+<s snum="59">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">wall</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="12">
+<s snum="60">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="assemble" wnsn="1" lexsn="2:36:00::">assemble</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">put</wf>
+<wf cmd="tag" pos="NN">paper</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="tag" pos="NNP">B</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<wf cmd="tag" pos="NNP">B</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<punc>.</punc>
+</s>
+<s snum="61">
+<wf cmd="done" pos="VB" lemma="line" wnsn="2" lexsn="2:35:00::">Line</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">paper</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>.</punc>
+</s>
+<s snum="62">
+<wf cmd="done" pos="VB" lemma="bevel" wnsn="1" lexsn="2:35:00::">Bevel</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">score</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="tag" pos="RB">so_that</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VB" lemma="overlap" wnsn="1" lexsn="2:42:03::">overlap</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">2</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="6" lexsn="2:36:01::">make</wf>
+<wf cmd="tag" pos="JJ">even</wf>
+<wf cmd="tag" pos="NN">thickness</wf>
+<punc>.</punc>
+</s>
+<s snum="63">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="ignore" pos="IN">inside</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="tag" pos="JJ">overlapped</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<punc>.</punc>
+</s>
+<s snum="64">
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">Join</wf>
+<wf cmd="tag" pos="NNP">B</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">A</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">scoring</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="reinforce" wnsn="1" lexsn="2:30:00::">reinforcing</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">coil</wf>
+<punc>.</punc>
+</s>
+<s snum="65">
+<wf cmd="done" pos="VB" lemma="trim" wnsn="1" lexsn="2:35:03::">Trim</wf>
+<wf cmd="tag" pos="JJ">excess</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="tag" pos="NN">lip</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="set" wnsn="1" lexsn="2:35:00::">set</wf>
+<wf cmd="tag" pos="RB">aside</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="done" pos="VB" lemma="assemble" wnsn="1" lexsn="2:36:00::">assembling</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="13">
+<s snum="66">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="assemble" wnsn="1" lexsn="2:36:00::">assemble</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">piece</wf>
+<wf cmd="tag" pos="NN">C</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<punc>.</punc>
+</s>
+<s snum="67">
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">Press</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="done" pos="VB" lemma="instruct" wnsn="1" lexsn="2:32:00::">instructed</wf>
+<wf cmd="tag" pos="RB">in_General</wf>
+<wf cmd="tag" pos="NNP">Directions</wf>
+<punc>.</punc>
+</s>
+<s snum="68">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="tag" pos="JJ">plain</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">C</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="leave" wnsn="4" lexsn="2:30:02::">leave</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="69">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<wf cmd="tag" pos="NN">D</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">C</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">score</wf>
+<wf cmd="tag" pos="JJ">other</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">D</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<wf cmd="tag" pos="NN">E</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="RB">before</wf>
+<punc>.</punc>
+</s>
+<s snum="70">
+<wf cmd="ignore" pos="IN">While</wf>
+<wf cmd="tag" pos="JJ">assembled</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="3" lexsn="2:42:05::">is</wf>
+<wf cmd="tag" pos="RB">still</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">gently</wf>
+<wf cmd="ignore" pos="CC">but</wf>
+<wf cmd="tag" pos="RB">firmly</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<punc>.</punc>
+</s>
+<s snum="71">
+<wf cmd="ignore" pos="IN">If</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<wf cmd="done" pos="VB" lemma="have" wnsn="2" lexsn="2:42:00::">has</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">deep</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">be</wf>
+<wf cmd="tag" pos="RB">quite</wf>
+<wf cmd="tag" pos="JJ">thick</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">this</wf>
+<wf cmd="tag" pos="NN">point</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="tag" pos="NN">eraser</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">pencil</wf>
+<wf cmd="tag" pos="RB">gently</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">4</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">deep</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="JJ">deep</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="allow_for" pos="VB" lemma="allow_for" wnsn="1" lexsn="2:42:00::">allow</wf>
+<wf cmd="tag" pos="NN">vent</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">proper</wf>
+<wf cmd="tag" pos="NN">drying</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">firing</wf>
+<punc>.</punc>
+</s>
+<s snum="72">
+<wf cmd="done" pos="VB" lemma="check" wnsn="1" lexsn="2:31:00::">Check</wf>
+<wf cmd="tag" pos="NN">fit</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<punc>;</punc>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="tag" pos="JJ">inner</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="1" lexsn="2:42:03::">is</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">big</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="trim" wnsn="1" lexsn="2:35:03::">trim</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="fit" wnsn="2" lexsn="2:42:02::">fit</wf>
+<punc>,</punc>
+<wf cmd="done" rdf="allowing_for" pos="VB" lemma="allow" wnsn="5" lexsn="2:42:00::">allowing</wf>
+<wf cmd="tag" pos="NN">room</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">thickness</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<punc>.</punc>
+</s>
+<s snum="73">
+<wf cmd="done" pos="VB" lemma="remove" wnsn="1" lexsn="2:30:00::">Remove</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">head</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="74">
+<wf cmd="done" pos="VB" lemma="remove" wnsn="1" lexsn="2:30:00::">Remove</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="75">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="tag" pos="RB">in_place</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="tag" pos="RB">slowly</wf>
+<punc>.</punc>
+</s>
+<s snum="76">
+<wf cmd="tag" pos="NN">Bisque</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fire</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">08</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="14">
+<s snum="77">
+<wf cmd="ignore" pos="IN">For</wf>
+<wf cmd="ignore" pos="DT">an</wf>
+<wf cmd="tag" pos="JJ">antique</wf>
+<wf cmd="tag" pos="NN">effect</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NNS">jars</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="brush" wnsn="1" lexsn="2:35:01::">brush</wf>
+<wf cmd="tag" pos="JJ">Creek-Turn</wf>
+<wf cmd="tag" pos="JJ">brown</wf>
+<wf cmd="tag" pos="NN">toner</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">bisque</wf>
+<wf cmd="tag" pos="NN">ware</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="sponge" wnsn="1" lexsn="2:35:00::">sponge</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="tag" pos="RB">off</wf>
+<punc>.</punc>
+</s>
+<s snum="78">
+<wf cmd="done" pos="VB" lemma="glaze" wnsn="1" lexsn="2:35:00::">Glaze</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">coats</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">clear</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="JJ">transparent</wf>
+<wf cmd="tag" pos="NN">matt</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<punc>.</punc>
+</s>
+<s snum="79">
+<wf cmd="ignore" pos="DT">The</wf>
+<wf cmd="tag" pos="JJ">large</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="brush" wnsn="1" lexsn="2:35:01::">brushed</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="JJ">Creek-Turn</wf>
+<wf cmd="tag" pos="JJ">green</wf>
+<wf cmd="tag" pos="NN">toner</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="sponge_off" wnsn="1" lexsn="2:35:00::">sponged_off</wf>
+<punc>.</punc>
+</s>
+<s snum="80">
+<wf cmd="done" pos="VB" lemma="glaze" wnsn="1" lexsn="2:35:00::">Glaze</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">coats</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">matt</wf>
+<wf cmd="tag" pos="NNS">glazes</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="JJ">turquoise</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NNS">touches</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">blossom</wf>
+<wf cmd="tag" pos="JJ">pink</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<punc>.</punc>
+</s>
+<s snum="81">
+<wf cmd="ignore" pos="WRB">When</wf>
+<wf cmd="tag" pos="JJ">dry</wf>
+<wf cmd="ignore" pos="PRP">they</wf>
+<wf cmd="done" pos="VBD" ot="notag">were</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fired</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">06</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="CD">05</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="15">
+<s snum="82">
+<punc>(</punc>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Made</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="JJ">modern</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NNS">molds</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="tag" pos="NN">f</wf>
+<punc>.</punc>
+<punc>)</punc>
+</s>
+<s snum="83">
+<wf cmd="done" pos="VB" lemma="roll" wnsn="4" lexsn="2:35:05::">Roll</wf>
+<wf cmd="tag" pos="JJ">white</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="CD">3</wf>
+<wf cmd="tag" pos="CD">16</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="NN">thickness</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="16">
+<s snum="84">
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">Use</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="tag" pos="CD">four</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<punc>.</punc>
+</s>
+<s snum="85">
+<wf cmd="ignore" pos="IN">For</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="JJ">short</wf>
+<wf cmd="tag" pos="NN">end</wf>
+<wf cmd="tag" pos="RB">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NN">measurement</wf>
+<wf cmd="tag" pos="NN">guide</wf>
+<punc>.</punc>
+</s>
+<s snum="86">
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">Press</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="87">
+<wf cmd="done" pos="VB" lemma="trim" wnsn="1" lexsn="2:35:03::">Trim</wf>
+<wf cmd="tag" pos="JJ">excess</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">rim</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>.</punc>
+</s>
+<s snum="88">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="done" pos="VB" lemma="bevel" wnsn="1" lexsn="2:35:00::">beveled</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="CD">45</wf>
+<punc>`</punc>
+<wf cmd="tag" pos="NN">angle</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="miter" wnsn="1" lexsn="2:35:00::">miter</wf>
+<wf cmd="tag" pos="NNS">corners</wf>
+<punc>.</punc>
+</s>
+<s snum="89">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="tag" pos="JJ">beveled</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="remove" wnsn="1" lexsn="2:30:00::">remove</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">place</wf>
+<wf cmd="tag" pos="JJ">design-side</wf>
+<wf cmd="tag" pos="JJ">up_on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<punc>.</punc>
+</s>
+<s snum="90">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="CD">four</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<punc>.</punc>
+</s>
+<s snum="91">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">place</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<punc>.</punc>
+</s>
+<s snum="92">
+<wf cmd="done" pos="VB" lemma="allow" wnsn="2" lexsn="2:32:00::">Allow</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="become" wnsn="2" lexsn="2:42:01::">become</wf>
+<wf cmd="tag" pos="NN">leather</wf>
+<wf cmd="tag" pos="JJ">hard</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="done" pos="VB" lemma="construct" wnsn="2" lexsn="2:36:01::">constructing</wf>
+<wf cmd="tag" pos="NN">shaker</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="17">
+<s snum="93">
+<wf cmd="done" pos="VB" lemma="construct" wnsn="2" lexsn="2:36:01::">Construct</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">box</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<wf cmd="done" pos="VB" ot="notag">on</wf>
+<wf cmd="tag" pos="JJ">scored</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">coils</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="reinforce" wnsn="1" lexsn="2:30:00::">reinforce</wf>
+<wf cmd="tag" pos="NNS">seams</wf>
+<punc>.</punc>
+</s>
+<s snum="94">
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">Join</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="CD">four</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<wf cmd="tag" pos="JJ">first</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">then</wf>
+<wf cmd="done" pos="VB" lemma="add" wnsn="1" lexsn="2:30:00::">add</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="add" wnsn="1" lexsn="2:30:00::">add</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="tag" pos="NN">last</wf>
+<punc>.</punc>
+</s>
+<s snum="95">
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">Use</wf>
+<wf cmd="tag" pos="NN">water</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">finger</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="smooth" wnsn="1" lexsn="2:35:00::">smooth</wf>
+<wf cmd="tag" pos="NNS">seams</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>.</punc>
+</s>
+<s snum="96">
+<wf cmd="done" pos="VB" lemma="turn" wnsn="1" lexsn="2:38:00::">Turn</wf>
+<wf cmd="tag" pos="NN">shaker</wf>
+<wf cmd="tag" pos="RB">upside_down</wf>
+<punc>.</punc>
+</s>
+<s snum="97">
+<wf cmd="done" pos="VB" lemma="recess" wnsn="1" lexsn="2:35:01::">Recess</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="tag" pos="RB">slightly</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" rdf="allow_for" pos="VB" lemma="allow_for" wnsn="1" lexsn="2:42:00::">allow</wf>
+<wf cmd="tag" pos="NN">room</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">stopper</wf>
+<punc>.</punc>
+</s>
+<s snum="98">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="tag" pos="NN">hole</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">cork</wf>
+<wf cmd="tag" pos="NN">stopper</wf>
+<punc>.</punc>
+</s>
+<s snum="99">
+<wf cmd="done" pos="VB" lemma="add" wnsn="1" lexsn="2:30:00::">Add</wf>
+<wf cmd="tag" pos="NNS">holes</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="form" wnsn="4" lexsn="2:30:01::">forming</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NNP">S</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">salt</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<punc>``</punc>
+<wf cmd="tag" pos="NN">P</wf>
+<punc>''</punc>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">pepper</wf>
+<punc>.</punc>
+</s>
+<s snum="100">
+<wf cmd="done" pos="VB" lemma="set" wnsn="1" lexsn="2:35:00::">Set</wf>
+<wf cmd="tag" pos="RB">aside</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="tag" pos="RB">thoroughly</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="18">
+<s snum="101">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">strip</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="tag" pos="RB">enough</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="JJ">wide</wf>
+<wf cmd="tag" pos="RB">enough</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="NNS">impressions</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<punc>.</punc>
+</s>
+<s snum="102">
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">Press</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="RB">three_times</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="bevel" wnsn="1" lexsn="2:35:00::">bevel</wf>
+<wf cmd="done" pos="VB" lemma="overlap" wnsn="1" lexsn="2:42:03::">overlapping</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">splice</wf>
+<wf cmd="tag" pos="JJ">joint</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">score</wf>
+<wf cmd="tag" pos="JJ">beveled</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>.</punc>
+</s>
+<s snum="103">
+<wf cmd="done" pos="VB" lemma="form" wnsn="4" lexsn="2:30:01::">Form</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="NN">strip</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">cylinder</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="tag" pos="JJ">scored</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<punc>.</punc>
+</s>
+<s snum="104">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">cylinder</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="RB">slightly</wf>
+<wf cmd="tag" pos="JJR">larger</wf>
+<wf cmd="ignore" pos="IN">than</wf>
+<wf cmd="tag" pos="NN">cylinder</wf>
+<punc>.</punc>
+</s>
+<s snum="105">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="tag" pos="NN">bottom</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">cylinder</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<punc>.</punc>
+</s>
+<s snum="106">
+<wf cmd="done" pos="VB" lemma="trim" wnsn="1" lexsn="2:35:03::">Trim</wf>
+<wf cmd="tag" pos="RB">away</wf>
+<wf cmd="tag" pos="JJ">excess</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="reinforce" wnsn="1" lexsn="2:30:00::">reinforce</wf>
+<wf cmd="tag" pos="NN">seam</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">coil</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<punc>.</punc>
+</s>
+<s snum="107">
+<wf cmd="ignore" pos="DT">This</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="form" wnsn="4" lexsn="2:30:01::">form</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">sugar_bowl</wf>
+<punc>.</punc>
+</s>
+<s snum="108">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="tag" pos="NN">creamer</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">same</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="19">
+<s snum="109">
+<wf cmd="tag" pos="NN">Handle</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">creamer</wf>
+<wf cmd="done" pos="VB" lemma="be" wnsn="2" lexsn="2:42:06::">is</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">strip</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">2</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">wide</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="CD">3</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="CD">1</wf>
+<wf cmd="tag" pos="CD">2</wf>
+<punc>''</punc>
+<wf cmd="tag" pos="JJ">long</wf>
+<punc>.</punc>
+</s>
+<s snum="110">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="add" wnsn="1" lexsn="2:30:00::">add</wf>
+<wf cmd="tag" pos="NN">handle</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">place</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">wooden</wf>
+<wf cmd="tag" pos="NN">dowel</wf>
+<wf cmd="ignore" pos="IN">against</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">inside</wf>
+<wf cmd="tag" pos="NN">wall</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">creamer</wf>
+<punc>.</punc>
+</s>
+<s snum="111">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="ignore" pos="IN">outside</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">container</wf>
+<wf cmd="ignore" pos="WRB">where</wf>
+<wf cmd="tag" pos="JJ">handle</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">joined</wf>
+<punc>.</punc>
+</s>
+<s snum="112">
+<wf cmd="done" pos="VB" lemma="bend" wnsn="3" lexsn="2:35:00::">Bend</wf>
+<wf cmd="tag" pos="JJ">handle</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">press</wf>
+<wf cmd="tag" pos="JJ">scored</wf>
+<wf cmd="tag" pos="NN">handle</wf>
+<wf cmd="tag" pos="NNS">ends</wf>
+<wf cmd="tag" pos="RB">firmly</wf>
+<wf cmd="tag" pos="RB">in_place</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">using</wf>
+<wf cmd="tag" pos="NN">dowel</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="reinforce" wnsn="1" lexsn="2:30:00::">reinforce</wf>
+<wf cmd="tag" pos="NN">container</wf>
+<wf cmd="ignore" pos="IN">while</wf>
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">pressing</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<punc>.</punc>
+</s>
+<s snum="113">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="form" wnsn="4" lexsn="2:30:01::">form</wf>
+<wf cmd="tag" pos="NN">spout</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">between</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">designs</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="dampen" wnsn="2" lexsn="2:30:01::">dampen</wf>
+<wf cmd="tag" pos="NN">area</wf>
+<wf cmd="tag" pos="RB">slightly</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="RB">gently</wf>
+<wf cmd="done" pos="VB" lemma="push" wnsn="1" lexsn="2:38:00::">push</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="tag" pos="RB">outward</wf>
+<punc>.</punc>
+</s>
+<s snum="114">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">sugar_bowl</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">same</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NN">jar</wf>
+<wf cmd="tag" pos="NNS">lids</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="omit" wnsn="1" lexsn="2:31:01::">omitting</wf>
+<wf cmd="tag" pos="NN">design</wf>
+<wf cmd="tag" pos="NN">disk</wf>
+<punc>.</punc>
+</s>
+<s snum="115">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="done" pos="VB" ot="notag">a</wf>
+<wf cmd="tag" pos="NN">notch</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">spoon</wf>
+<wf cmd="tag" pos="NN">handle</wf>
+<wf cmd="ignore" pos="IN">if</wf>
+<wf cmd="done" pos="VB" lemma="desire" wnsn="1" lexsn="2:37:00::">desired</wf>
+<punc>.</punc>
+</s>
+<s snum="116">
+<wf cmd="done" pos="VB" lemma="set" wnsn="1" lexsn="2:35:00::">Set</wf>
+<wf cmd="tag" pos="RB">aside</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">lid</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">sugar_bowl</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="20">
+<s snum="117">
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">Make</wf>
+<wf cmd="tag" pos="JJ">same</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="tag" pos="NN">salt</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">pepper</wf>
+<wf cmd="tag" pos="NNS">shakers</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="leave_off" wnsn="2" lexsn="2:31:00::">leaving_off</wf>
+<wf cmd="tag" pos="JJ">top</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<punc>.</punc>
+</s>
+<s snum="118">
+<wf cmd="tag" pos="NNS">Vases</wf>
+<wf cmd="ignore" pos="MD">may</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="make" wnsn="3" lexsn="2:36:00::">made</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NNS">candles</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="fill" wnsn="1" lexsn="2:30:01::">filling</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="JJ">melted</wf>
+<wf cmd="tag" pos="NN">wax</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">wick</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="21">
+<s snum="119">
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">Cut</wf>
+<wf cmd="tag" pos="RB">a_piece</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="DT">each</wf>
+<wf cmd="ignore" pos="IN">about</wf>
+<punc>*</punc>
+<punc>*</punc>
+<wf cmd="tag" pos="NN">f</wf>
+<punc>(</punc>
+<wf cmd="tag" pos="JJ">long</wf>
+<wf cmd="tag" pos="RB">enough</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="NNS">impressions</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="120">
+<wf cmd="done" pos="VB" lemma="press" wnsn="1" lexsn="2:35:00::">Press</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="CD">two</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="IN">into</wf>
+<wf cmd="tag" pos="NN">cavity</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">mold</wf>
+<wf cmd="tag" pos="RB">three_times</wf>
+<punc>.</punc>
+</s>
+<s snum="121">
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">Put</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">plaster</wf>
+<wf cmd="tag" pos="NN">board</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="JJ">firm</wf>
+<wf cmd="tag" pos="JJ">leather-hard</wf>
+<wf cmd="tag" pos="NN">state</wf>
+<punc>.</punc>
+</s>
+<s snum="122">
+<wf cmd="done" pos="VB" lemma="score" wnsn="2" lexsn="2:35:00::">Score</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="join" wnsn="2" lexsn="2:35:01::">join</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">base</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">slip</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="reinforce" wnsn="1" lexsn="2:30:00::">reinforce</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">coil</wf>
+<punc>.</punc>
+</s>
+<s snum="123">
+<wf cmd="ignore" pos="DT">A</wf>
+<wf cmd="tag" pos="NN">cardboard</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="done" pos="VB" lemma="cut" wnsn="1" lexsn="2:35:00::">cut</wf>
+<wf cmd="done" pos="VB" ot="notag">to</wf>
+<wf cmd="done" pos="VB" lemma="fit" wnsn="2" lexsn="2:42:02::">fit</wf>
+<wf cmd="tag" pos="RB">inside</wf>
+<wf cmd="tag" pos="NN">holder</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="done" pos="VB" lemma="help" wnsn="1" lexsn="2:41:00::">help</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="prevent" wnsn="1" lexsn="2:41:01::">prevent</wf>
+<wf cmd="tag" pos="NN">warping</wf>
+<punc>.</punc>
+</s>
+<s snum="124">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">pattern</wf>
+<wf cmd="ignore" pos="IN">inside</wf>
+<wf cmd="tag" pos="NN">holder</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="NNS">strips</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="hold" wnsn="1" lexsn="2:42:00::">hold</wf>
+<wf cmd="done" pos="VB" ot="notag">in</wf>
+<wf cmd="tag" pos="NN">place</wf>
+<punc>(</punc>
+<wf cmd="tag" pos="RB">see</wf>
+<wf cmd="tag" pos="NN">Fig.</wf>
+<wf cmd="tag" pos="CD">2</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">page</wf>
+<wf cmd="tag" pos="CD">71</wf>
+<punc>)</punc>
+<punc>.</punc>
+</s>
+<s snum="125">
+<wf cmd="done" pos="VBP" ot="notag">Do</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="use" wnsn="1" lexsn="2:34:01::">use</wf>
+<wf cmd="tag" pos="NN">wood</wf>
+<wf cmd="ignore" pos="IN">as</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<wf cmd="ignore" pos="MD">will</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="shrink" wnsn="4" lexsn="2:30:00::">shrink</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="NN">clay</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="ignore" pos="MD">would</wf>
+<wf cmd="done" pos="VB" lemma="cause" wnsn="1" lexsn="2:36:00::">cause</wf>
+<wf cmd="tag" pos="NN">breakage</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="22">
+<s snum="126">
+<wf cmd="done" pos="VB" lemma="let" wnsn="1" lexsn="2:41:00::">Let</wf>
+<wf cmd="ignore" pos="DT">all</wf>
+<wf cmd="tag" pos="NNS">projects</wf>
+<wf cmd="done" pos="VB" lemma="dry" wnsn="2" lexsn="2:30:00::">dry</wf>
+<wf cmd="tag" pos="RB">slowly</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="JJ">several</wf>
+<wf cmd="tag" pos="NNS">days</wf>
+<punc>.</punc>
+</s>
+<s snum="127">
+<wf cmd="done" pos="VB" lemma="clean" wnsn="1" lexsn="2:35:00::">Clean</wf>
+<wf cmd="tag" pos="NN">greenware</wf>
+<punc>.</punc>
+</s>
+<s snum="128">
+<wf cmd="tag" pos="NN">Bisque</wf>
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">fire</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">08</wf>
+<punc>.</punc>
+</s>
+<s snum="129">
+<wf cmd="ignore" pos="IN">Inside</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NNS">pieces</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="glaze" wnsn="1" lexsn="2:35:00::">glazed</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="CD">three</wf>
+<wf cmd="tag" pos="NNS">coats</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="JJ">Creek-Turn</wf>
+<wf cmd="tag" pos="NN">bottle_green</wf>
+<wf cmd="tag" pos="JJ">antique</wf>
+<wf cmd="tag" pos="NN">glaze</wf>
+<punc>.</punc>
+</s>
+<s snum="130">
+<wf cmd="ignore" pos="IN">Outside</wf>
+<wf cmd="done" pos="VBD" ot="notag">was</wf>
+<wf cmd="done" pos="VB" lemma="finish" wnsn="4" lexsn="2:35:00::">finished</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="JJ">Creek-Turn</wf>
+<wf cmd="tag" pos="JJ">brown</wf>
+<wf cmd="tag" pos="NN">toner</wf>
+<wf cmd="done" pos="VB" lemma="brush_on" wnsn="1" lexsn="2:35:00::">brushed_on</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="sponge_off" wnsn="1" lexsn="2:35:00::">sponged_off</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="give" wnsn="1" lexsn="2:40:03::">give</wf>
+<wf cmd="tag" pos="JJ">antique</wf>
+<wf cmd="tag" pos="NN">finish</wf>
+<punc>.</punc>
+</s>
+<s snum="131">
+<wf cmd="done" pos="VB" lemma="fire" wnsn="3" lexsn="2:30:00::">Fired</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">cone</wf>
+<wf cmd="tag" pos="CD">06</wf>
+<punc>-</punc>
+<wf cmd="tag" pos="CD">05</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="23">
+<s snum="132">
+<wf cmd="ignore" pos="WRB">When</wf>
+<wf cmd="done" pos="VB" lemma="change" wnsn="3" lexsn="2:30:02::">changing</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">color</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">another</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="IN">whether</wf>
+<wf cmd="done" pos="VB" lemma="work_on" wnsn="1" lexsn="2:41:00::">working_on</wf>
+<wf cmd="tag" pos="NN">right</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="JJ">wrong</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="pick_up" wnsn="1" lexsn="2:38:01::">pick_up</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">new</wf>
+<wf cmd="tag" pos="NN">strand</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="ignore" pos="IN">underneath</wf>
+<wf cmd="done" pos="VB" lemma="drop" wnsn="1" lexsn="2:38:01::">dropped</wf>
+<wf cmd="tag" pos="NN">strand</wf>
+<punc>.</punc>
+</s>
+<s snum="133">
+<wf cmd="tag" pos="NN">Photograph</wf>
+<wf cmd="done" pos="VB" lemma="show" wnsn="0" lexsn="2:39:03::">shows</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">wrong</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">work</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">light</wf>
+<wf cmd="tag" pos="NN">strand</wf>
+<wf cmd="done" pos="VBG" ot="notag">being</wf>
+<wf cmd="done" pos="VB" lemma="pick_up" wnsn="1" lexsn="2:38:01::">picked_up</wf>
+<wf cmd="ignore" pos="IN">under</wf>
+<wf cmd="tag" pos="JJ">dark</wf>
+<wf cmd="tag" pos="NN">strand</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">position</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="purl" wnsn="3" lexsn="2:36:02::">purled</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="24">
+<s snum="134">
+<wf cmd="done" pos="VB" lemma="spread" wnsn="4" lexsn="2:35:03::">Spread</wf>
+<wf cmd="tag" pos="NN">article</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">flat</wf>
+<wf cmd="tag" pos="NN">surface</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="tag" pos="JJ">required</wf>
+<wf cmd="tag" pos="NN">width</wf>
+<wf cmd="ignore" pos="IN">before</wf>
+<wf cmd="done" pos="VB" lemma="measure" wnsn="1" lexsn="2:31:00::">measuring</wf>
+<wf cmd="tag" pos="NN">length</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="NN">center</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="25">
+<s snum="135">
+<wf cmd="done" pos="VB" lemma="mark" wnsn="5" lexsn="2:30:00::">Mark</wf>
+<wf cmd="tag" pos="NN">row</wf>
+<wf cmd="tag" pos="RB">on_which</wf>
+<wf cmd="tag" pos="JJ">first</wf>
+<wf cmd="tag" pos="NNS">stitches</wf>
+<wf cmd="done" pos="VBP" ot="notag">have</wf>
+<wf cmd="done" pos="VBN" ot="notag">been</wf>
+<wf cmd="done" pos="VB" lemma="bind_off" wnsn="1" lexsn="2:35:00::">bound_off</wf>
+<wf cmd="ignore" pos="IN">for</wf>
+<wf cmd="tag" pos="NN">armhole</wf>
+<wf cmd="ignore" pos="IN">by</wf>
+<wf cmd="done" pos="VB" lemma="draw" wnsn="1" lexsn="2:35:03::">drawing</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">contrasting</wf>
+<wf cmd="tag" pos="JJ">colored</wf>
+<wf cmd="tag" pos="NN">thread</wf>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="ignore" pos="PRP">it</wf>
+<punc>.</punc>
+</s>
+<s snum="136">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">work</wf>
+<wf cmd="done" pos="VB" ot="notag">on</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">flat</wf>
+<wf cmd="tag" pos="NN">surface</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="smooth" wnsn="2" lexsn="2:35:01::">smooth</wf>
+<wf cmd="tag" pos="RB">out</wf>
+<punc>.</punc>
+</s>
+<s snum="137">
+<wf cmd="done" pos="VB" lemma="measure" wnsn="1" lexsn="2:31:00::">Measure</wf>
+<wf cmd="tag" pos="JJ">straight</wf>
+<wf cmd="tag" pos="RB">up</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="JJ">marked</wf>
+<wf cmd="tag" pos="NN">row</wf>
+<punc>.</punc>
+</s>
+<s snum="138">
+<wf cmd="tag" pos="RB">See</wf>
+<wf cmd="tag" pos="NN">illustration</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="26">
+<s snum="139">
+<wf cmd="ignore" pos="WRB">When</wf>
+<wf cmd="tag" pos="NNS">directions</wf>
+<wf cmd="done" pos="VB" lemma="read" wnsn="2" lexsn="2:42:00::">read</wf>
+<punc>``</punc>
+<wf cmd="ignore" pos="UH">sl</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">marker</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">needle</wf>
+<punc>''</punc>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="put" wnsn="1" lexsn="2:35:00::">put</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="JJ">small</wf>
+<wf cmd="tag" pos="NN">safety_pin</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">paper_clip</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="JJ">commercial</wf>
+<wf cmd="tag" pos="NN">ring</wf>
+<wf cmd="tag" pos="NN">marker</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="NN">needle</wf>
+<punc>.</punc>
+</s>
+<s snum="140">
+<wf cmd="ignore" pos="IN">In</wf>
+<wf cmd="done" pos="VB" lemma="work" wnsn="1" lexsn="2:41:02::">working</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">always</wf>
+<wf cmd="done" pos="VB" lemma="slip" wnsn="1" lexsn="2:38:01::">slip</wf>
+<wf cmd="tag" pos="NN">marker</wf>
+<wf cmd="ignore" pos="IN">from</wf>
+<wf cmd="tag" pos="CD">one</wf>
+<wf cmd="tag" pos="NN">needle</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="ignore" pos="DT">another</wf>
+<punc>.</punc>
+</s>
+<s snum="141">
+<wf cmd="ignore" pos="TO">To</wf>
+<wf cmd="done" pos="VB" lemma="mark" wnsn="5" lexsn="2:30:00::">mark</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">row</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">stitch</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="tie" wnsn="1" lexsn="2:35:00::">tie</wf>
+<wf cmd="tag" pos="JJ">contrasting</wf>
+<wf cmd="tag" pos="NN">thread</wf>
+<wf cmd="ignore" pos="IN">around</wf>
+<wf cmd="tag" pos="NN">end</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">row</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NN">stitch</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="mark" wnsn="5" lexsn="2:30:00::">marked</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="27">
+<s snum="142">
+<wf cmd="tag" pos="JJS">Most</wf>
+<wf cmd="tag" pos="NNS">seams</wf>
+<wf cmd="done" pos="VBP" ot="notag">are</wf>
+<wf cmd="done" pos="VB" lemma="sew" wnsn="1" lexsn="2:35:00::">sewn</wf>
+<wf cmd="ignore" pos="IN">with</wf>
+<wf cmd="tag" pos="NN">backstitch</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="RB">especially</wf>
+<wf cmd="ignore" pos="IN">on</wf>
+<wf cmd="tag" pos="JJ">curved</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">slanted</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="JJ">loose</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>.</punc>
+</s>
+<s snum="143">
+<wf cmd="done" pos="VB" lemma="pin" wnsn="2" lexsn="2:35:01::">Pin</wf>
+<wf cmd="tag" pos="NN">right</wf>
+<wf cmd="tag" pos="NNS">sides</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">pieces</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<punc>,</punc>
+<wf cmd="done" pos="VB" lemma="keep" wnsn="1" lexsn="2:42:00::">keeping</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<wf cmd="tag" pos="RB">even</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="done" pos="VB" lemma="match" wnsn="3" lexsn="2:35:08::">matching</wf>
+<wf cmd="tag" pos="NNS">rows</wf>
+<wf cmd="ignore" pos="CC">or</wf>
+<wf cmd="tag" pos="NNS">patterns</wf>
+<punc>.</punc>
+</s>
+<s snum="144">
+<wf cmd="done" pos="VB" lemma="thread" wnsn="2" lexsn="2:35:00::">Thread</wf>
+<wf cmd="tag" pos="JJ">matching</wf>
+<wf cmd="tag" pos="NN">yarn</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">tapestry</wf>
+<wf cmd="tag" pos="NN">needle</wf>
+<punc>.</punc>
+</s>
+<s snum="145">
+<wf cmd="tag" pos="NNP">Run</wf>
+<wf cmd="tag" pos="NN">end</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">yarn</wf>
+<wf cmd="ignore" pos="IN">through</wf>
+<wf cmd="tag" pos="JJ">several</wf>
+<wf cmd="tag" pos="NNS">stitches</wf>
+<wf cmd="ignore" pos="IN">along</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<wf cmd="ignore" pos="TO">to</wf>
+<wf cmd="done" pos="VB" lemma="secure" wnsn="2" lexsn="2:35:01::">secure</wf>
+<punc>;</punc>
+<wf cmd="done" pos="VB" lemma="backstitch" wnsn="1" lexsn="2:35:00::">backstitch</wf>
+<wf cmd="tag" pos="NN">pieces</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<wf cmd="tag" pos="RB">close_to</wf>
+<wf cmd="tag" pos="NN">edge</wf>
+<punc>.</punc>
+</s>
+<s snum="146">
+<wf cmd="done" pos="VBP" ot="notag">Do</wf>
+<wf cmd="tag" pos="RB">not</wf>
+<wf cmd="done" pos="VB" lemma="draw" wnsn="1" lexsn="2:35:03::">draw</wf>
+<wf cmd="tag" pos="NN">yarn</wf>
+<wf cmd="tag" pos="RB">too</wf>
+<wf cmd="tag" pos="JJ">tight</wf>
+<punc>.</punc>
+</s>
+<s snum="147">
+<wf cmd="tag" pos="RB">See</wf>
+<wf cmd="tag" pos="NN">illustration</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="28">
+<s snum="148">
+<wf cmd="done" pos="VB" lemma="place" wnsn="1" lexsn="2:35:00::">Place</wf>
+<wf cmd="tag" pos="NN">sleeve</wf>
+<wf cmd="tag" pos="NN">seam</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="NN">center</wf>
+<wf cmd="tag" pos="NN">underarm</wf>
+<wf cmd="ignore" pos="CC">and</wf>
+<wf cmd="tag" pos="NN">center</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="tag" pos="NN">sleeve</wf>
+<wf cmd="tag" pos="NN">cap</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="tag" pos="NN">shoulder</wf>
+<wf cmd="tag" pos="NN">seam</wf>
+<punc>.</punc>
+</s>
+<s snum="149">
+<wf cmd="done" pos="VB" lemma="ease" wnsn="1" lexsn="2:38:00::">Ease</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="ignore" pos="DT">any</wf>
+<wf cmd="tag" pos="JJ">extra</wf>
+<wf cmd="tag" pos="NN">fullness</wf>
+<wf cmd="tag" pos="RB">evenly</wf>
+<wf cmd="tag" pos="RB">around</wf>
+<punc>.</punc>
+</s>
+<s snum="150">
+<wf cmd="done" pos="VB" lemma="backstitch" wnsn="1" lexsn="2:35:00::">Backstitch</wf>
+<wf cmd="tag" pos="NN">seam</wf>
+<punc>.</punc>
+</s>
+</p>
+<p pnum="29">
+<s snum="151">
+<wf cmd="tag" pos="JJ">Straight</wf>
+<wf cmd="tag" pos="JJ">vertical</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="JJ">such_as</wf>
+<wf cmd="ignore" pos="DT">those</wf>
+<wf cmd="ignore" pos="IN">at</wf>
+<wf cmd="ignore" pos="DT">the</wf>
+<wf cmd="tag" pos="JJ">back</wf>
+<wf cmd="tag" pos="NN">seam</wf>
+<wf cmd="ignore" pos="IN">of</wf>
+<wf cmd="ignore" pos="DT">a</wf>
+<wf cmd="tag" pos="NN">sock</wf>
+<punc>,</punc>
+<wf cmd="ignore" pos="MD">can</wf>
+<wf cmd="done" pos="VB" ot="notag">be</wf>
+<wf cmd="done" pos="VB" lemma="weave" wnsn="1" lexsn="2:35:00::">woven</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<wf cmd="tag" pos="RB">invisibly</wf>
+<punc>.</punc>
+</s>
+<s snum="152">
+<wf cmd="done" pos="VB" lemma="thread" wnsn="2" lexsn="2:35:00::">Thread</wf>
+<wf cmd="tag" pos="JJ">matching</wf>
+<wf cmd="tag" pos="NN">yarn</wf>
+<wf cmd="ignore" pos="IN">in</wf>
+<wf cmd="tag" pos="NN">tapestry</wf>
+<wf cmd="tag" pos="NN">needle</wf>
+<punc>.</punc>
+</s>
+<s snum="153">
+<wf cmd="done" pos="VB" lemma="hold" wnsn="2" lexsn="2:35:00::">Hold</wf>
+<wf cmd="tag" pos="NNS">edges</wf>
+<wf cmd="tag" pos="RB">together</wf>
+<punc>,</punc>
+<wf cmd="tag" pos="NN">right</wf>
+<wf cmd="tag" pos="NN">side</wf>
+<wf cmd="tag" pos="RB">up</wf>
+<punc>.</punc>
+</s>
+</p>
+</context>
+</contextfile>
