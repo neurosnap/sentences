@@ -154,5 +154,9 @@ Performance
 Using [Brown Corpus](http://www.hit.uib.no/icame/brown/bcm.html) which is annotated American English
 text, we compare this package with other libraries across multiple programming languages.
 
+|Library    | Avg Speed (s, 10 runs) | Accuracy (%)
+|:----------|:----------------------:|:-----------:
+| Sentences | 1.96                   | 98.95
+| NLTK      | 5.22                   | 99.21
 
 
