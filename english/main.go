@@ -41,7 +41,12 @@ func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceToken
 	multiPunct := &MultiPunctWordAnnotation{
 		training, word,
 		&sentences.DefaultTokenGrouper{},
-		&sentences.OrthoContext{training, lang, word, word},
+		&sentences.OrthoContext{
+			Storage:      training,
+			PunctStrings: lang,
+			TokenType:    word,
+			TokenFirst:   word,
+		},
 	}
 
 	annotations = append(annotations, multiPunct)
