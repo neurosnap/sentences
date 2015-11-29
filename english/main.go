@@ -38,15 +38,18 @@ func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceToken
 	word := NewWordTokenizer(lang)
 	annotations := sentences.NewAnnotations(training, lang, word)
 
+	ortho := &sentences.OrthoContext{
+		Storage:      training,
+		PunctStrings: lang,
+		TokenType:    word,
+		TokenFirst:   word,
+	}
+
 	multiPunct := &MultiPunctWordAnnotation{
-		training, word,
-		&sentences.DefaultTokenGrouper{},
-		&sentences.OrthoContext{
-			Storage:      training,
-			PunctStrings: lang,
-			TokenType:    word,
-			TokenFirst:   word,
-		},
+		Storage:      training,
+		TokenParser:  word,
+		TokenGrouper: &sentences.DefaultTokenGrouper{},
+		Ortho:        ortho,
 	}
 
 	annotations = append(annotations, multiPunct)
