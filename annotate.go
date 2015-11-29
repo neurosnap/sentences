@@ -162,11 +162,7 @@ func (a *TokenBasedAnnotation) tokenAnnotation(tokOne, tokTwo *Token) {
 		if isSentStarter == 0 {
 			tokOne.SentBreak = false
 			tokOne.Abbr = true
-			if tokIsInitial {
-				return
-			} else {
-				return
-			}
+			return
 		}
 
 		/*
