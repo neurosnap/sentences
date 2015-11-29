@@ -17,9 +17,9 @@ func (ss SetString) Remove(str string) {
 func (ss SetString) Has(str string) bool {
 	if ss[str] == 0 {
 		return false
-	} else {
-		return true
 	}
+
+	return true
 }
 
 func (ss SetString) Array() []string {

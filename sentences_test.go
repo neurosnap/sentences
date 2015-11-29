@@ -32,9 +32,9 @@ func readFile(fname string) string {
 }
 
 func getFileLocation(prefix, original, expected string) []string {
-	orig_text := strings.Join([]string{prefix, original}, "")
-	expected_text := strings.Join([]string{prefix, expected}, "")
-	return []string{orig_text, expected_text}
+	origText := strings.Join([]string{prefix, original}, "")
+	expectedText := strings.Join([]string{prefix, expected}, "")
+	return []string{origText, expectedText}
 }
 
 func TestEnglish(t *testing.T) {
@@ -44,7 +44,7 @@ func TestEnglish(t *testing.T) {
 
 	prefix := "test_files/english/"
 
-	test_files := [][]string{
+	testFiles := [][]string{
 		getFileLocation(prefix, "carolyn.txt", "carolyn_s.txt"),
 		getFileLocation(prefix, "ecig.txt", "ecig_s.txt"),
 		getFileLocation(prefix, "foul_ball.txt", "foul_ball_s.txt"),
@@ -68,13 +68,13 @@ func TestEnglish(t *testing.T) {
 		getFileLocation(prefix, "nyfed.txt", "nyfed_s.txt"),
 	}
 
-	for _, f := range test_files {
-		actual_text := readFile(f[0])
-		expected_text := readFile(f[1])
-		expected := strings.Split(expected_text, "{{sentence_break}}")
+	for _, f := range testFiles {
+		actualText := readFile(f[0])
+		expectedText := readFile(f[1])
+		expected := strings.Split(expectedText, "{{sentence_break}}")
 
 		t.Log(f[0])
-		sentences := tokenizer.Tokenize(actual_text)
+		sentences := tokenizer.Tokenize(actualText)
 		for index, s := range sentences {
 			sentence := strings.TrimSpace(s.Text)
 			if sentence != strings.TrimSpace(expected[index]) {
