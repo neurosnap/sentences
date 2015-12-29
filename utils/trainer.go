@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	. "github.com/neurosnap/punkt"
+	. "github.com/neurosnap/sentences"
 )
 
 type AbbrevType struct {
