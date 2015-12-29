@@ -93,7 +93,7 @@ This package attempts to fix some problems I noticed for english.
 import (
     "fmt"
 
-    "gopkg.in/neurosnap/sentences.v1"
+    "gopkg.in/neurosnap/sentences.v1/english"
 )
 
 func main() {
