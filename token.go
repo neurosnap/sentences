@@ -5,13 +5,15 @@ import (
 	"regexp"
 )
 
-// Groups two adjacent tokens together.
+// TokenGrouper two adjacent tokens together.
 type TokenGrouper interface {
 	Group([]*Token) [][2]*Token
 }
 
+// DefaultTokenGrouper is the default implementation of TokenGrouper
 type DefaultTokenGrouper struct{}
 
+// Group is the primary logic for implementing TokenGrouper
 func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
 	if len(tokens) == 0 {
 		return nil
@@ -32,7 +34,7 @@ func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
 	return pairTokens
 }
 
-// Stores a token of text with annotations produced during sentence boundary detection.
+// Token stores a token of text with annotations produced during sentence boundary detection.
 type Token struct {
 	Tok         string
 	Position    int
@@ -47,6 +49,7 @@ type Token struct {
 	reAlpha     *regexp.Regexp
 }
 
+// NewToken is the default implementation of the Token struct
 func NewToken(token string) *Token {
 	tok := Token{
 		Tok:        token,
@@ -59,6 +62,7 @@ func NewToken(token string) *Token {
 	return &tok
 }
 
+// String is the string representation of Token
 func (p *Token) String() string {
 	return fmt.Sprintf("<Token Tok: %q, SentBreak: %t, Abbr: %t, Position: %d>", p.Tok, p.SentBreak, p.Abbr, p.Position)
 }

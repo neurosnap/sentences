@@ -37,10 +37,13 @@ var orthoMap = map[[2]string]int{
 	[2]string{"unknown", "lower"}:  orthoUnkLc,
 }
 
+// Ortho creates a promise for structs to implement an orthogonal heuristic
+// method.
 type Ortho interface {
 	Heuristic(*Token) int
 }
 
+// OrthoContext determines whether a token is capitalized, sentence starter, etc.
 type OrthoContext struct {
 	*Storage
 	PunctStrings
@@ -49,7 +52,7 @@ type OrthoContext struct {
 }
 
 /*
-Decide whether the given token is the first token in a sentence.
+Heuristic decides whether the given token is the first token in a sentence.
 */
 func (o *OrthoContext) Heuristic(token *Token) int {
 	if token == nil {

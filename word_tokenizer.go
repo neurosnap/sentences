@@ -6,12 +6,13 @@ import (
 	"unicode"
 )
 
+// WordTokenizer is the primary interface for tokenizing words
 type WordTokenizer interface {
 	TokenParser
 	Tokenize(string, bool) []*Token
 }
 
-// Helpers to get the type of a token
+// TokenType are helpers to get the type of a token
 type TokenType interface {
 	Type(*Token) string
 	// The type with its final period removed if it has one.
@@ -20,7 +21,7 @@ type TokenType interface {
 	TypeNoSentPeriod(*Token) string
 }
 
-// Helpers to determine the case of the token's first letter
+// TokenFirst are helpers to determine the case of the token's first letter
 type TokenFirst interface {
 	// True if the token's first character is lowercase
 	FirstLower(*Token) bool
@@ -28,7 +29,7 @@ type TokenFirst interface {
 	FirstUpper(*Token) bool
 }
 
-// Helpers to determine what type of token we are dealing with.
+// TokenExistential are helpers to determine what type of token we are dealing with.
 type TokenExistential interface {
 	// True if the token text is all alphabetic.
 	IsAlpha(*Token) bool
@@ -46,22 +47,24 @@ type TokenExistential interface {
 	HasSentEndChars(*Token) bool
 }
 
-// Primary token interface that determines the context and type of a tokenized word.
+// TokenParser is the primary token interface that determines the context and type of a tokenized word.
 type TokenParser interface {
 	TokenType
 	TokenFirst
 	TokenExistential
 }
 
+// DefaultWordTokenizer is the default implementation of the WordTokenizer
 type DefaultWordTokenizer struct {
 	PunctStrings
 }
 
+// NewWordTokenizer creates a new DefaultWordTokenizer
 func NewWordTokenizer(p PunctStrings) *DefaultWordTokenizer {
 	return &DefaultWordTokenizer{p}
 }
 
-// Breaks text into words while preserving their character position, whether it starts
+// Tokenize breaks text into words while preserving their character position, whether it starts
 // a new line, and new paragraph.
 func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*Token {
 	if len(text) == 0 {
@@ -125,7 +128,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 	return tokens
 }
 
-// Returns a case-normalized representation of the token.
+// Type returns a case-normalized representation of the token.
 func (p *DefaultWordTokenizer) Type(t *Token) string {
 	typ := t.reNumeric.ReplaceAllString(strings.ToLower(t.Tok), "##number##")
 	if len(typ) == 1 {
@@ -136,7 +139,7 @@ func (p *DefaultWordTokenizer) Type(t *Token) string {
 	return strings.Replace(typ, ",", "", -1)
 }
 
-// The type with its final period removed if it has one.
+// TypeNoPeriod is the type with its final period removed if it has one.
 func (p *DefaultWordTokenizer) TypeNoPeriod(t *Token) string {
 	typ := p.Type(t)
 	if len(typ) > 1 && string(typ[len(typ)-1]) == "." {
@@ -145,7 +148,7 @@ func (p *DefaultWordTokenizer) TypeNoPeriod(t *Token) string {
 	return typ
 }
 
-// The type with its final period removed if it is marked as a sentence break.
+// TypeNoSentPeriod is the type with its final period removed if it is marked as a sentence break.
 func (p *DefaultWordTokenizer) TypeNoSentPeriod(t *Token) string {
 	if p == nil {
 		return ""
@@ -158,7 +161,7 @@ func (p *DefaultWordTokenizer) TypeNoSentPeriod(t *Token) string {
 	return p.Type(t)
 }
 
-// True if the token's first character is uppercase.
+// FirstUpper is true if the token's first character is uppercase.
 func (p *DefaultWordTokenizer) FirstUpper(t *Token) bool {
 	if t.Tok == "" {
 		return false
@@ -168,7 +171,7 @@ func (p *DefaultWordTokenizer) FirstUpper(t *Token) bool {
 	return unicode.IsUpper(runes[0])
 }
 
-// True if the token's first character is lowercase
+// FirstLower is true if the token's first character is lowercase
 func (p *DefaultWordTokenizer) FirstLower(t *Token) bool {
 	if t.Tok == "" {
 		return false
@@ -178,37 +181,38 @@ func (p *DefaultWordTokenizer) FirstLower(t *Token) bool {
 	return unicode.IsLower(runes[0])
 }
 
-// True if the token text is that of an ellipsis.
+// IsEllipsis is true if the token text is that of an ellipsis.
 func (p *DefaultWordTokenizer) IsEllipsis(t *Token) bool {
 	return t.reEllipsis.MatchString(t.Tok)
 }
 
-// True if the token text is that of a number.
+// IsNumber is true if the token text is that of a number.
 func (p *DefaultWordTokenizer) IsNumber(t *Token) bool {
 	return strings.HasPrefix(t.Tok, "##number##")
 }
 
-// True if the token text is that of an initial.
+// IsInitial is true if the token text is that of an initial.
 func (p *DefaultWordTokenizer) IsInitial(t *Token) bool {
 	return t.reInitial.MatchString(t.Tok)
 }
 
-// True if the token text is all alphabetic.
+// IsAlpha is true if the token text is all alphabetic.
 func (p *DefaultWordTokenizer) IsAlpha(t *Token) bool {
 	return t.reAlpha.MatchString(t.Tok)
 }
 
-// True if the token is either a number or is alphabetic.
+// IsNonPunct is true if the token is either a number or is alphabetic.
 func (p *DefaultWordTokenizer) IsNonPunct(t *Token) bool {
 	nonPunct := regexp.MustCompile(p.PunctStrings.NonPunct())
 	return nonPunct.MatchString(p.Type(t))
 }
 
+// HasPeriodFinal is true if the last character in the word is a period
 func (p *DefaultWordTokenizer) HasPeriodFinal(t *Token) bool {
 	return strings.HasSuffix(t.Tok, ".")
 }
 
-// Find any punctuation excluding the period final
+// HasSentEndChars finds any punctuation excluding the period final
 func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 	enders := []string{
 		`."`, `.'`, `.)`,

@@ -4,7 +4,8 @@ import (
 	"strings"
 )
 
-/* Annotation interface used for the sentence tokenizer to add properties to
+/*
+AnnotateTokens is an interface used for the sentence tokenizer to add properties to
 any given token during tokenization.
 */
 type AnnotateTokens interface {
@@ -12,7 +13,7 @@ type AnnotateTokens interface {
 }
 
 /*
-Perform the first pass of annotation, which makes decisions
+TypeBasedAnnotation performs the first pass of annotation, which makes decisions
 based purely based on the word type of each word:
 	* '?', '!', and '.' are marked as sentence breaks.
 	* sequences of two or more periods are marked as ellipsis.
@@ -30,6 +31,7 @@ type TypeBasedAnnotation struct {
 	TokenExistential
 }
 
+// NewTypeBasedAnnotation creates an instance of the TypeBasedAnnotation struct
 func NewTypeBasedAnnotation(s *Storage, p PunctStrings, e TokenExistential) *TypeBasedAnnotation {
 	return &TypeBasedAnnotation{
 		Storage:          s,
@@ -38,7 +40,7 @@ func NewTypeBasedAnnotation(s *Storage, p PunctStrings, e TokenExistential) *Typ
 	}
 }
 
-// Default annotations that the tokenizer uses
+// NewAnnotations is the default AnnotateTokens struct  that the tokenizer uses
 func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTokens {
 	return []AnnotateTokens{
 		&TypeBasedAnnotation{s, p, word},
@@ -48,6 +50,7 @@ func NewAnnotations(s *Storage, p PunctStrings, word WordTokenizer) []AnnotateTo
 	}
 }
 
+// Annotate iterates over all tokens and applies the type annotation on them
 func (a *TypeBasedAnnotation) Annotate(tokens []*Token) []*Token {
 	for _, augTok := range tokens {
 		a.typeAnnotation(augTok)
@@ -74,7 +77,7 @@ func (a *TypeBasedAnnotation) typeAnnotation(token *Token) {
 }
 
 /*
-Performs a token-based classification (section 4) over the given
+TokenBasedAnnotation performs a token-based classification (section 4) over the given
 tokens, making use of the orthographic heuristic (4.1.1), collocation
 heuristic (4.1.2) and frequent sentence starter heuristic (4.1.3).
 */
@@ -86,6 +89,7 @@ type TokenBasedAnnotation struct {
 	Ortho
 }
 
+// Annotate iterates groups tokens in pairs of two and then iterates over them to apply token annotation
 func (a *TokenBasedAnnotation) Annotate(tokens []*Token) []*Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		a.tokenAnnotation(tokPair[0], tokPair[1])

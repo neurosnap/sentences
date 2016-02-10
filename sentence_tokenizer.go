@@ -2,14 +2,14 @@ package sentences
 
 import "fmt"
 
-// Interface used by the Tokenize function, can be extended to correct sentence
+// SentenceTokenizer interface is used by the Tokenize function, can be extended to correct sentence
 // boundaries that punkt misses.
 type SentenceTokenizer interface {
 	AnnotateTokens([]*Token, ...AnnotateTokens) []*Token
 	Tokenize(string) []*Sentence
 }
 
-// A sentence tokenizer which uses an unsupervised algorithm to build a model
+// DefaultSentenceTokenizer is a sentence tokenizer which uses an unsupervised algorithm to build a model
 // for abbreviation words, collocations, and words that start sentences
 // and then uses that model to find sentence boundaries.
 type DefaultSentenceTokenizer struct {
@@ -19,7 +19,7 @@ type DefaultSentenceTokenizer struct {
 	Annotations []AnnotateTokens
 }
 
-// Sane defaults for the sentence tokenizer
+// NewSentenceTokenizer are the sane defaults for the sentence tokenizer
 func NewSentenceTokenizer(s *Storage) *DefaultSentenceTokenizer {
 	lang := NewPunctStrings()
 	word := NewWordTokenizer(lang)
@@ -37,7 +37,7 @@ func NewSentenceTokenizer(s *Storage) *DefaultSentenceTokenizer {
 
 }
 
-// Wraps around DST doing the work for customizing the tokenizer
+// NewTokenizer wraps around DST doing the work for customizing the tokenizer
 func NewTokenizer(s *Storage, word WordTokenizer, lang PunctStrings) *DefaultSentenceTokenizer {
 	annotations := NewAnnotations(s, lang, word)
 
@@ -52,7 +52,7 @@ func NewTokenizer(s *Storage, word WordTokenizer, lang PunctStrings) *DefaultSen
 }
 
 /*
-Given a set of tokens augmented with markers for line-start and
+AnnotateTokens given a set of tokens augmented with markers for line-start and
 paragraph-start, returns an iterator through those tokens with full
 annotation including predicted sentence breaks.
 */
@@ -65,7 +65,7 @@ func (s *DefaultSentenceTokenizer) AnnotateTokens(tokens []*Token, annotate ...A
 }
 
 /*
-Fully annotated word tokens.  This allows for adhoc adjustments to the tokens
+AnnotatedTokens are the fully annotated word tokens.  This allows for adhoc adjustments to the tokens
 */
 func (s *DefaultSentenceTokenizer) AnnotatedTokens(text string) []*Token {
 	// Use the default word tokenizer but only grab the tokens that
@@ -81,8 +81,8 @@ func (s *DefaultSentenceTokenizer) AnnotatedTokens(text string) []*Token {
 }
 
 /*
-Instead of returning an array of sentences, this method returns only the positions
-for the sentence boundaries.
+SentencePositions returns an array of positions instead of returning an array
+of sentences.
 */
 func (s *DefaultSentenceTokenizer) SentencePositions(text string) []int {
 	annotatedTokens := s.AnnotatedTokens(text)
@@ -103,7 +103,7 @@ func (s *DefaultSentenceTokenizer) SentencePositions(text string) []int {
 }
 
 /*
-Container to hold sentences, provides the character positions
+Sentence container to hold sentences, provides the character positions
 as well as the text for that sentence.
 */
 type Sentence struct {
@@ -116,7 +116,7 @@ func (s Sentence) String() string {
 	return fmt.Sprintf("<Sentence [%d:%d]>", s.Start, s.End)
 }
 
-// Splits text input into sentence tokens.
+// Tokenize splits text input into sentence tokens.
 func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 	annotatedTokens := s.AnnotatedTokens(text)
 

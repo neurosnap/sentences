@@ -1,21 +1,24 @@
 package sentences
 
+// PunctStrings implements all the functions necessary for punctuation strings.
+// They are used to detect punctuation in the sentence
+// tokenizer.
 type PunctStrings interface {
 	NonPunct() string
 	Punctuation() string
 	HasSentencePunct(string) bool
 }
 
-// Punctuation strings that are used to detect punctuation in the sentence
+// DefaultPunctStrings are used to detect punctuation in the sentence
 // tokenizer.
 type DefaultPunctStrings struct{}
 
-// Creates a default set of properties
+// NewPunctStrings creates a default set of properties
 func NewPunctStrings() *DefaultPunctStrings {
 	return &DefaultPunctStrings{}
 }
 
-// Regex string to detect non-punctuation.
+// NonPunct regex string to detect non-punctuation.
 func (p *DefaultPunctStrings) NonPunct() string {
 	return `[^\W\d]`
 }
@@ -25,7 +28,7 @@ func (p *DefaultPunctStrings) Punctuation() string {
 	return ";:,.!?"
 }
 
-// Does the supplied text have a known sentence punctuation character?
+// HasSentencePunct does the supplied text have a known sentence punctuation character?
 func (p *DefaultPunctStrings) HasSentencePunct(text string) bool {
 	endPunct := `.!?`
 	for _, char := range endPunct {

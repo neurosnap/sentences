@@ -2,18 +2,21 @@ package sentences
 
 import "encoding/json"
 
-// golang implementation of a set of strings
+// SetString is an  implementation of a set of strings
 // probably not the best way to do this but oh well.
 type SetString map[string]int
 
+// Add adds a string key to the set
 func (ss SetString) Add(str string) {
 	ss[str] = 1
 }
 
+// Remove deletes a string key from the set
 func (ss SetString) Remove(str string) {
 	delete(ss, str)
 }
 
+// Has checks whether a key exists in the set
 func (ss SetString) Has(str string) bool {
 	if ss[str] == 0 {
 		return false
@@ -22,6 +25,7 @@ func (ss SetString) Has(str string) bool {
 	return true
 }
 
+// Array returns and array of keys from the set
 func (ss SetString) Array() []string {
 	arr := make([]string, 0, len(ss))
 
@@ -32,7 +36,7 @@ func (ss SetString) Array() []string {
 	return arr
 }
 
-// Stores data used to perform sentence boundary detection with punkt
+// Storage stores data used to perform sentence boundary detection with punkt
 // This is where all the training data gets stored for future use
 type Storage struct {
 	AbbrevTypes  SetString `json:"AbbrevTypes"`
@@ -41,7 +45,7 @@ type Storage struct {
 	OrthoContext SetString `json:"OrthoContext"`
 }
 
-// Primary function to load JSON training data.  By default, the sentence tokenizer
+// LoadTraining is the primary function to load JSON training data.  By default, the sentence tokenizer
 // loads in english automatically, but other languages could be loaded into a
 // binary file using the `make <lang>` command.
 func LoadTraining(data []byte) (*Storage, error) {
@@ -55,7 +59,7 @@ func LoadTraining(data []byte) (*Storage, error) {
 	return &storage, nil
 }
 
-// Creates the default storage container
+// NewStorage creates the default storage container
 func NewStorage() *Storage {
 	return &Storage{SetString{}, SetString{}, SetString{}, SetString{}}
 }
@@ -65,7 +69,7 @@ func (p *Storage) addOrthoContext(typ string, flag int) {
 	p.OrthoContext[typ] |= flag
 }
 
-// Detemins if any of the tokens are an abbreviation
+// IsAbbr detemines if any of the tokens are an abbreviation
 func (p *Storage) IsAbbr(tokens ...string) bool {
 	for _, token := range tokens {
 		if p.AbbrevTypes.Has(token) {
