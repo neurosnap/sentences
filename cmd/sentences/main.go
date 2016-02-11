@@ -11,7 +11,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// VERSION is the semantic version number
 var VERSION string
+
+// COMMITHASH is the git commit hash value
 var COMMITHASH string
 
 var ver bool
