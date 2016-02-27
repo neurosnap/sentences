@@ -12,6 +12,8 @@ type WordTokenizer struct {
 	sentences.DefaultWordTokenizer
 }
 
+var reAbbr = regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
+
 // English customized sentence tokenizer.
 func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceTokenizer, error) {
 	training := s
@@ -121,7 +123,6 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
-	reAbbr := regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
 		return
 	}
