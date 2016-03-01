@@ -6,6 +6,11 @@ import (
 	"unicode"
 )
 
+var reEllipsis = regexp.MustCompile(`\.\.+$`)
+var reNumeric = regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`)
+var reInitial = regexp.MustCompile(`^[A-Za-z]\.$`)
+var reAlpha = regexp.MustCompile(`^[A-Za-z]+$`)
+
 // WordTokenizer is the primary interface for tokenizing words
 type WordTokenizer interface {
 	TokenParser
@@ -130,7 +135,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 
 // Type returns a case-normalized representation of the token.
 func (p *DefaultWordTokenizer) Type(t *Token) string {
-	typ := t.reNumeric.ReplaceAllString(strings.ToLower(t.Tok), "##number##")
+	typ := reNumeric.ReplaceAllString(strings.ToLower(t.Tok), "##number##")
 	if len(typ) == 1 {
 		return typ
 	}
@@ -183,7 +188,7 @@ func (p *DefaultWordTokenizer) FirstLower(t *Token) bool {
 
 // IsEllipsis is true if the token text is that of an ellipsis.
 func (p *DefaultWordTokenizer) IsEllipsis(t *Token) bool {
-	return t.reEllipsis.MatchString(t.Tok)
+	return reEllipsis.MatchString(t.Tok)
 }
 
 // IsNumber is true if the token text is that of a number.
@@ -193,18 +198,17 @@ func (p *DefaultWordTokenizer) IsNumber(t *Token) bool {
 
 // IsInitial is true if the token text is that of an initial.
 func (p *DefaultWordTokenizer) IsInitial(t *Token) bool {
-	return t.reInitial.MatchString(t.Tok)
+	return reInitial.MatchString(t.Tok)
 }
 
 // IsAlpha is true if the token text is all alphabetic.
 func (p *DefaultWordTokenizer) IsAlpha(t *Token) bool {
-	return t.reAlpha.MatchString(t.Tok)
+	return reAlpha.MatchString(t.Tok)
 }
 
 // IsNonPunct is true if the token is either a number or is alphabetic.
 func (p *DefaultWordTokenizer) IsNonPunct(t *Token) bool {
-	nonPunct := regexp.MustCompile(p.PunctStrings.NonPunct())
-	return nonPunct.MatchString(p.Type(t))
+	return p.PunctStrings.NonPunct().MatchString(p.Type(t))
 }
 
 // HasPeriodFinal is true if the last character in the word is a period

@@ -1,10 +1,14 @@
 package sentences
 
+import (
+	"regexp"
+)
+
 // PunctStrings implements all the functions necessary for punctuation strings.
 // They are used to detect punctuation in the sentence
 // tokenizer.
 type PunctStrings interface {
-	NonPunct() string
+	NonPunct() *regexp.Regexp
 	Punctuation() string
 	HasSentencePunct(string) bool
 }
@@ -18,9 +22,10 @@ func NewPunctStrings() *DefaultPunctStrings {
 	return &DefaultPunctStrings{}
 }
 
-// NonPunct regex string to detect non-punctuation.
-func (p *DefaultPunctStrings) NonPunct() string {
-	return `[^\W\d]`
+var nonPunctRegex = regexp.MustCompile(`[^\W\d]`)
+
+func (p *DefaultPunctStrings) NonPunct() *regexp.Regexp {
+	return nonPunctRegex
 }
 
 // Punctuation characters

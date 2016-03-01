@@ -120,8 +120,9 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 	return tokens
 }
 
+var reAbbr = regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
+
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
-	reAbbr := regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
 		return
 	}

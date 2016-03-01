@@ -2,7 +2,6 @@ package sentences
 
 import (
 	"fmt"
-	"regexp"
 )
 
 // TokenGrouper two adjacent tokens together.
@@ -43,20 +42,12 @@ type Token struct {
 	LineStart   bool
 	Abbr        bool
 	periodFinal bool
-	reEllipsis  *regexp.Regexp
-	reNumeric   *regexp.Regexp
-	reInitial   *regexp.Regexp
-	reAlpha     *regexp.Regexp
 }
 
 // NewToken is the default implementation of the Token struct
 func NewToken(token string) *Token {
 	tok := Token{
-		Tok:        token,
-		reEllipsis: regexp.MustCompile(`\.\.+$`),
-		reNumeric:  regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`),
-		reInitial:  regexp.MustCompile(`^[A-Za-z]\.$`),
-		reAlpha:    regexp.MustCompile(`^[A-Za-z]+$`),
+		Tok: token,
 	}
 
 	return &tok
