@@ -36,7 +36,7 @@ cross:
 	tar -czvf $(BINARY_DIR)/sentences_windows-386.tar.gz ./sentences
 
 deploy:
-	source ~/.virtualenvs/aws/bin/activate
+	source ~/virtualenvs/aws/bin/activate
 	aws s3 cp ./binary s3://sentence-binaries/ --recursive --exclude "*" --include "*.tar.gz"
 
 install:
