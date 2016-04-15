@@ -85,5 +85,28 @@ func TestEnglish(t *testing.T) {
 			}
 		}
 	}
+}
 
+func TestSemicolon(t *testing.T) {
+	t.Log("Tokenizer should parse sentences with semicolons")
+
+	tokenizer := loadTokenizer("data/english.json")
+
+	actualText := "I am here; you are over there.  Will the tokenizer output two complete sentences?"
+	actual := tokenizer.Tokenize(actualText)
+
+	expected := []string{
+		"I am here; you are over there.",
+		"  Will the tokenizer output two complete sentences?",
+	}
+
+	if len(actual) != len(expected) {
+		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
+	}
+
+	for index, sent := range actual {
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
+		}
+	}
 }
