@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/neurosnap/sentences"
-	"github.com/neurosnap/sentences/data"
+	"gopkg.in/neurosnap/sentences.v1"
+	"gopkg.in/neurosnap/sentences.v1/data"
 )
 
 type WordTokenizer struct {

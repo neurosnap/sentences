@@ -77,8 +77,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 	paragraphStart := false
 	getNextWord := false
 
-	for i := 0; i < len(text); i++ {
-		char := rune(text[i])
+	for i, char := range text {
 		if !unicode.IsSpace(char) {
 			continue
 		}
