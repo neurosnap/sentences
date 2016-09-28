@@ -72,7 +72,7 @@ func main() {
     b, _ := data.Asset("data/english.json");
 
     // load the training data
-    training, _ := sentences.LoadTraining(data)
+    training, _ := sentences.LoadTraining(b)
 
     // create the default sentence tokenizer
     tokenizer := sentences.NewSentenceTokenizer(training)
@@ -158,5 +158,3 @@ text, we compare this package with other libraries across multiple programming l
 |:----------|:----------------------:|:-----------:
 | Sentences | 1.96                   | 98.95
 | NLTK      | 5.22                   | 99.21
-
-
