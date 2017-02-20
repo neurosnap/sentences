@@ -76,9 +76,8 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 	lineStart := false
 	paragraphStart := false
 	getNextWord := false
-
 	for i, char := range text {
-		if !unicode.IsSpace(char) {
+		if !unicode.IsSpace(char) && i != len(text)-1 {
 			continue
 		}
 
@@ -88,8 +87,13 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 			}
 			lineStart = true
 		}
+		var word string
+		if i == len(text)-1 {
+			word = strings.TrimSpace(text[lastSpace:])
+		} else {
+			word = strings.TrimSpace(text[lastSpace:i])
+		}
 
-		word := strings.TrimSpace(text[lastSpace:i])
 		if word == "" {
 			continue
 		}
