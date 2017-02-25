@@ -100,6 +100,8 @@ func TestSemicolon(t *testing.T) {
 		"  Will the tokenizer output two complete sentences?",
 	}
 
+	t.Logf("%v", actual)
+
 	if len(actual) != len(expected) {
 		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
 	}
