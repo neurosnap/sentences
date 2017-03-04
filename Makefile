@@ -6,13 +6,17 @@ CURRENT_VERSION=$(shell cat $(VERSION_FILE))
 
 COMMITHASH=$(shell git rev-parse --short HEAD)
 
-.PHONY: english
+.PHONY: english test build cross deploy install bump
 
 test:
 	go test ./...
 
 build:
 	go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+
+get:
+	go get ./...
+	go get github.com/inconshreveable/mousetrap
 
 cross:
 	mkdir -p $(BINARY_DIR)
@@ -35,7 +39,7 @@ cross:
 	GOOS=windows GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
 	tar -czvf $(BINARY_DIR)/sentences_windows-386.tar.gz ./sentences
 
-deploy:
+deploy: cross
 	source ~/virtualenvs/aws/bin/activate
 	aws s3 cp ./binary s3://sentence-binaries/ --recursive --exclude "*" --include "*.tar.gz"
 
