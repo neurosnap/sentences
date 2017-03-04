@@ -133,5 +133,11 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 		lastBreak = token.Position
 	}
 
+	if lastBreak != len(text) {
+		lastChar := len(text)
+		sentence := &Sentence{lastBreak, lastChar, text[lastBreak:lastChar]}
+		sentences = append(sentences, sentence)
+	}
+
 	return sentences
 }

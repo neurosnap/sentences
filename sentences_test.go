@@ -112,3 +112,30 @@ func TestSemicolon(t *testing.T) {
 		}
 	}
 }
+
+func TestEndOfTextNoPunct(t *testing.T) {
+	t.Log("Tokenizer should break up sentences even if text doesn't end in punctuation")
+
+	tokenizer := loadTokenizer("data/english.json")
+
+	actualText := "Hi does this work?\n\nIt seems to.  This is great"
+	actual := tokenizer.Tokenize(actualText)
+
+	expected := []string{
+		"Hi does this work?",
+		"\n\nIt seems to.",
+		"  This is great",
+	}
+
+	t.Logf("%v", actual)
+
+	if len(actual) != len(expected) {
+		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
+	}
+
+	for index, sent := range actual {
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
+		}
+	}
+}
