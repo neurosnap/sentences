@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## v1.0.4
+
+* :bug: Fixed regression that caused text that didn't end in punctuation to get cropped
+
 ## v1.0.3
 
 * :bug: Fixed issue where the WordTokenizer would crop off the last word
