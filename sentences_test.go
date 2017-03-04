@@ -139,3 +139,54 @@ func TestEndOfTextNoPunct(t *testing.T) {
 		}
 	}
 }
+
+func TestWeirdEllipsis(t *testing.T) {
+	t.Log("Tokenizer should not break up ellipsis")
+
+	actualText := "Harry Potter . . . what an honor."
+	expected := []string{
+		"Harry Potter . . . what an honor.",
+	}
+
+	compareSentence(t, actualText, expected)
+}
+
+func TestNormalEllipsis(t *testing.T) {
+	t.Log("Tokenizer should not break up ellipsis")
+
+	actualText := "Harry Potter ... what an honor."
+	expected := []string{
+		"Harry Potter ... what an honor.",
+	}
+
+	compareSentence(t, actualText, expected)
+}
+
+func TestSpacedPeriod(t *testing.T) {
+	t.Log("Tokenizer should break up sentence with a barren period")
+
+	actualText := "Hi my name is steve . what is your name?"
+	expected := []string{
+		"Hi my name is steve .",
+		" what is your name?",
+	}
+
+	compareSentence(t, actualText, expected)
+}
+
+func compareSentence(t *testing.T, actualText string, expected []string) {
+	tokenizer := loadTokenizer("data/english.json")
+	actual := tokenizer.Tokenize(actualText)
+
+	t.Logf("Actual: %v", actual)
+
+	if len(actual) != len(expected) {
+		t.Fatalf("Actual: %d, Expected: %d", len(actual), len(expected))
+	}
+
+	for index, sent := range actual {
+		if sent.Text != expected[index] {
+			t.Fatalf("Actual: %s\nExpected: %s", sent.Text, expected[index])
+		}
+	}
+}
