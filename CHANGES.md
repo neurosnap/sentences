@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## v1.0.3
+
+* :bug: Fixed issue where the WordTokenizer would crop off the last word
+
 ## v1.0.2
 
 * Word Tokenizer: iterate over string by runes in word tokenizer
