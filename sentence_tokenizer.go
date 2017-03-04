@@ -113,7 +113,7 @@ type Sentence struct {
 }
 
 func (s Sentence) String() string {
-	return fmt.Sprintf("<Sentence [%d:%d]>", s.Start, s.End)
+	return fmt.Sprintf("<Sentence [%d:%d] '%s'>", s.Start, s.End, s.Text)
 }
 
 // Tokenize splits text input into sentence tokens.
@@ -132,10 +132,6 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 
 		lastBreak = token.Position
 	}
-
-	lastChar := len(text)
-	sentence := &Sentence{lastBreak, lastChar, text[lastBreak:lastChar]}
-	sentences = append(sentences, sentence)
 
 	return sentences
 }
