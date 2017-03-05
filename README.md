@@ -110,6 +110,19 @@ func main() {
 }
 ```
 
+Contributing
+------------
+
+I need help maintaining this library.  If you are interested in contributing
+to this library then please start by looking at the [golder-rules](https://github.com/neurosnap/sentences/tree/golden-rule) branch which
+tests the [Golden Rules](https://github.com/diasks2/pragmatic_segmenter/blob/master/README.md#the-golden-rules)
+for english sentence tokenization created by the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter)
+library.
+
+Create an issue for a particular failing test and submit an issue/PR.
+
+I'm happy to help anyone willing to contribute.
+
 Customizable
 ------------
 
