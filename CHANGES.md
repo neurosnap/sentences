@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## v1.0.6 (2017-03-05)
+
+* :package: Ignore command line dependencies from go vendoring
+
 ## v1.0.5 (2017-03-05)
 
 * :bug: Sentence tokenizer would incorrectly parse a spaced ellipsis ". . ." as multiple sentences [16](https://github.com/neurosnap/sentences/pull/16)
