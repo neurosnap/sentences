@@ -1,5 +1,6 @@
 BASE_DIR=$(shell echo $$GOPATH)/src/github.com/neurosnap/sentences
 BINARY_DIR=./binary
+CMD_DIR=./_cmd/sentences
 
 VERSION_FILE=$(BASE_DIR)/VERSION
 CURRENT_VERSION=$(shell cat $(VERSION_FILE))
@@ -12,7 +13,7 @@ test:
 	go test ./...
 
 build:
-	go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 
 get:
 	go get ./...
@@ -21,22 +22,22 @@ get:
 cross:
 	mkdir -p $(BINARY_DIR)
 
-	GOOS=linux GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=linux GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_linux-amd64.tar.gz ./sentences
 
-	GOOS=linux GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=linux GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_linux-386.tar.gz ./sentences
 
-	GOOS=darwin GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=darwin GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_darwin-amd64.tar.gz ./sentences
 
-	GOOS=darwin GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=darwin GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_darwin-386.tar.gz ./sentences
 
-	GOOS=windows GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=windows GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_windows-amd64.tar.gz ./sentences
 
-	GOOS=windows GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	GOOS=windows GOARCH=386 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_windows-386.tar.gz ./sentences
 
 deploy: cross
@@ -44,7 +45,7 @@ deploy: cross
 	aws s3 cp ./binary s3://sentence-binaries/ --recursive --exclude "*" --include "*.tar.gz"
 
 install:
-	go install -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ./cmd/sentences
+	go install -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 
 bump:
 	MAJOR=$(word 1, $(subst ., , $(CURRENT_VERSION)))
