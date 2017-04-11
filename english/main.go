@@ -76,7 +76,7 @@ func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
 // Find any punctuation excluding the period final
 func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	enders := []string{
-		`."`, `.'`, `.)`, `.’`, `.”`,
+		`."`, `.)`, `.’`, `.”`,
 		`?`, `?"`, `?'`, `?)`, `?’`, `?”`,
 		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
 	}
@@ -88,7 +88,7 @@ func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	}
 
 	parens := []string{
-		`.[`, `.(`, `."`, `.'`,
+		`.[`, `.(`, `."`,
 		`?[`, `?(`,
 		`![`, `!(`,
 	}
