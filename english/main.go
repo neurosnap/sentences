@@ -135,7 +135,27 @@ func looksInternal(tok string) bool {
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+	if strings.HasSuffix(tokOne.Tok, ".") && tokTwo.Tok == "." {
+		tokOne.SentBreak = false
+		tokTwo.SentBreak = false
+		return
+	}
+
 	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
+
+	if strings.HasSuffix(tokOne.Tok, ".") && !tokOne.SentBreak {
+		tokTwoCtx := a.Storage.OrthoContext[a.TypeNoPeriod(tokTwo)]
+		if a.TokenParser.FirstUpper(tokTwo) && tokTwoCtx&112 != 0 {
+			tokOne.SentBreak = true
+		}
+	}
+
+	if m, _ := regexp.MatchString(`(?:\.\s?){2,}\.`, tokOne.Tok); m {
+		if a.TokenParser.FirstUpper(tokTwo) || a.SentStarters[nextTyp] != 0 {
+			tokOne.SentBreak = true
+			return
+		}
+	}
 
 	/*
 		If the tokOne's sentence-breaking punctuation looks like it could occur
