@@ -122,7 +122,33 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 	return tokens
 }
 
+// looksInternal determines if tok's punctuation could appear
+// sentence-internally (i.e., parentheses or quotations).
+func looksInternal(tok string) bool {
+	internal := []string{")", `’`, `”`, `"`, `'`}
+	for _, punc := range internal {
+		if strings.HasSuffix(tok, punc) {
+			return true
+		}
+	}
+	return false
+}
+
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
+
+	/*
+		If the tokOne's sentence-breaking punctuation looks like it could occur
+		sentence-internally, ensure that the following word is either
+		capitalized or a frequent sentence starter.
+	*/
+	if tokOne.SentBreak && looksInternal(tokOne.Tok) {
+		if a.TokenParser.FirstLower(tokTwo) && a.SentStarters[nextTyp] == 0 {
+			tokOne.SentBreak = false
+			return
+		}
+	}
+
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
 		return
 	}
@@ -134,7 +160,6 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 	tokOne.Abbr = true
 	tokOne.SentBreak = false
 
-	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
 	/*
 		[4.1.1. Orthographic Heuristic] Check if there's
 		orthogrpahic evidence about whether the next word
