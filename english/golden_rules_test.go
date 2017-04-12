@@ -396,7 +396,7 @@ func TestGoldenRules(t *testing.T) {
 	actualText = "If words are left off at the end of a sentence, and that is all that is omitted, indicate the omission with ellipsis marks (preceded and followed by a space) and then indicate the end of the sentence with a period . . . . Next sentence."
 	expected = []string{
 		"If words are left off at the end of a sentence, and that is all that is omitted, indicate the omission with ellipsis marks (preceded and followed by a space) and then indicate the end of the sentence with a period . . . .",
-		"Next sentence.",
+		" Next sentence.",
 	}
 	compareSentences(t, actualText, expected, test)
 
