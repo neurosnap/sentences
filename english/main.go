@@ -134,7 +134,14 @@ func looksInternal(tok string) bool {
 	return false
 }
 
+var reLooksLikeEllipsis = regexp.MustCompile(`(?:\.\s?){2,}\.`)
+
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+
+	/*
+		If both tokOne and tokTwo and periods, we're probably in an ellipsis
+		that wasn't properly tokenized by `WordTokenizer`.
+	*/
 	if strings.HasSuffix(tokOne.Tok, ".") && tokTwo.Tok == "." {
 		tokOne.SentBreak = false
 		tokTwo.SentBreak = false
@@ -143,6 +150,10 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 
 	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
 
+	/*
+		If the tokOne ends with a period but isn't marked as a sentence breaker,
+		mark it if tokTwo is capitalized and can occur in _ORTHO_LC.
+	*/
 	if strings.HasSuffix(tokOne.Tok, ".") && !tokOne.SentBreak {
 		tokTwoCtx := a.Storage.OrthoContext[a.TypeNoPeriod(tokTwo)]
 		if a.TokenParser.FirstUpper(tokTwo) && tokTwoCtx&112 != 0 {
@@ -150,7 +161,11 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		}
 	}
 
-	if m, _ := regexp.MatchString(`(?:\.\s?){2,}\.`, tokOne.Tok); m {
+	/*
+		If the tokOne looks like an ellipsis and tokTwo is either capitalized
+		or a frequent sentence starter, break the sentence.
+	*/
+	if reLooksLikeEllipsis.MatchString(tokOne.Tok) {
 		if a.TokenParser.FirstUpper(tokTwo) || a.SentStarters[nextTyp] != 0 {
 			tokOne.SentBreak = true
 			return
