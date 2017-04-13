@@ -113,6 +113,11 @@ type MultiPunctWordAnnotation struct {
 func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*sentences.Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		if len(tokPair) < 2 || tokPair[1] == nil {
+			tok := tokPair[0].Tok
+			if strings.Contains(tok, "\n") && strings.Contains(tok, " ") {
+				// We've mislabeled due to an errant newline.
+				tokPair[0].SentBreak = false
+			}
 			continue
 		}
 
