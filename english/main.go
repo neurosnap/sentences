@@ -13,6 +13,8 @@ type WordTokenizer struct {
 }
 
 var reAbbr = regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
+var reLooksLikeEllipsis = regexp.MustCompile(`(?:\.\s?){2,}\.`)
+var reEntities = regexp.MustCompile(`Yahoo!`)
 
 // English customized sentence tokenizer.
 func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceTokenizer, error) {
@@ -82,7 +84,7 @@ func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	}
 
 	for _, ender := range enders {
-		if strings.HasSuffix(t.Tok, ender) {
+		if strings.HasSuffix(t.Tok, ender) && !reEntities.MatchString(t.Tok) {
 			return true
 		}
 	}
@@ -138,8 +140,6 @@ func looksInternal(tok string) bool {
 	}
 	return false
 }
-
-var reLooksLikeEllipsis = regexp.MustCompile(`(?:\.\s?){2,}\.`)
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
 
