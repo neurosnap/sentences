@@ -5,6 +5,7 @@ import (
 	"strings"
 	"testing"
 
+	e2 "github.com/jdkato/sentences/english"
 	td "github.com/neurosnap/sentences/data"
 	"github.com/neurosnap/sentences/english"
 )
@@ -38,8 +39,8 @@ func getFileLocation(prefix, original, expected string) []string {
 	return []string{origText, expectedText}
 }
 
-func BenchmarkEnglish(b *testing.B) {
-	tokenizer := loadTokenizer("data/english.json")
+func BenchmarkEnglishPackage2(b *testing.B) {
+	tokenizer, _ := e2.NewSentenceTokenizer(nil)
 
 	prefix := "test_files/english/"
 
