@@ -6,6 +6,7 @@ import (
 	"testing"
 
 	td "github.com/neurosnap/sentences/data"
+	"github.com/neurosnap/sentences/english"
 )
 
 func loadTokenizer(data string) *DefaultSentenceTokenizer {
@@ -39,6 +40,42 @@ func getFileLocation(prefix, original, expected string) []string {
 
 func BenchmarkEnglish(b *testing.B) {
 	tokenizer := loadTokenizer("data/english.json")
+
+	prefix := "test_files/english/"
+
+	testFiles := [][]string{
+		getFileLocation(prefix, "carolyn.txt", "carolyn_s.txt"),
+		getFileLocation(prefix, "ecig.txt", "ecig_s.txt"),
+		getFileLocation(prefix, "foul_ball.txt", "foul_ball_s.txt"),
+		getFileLocation(prefix, "fbi.txt", "fbi_s.txt"),
+		getFileLocation(prefix, "dre.txt", "dre_s.txt"),
+		getFileLocation(prefix, "dr.txt", "dr_s.txt"),
+		getFileLocation(prefix, "quotes.txt", "quotes_s.txt"),
+		getFileLocation(prefix, "kiss.txt", "kiss_s.txt"),
+		getFileLocation(prefix, "kentucky.txt", "kentucky_s.txt"),
+		getFileLocation(prefix, "iphone6s.txt", "iphone6s_s.txt"),
+		getFileLocation(prefix, "lebanon.txt", "lebanon_s.txt"),
+		getFileLocation(prefix, "duma.txt", "duma_s.txt"),
+		getFileLocation(prefix, "demolitions.txt", "demolitions_s.txt"),
+		getFileLocation(prefix, "qa.txt", "qa_s.txt"),
+		getFileLocation(prefix, "anarchy.txt", "anarchy_s.txt"),
+		getFileLocation(prefix, "ethicist.txt", "ethicist_s.txt"),
+		getFileLocation(prefix, "self_reliance.txt", "self_reliance_s.txt"),
+		getFileLocation(prefix, "punct.txt", "punct_s.txt"),
+		getFileLocation(prefix, "clinton.txt", "clinton_s.txt"),
+		getFileLocation(prefix, "markets.txt", "markets_s.txt"),
+		getFileLocation(prefix, "nyfed.txt", "nyfed_s.txt"),
+	}
+
+	for n := 0; n < b.N; n++ {
+		for _, f := range testFiles {
+			tokenizer.Tokenize(readFile(f[0]))
+		}
+	}
+}
+
+func BenchmarkEnglishPackage(b *testing.B) {
+	tokenizer, _ := english.NewSentenceTokenizer(nil)
 
 	prefix := "test_files/english/"
 
