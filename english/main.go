@@ -142,6 +142,8 @@ func looksInternal(tok string) bool {
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+	// This is an expensive calculation, so we only want to do it once.
+	var nextTyp string
 
 	/*
 		If both tokOne and tokTwo and periods, we're probably in an ellipsis
@@ -153,39 +155,45 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		return
 	}
 
-	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
+	isNonBreak := strings.HasSuffix(tokOne.Tok, ".") && !tokOne.SentBreak
+	isEllipsis := reLooksLikeEllipsis.MatchString(tokOne.Tok)
+	isInternal := tokOne.SentBreak && looksInternal(tokOne.Tok)
 
-	/*
-		If the tokOne ends with a period but isn't marked as a sentence breaker,
-		mark it if tokTwo is capitalized and can occur in _ORTHO_LC.
-	*/
-	if strings.HasSuffix(tokOne.Tok, ".") && !tokOne.SentBreak {
-		tokTwoCtx := a.Storage.OrthoContext[a.TypeNoPeriod(tokTwo)]
-		if a.TokenParser.FirstUpper(tokTwo) && tokTwoCtx&112 != 0 {
-			tokOne.SentBreak = true
+	if isNonBreak || isEllipsis || isInternal {
+		nextTyp = a.TokenParser.TypeNoSentPeriod(tokTwo)
+		isStarter := a.SentStarters[nextTyp]
+
+		/*
+			If the tokOne looks like an ellipsis and tokTwo is either
+			capitalized or a frequent sentence starter, break the sentence.
+		*/
+		if isEllipsis {
+			if a.TokenParser.FirstUpper(tokTwo) || isStarter != 0 {
+				tokOne.SentBreak = true
+				return
+			}
 		}
-	}
 
-	/*
-		If the tokOne looks like an ellipsis and tokTwo is either capitalized
-		or a frequent sentence starter, break the sentence.
-	*/
-	if reLooksLikeEllipsis.MatchString(tokOne.Tok) {
-		if a.TokenParser.FirstUpper(tokTwo) || a.SentStarters[nextTyp] != 0 {
-			tokOne.SentBreak = true
-			return
+		/*
+			If the tokOne's sentence-breaking punctuation looks like it could
+			occur sentence-internally, ensure that the following word is either
+			capitalized or a frequent sentence starter.
+		*/
+		if isInternal {
+			if a.TokenParser.FirstLower(tokTwo) && isStarter == 0 {
+				tokOne.SentBreak = false
+				return
+			}
 		}
-	}
 
-	/*
-		If the tokOne's sentence-breaking punctuation looks like it could occur
-		sentence-internally, ensure that the following word is either
-		capitalized or a frequent sentence starter.
-	*/
-	if tokOne.SentBreak && looksInternal(tokOne.Tok) {
-		if a.TokenParser.FirstLower(tokTwo) && a.SentStarters[nextTyp] == 0 {
-			tokOne.SentBreak = false
-			return
+		/*
+			If the tokOne ends with a period but isn't marked as a sentence
+			break, mark it if tokTwo is capitalized and can occur in _ORTHO_LC.
+		*/
+		if isNonBreak && a.TokenParser.FirstUpper(tokTwo) {
+			if a.Storage.OrthoContext[nextTyp]&112 != 0 {
+				tokOne.SentBreak = true
+			}
 		}
 	}
 
@@ -209,6 +217,10 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 	if isSentStarter == 1 {
 		tokOne.SentBreak = true
 		return
+	}
+
+	if nextTyp == "" {
+		nextTyp = a.TokenParser.TypeNoSentPeriod(tokTwo)
 	}
 
 	/*
