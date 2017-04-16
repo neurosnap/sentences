@@ -13,6 +13,8 @@ type WordTokenizer struct {
 }
 
 var reAbbr = regexp.MustCompile(`((?:[\w]\.)+[\w]*\.)`)
+var reLooksLikeEllipsis = regexp.MustCompile(`(?:\.\s?){2,}\.`)
+var reEntities = regexp.MustCompile(`Yahoo!`)
 
 // English customized sentence tokenizer.
 func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceTokenizer, error) {
@@ -31,7 +33,7 @@ func NewSentenceTokenizer(s *sentences.Storage) (*sentences.DefaultSentenceToken
 	}
 
 	// supervisor abbreviations
-	abbrevs := []string{"sgt", "gov", "no"}
+	abbrevs := []string{"sgt", "gov", "no", "mt"}
 	for _, abbr := range abbrevs {
 		training.AbbrevTypes.Add(abbr)
 	}
@@ -76,19 +78,19 @@ func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
 // Find any punctuation excluding the period final
 func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	enders := []string{
-		`."`, `.'`, `.)`, `.’`, `.”`,
+		`."`, `.)`, `.’`, `.”`,
 		`?`, `?"`, `?'`, `?)`, `?’`, `?”`,
 		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
 	}
 
 	for _, ender := range enders {
-		if strings.HasSuffix(t.Tok, ender) {
+		if strings.HasSuffix(t.Tok, ender) && !reEntities.MatchString(t.Tok) {
 			return true
 		}
 	}
 
 	parens := []string{
-		`.[`, `.(`, `."`, `.'`,
+		`.[`, `.(`, `."`,
 		`?[`, `?(`,
 		`![`, `!(`,
 	}
@@ -113,6 +115,11 @@ type MultiPunctWordAnnotation struct {
 func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*sentences.Token {
 	for _, tokPair := range a.TokenGrouper.Group(tokens) {
 		if len(tokPair) < 2 || tokPair[1] == nil {
+			tok := tokPair[0].Tok
+			if strings.Contains(tok, "\n") && strings.Contains(tok, " ") {
+				// We've mislabeled due to an errant newline.
+				tokPair[0].SentBreak = false
+			}
 			continue
 		}
 
@@ -122,7 +129,74 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 	return tokens
 }
 
+// looksInternal determines if tok's punctuation could appear
+// sentence-internally (i.e., parentheses or quotations).
+func looksInternal(tok string) bool {
+	internal := []string{")", `’`, `”`, `"`, `'`}
+	for _, punc := range internal {
+		if strings.HasSuffix(tok, punc) {
+			return true
+		}
+	}
+	return false
+}
+
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+	// This is an expensive calculation, so we only want to do it once.
+	var nextTyp string
+
+	/*
+		If both tokOne and tokTwo and periods, we're probably in an ellipsis
+		that wasn't properly tokenized by `WordTokenizer`.
+	*/
+	if strings.HasSuffix(tokOne.Tok, ".") && tokTwo.Tok == "." {
+		tokOne.SentBreak = false
+		tokTwo.SentBreak = false
+		return
+	}
+
+	isNonBreak := strings.HasSuffix(tokOne.Tok, ".") && !tokOne.SentBreak
+	isEllipsis := reLooksLikeEllipsis.MatchString(tokOne.Tok)
+	isInternal := tokOne.SentBreak && looksInternal(tokOne.Tok)
+
+	if isNonBreak || isEllipsis || isInternal {
+		nextTyp = a.TokenParser.TypeNoSentPeriod(tokTwo)
+		isStarter := a.SentStarters[nextTyp]
+
+		/*
+			If the tokOne looks like an ellipsis and tokTwo is either
+			capitalized or a frequent sentence starter, break the sentence.
+		*/
+		if isEllipsis {
+			if a.TokenParser.FirstUpper(tokTwo) || isStarter != 0 {
+				tokOne.SentBreak = true
+				return
+			}
+		}
+
+		/*
+			If the tokOne's sentence-breaking punctuation looks like it could
+			occur sentence-internally, ensure that the following word is either
+			capitalized or a frequent sentence starter.
+		*/
+		if isInternal {
+			if a.TokenParser.FirstLower(tokTwo) && isStarter == 0 {
+				tokOne.SentBreak = false
+				return
+			}
+		}
+
+		/*
+			If the tokOne ends with a period but isn't marked as a sentence
+			break, mark it if tokTwo is capitalized and can occur in _ORTHO_LC.
+		*/
+		if isNonBreak && a.TokenParser.FirstUpper(tokTwo) {
+			if a.Storage.OrthoContext[nextTyp]&112 != 0 {
+				tokOne.SentBreak = true
+			}
+		}
+	}
+
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
 		return
 	}
@@ -134,7 +208,6 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 	tokOne.Abbr = true
 	tokOne.SentBreak = false
 
-	nextTyp := a.TokenParser.TypeNoSentPeriod(tokTwo)
 	/*
 		[4.1.1. Orthographic Heuristic] Check if there's
 		orthogrpahic evidence about whether the next word
@@ -144,6 +217,10 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 	if isSentStarter == 1 {
 		tokOne.SentBreak = true
 		return
+	}
+
+	if nextTyp == "" {
+		nextTyp = a.TokenParser.TypeNoSentPeriod(tokTwo)
 	}
 
 	/*
