@@ -16,7 +16,7 @@ Install
 
 ```
 go get gopkg.in/neurosnap/sentences.v1
-go install gopkg.in/neurosnap/sentences.v1/cmd/sentences
+go install gopkg.in/neurosnap/sentences.v1/_cmd/sentences
 ```
 
 ### Binaries
