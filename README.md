@@ -8,7 +8,6 @@ Sentences - A command line sentence tokenizer
 
 This command line utility will convert a blob of text into a list of sentences.
 
-* [Demo](http://sentences.erock.io)
 * [Docs](https://godoc.org/gopkg.in/neurosnap/sentences.v1)
 
 Install
@@ -23,18 +22,18 @@ go install gopkg.in/neurosnap/sentences.v1/_cmd/sentences
 
 #### Linux
 
-* [Linux 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-386.tar.gz)
-* [Linux AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_linux-amd64.tar.gz)
+* [Linux 386](https:///storage.cloud.google.com/go-sentences/sentences_linux-386.tar.gz)
+* [Linux AMD64](https://storage.cloud.google.com/go-sentences/sentences_linux-amd64.tar.gz)
 
 #### Mac
 
-* [Darwin 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-386.tar.gz)
-* [Darwin AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_darwin-amd64.tar.gz)
+* [Darwin 386](https://storage.cloud.google.com/go-sentences/sentences_darwin-386.tar.gz)
+* [Darwin AMD64](https://storage.cloud.google.com/go-sentences/sentences_darwin-amd64.tar.gz)
 
 #### Windows
 
-* [Windows 386](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-386.tar.gz)
-* [Windows AMD64](https://s3-us-west-2.amazonaws.com/sentence-binaries/sentences_windows-amd64.tar.gz)
+* [Windows 386](https://storage.cloud.google.com/go-sentences/sentences_windows-386.tar.gz)
+* [Windows AMD64](https://storage.cloud.google.com/go-sentences/sentences_windows-amd64.tar.gz)
 
 Command
 -------

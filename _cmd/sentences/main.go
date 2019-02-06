@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/neurosnap/sentences/english"
+	"gopkg.in/neurosnap/sentences.v1/english"
 	"github.com/spf13/cobra"
 )
 
