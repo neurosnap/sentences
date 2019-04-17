@@ -22,7 +22,7 @@ func NewFreqDist(samples map[string]int) *FreqDist {
 	return &FreqDist{samples}
 }
 
-// Return the total number of sample outcomes that have been recorded by this FreqDist.
+// N returns the total number of sample outcomes that have been recorded by this FreqDist.
 func (f *FreqDist) N() float64 {
 	sum := 0.0
 	for _, val := range f.Samples {
@@ -31,7 +31,7 @@ func (f *FreqDist) N() float64 {
 	return sum
 }
 
-// Return the total number of sample values (or "bins") that have counts greater than zero.
+// B returns the total number of sample values (or "bins") that have counts greater than zero.
 func (f *FreqDist) B() int {
 	return len(f.Samples)
 }
