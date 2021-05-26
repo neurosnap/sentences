@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## v1.0.7 (2021-04-26)
+
+* :sparkles: Add fullwidth punctuation to support CJK [23](https://github.com/neurosnap/sentences/pull/23)
+
 ## v1.0.6 (2017-03-05)
 
 * :package: Ignore command line dependencies from go vendoring
