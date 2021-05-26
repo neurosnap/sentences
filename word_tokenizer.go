@@ -80,8 +80,12 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 	getNextWord := false
 
 	for i, char := range text {
-		if !unicode.IsSpace(char) && i != textLength-1 {
+		if !unicode.IsSpace(char) && !IsCjkPunct(char) && i != textLength-1 {
 			continue
+		}
+
+		if IsCjkPunct(char) {
+			i += len(string(char))
 		}
 
 		if char == '\n' {
@@ -252,5 +256,13 @@ func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 		}
 	}
 
+	return false
+}
+
+func IsCjkPunct(r rune) bool {
+	switch r {
+	case '。', '；', '！', '？':
+		return true
+	}
 	return false
 }
