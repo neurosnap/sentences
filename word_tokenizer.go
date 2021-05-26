@@ -80,7 +80,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 	getNextWord := false
 
 	for i, char := range text {
-		if !unicode.IsSpace(char) && i != textLength - 1 {
+		if !unicode.IsSpace(char) && i != textLength-1 {
 			continue
 		}
 
@@ -92,7 +92,7 @@ func (p *DefaultWordTokenizer) Tokenize(text string, onlyPeriodContext bool) []*
 		}
 
 		var cursor int
-		if i == textLength - 1 {
+		if i == textLength-1 {
 			cursor = textLength
 		} else {
 			cursor = i
@@ -217,7 +217,7 @@ func (p *DefaultWordTokenizer) IsNonPunct(t *Token) bool {
 
 // HasPeriodFinal is true if the last character in the word is a period
 func (p *DefaultWordTokenizer) HasPeriodFinal(t *Token) bool {
-	return strings.HasSuffix(t.Tok, ".")
+	return strings.HasSuffix(t.Tok, ".") || strings.HasSuffix(t.Tok, "。")
 }
 
 // HasSentEndChars finds any punctuation excluding the period final
@@ -226,6 +226,9 @@ func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 		`."`, `.'`, `.)`,
 		`?`, `?"`, `?'`, `?)`,
 		`!`, `!"`, `!'`, `!)`, `!’`, `!”`,
+		`。”`, `。’`, `。）`,
+		`？`, `？”`, `？’`, `？）`,
+		`！`, `！”`, `！’`, `！）`, `！’`, `！”`,
 	}
 
 	for _, ender := range enders {
@@ -238,6 +241,9 @@ func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 		`.[`, `.(`, `."`, `.'`,
 		`?[`, `?(`,
 		`![`, `!(`,
+		`。【`, `。（`, `。”`, `。’`,
+		`？【`, `？（`,
+		`！【`, `！（`,
 	}
 
 	for _, paren := range parens {
