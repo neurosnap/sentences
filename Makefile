@@ -39,6 +39,9 @@ cross:
 	GOOS=darwin GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_darwin-amd64.tar.gz ./sentences
 
+	GOOS=darwin GOARCH=arm64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
+	tar -czvf $(BINARY_DIR)/sentences_darwin-arm64.tar.gz ./sentences
+
 	GOOS=windows GOARCH=amd64 go build -ldflags "-X main.VERSION=$(CURRENT_VERSION) -X main.COMMITHASH=$(COMMITHASH)" ${CMD_DIR}
 	tar -czvf $(BINARY_DIR)/sentences_windows-amd64.tar.gz ./sentences
 .PHONY: cross
