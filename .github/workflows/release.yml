@@ -1,0 +1,25 @@
+on:
+  release:
+    types: [created]
+name: release
+jobs:
+  generate:
+    name: create release-artifacts
+    runs-on: ubuntu-latest
+    steps:
+    - name: install golang
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16.x
+    - name: checkout code
+      uses: actions/checkout@v2
+    - name: install go-bindata
+      run: make bindata
+    - name: generate the artifacts
+      run: make cross
+    - name: upload the artifacts
+      uses: skx/github-action-publish-binaries@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: 'binary/sentences_*'
