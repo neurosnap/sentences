@@ -13,14 +13,17 @@ This command line utility will convert a blob of text into a list of sentences.
 ## Install
 
 ```
+brew tap neurosnap/sentences
+brew install sentences
+```
+
+Or you can find the pre-built binaries on [the github
+releases page](https://github.com/neurosnap/sentences/releases).
+
+```
 go get github.com/neurosnap/sentences
 go install github.com/neurosnap/sentences/_cmd/sentences
 ```
-
-### Binaries
-
-Find the latest binaries on [the github
-releases page](https://github.com/neurosnap/sentences/releases).
 
 ## Command
 
