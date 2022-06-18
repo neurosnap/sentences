@@ -1,0 +1,83 @@
+package main
+
+import (
+	"bufio"
+	"flag"
+	"fmt"
+	"io/ioutil"
+	"os"
+	"strings"
+
+	"github.com/neurosnap/sentences/english"
+)
+
+// VERSION is the semantic version number
+var VERSION string
+
+// COMMITHASH is the git commit hash value
+var COMMITHASH string
+
+func run(fname string, delim string) {
+	var text []byte
+	var err error
+
+	if fname != "" {
+		text, err = ioutil.ReadFile(fname)
+		if err != nil {
+			panic(err)
+		}
+	} else {
+		stat, err := os.Stdin.Stat()
+		if err != nil {
+			panic(err)
+		}
+
+		if (stat.Mode() & os.ModeCharDevice) != 0 {
+			return
+		}
+
+		reader := bufio.NewReader(os.Stdin)
+		text, err = ioutil.ReadAll(reader)
+		if err != nil {
+			panic(err)
+		}
+	}
+
+	tokenizer, err := english.NewSentenceTokenizer(nil)
+	if err != nil {
+		panic(err)
+	}
+
+	sentences := tokenizer.Tokenize(string(text))
+	for _, s := range sentences {
+		text := strings.Join(strings.Fields(s.Text), " ")
+
+		text = strings.Join([]string{text, delim}, "")
+		fmt.Printf("%s", text)
+	}
+}
+
+func main() {
+	var ver bool
+	verStr := "Get current version of sentences"
+	flag.BoolVar(&ver, "version", false, verStr)
+	flag.BoolVar(&ver, "v", false, fmt.Sprintf("%s (alias of --version)", verStr))
+
+	var fname string
+	fileStr := "Read file as source input instead of stdin"
+	flag.StringVar(&fname, "file", "", fileStr)
+	flag.StringVar(&fname, "f", "", fmt.Sprintf("%s (alias of --file)", fileStr))
+
+	var delim string
+	delimStr := "Delimiter used to demarcate sentence boundaries"
+	flag.StringVar(&delim, "delimiter", "", delimStr)
+	flag.StringVar(&delim, "d", "", fmt.Sprintf("%s (alias of --delimiter)", delimStr))
+	flag.Parse()
+
+	if ver {
+		fmt.Println(VERSION)
+		return
+	}
+
+	run(fname, delim)
+}

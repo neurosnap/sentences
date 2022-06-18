@@ -1,5 +1,5 @@
 BINARY_DIR=./binary
-CMD_DIR=./_cmd/sentences
+CMD_DIR=./cmd/sentences
 
 VERSION_FILE=./VERSION
 CURRENT_VERSION=$(shell cat $(VERSION_FILE))
