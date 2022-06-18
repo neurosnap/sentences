@@ -112,7 +112,7 @@ func main() {
 ## Contributing
 
 I need help maintaining this library.  If you are interested in contributing
-to this library then please start by looking at the [golder-rules](https://github.com/neurosnap/sentences/tree/golden-rule) branch which
+to this library then please start by looking at the [golden-rules](https://github.com/neurosnap/sentences/tree/golden-rule) branch which
 tests the [Golden Rules](https://github.com/diasks2/pragmatic_segmenter/blob/master/README.md#the-golden-rules)
 for english sentence tokenization created by the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter)
 library.
@@ -121,12 +121,12 @@ Create an issue for a particular failing test and submit an issue/PR.
 
 I'm happy to help anyone willing to contribute.
 
-## Customizable
+## Customize
 
 `sentences` was built around composability, most major components of this package
 can be extended.
 
-Eager to make adhoc changes but don't know how to start?
+Eager to make ad-hoc changes but don't know how to start?
 Have a look at `github.com/neurosnap/sentences/english` for a solid example.
 
 ## Notice
@@ -144,12 +144,12 @@ This library is a port of the [nltk's](http://www.nltk.org) punkt tokenizer.
 
 An unsupervised multilingual sentence boundary detection library for golang.
 The way the punkt system accomplishes this goal is through training the tokenizer
-with text in that given language.  Once the likelyhoods of abbreviations, collocations,
+with text in that given language.  Once the likelihoods of abbreviations, collocations,
 and sentence starters are determined, finding sentence boundaries becomes easier.
 
 There are many problems that arise when tokenizing text into sentences, the primary
 issue being abbreviations.  The punkt system attempts to determine whether a  word
-is an abbrevation, an end to a sentence, or even both through training the system with text
+is an abbreviation, an end to a sentence, or even both through training the system with text
 in the given language.  The punkt system incorporates both token- and type-based
 analysis on the text through two different phases of annotation.
 
