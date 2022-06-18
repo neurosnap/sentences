@@ -28,7 +28,7 @@ releases page](https://github.com/neurosnap/sentences/releases).
 
 ```
 go get github.com/neurosnap/sentences
-go install github.com/neurosnap/sentences/_cmd/sentences
+go install github.com/neurosnap/sentences/cmd/sentences
 ```
 
 ## Command
