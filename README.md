@@ -10,6 +10,14 @@ This command line utility will convert a blob of text into a list of sentences.
 * [Demo](https://sentences-231000.appspot.com/)
 * [Docs](https://godoc.org/github.com/neurosnap/sentences)
 
+## Features
+
+* Supports multiple languages (english, czech, dutch, estonian, finnish,
+  german, greek, italian, norwegian, polish, portuguese, slovene, turkish)
+* Zero dependencies
+* Extendable
+* Fast
+
 ## Install
 
 ### mac
@@ -115,7 +123,7 @@ I'm happy to help anyone willing to contribute.
 
 ## Customizable
 
-Sentences was built around composability, most major components of this package
+`sentences` was built around composability, most major components of this package
 can be extended.
 
 Eager to make adhoc changes but don't know how to start?
