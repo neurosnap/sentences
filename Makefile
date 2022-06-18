@@ -6,6 +6,9 @@ CURRENT_VERSION=$(shell cat $(VERSION_FILE))
 
 COMMITHASH=$(shell git rev-parse --short HEAD)
 
+PREFIX?=/usr/local
+BINDIR?=$(PREFIX)/bin
+
 test:
 	go test ./...
 .PHONY: test
@@ -23,6 +26,14 @@ bindata:
 	go get github.com/go-bindata/go-bindata/...
 	go install github.com/go-bindata/go-bindata/...
 .PHONY: bindata
+
+# install:
+# 	install -m755 sentences $(DESTDIR)$(BINDIR)/sentences
+# .PHONY: install
+#
+# uninstall:
+# 	rm -f $(DESTDIR)$(BINDIR)/sentences
+# .PHONY: uninstall
 
 cross:
 	mkdir -p $(BINARY_DIR)
@@ -127,5 +138,3 @@ spanish:
 turkish:
 	go-bindata -pkg="data" -o data/turkish.go data/turkish.json
 .PHONY: turkish
-
-

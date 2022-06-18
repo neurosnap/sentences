@@ -17,7 +17,11 @@ var VERSION string
 // COMMITHASH is the git commit hash value
 var COMMITHASH string
 
-func run(fname string, delim string) {
+func run(fname string, delim string, debug bool) {
+	if debug {
+		fmt.Printf("file [%s], delim [%s]\n", fname, delim)
+	}
+
 	var text []byte
 	var err error
 
@@ -49,6 +53,14 @@ func run(fname string, delim string) {
 	}
 
 	sentences := tokenizer.Tokenize(string(text))
+
+	if debug {
+		for _, s := range sentences {
+			fmt.Println(s)
+		}
+		fmt.Println("---")
+	}
+
 	for _, s := range sentences {
 		text := strings.Join(strings.Fields(s.Text), " ")
 
@@ -70,8 +82,13 @@ func main() {
 
 	var delim string
 	delimStr := "Delimiter used to demarcate sentence boundaries"
-	flag.StringVar(&delim, "delimiter", "", delimStr)
-	flag.StringVar(&delim, "d", "", fmt.Sprintf("%s (alias of --delimiter)", delimStr))
+	flag.StringVar(&delim, "delimiter", "\n", delimStr)
+	flag.StringVar(&delim, "d", "\n", fmt.Sprintf("%s (alias of --delimiter)", delimStr))
+
+	var debug bool
+	debugStr := "Debug mode"
+	flag.BoolVar(&debug, "debug", false, debugStr)
+
 	flag.Parse()
 
 	if ver {
@@ -79,5 +96,5 @@ func main() {
 		return
 	}
 
-	run(fname, delim)
+	run(fname, delim, debug)
 }
