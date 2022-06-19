@@ -13,7 +13,7 @@ This command line utility will convert a blob of text into a list of sentences.
 ## Features
 
 * Supports multiple languages (english, czech, dutch, estonian, finnish,
-  german, greek, italian, norwegian, polish, portuguese, slovene, turkish)
+  german, greek, italian, norwegian, polish, portuguese, slovene, and turkish)
 * Zero dependencies
 * Extendable
 * Fast
@@ -70,9 +70,8 @@ func main() {
     former U.S. Rep. Carolyn Cheeks Kilpatrick to file; Stallings challenged the
     law in court and won. Kilpatrick mounted a write-in campaign, but Stallings won.`
 
-    // Compiling language specific data into a binary file can be accomplished
-    // by using `make <lang>` and then loading the `json` data:
-    b, _ := data.Asset("data/english.json");
+    // download the training data from this repo (./data) and save it somewhere
+    b, _ := os.ReadFile("./path/to/english.json")
 
     // load the training data
     training, _ := sentences.LoadTraining(b)
