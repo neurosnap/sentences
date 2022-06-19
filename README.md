@@ -20,6 +20,10 @@ This command line utility will convert a blob of text into a list of sentences.
 
 ## Install
 
+### arch
+
+[aur](https://aur.archlinux.org/packages/sentences-bin)
+
 ### mac
 
 ```
