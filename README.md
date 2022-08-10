@@ -58,9 +58,9 @@ go get github.com/neurosnap/sentences
 ```Go
 import (
     "fmt"
+    "os"
 
     "github.com/neurosnap/sentences"
-    "github.com/neurosnap/sentences/data"
 )
 
 func main() {
