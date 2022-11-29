@@ -71,7 +71,7 @@ func (s *DefaultSentenceTokenizer) AnnotatedTokens(text string) []*Token {
 	// Use the default word tokenizer but only grab the tokens that
 	// relate to a sentence ending punctuation.  This means grab the word
 	// before and after the punctuation.
-	tokens := s.WordTokenizer.Tokenize(text, true)
+	tokens := s.WordTokenizer.Tokenize(text, false)
 
 	if len(tokens) == 0 {
 		return nil

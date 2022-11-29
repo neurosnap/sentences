@@ -45,6 +45,9 @@ type TokenExistential interface {
 	HasPeriodFinal(*Token) bool
 	// Does this token end with a punctuation and a quote?
 	HasSentEndChars(*Token) bool
+	// Does this token end with ambigiuous punctuation?
+	HasUnreliableEndChars(*Token) bool
+
 }
 
 // TokenParser is the primary token interface that determines the context and type of a tokenized word.
@@ -258,7 +261,20 @@ func (p *DefaultWordTokenizer) HasSentEndChars(t *Token) bool {
 
 	return false
 }
-
+// Find any punctuation that might mean the end of a sentence but doesn't have to
+func (p *DefaultWordTokenizer) HasUnreliableEndChars(t *Token) bool {
+	enders := []string{
+		`."`, `.'`, `.)`, `.’`, `.”`,
+		`?"`, `?'`, `?)`, `?’`, `?”`,
+		`!"`, `!'`, `!)`, `!’`, `!”`,
+	}
+	for _, ender := range enders {
+		if strings.HasSuffix(t.Tok, ender) {
+			return true
+		}
+	}
+	return false
+}
 func IsCjkPunct(r rune) bool {
 	switch r {
 	case '。', '；', '！', '？':
