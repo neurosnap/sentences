@@ -72,7 +72,20 @@ func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
 
 	return word
 }
-
+// Find any punctuation that might mean the end of a sentence but doesn't have to
+func (e *WordTokenizer) HasUnreliableEndChars(t *sentences.Token) bool {
+	enders := []string{
+		`."`, `.'`, `.)`, `.’`, `.”`,
+		`?"`, `?'`, `?)`, `?’`, `?”`,
+		`!"`, `!'`, `!)`, `!’`, `!”`,
+	}
+	for _, ender := range enders {
+		if strings.HasSuffix(t.Tok, ender) {
+			return true
+		}
+	}
+	return false
+}
 // Find any punctuation excluding the period final
 func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	enders := []string{
@@ -123,7 +136,7 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
-	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 {
+	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && !a.HasUnreliableEndChars(tokOne) {
 		return
 	}
 
@@ -152,8 +165,9 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		frequent-sentence-starters list, then label tok as a
 		sentence break.
 	*/
-	if a.TokenParser.FirstUpper(tokTwo) && a.SentStarters[nextTyp] != 0 {
+	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne)) {
 		tokOne.SentBreak = true
 		return
 	}
+
 }
