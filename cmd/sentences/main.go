@@ -93,6 +93,7 @@ func main() {
 
 	if ver {
 		fmt.Println(VERSION)
+		fmt.Println(COMMITHASH)
 		return
 	}
 
