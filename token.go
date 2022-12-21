@@ -46,12 +46,14 @@ type Token struct {
 	reEllipsis  *regexp.Regexp
 	reNumeric   *regexp.Regexp
 	reInitial   *regexp.Regexp
+	reListNumber *regexp.Regexp
 	reAlpha     *regexp.Regexp
 }
 
 var reEllipsis = regexp.MustCompile(`\.\.+$`)
 var reNumeric = regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`)
 var reInitial = regexp.MustCompile(`^[A-Za-z]\.$`)
+var reListNumber = regexp.MustCompile(`\d+.?\)?$`)
 var reAlpha = regexp.MustCompile(`^[A-Za-z]+$`)
 
 // NewToken is the default implementation of the Token struct
@@ -61,6 +63,7 @@ func NewToken(token string) *Token {
 		reEllipsis: reEllipsis,
 		reNumeric:  reNumeric,
 		reInitial:  reInitial,
+		reListNumber: reListNumber,
 		reAlpha:    reAlpha,
 	}
 

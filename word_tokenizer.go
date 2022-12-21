@@ -37,6 +37,8 @@ type TokenExistential interface {
 	IsEllipsis(*Token) bool
 	// True if the token text is that of an initial.
 	IsInitial(*Token) bool
+	// True if the token text is that of an number as part of a list.
+	IsListNumber(*Token) bool
 	// True if the token text is that of a number.
 	IsNumber(*Token) bool
 	// True if the token is either a number or is alphabetic.
@@ -209,6 +211,11 @@ func (p *DefaultWordTokenizer) IsNumber(t *Token) bool {
 // IsInitial is true if the token text is that of an initial.
 func (p *DefaultWordTokenizer) IsInitial(t *Token) bool {
 	return t.reInitial.MatchString(t.Tok)
+}
+
+// IsInitial is true if the token text is that of a list number.
+func (p *DefaultWordTokenizer) IsListNumber(t *Token) bool {
+	return t.reListNumber.MatchString(t.Tok)
 }
 
 // IsAlpha is true if the token text is all alphabetic.

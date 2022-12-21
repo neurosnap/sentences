@@ -60,4 +60,28 @@ func TestGoldenRules(t *testing.T) {
 		" She held the book out to show him.",
 	}
 	compareSentences(t, actualText, expected, test)
+
+	test = "32. List (period followed by parens and period to end item)"
+	actualText = "1.) The first item. 2.) The second item."
+	expected = []string{
+		"1.) The first item.",
+		" 2.) The second item.",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "34. List (parens and period to end item)"
+	actualText = "1) The first item. 2) The second item."
+	expected = []string{
+		"1) The first item.",
+		" 2) The second item.",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "36. List (period to mark list and period to end item)"
+	actualText = "1. The first item. 2. The second item."
+	expected = []string{
+		"1. The first item.",
+		" 2. The second item.",
+	}
+	compareSentences(t, actualText, expected, test)
 }

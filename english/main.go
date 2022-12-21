@@ -136,6 +136,11 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
+	if a.IsListNumber(tokOne) {
+		tokOne.SentBreak = false
+		return
+	}
+
 	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && !a.HasUnreliableEndChars(tokOne) {
 		return
 	}
