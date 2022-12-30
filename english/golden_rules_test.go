@@ -84,4 +84,42 @@ func TestGoldenRules(t *testing.T) {
 		" 2. The second item.",
 	}
 	compareSentences(t, actualText, expected, test)
+
+	test = "46. Ellipsis at end of quotation"
+	actualText = "Thoreau argues that by simplifying one’s life, “the laws of the universe will appear less complex. . . .”"
+	expected = []string{
+		"Thoreau argues that by simplifying one’s life, “the laws of the universe will appear less complex. . . .”",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "47. Ellipsis with square brackets"
+	actualText = "\"Bohr [...] used the analogy of parallel stairways [...]\" (Smith 55)."
+	expected = []string{
+		"\"Bohr [...] used the analogy of parallel stairways [...]\" (Smith 55).",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "48. Ellipsis as sentence boundary (standard ellipsis rules)"
+	actualText = "If words are left off at the end of a sentence, and that is all that is omitted, indicate the omission with ellipsis marks (preceded and followed by a space) and then indicate the end of the sentence with a period ... . Next sentence."
+	expected = []string{
+		"If words are left off at the end of a sentence, and that is all that is omitted, indicate the omission with ellipsis marks (preceded and followed by a space) and then indicate the end of the sentence with a period ... .",
+		" Next sentence.",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "49. Ellipsis as sentence boundary (non-standard ellipsis rules)"
+	actualText = "I never meant that.... She left the store."
+	expected = []string{
+		"I never meant that....",
+		" She left the store.",
+	}
+	compareSentences(t, actualText, expected, test)
+
+	test = "51. 4-dot ellipsis"
+	actualText = "One further habit which was somewhat weakened . . . was that of combining words into self-interpreting compounds. . . . The practice was not abandoned. . . ."
+	expected = []string{
+		"One further habit which was somewhat weakened . . . was that of combining words into self-interpreting compounds. . . .",
+		" The practice was not abandoned. . . .",
+	}
+	compareSentences(t, actualText, expected, test)
 }

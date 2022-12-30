@@ -141,7 +141,12 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		return
 	}
 
-	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && !a.HasUnreliableEndChars(tokOne) {
+	if  strings.HasSuffix(tokOne.Tok,".") && tokTwo.Tok=="." {
+		tokOne.SentBreak = false
+		return
+	}
+
+	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && tokOne.Tok!="." && !a.HasUnreliableEndChars(tokOne) {
 		return
 	}
 
@@ -170,7 +175,7 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		frequent-sentence-starters list, then label tok as a
 		sentence break.
 	*/
-	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne)) {
+	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne) || tokOne.Tok==".") {
 		tokOne.SentBreak = true
 		return
 	}
