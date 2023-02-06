@@ -85,6 +85,14 @@ func TestGoldenRules(t *testing.T) {
 	}
 	compareSentences(t, actualText, expected, test)
 
+	test = "43. Geo Coordinates"
+	actualText = "You can find it at N°. 1026.253.553. That is where the treasure is."
+	expected = []string{
+		"You can find it at N°. 1026.253.553.",
+		" That is where the treasure is.",
+	}
+	compareSentences(t, actualText, expected, test)
+
 	test = "46. Ellipsis at end of quotation"
 	actualText = "Thoreau argues that by simplifying one’s life, “the laws of the universe will appear less complex. . . .”"
 	expected = []string{

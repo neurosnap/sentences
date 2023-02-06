@@ -36,35 +36,38 @@ func (p *DefaultTokenGrouper) Group(tokens []*Token) [][2]*Token {
 
 // Token stores a token of text with annotations produced during sentence boundary detection.
 type Token struct {
-	Tok         string
-	Position    int
-	SentBreak   bool
-	ParaStart   bool
-	LineStart   bool
-	Abbr        bool
-	periodFinal bool
-	reEllipsis  *regexp.Regexp
-	reNumeric   *regexp.Regexp
-	reInitial   *regexp.Regexp
-	reListNumber *regexp.Regexp
-	reAlpha     *regexp.Regexp
+	Tok                    string
+	Position               int
+	SentBreak              bool
+	ParaStart              bool
+	LineStart              bool
+	Abbr                   bool
+	periodFinal            bool
+	reEllipsis             *regexp.Regexp
+	reNumeric              *regexp.Regexp
+	reInitial              *regexp.Regexp
+	reListNumber           *regexp.Regexp
+	reAlpha                *regexp.Regexp
+	reCoordinateSecondPart *regexp.Regexp
 }
 
 var reEllipsis = regexp.MustCompile(`\.\.+$`)
 var reNumeric = regexp.MustCompile(`-?[\.,]?\d[\d,\.-]*\.?$`)
 var reInitial = regexp.MustCompile(`^[A-Za-z]\.$`)
-var reListNumber = regexp.MustCompile(`\d+.?\)?$`)
+var reListNumber = regexp.MustCompile(`^\d+.?\)?$`)
 var reAlpha = regexp.MustCompile(`^[A-Za-z]+$`)
+var reCoordinateSecondPart = regexp.MustCompile(`^[0-9]*\.[0-9]*\.[0-9]*\.$`)
 
 // NewToken is the default implementation of the Token struct
 func NewToken(token string) *Token {
 	tok := Token{
-		Tok:        token,
-		reEllipsis: reEllipsis,
-		reNumeric:  reNumeric,
-		reInitial:  reInitial,
-		reListNumber: reListNumber,
-		reAlpha:    reAlpha,
+		Tok:                    token,
+		reEllipsis:             reEllipsis,
+		reNumeric:              reNumeric,
+		reInitial:              reInitial,
+		reListNumber:           reListNumber,
+		reAlpha:                reAlpha,
+		reCoordinateSecondPart: reCoordinateSecondPart,
 	}
 
 	return &tok

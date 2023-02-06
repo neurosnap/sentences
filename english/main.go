@@ -136,7 +136,7 @@ func (a *MultiPunctWordAnnotation) Annotate(tokens []*sentences.Token) []*senten
 }
 
 func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Token) {
-	if a.IsListNumber(tokOne) {
+	if a.IsListNumber(tokOne) || a.IsCoordinatePartOne(tokOne) {
 		tokOne.SentBreak = false
 		return
 	}
@@ -146,7 +146,7 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		return
 	}
 
-	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && tokOne.Tok!="." && !a.HasUnreliableEndChars(tokOne) {
+	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && tokOne.Tok!="." && !(a.HasUnreliableEndChars(tokOne)) && !(a.IsCoordinatePartTwo(tokOne)) {
 		return
 	}
 
@@ -175,7 +175,7 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		frequent-sentence-starters list, then label tok as a
 		sentence break.
 	*/
-	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne) || tokOne.Tok==".") {
+	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne) || tokOne.Tok=="." || a.IsCoordinatePartTwo(tokOne)) {
 		tokOne.SentBreak = true
 		return
 	}
