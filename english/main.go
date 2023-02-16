@@ -72,6 +72,7 @@ func NewWordTokenizer(p sentences.PunctStrings) *WordTokenizer {
 
 	return word
 }
+
 // Find any punctuation that might mean the end of a sentence but doesn't have to
 func (e *WordTokenizer) HasUnreliableEndChars(t *sentences.Token) bool {
 	enders := []string{
@@ -86,6 +87,7 @@ func (e *WordTokenizer) HasUnreliableEndChars(t *sentences.Token) bool {
 	}
 	return false
 }
+
 // Find any punctuation excluding the period final
 func (e *WordTokenizer) HasSentEndChars(t *sentences.Token) bool {
 	enders := []string{
@@ -141,12 +143,12 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		return
 	}
 
-	if  strings.HasSuffix(tokOne.Tok,".") && tokTwo.Tok=="." {
+	if strings.HasSuffix(tokOne.Tok, ".") && tokTwo.Tok == "." {
 		tokOne.SentBreak = false
 		return
 	}
 
-	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && tokOne.Tok!="." && !(a.HasUnreliableEndChars(tokOne)) && !(a.IsCoordinatePartTwo(tokOne)) {
+	if len(reAbbr.FindAllString(tokOne.Tok, 1)) == 0 && tokOne.Tok != "." && !(a.HasUnreliableEndChars(tokOne)) && !(a.IsCoordinatePartTwo(tokOne)) {
 		return
 	}
 
@@ -175,7 +177,7 @@ func (a *MultiPunctWordAnnotation) tokenAnnotation(tokOne, tokTwo *sentences.Tok
 		frequent-sentence-starters list, then label tok as a
 		sentence break.
 	*/
-	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne) || tokOne.Tok=="." || a.IsCoordinatePartTwo(tokOne)) {
+	if a.TokenParser.FirstUpper(tokTwo) && (a.SentStarters[nextTyp] != 0 || a.HasUnreliableEndChars(tokOne) || tokOne.Tok == "." || a.IsCoordinatePartTwo(tokOne)) {
 		tokOne.SentBreak = true
 		return
 	}
