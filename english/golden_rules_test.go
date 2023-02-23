@@ -38,7 +38,7 @@ func TestGoldenRules(t *testing.T) {
 		"He teaches science (He previously worked for 5 years as an engineer.) at the local University.",
 	}
 	compareSentences(t, actualText, expected, test)
-	
+
 	test = "24. Single quotations inside sentence"
 	actualText = "She turned to him, 'This is great.' she said."
 	expected = []string{
