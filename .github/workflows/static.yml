@@ -37,3 +37,4 @@ jobs:
           src: './public/*'
           project: "git-sentences-${{ steps.vars.outputs.sha_short }}"
           promote: "git-sentences"
+          retain: "git-sentences-"
